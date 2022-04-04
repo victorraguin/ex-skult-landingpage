@@ -1,0 +1,14 @@
+{
+  "extends": ["@skultgg-config/eslint-config-skult", "plugin:@next/next/recommended"],
+  "rules": {
+    "react/jsx-props-no-spreading": "off",
+    "@next/next/no-img-element": "off",
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      },
+    ],
+    
+  }
+}

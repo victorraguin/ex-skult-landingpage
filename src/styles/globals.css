@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Inter';
+  src: url(../../public/assets/Inter/static/Inter-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url(../../public/assets/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Poppins-SB';
+  src: url(../../public/assets/Poppins/Poppins-SemiBold.ttf);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

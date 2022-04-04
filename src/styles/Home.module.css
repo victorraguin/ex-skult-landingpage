@@ -1,0 +1,79 @@
+.container {
+  @apply mx-auto flex min-h-screen justify-center bg-cover bg-center bg-no-repeat sm:mx-auto sm:py-14;
+  @apply flex-col items-center lg:flex-row lg:items-start;
+  @apply max-w-screen-xl;
+}
+
+.formContainer {
+  @apply relative flex flex-col gap-4 rounded-3xl bg-bg-1 p-10 lg:ml-10;
+  @apply w-11/12 md:w-10/12 lg:w-7/12 xl:w-6/12;
+}
+
+.logoContainer {
+  @apply mb-6 w-6/12 md:mb-10 md:w-4/12 lg:mb-0 lg:w-4/12;
+}
+
+.formTitle {
+  @apply mb-5 text-5xl font-semibold text-white;
+}
+
+.isNew {
+  @apply mb-10 mr-2 text-xs text-white;
+}
+
+.createAccount {
+  @apply mb-10 text-xs text-primary;
+}
+
+.usernameInput {
+  @apply h-12 w-full rounded-md bg-grey-50 bg-opacity-5 px-4 ring-primary focus:outline-none focus:ring-1;
+}
+
+.passwordInput {
+  @apply mb-7 h-12 w-full rounded-md bg-grey-50 bg-opacity-5 px-4 text-white  ring-primary focus:outline-none focus:ring-1;
+}
+
+.rounded2lg {
+  border-radius: 2.5rem;
+}
+.containerSecond {
+  @apply mx-auto flex min-h-screen justify-center bg-cover bg-center bg-no-repeat sm:mx-auto sm:py-14;
+  @apply flex-col items-center lg:flex-row lg:items-start;
+  @apply max-w-screen-xl;
+}
+
+.formContainerSecond {
+  @apply ml-0 mb-12 flex flex-col gap-5 bg-bg-1 p-10 sm:mx-auto sm:mb-0 md:p-12;
+  @apply w-[90%] md:h-[42rem] md:w-[32rem];
+  box-shadow: black 0px 23px 28px -5px;
+}
+
+.logoContainerSecond {
+  @apply mb-6 w-4/5 md:mb-10 md:w-8/12 md:w-7/12 lg:mb-0 lg:w-7/12;
+}
+
+.formTitleSecond {
+  @apply mb-5 pt-3 font-poppins text-5xl font-semibold text-white;
+}
+
+.isNewSecond {
+  @apply mr-4 text-grey-neutral;
+  font-size: 0.9rem;
+}
+
+.createAccountSecond {
+  @apply mb-10 transform text-primary hover:underline;
+  font-size: 0.9rem;
+}
+
+.usernameInputSecond {
+  @apply mb-4 h-11 w-full rounded-md bg-grey-50 bg-opacity-5 px-4  text-white ring-primary focus:outline-none focus:ring-1;
+}
+
+.locationInput {
+  @apply h-11 w-full rounded-md bg-grey-50 bg-opacity-5 px-4 text-white ring-primary focus:bg-gray-100 focus:text-gray-600 focus:outline-none focus:ring-1;
+}
+
+.passwordInputSecond {
+  @apply mb-4 h-11 w-full rounded-md bg-grey-50 bg-opacity-5 px-4  text-white ring-primary focus:outline-none focus:ring-1;
+}

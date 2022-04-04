@@ -1,0 +1,50 @@
+.button {
+  @apply transform rounded-xl p-3 font-medium  text-white transition duration-200 ease-in-out hover:bg-gray-800 hover:text-primary;
+}
+
+.buttonPrimary {
+  @apply transform rounded-xl bg-primary p-3  text-white transition duration-200 ease-in-out hover:bg-secondary hover:text-primary;
+}
+
+.GameTypeButton {
+  @apply my-2 ml-4 flex h-full cursor-pointer items-center  justify-between rounded font-poppins  text-sm text-white transition duration-100 ease-in-out hover:border-primary hover:text-primary;
+}
+
+.GameImageButton {
+  @apply cursor-pointer rounded-xl transition duration-200 ease-in-out hover:scale-110 md:h-full;
+}
+.CloseBtn {
+  @apply inset-y-0 right-6 top-6 flex h-12 w-12 items-center rounded-full pl-4 text-white hover:bg-gray-900 hover:text-white;
+}
+
+.BtnFaOffDesable {
+  @apply rounded-full bg-black text-gray-400;
+}
+
+.BtnFaOffActive {
+  @apply rounded-full bg-black text-primary;
+}
+
+.twicthBtnSecond {
+  @apply mt-4 rounded-xl bg-indigo-400 p-3 font-medium text-white;
+  @apply w-full transform transition duration-500 ease-in-out hover:bg-gray-800 hover:text-indigo-400;
+}
+
+.backBtn {
+  @apply absolute right-6 top-6 flex h-12 w-12 items-center justify-center rounded-full bg-secondary;
+  @apply hover:bg-primary hover:text-white;
+}
+
+.BtnSkip {
+  @apply absolute right-6 top-6 mr-3 flex items-center justify-center rounded-xl bg-secondary px-8 sm:p-2 md:p-4;
+}
+
+.buttonSignUp {
+  @apply mr-2  rounded-md bg-secondary py-4 px-8 transition hover:bg-primary hover:text-white;
+  @apply w-40;
+}
+
+.buttonSignUpMail {
+  @apply mr-2 rounded-md bg-secondary py-4 px-8 transition;
+  @apply w-40;
+}

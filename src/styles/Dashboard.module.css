@@ -1,0 +1,95 @@
+.navbar {
+  @apply fixed top-0 z-10 flex w-full flex-wrap items-center justify-between bg-bg-1 p-2 shadow;
+}
+.body {
+  @apply top-0 z-10 flex min-h-screen  w-full flex-wrap items-center  items-center justify-between bg-bg-1 bg-center;
+  @apply w-full max-w-screen-2xl;
+}
+.container {
+  @apply fixed top-0 z-10 flex min-h-screen w-full flex-wrap items-center  items-center justify-between bg-gray-500 bg-center;
+  @apply w-full;
+}
+.blockstyle {
+  @apply flex flex-col gap-4 rounded-3xl border border-[#f0f3f60a] bg-[#242731] shadow;
+}
+
+.GameContainer {
+  @apply m-2 flex w-full rounded-2xl border border-[#f0f3f60a] bg-[#242731];
+}
+
+.avatarContainer {
+  @apply mx-0 cursor-pointer transition duration-200 ease-in-out hover:scale-105;
+}
+
+.avatar {
+  @apply mr-4 h-24 w-24 rounded-full border-2 border-primary bg-cover bg-no-repeat object-cover p-[2px];
+}
+
+.avatarNavBar {
+  @apply h-20 w-20 rounded-full bg-cover bg-no-repeat p-2;
+}
+
+.ProfilContainer {
+  @apply w-full px-2 xl:w-3/4 xl:max-w-6xl;
+}
+
+.ProfilName {
+  @apply mt-2 mb-2 w-full font-poppinssb text-4xl text-white;
+}
+
+.ProfilblurbSection {
+  @apply mt-2 w-full flex-none font-medium text-gray-400;
+}
+
+.ProfilInfoSection {
+  @apply flex flex-col-reverse md:flex-row-reverse;
+  @apply max-w-sm pr-2 lg:max-w-3xl xl:max-w-5xl;
+}
+
+.blockContent {
+  @apply mb-4 rounded-3xl bg-bg-1 shadow-2xl;
+}
+
+.contentGamesBlock {
+  @apply w-full md:flex md:p-0;
+}
+
+.GameTitle {
+  @apply ml-4 font-poppinssb text-xl text-white  md:w-full;
+}
+
+.gradient {
+  @apply bg-gradient-to-r from-yellow-500 to-yellow-600;
+}
+
+.Menu {
+  @apply cursor-pointer rounded-md px-3 py-2 text-sm font-medium text-gray-400 hover:bg-gray-800 hover:text-primary;
+}
+
+.navBarMenu {
+  @apply flex h-full cursor-pointer items-center justify-between px-4 transition  duration-200 ease-in-out hover:border-b  hover:border-primary  hover:text-primary;
+}
+
+.search {
+  @apply h-8 w-full rounded-md bg-bg-1 py-3 pl-9 text-sm text-gray-400  placeholder-gray-400 outline-none transition focus:ring-2 focus:ring-gray-700;
+}
+
+.MenuBnt {
+  @apply inline-flex items-center justify-center rounded-md bg-gray-800 p-2 text-gray-400  focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-gray-800 hover:bg-gray-800;
+}
+
+.indexedStep {
+  @apply flex h-10 w-36 justify-center rounded-xl bg-gray-400 pt-2 align-baseline font-poppinssb text-base text-white;
+}
+
+.indexedStepMobile {
+  @apply flex justify-center rounded-xl bg-gray-400 p-2 align-baseline font-poppinssb text-base text-white;
+}
+
+.userMenuButtonStyle {
+  @apply h-16 w-16 cursor-pointer rounded-full border-2 border-primary object-cover transition duration-200 ease-in-out hover:scale-110;
+}
+
+.LeagueScoreText {
+  @apply bg-gradient-to-l from-[#ED713C] to-[#FFC000] bg-clip-text text-7xl font-bold text-transparent;
+}

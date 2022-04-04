@@ -1,0 +1,24 @@
+.container {
+  @apply relative mx-auto bg-[#0C0C0D]/80 px-5 shadow-lg md:w-2/4 md:rounded-xl md:px-10;
+}
+
+.loadingContainer {
+  @apply relative mx-auto bg-[#0C0C0D]/100 px-5 shadow-lg md:rounded-xl;
+}
+
+.sousTitleModal {
+  @apply font-poppinssb text-base text-white;
+  @apply xl:w-3/4 xl:max-w-6xl;
+}
+
+.sousGoModal {
+  @apply max-w-sm flex-row-reverse lg:max-w-3xl xl:max-w-5xl;
+}
+
+.sousBntModal {
+  @apply mb-1 flex-row-reverse rounded bg-primary p-2 text-xs font-bold text-white;
+}
+
+.sousFaBntTitle {
+  @apply bg-gradient-to-br from-[#6d6d6d] to-[#ffbf0062] bg-clip-text font-poppinssb text-2xl text-transparent;
+}
