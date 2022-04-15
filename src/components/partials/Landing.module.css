@@ -1,0 +1,23 @@
+.HeaderJoinDiscord {
+  box-shadow: 0px 0px 25px -3px #ffcc00cf;
+}
+
+.DiscordButton {
+  @apply flex h-[52px] flex-row rounded-full border-[2px] border-[#a9a9a9] px-1 transition duration-200 ease-in-out hover:scale-105;
+}
+
+.HomeTitle {
+  @apply bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text pt-28 font-poppins text-[65px] font-bold  text-transparent;
+}
+
+.HomeLittleTitle {
+  @apply bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text font-poppins text-[50px] font-light  text-transparent;
+}
+
+.floatingDiscordButton {
+  @apply relative shadow-inner shadow-black top-[-14rem] mx-auto w-80  cursor-pointer rounded-[15px] border-2 border-[#e7e7e72f] bg-[#222222] py-5 text-center font-poppins text-[42px] font-normal text-[#e7e7e7] 2xl:top-[-15rem];
+}
+
+.floatingOmberButton {
+  @apply relative top-[-12rem] mx-auto w-[18rem]  rounded-[15px] border-2 border-[#e7e7e72f] bg-[#040303] py-2 text-center font-poppins text-[42px] font-normal text-[#e7e7e7] blur 2xl:top-[-13rem];
+}

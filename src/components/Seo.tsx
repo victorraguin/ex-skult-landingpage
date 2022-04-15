@@ -3,7 +3,7 @@ import Head from 'next/head';
 
 const Seo: React.FC<SEOProps> = ({ description, keywords, title }) => (
   <Head>
-    <title>Skult | {title}</title>
+    <title>SKULT | {title}</title>
     <meta name="description" content={description} />
     <meta name="keywords" content={keywords?.join(', ')} />
     <meta property="og:type" content="website" />
@@ -18,7 +18,7 @@ const Seo: React.FC<SEOProps> = ({ description, keywords, title }) => (
     <meta name="twitter:creator" content="@Skult" />
     <meta name="twitter:image" content="" />
     <meta property="og:image" content="" />
-    <link rel="icon" type="image/png" href={`${process.env.CDN_BASE_URL}/favicon.ico`} />
+    <link rel="icon" type="image/png" href={`/favicon.ico`} />
     <link rel="apple-touch-icon" type="image/png" href="/favicon.ico" />
   </Head>
 );
@@ -33,7 +33,7 @@ export interface SEOProps {
 
 Seo.defaultProps = {
   description: '',
-  keywords: ['dashboard', 'Skult', 'games'],
+  keywords: ['Streamers', 'Skult', 'games', 'Leaguers'],
 };
 
 export default Seo;

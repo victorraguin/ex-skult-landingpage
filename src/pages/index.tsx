@@ -6,22 +6,23 @@ import StartBlock from '../components/partials/StartBlock';
 import PresentationBlock from '../components/partials/PresentationBlock';
 import StreamersLeaguersBlock from '../components/partials/StreamersLeaguersBlock';
 import CollectiblesBlock from '../components/partials/CollectiblesBlock';
+import { motion } from 'framer-motion';
 import SocialBlock from '../components/partials/SocialBlock';
 import Footer from '../components/partials/Footer';
 
 const Home: NextPage = () => {
   return (
-    <div className="bg-black text-white">
+    <div className="bg-[#222222]">
       <Seo title={'Hello'} />
-      <div className="min-w-screen mx-32 min-h-screen bg-black">
-        <Header />
+      <Header />
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 3, duration: 1.5 }}>
         <StartBlock />
         <PresentationBlock />
         <StreamersLeaguersBlock />
         <CollectiblesBlock />
         <SocialBlock />
         <Footer />
-      </div>
+      </motion.div>
     </div>
   );
 };
