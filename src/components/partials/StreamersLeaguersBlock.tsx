@@ -100,19 +100,23 @@ const StreamersLeaguersBlock = () => {
 
   return (
     <motion.div className="relative flex flex-col flex-wrap  bg-[#262626] pt-20 2xl:pt-20 3xl:pt-20" ref={ref}>
-      <img src="/elements/haut.webp" alt="Streamer" className="absolute right-0 top-[-2rem] w-full" />
+      <img
+        src="/elements/haut.webp"
+        alt="Streamer"
+        className="invisible absolute right-0 top-[-2rem] w-full xl:visible"
+      />
       <motion.h1
         initial={{ opacity: 0 }}
         animate={controls}
         variants={openTitleText}
-        className="relative mx-auto flex flex-row font-poppins text-[48px] font-semibold text-primary"
+        className="relative mx-auto flex flex-row font-poppins text-[32px] font-semibold text-primary xl:text-[48px]"
       >
         Nobody
-        <p className="pl-2 text-center text-[48px] font-light text-[#e7e7e7]"> is Left Behind!</p>
+        <p className="pl-2 text-center text-[32px] font-light text-[#e7e7e7] xl:text-[48px]"> is Left Behind!</p>
       </motion.h1>
       <div className="m-auto flex flex-wrap justify-around pt-[4.5rem] xl:flex-nowrap 2xl:pt-[6rem] 4xl:pt-[12rem]">
         <div className="xl:pr-[323px]">
-          <div className="relative right-[-30%]">
+          <div className="relative mx-5 xl:right-[-30%] xl:mx-0">
             <div className="pb-[15rem] 2xl:pb-[17rem] 4xl:pb-[20rem]">
               <div className="relative">
                 <motion.img
@@ -168,9 +172,14 @@ const StreamersLeaguersBlock = () => {
                 From your collectibles and your in-game actions. The better you play, the more valuable you are!
               </p>
             </motion.div>
-            <motion.div initial={{ opacity: 0 }} animate={controls} variants={openButtonStreamerBlock}>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={controls}
+              variants={openButtonStreamerBlock}
+              className="pb-10 xl:pb-0"
+            >
               <button
-                className={`relative scale-105 rounded-full bg-gradient-to-r from-[#FFCC00] to-[#ED713C] p-0.5 text-sm hover:scale-110`}
+                className={`pb-10text-sm relative scale-105 rounded-full bg-gradient-to-r from-[#FFCC00] to-[#ED713C] p-0.5 hover:scale-110`}
               >
                 <div className="relative flex flex-row rounded-full bg-[#262626] px-6 pt-3">
                   <div className={`pb-3 text-[20px] text-[#a9a9a9]`}>I'm a Streamer!</div>
@@ -179,8 +188,8 @@ const StreamersLeaguersBlock = () => {
             </motion.div>
           </div>
         </div>
-        <div className="bg-[#222222] pb-96 xl:pl-80">
-          <div className="relative left-[-30%]">
+        <div className="bg-[#222222] pb-96 pt-10 xl:pt-0 xl:pl-80">
+          <div className="relative mx-5 xl:left-[-30%] xl:mx-0">
             <div className="pb-[15rem] 2xl:pb-[17rem] 4xl:pb-[20rem]">
               <div className="relative">
                 <motion.img
@@ -258,13 +267,13 @@ const StreamersLeaguersBlock = () => {
           <motion.img
             src="./elements/skult-nft-icon.svg"
             alt="header"
-            className=" absolute right-[48.35%] z-20 mx-auto h-20 cursor-pointer transition duration-300 ease-in-out hover:scale-125 hover:invert"
+            className=" absolute right-[39.5%] top-[5rem] z-20 mx-auto h-20 cursor-pointer transition duration-300 ease-in-out hover:scale-125 hover:invert xl:top-0 xl:right-[48.35%]"
           />
         </motion.div>
         <motion.img
           src="./elements/skyrroz.svg"
           alt="header"
-          className="absolute z-30 mx-auto origin-bottom cursor-grab transition duration-[800ms] ease-in-out"
+          className="absolute top-[-20rem] z-30 mx-auto origin-bottom scale-[60%] cursor-grab transition duration-[800ms] ease-in-out xl:top-0 xl:scale-100"
           drag
           dragElastic={1}
           whileTap={{ cursor: 'grabbing' }}
@@ -274,15 +283,15 @@ const StreamersLeaguersBlock = () => {
         <img
           src="./elements/natasha.svg"
           alt="header"
-          className="absolute left-[47%] z-20 origin-bottom rotate-[18deg] transition duration-[800ms] ease-in-out hover:rotate-[28deg]"
+          className="absolute left-[21%] top-[-20rem] z-20 origin-bottom rotate-[18deg] scale-[60%] transition duration-[800ms] ease-in-out hover:rotate-[28deg] xl:left-[47%] xl:top-0 xl:scale-100"
         />
         <img
           src="./elements/waartex.svg"
           alt="header"
-          className="absolute right-[47%] z-10 origin-bottom rotate-[350deg] transition duration-[800ms] ease-in-out hover:rotate-[345deg]"
+          className="absolute right-[21%] top-[-20rem] z-10 origin-bottom rotate-[350deg] scale-[60%] transition duration-[800ms] ease-in-out hover:rotate-[345deg] xl:right-[47%] xl:top-0 xl:scale-100"
         />
       </div>
-      <img src="/elements/bas.webp" alt="Streamer" className="relative left-0 bottom-0 w-full" />
+      <img src="/elements/bas.webp" alt="Streamer" className="invisible relative left-0 bottom-0 w-full xl:visible" />
     </motion.div>
   );
 };
