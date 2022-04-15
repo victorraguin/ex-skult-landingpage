@@ -139,7 +139,7 @@ const CardAndGamesBlock = () => {
         initial="hidden"
         animate={controls}
       >
-        <motion.img variants={GameItem} src="/elements/GAME/WARZONE.svg" alt="Warzone" className="h-[100px]" />
+        <motion.img variants={GameItem} src="/elements/GAME/warzone.svg" alt="Warzone" className="h-[100px]" />
         <motion.img variants={GameItem} src="/elements/GAME/fortnite.svg" alt="Fortnite" className="h-[100px]" />
         <motion.img variants={GameItem} src="/elements/GAME/APEX.svg" alt="APEX" className="h-[100px]" />
         <motion.img variants={GameItem} src="/elements/GAME/valorant.svg" alt="valorant" className="h-[100px]" />

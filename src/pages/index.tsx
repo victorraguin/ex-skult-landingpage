@@ -15,7 +15,7 @@ const Home: NextPage = () => {
     <div className="bg-[#222222]">
       <Seo title={'Hello'} />
       <Header />
-      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 3, duration: 1.5 }}>
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5, duration: 1 }}>
         <StartBlock />
         <PresentationBlock />
         <StreamersLeaguersBlock />

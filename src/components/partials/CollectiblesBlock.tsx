@@ -37,7 +37,13 @@ const CollectiblesBlock = () => {
   };
 
   return (
-    <motion.div className="h-full bg-[#222222]" variants={CardContainer} initial="hidden" animate={controls} ref={ref}>
+    <motion.div
+      className="h-full bg-[#222222] pt-10 xl:pt-0"
+      variants={CardContainer}
+      initial="hidden"
+      animate={controls}
+      ref={ref}
+    >
       <motion.div className="flex flex-row flex-wrap justify-around xl:mx-60 xl:flex-nowrap">
         <motion.div className=" flex flex-col" variants={CardItem}>
           <img src="/elements/skult-collecte-icon-.svg" alt="Collect Icon" className="h-[125px]" />
@@ -89,7 +95,7 @@ const CollectiblesBlock = () => {
           </p>
         </motion.div>
       </motion.div>
-      <div className="pb-40"></div>
+      <div className="pb-20 xl:pb-40"></div>
     </motion.div>
   );
 };

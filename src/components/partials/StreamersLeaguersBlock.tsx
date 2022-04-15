@@ -14,87 +14,87 @@ const StreamersLeaguersBlock = () => {
   }, [controls, inView]);
 
   const openTitleText = {
-    visible: { opacity: 1, transition: { duration: 1 } },
+    visible: { opacity: 1, transition: { duration: 0.5 } },
     hidden: { opacity: 0, scale: 0 },
   };
 
   const openStreamerLogoShadow = {
-    visible: { opacity: 1, transition: { duration: 1 } },
+    visible: { opacity: 1, transition: { duration: 0.5 } },
     hidden: { opacity: 0 },
   };
 
   const openStreamerLueur = {
-    visible: { opacity: 1, transition: { delay: 1, duration: 1 } },
+    visible: { opacity: 1, transition: { delay: 0.5, duration: 0.5 } },
     hidden: { opacity: 0 },
   };
 
   const openStreamerLogo = {
-    visible: { opacity: 1, transition: { delay: 2, duration: 1 } },
+    visible: { opacity: 1, transition: { delay: 1, duration: 0.5 } },
     hidden: { opacity: 0 },
   };
 
   const openAnyStreamerText = {
-    visible: { opacity: 1, scale: 1, transition: { delay: 3, duration: 1 } },
+    visible: { opacity: 1, scale: 1, transition: { delay: 1.5, duration: 0.5 } },
     hidden: { opacity: 0, scale: 0 },
   };
 
   const openLeaguerLogoShadow = {
-    visible: { opacity: 1, transition: { delay: 3, duration: 1 } },
+    visible: { opacity: 1, transition: { delay: 1, duration: 0.5 } },
     hidden: { opacity: 0 },
   };
 
   const openLeaguerLueur = {
-    visible: { opacity: 1, transition: { delay: 4, duration: 1 } },
+    visible: { opacity: 1, transition: { delay: 1.25, duration: 0.5 } },
     hidden: { opacity: 0 },
   };
 
   const openLeaguerLogo = {
-    visible: { opacity: 1, transition: { delay: 5, duration: 1 } },
+    visible: { opacity: 1, transition: { delay: 1.5, duration: 0.5 } },
     hidden: { opacity: 0 },
   };
 
   const openAnyLeaguerText = {
-    visible: { opacity: 1, scale: 1, transition: { delay: 6, duration: 1 } },
+    visible: { opacity: 1, scale: 1, transition: { delay: 2, duration: 0.5 } },
     hidden: { opacity: 0, scale: 0 },
   };
 
   const openCommunityBlock = {
-    visible: { opacity: 1, transition: { delay: 7, duration: 1 } },
+    visible: { opacity: 1, transition: { delay: 3, duration: 0.5 } },
     hidden: { opacity: 0, scale: 0 },
   };
 
   const openFunBlock = {
-    visible: { opacity: 1, transition: { delay: 7.5, duration: 1 } },
+    visible: { opacity: 1, transition: { delay: 3.5, duration: 0.5 } },
     hidden: { opacity: 0, scale: 0 },
   };
 
   const openEngagementBlock = {
-    visible: { opacity: 1, transition: { delay: 8, duration: 1 } },
+    visible: { opacity: 1, transition: { delay: 4, duration: 0.5 } },
     hidden: { opacity: 0, scale: 0 },
   };
 
   const openRewardsBlock = {
-    visible: { opacity: 1, transition: { delay: 8.5, duration: 1 } },
+    visible: { opacity: 1, transition: { delay: 4.5, duration: 0.5 } },
     hidden: { opacity: 0, scale: 0 },
   };
 
   const openEarnCashStreamersBlock = {
-    visible: { opacity: 1, transition: { delay: 9, duration: 1 } },
+    visible: { opacity: 1, transition: { delay: 5, duration: 0.5 } },
     hidden: { opacity: 0, scale: 0 },
   };
 
   const openEarnCashLeaguersBlock = {
-    visible: { opacity: 1, transition: { delay: 9.5, duration: 1 } },
+    visible: { opacity: 1, transition: { delay: 5.5, duration: 0.5 } },
     hidden: { opacity: 0, scale: 0 },
   };
 
   const openButtonStreamerBlock = {
-    visible: { opacity: 1, transition: { delay: 10, duration: 1 } },
+    visible: { opacity: 1, transition: { delay: 6, duration: 0.5 } },
     hidden: { opacity: 0, scale: 0 },
   };
 
   const openButtonLeaguerBlock = {
-    visible: { opacity: 1, transition: { delay: 10.5, duration: 1 } },
+    visible: { opacity: 1, transition: { delay: 6.5, duration: 0.5 } },
     hidden: { opacity: 0, scale: 0 },
   };
 
@@ -257,7 +257,7 @@ const StreamersLeaguersBlock = () => {
         </div>
       </div>
       <div className="relative top-[-8rem] flex flex-row justify-center">
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 15, duration: 1 }}
@@ -267,18 +267,13 @@ const StreamersLeaguersBlock = () => {
           <motion.img
             src="./elements/skult-nft-icon.svg"
             alt="header"
-            className=" absolute right-[39.5%] top-[5rem] z-20 mx-auto h-20 cursor-pointer transition duration-300 ease-in-out hover:scale-125 hover:invert xl:top-0 xl:right-[48.35%]"
+            className=" absolute right-[39.5%] top-[8.5rem] z-20 mx-auto h-20 cursor-pointer transition duration-300 ease-in-out hover:scale-125 hover:invert xl:top-0 xl:right-[48.35%]"
           />
-        </motion.div>
+        </motion.div> */}
         <motion.img
           src="./elements/skyrroz.svg"
           alt="header"
-          className="absolute top-[-20rem] z-30 mx-auto origin-bottom scale-[60%] cursor-grab transition duration-[800ms] ease-in-out xl:top-0 xl:scale-100"
-          drag
-          dragElastic={1}
-          whileTap={{ cursor: 'grabbing' }}
-          dragConstraints={{ right: 100, left: 100, top: 100, bottom: 100 }}
-          dragTransition={{ bounceStiffness: 600, bounceDamping: 10 }}
+          className="absolute top-[-20rem] z-30 mx-auto origin-bottom scale-[60%] transition duration-[800ms] ease-in-out hover:rotate-[1deg] xl:top-0 xl:scale-100"
         />
         <img
           src="./elements/natasha.svg"

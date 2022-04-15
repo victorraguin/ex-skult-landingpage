@@ -5,19 +5,19 @@ import { useInView } from 'react-intersection-observer';
 
 const PresentationBlock = () => {
   const videoVariant = {
-    visible: { opacity: 1, transition: { delay: 3, duration: 7 } },
+    visible: { opacity: 1, transition: { delay: 2, duration: 6 } },
     hidden: { opacity: 0 },
   };
   const openLureurVariant = {
-    visible: { opacity: 1, scale: 1, transition: { delay: 1, duration: 3 } },
+    visible: { opacity: 1, scale: 1, transition: { delay: 1, duration: 2 } },
     hidden: { opacity: 0, scale: 0 },
   };
   const openTitleText = {
-    visible: { opacity: 1, scale: 1, transition: { duration: 1 } },
+    visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
     hidden: { opacity: 0, scale: 0 },
   };
   const openLittleTitleText = {
-    visible: { opacity: 1, scale: 1, transition: { delay: 1, duration: 1 } },
+    visible: { opacity: 1, scale: 1, transition: { delay: 0.5, duration: 0.5 } },
     hidden: { opacity: 0, scale: 0 },
   };
   const openStreamerFantasyText = {
@@ -25,7 +25,7 @@ const PresentationBlock = () => {
     hidden: { opacity: 0, scale: 0 },
   };
   const openSupportedGamesText = {
-    visible: { opacity: 1, scale: 1, transition: { delay: 3, duration: 3 } },
+    visible: { opacity: 1, scale: 1, transition: { delay: 1.5, duration: 2 } },
     hidden: { opacity: 0, scale: 0 },
   };
   const lueurVariant = {
@@ -64,10 +64,10 @@ const PresentationBlock = () => {
     visible: {
       opacity: 1,
       scale: 1,
-      delay: 5,
+      delay: 3,
       duration: 1,
       transition: {
-        delayChildren: 5,
+        delayChildren: 2.5,
         duration: 0.5,
         staggerChildren: 0.5,
       },
@@ -114,9 +114,9 @@ const PresentationBlock = () => {
         Victory!
       </motion.h3>
       <div className="relative flex flex-col ">
-        <div className="relative left-[13%] z-10 rounded-[15px] xl:left-[19%] xl:w-[920px] xl:bg-[#282828] 2xl:left-[22%] 3xl:left-[28.5%] 4xl:left-[33%]">
+        <div className="left-[13%] z-10 mx-auto rounded-[15px] xl:relative xl:left-[19%] xl:mx-0 xl:w-[920px] xl:bg-[#282828] 2xl:left-[22%] 3xl:left-[28.5%] 4xl:left-[33%]">
           <motion.video
-            className="relative z-20 rounded-[15px] xl:w-[920px]"
+            className="relative z-20 w-[300px] rounded-[15px] xl:w-[920px]"
             animate={controls}
             initial={{ opacity: 0 }}
             variants={videoVariant}
