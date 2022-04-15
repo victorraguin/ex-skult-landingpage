@@ -47,23 +47,23 @@ const CollectiblesBlock = () => {
       <motion.div className="flex flex-row flex-wrap justify-around xl:mx-60 xl:flex-nowrap">
         <motion.div className=" flex flex-col" variants={CardItem}>
           <img src="/elements/skult-collecte-icon-.svg" alt="Collect Icon" className="h-[125px]" />
-          <h4 className="text-center text-[28px] font-bold text-primary">Collect</h4>
-          <p className="mx-auto w-2/3 pt-4 text-center text-[18px] font-medium text-[#b8b8b8]">
+          <h4 className="pt-5 text-center font-poppins text-[28px] font-semibold text-primary">Collect</h4>
+          <p className="mx-auto w-2/3 pt-4 text-center font-poppins text-[18px] font-medium text-[#b8b8b8]">
             Create your fighting deck by collecting the cards of the best Streamers you can find! You'll need them to
             participate into the Leagues!
           </p>
         </motion.div>
         <motion.div className=" flex flex-col" variants={CardItem}>
           <img src="/elements/skult-trade-icon.svg" alt="Collect Icon" className="h-[125px]" />
-          <h4 className="text-center text-[28px] font-bold text-primary">Trade</h4>
-          <p className="mx-auto w-2/3 text-center text-[18px] font-medium text-[#b8b8b8]">
+          <h4 className="pt-5 text-center font-poppins text-[28px] font-semibold text-primary">Trade</h4>
+          <p className="mx-auto w-2/3 pt-4 text-center font-poppins text-[18px] font-medium text-[#b8b8b8]">
             Trade with other Leaguers across the globe. Sell the cards you won't need: real cash is coming your way!
           </p>
         </motion.div>
         <motion.div className=" flex flex-col" variants={CardItem}>
-          <img src="/elements/skult-compete-icon.svg" alt="Collect Icon" className="h-[160px]" />
-          <h4 className="text-center text-[28px] font-bold text-primary">Compete</h4>
-          <p className="mx-auto w-2/3 text-center text-[18px] font-medium  text-[#b8b8b8]">
+          <img src="/elements/skult-compete-icon.svg" alt="Collect Icon" className="h-[125px]" />
+          <h4 className="pt-5 text-center font-poppins text-[28px] font-semibold text-primary">Compete</h4>
+          <p className="mx-auto w-2/3 pt-4 text-center font-poppins text-[18px] font-medium text-[#b8b8b8]">
             Draft your Squad and enter weekly Leagues. Your final score will depend on the real-world performances of
             your Streamers.
           </p>
@@ -72,25 +72,25 @@ const CollectiblesBlock = () => {
       <motion.div className="mt-20 flex flex-row flex-wrap justify-around xl:mx-60 xl:flex-nowrap">
         <motion.div className=" flex flex-col" variants={CardItem}>
           <img src="/elements/skult-support-icon.svg" alt="Collect Icon" className="h-[125px]" />
-          <h4 className="text-center text-[28px] font-bold text-primary">Support</h4>
-          <p className="mx-auto w-2/3 text-center text-[18px] font-medium  text-[#b8b8b8]">
+          <h4 className="pt-5 text-center font-poppins text-[28px] font-semibold text-primary">Support</h4>
+          <p className="mx-auto w-2/3 pt-4 text-center font-poppins text-[18px] font-medium text-[#b8b8b8]">
             Streamers receive a share every time a Leaguer buys one of his cards from SKULT. Are you a real fan? Then
             show them your love!
           </p>
         </motion.div>
         <motion.div className=" flex flex-col" variants={CardItem}>
           <img src="/elements/skult-nft-icon.svg" alt="Collect Icon" className="h-[125px]" />
-          <h4 className="text-center text-[28px] font-bold text-primary">Unique &</h4>
-          <h4 className="text-center text-[28px] font-bold text-primary">Counterfeit proof</h4>
-          <p className="mx-auto w-2/3 text-center text-[18px] font-medium  text-[#b8b8b8]">
+          <h4 className="pt-5 text-center font-poppins text-[28px] font-semibold text-primary">Unique &</h4>
+          <h4 className="text-center font-poppins text-[28px] font-semibold text-primary">Counterfeit proof</h4>
+          <p className="mx-auto w-2/3 pt-4 text-center font-poppins text-[18px] font-medium text-[#b8b8b8]">
             Every card is a non-fungible token (NFT). The blockchain technology ensures its uniqueness and ownership
             security.
           </p>
         </motion.div>
         <motion.div className="mr-8 flex flex-col" variants={CardItem}>
           <img src="/elements/skult-airdrop-icon.svg" alt="Collect Icon" className="h-[125px]" />
-          <h4 className="text-center text-[28px] font-bold text-primary">Earn</h4>
-          <p className="mx-auto w-2/3 text-center text-[18px] font-medium  text-[#b8b8b8]">
+          <h4 className="pt-5 text-center font-poppins text-[28px] font-semibold text-primary">Earn</h4>
+          <p className="mx-auto w-2/3 pt-4 text-center font-poppins text-[18px] font-medium text-[#b8b8b8]">
             Coins, cards, rewards and free drops are all for grab! Watch out: you might be ending up winning something!
           </p>
         </motion.div>

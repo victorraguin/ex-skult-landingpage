@@ -11,37 +11,37 @@ const Footer = () => {
       <div className="mx-5 flex flex-col pt-10 xl:mx-0 ">
         <form>
           <input
-            className="mx-4 border-b border-[#a9a9a9] bg-[#222222] font-light text-[#a9a9a9] focus:bg-[#252525]"
+            className="mx-4 w-80 border-b border-[#a9a9a9] bg-[#222222] pb-2 font-light text-[#a9a9a9] focus:outline-none"
             type="email"
             name="email"
-            defaultValue="Your Email..."
+            defaultValue="Subscribe to our Newsletter"
           />
           <input
             type="submit"
             value="Subscribe"
-            className="mx-4 cursor-pointer rounded-full border border-[#a9a9a9] bg-[#222222] p-2 font-light text-[#a9a9a9] hover:scale-105"
+            className="mx-4 cursor-pointer rounded-full border border-[#a9a9a9] bg-[#222222] p-2 px-4 font-light text-[#a9a9a9] hover:scale-105"
           />
         </form>
       </div>
-      <div className="flex flex-row flex-wrap pb-5 2xl:ml-[25%]">
+      <div className="flex flex-row flex-wrap pb-3 2xl:ml-[25%]">
         <img
           src="./elements/social/discord.svg"
-          className="m-auto mx-2 h-[3rem] cursor-pointer hover:scale-105 hover:brightness-150 xl:h-[4rem] "
+          className="m-auto mx-2 h-[3rem] cursor-pointer hover:scale-105 hover:brightness-150 xl:h-[3rem] "
           alt="Discord"
         />
         <img
           src="./elements/social/facebook.svg"
-          className="m-auto mx-2  h-[3rem] cursor-pointer hover:scale-105 hover:brightness-150 xl:h-[4rem]"
+          className="m-auto mx-2  h-[3rem] cursor-pointer hover:scale-105 hover:brightness-150 xl:h-[3rem]"
           alt="Facebook"
         />
         <img
           src="./elements/social/instagram.svg"
-          className="m-auto mx-2 h-[3rem] cursor-pointer hover:scale-105 hover:brightness-150 xl:h-[4rem]"
+          className="m-auto mx-2 h-[3rem] cursor-pointer hover:scale-105 hover:brightness-150 xl:h-[3rem]"
           alt="Instagram"
         />
         <img
           src="./elements/social/reddit.svg"
-          className="m-auto mx-2 h-[3rem] cursor-pointer hover:scale-105 hover:brightness-150 xl:h-[4rem]"
+          className="m-auto mx-2 h-[3rem] cursor-pointer hover:scale-105 hover:brightness-150 xl:h-[3rem]"
           alt="Reddit"
         />
         <img
@@ -51,7 +51,7 @@ const Footer = () => {
         />
         <img
           src="./elements/social/medium.svg"
-          className="m-auto mx-2 h-[3rem] cursor-pointer hover:scale-105 hover:brightness-150 xl:h-[4rem]"
+          className="m-auto mx-2 h-[3rem] cursor-pointer hover:scale-105 hover:brightness-150 xl:h-[3rem]"
           alt="Medium"
         />
       </div>
