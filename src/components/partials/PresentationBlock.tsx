@@ -98,7 +98,7 @@ const PresentationBlock = () => {
   return (
     <motion.div className="flex flex-col bg-[#282828] shadow-2xl shadow-black" ref={ref}>
       <motion.h3
-        className="mt-5 text-center font-poppins text-[48px] font-light text-[#e7e7e7]"
+        className="mx-2 mt-5 text-center font-poppins text-[32px] font-light text-[#e7e7e7] xl:mx-0 xl:text-[48px]"
         initial={{ opacity: 0 }}
         animate={controls}
         variants={openTitleText}
@@ -106,7 +106,7 @@ const PresentationBlock = () => {
         Every Game is a step further towards
       </motion.h3>
       <motion.h3
-        className="mb-10 text-center font-poppins text-[48px] font-light text-[#FFC000]"
+        className="mb-10 text-center font-poppins text-[40px] font-light text-[#FFC000] xl:text-[48px]"
         initial={{ opacity: 0 }}
         animate={controls}
         variants={openLittleTitleText}
@@ -114,9 +114,9 @@ const PresentationBlock = () => {
         Victory!
       </motion.h3>
       <div className="relative flex flex-col ">
-        <div className="relative left-[19%] z-10 w-[920px] rounded-[15px] bg-[#282828] 2xl:left-[22%] 3xl:left-[28.5%] 4xl:left-[33%]">
+        <div className="relative left-[13%] z-10 rounded-[15px] xl:left-[19%] xl:w-[920px] xl:bg-[#282828] 2xl:left-[22%] 3xl:left-[28.5%] 4xl:left-[33%]">
           <motion.video
-            className="relative z-20 w-[920px] rounded-[15px]"
+            className="relative z-20 rounded-[15px] xl:w-[920px]"
             animate={controls}
             initial={{ opacity: 0 }}
             variants={videoVariant}
@@ -147,7 +147,7 @@ const PresentationBlock = () => {
         </motion.div>
       </div>
       <motion.div
-        className="mt-12 text-center font-poppins text-[48px] font-medium text-[#e7e7e7]"
+        className="mt-12 text-center font-poppins text-[26px] font-medium text-[#e7e7e7] xl:text-[48px]"
         initial={{ opacity: 0 }}
         animate={controls}
         variants={openStreamerFantasyText}
@@ -155,59 +155,59 @@ const PresentationBlock = () => {
         Streamer Fantasy Leagues
       </motion.div>
       <motion.div
-        className="mt-10 mb-10 flex flex-row flex-wrap justify-evenly 3xl:px-60"
+        className="mt-10 mb-10 flex flex-row flex-wrap justify-around xl:justify-evenly 3xl:px-60"
         variants={CardContainer}
         initial="hidden"
         animate={controls}
       >
         <motion.div
           variants={CardItem}
-          className="h-[150px] w-[235px] rounded-[15px] border-[1px] border-[#464646] bg-[#303030] pt-6 "
+          className="m-1 w-[180px] rounded-[15px] border-[1px] border-[#464646] bg-[#303030] py-6 xl:w-[235px]"
         >
-          <h4 className="text-center text-[28px] font-semibold text-primary">Collect cards</h4>
-          <p className="text-center text-[20px] font-light text-[#e7e7e7]">of your favorites</p>
-          <p className="text-center text-[20px] font-light text-[#e7e7e7]">Streamers</p>
+          <h4 className="text-center text-[22px] font-semibold text-primary xl:text-[28px]">Collect cards</h4>
+          <p className="text-center font-light text-[#e7e7e7] xl:text-[20px]">of your favorites</p>
+          <p className="text-center font-light text-[#e7e7e7] xl:text-[20px]">Streamers</p>
         </motion.div>
         <motion.div
           variants={CardItem}
-          className="h-[150px] w-[235px] rounded-[15px] border-[1px] border-[#464646] bg-[#303030] pt-6"
+          className="m-1 w-[180px] rounded-[15px] border-[1px] border-[#464646] bg-[#303030] pt-6 xl:w-[235px]"
         >
-          <h4 className="text-center text-[28px] font-semibold text-primary">Build</h4>
-          <p className="text-center text-[20px] font-light text-[#e7e7e7]">your own</p>
-          <p className="text-center text-[20px]  font-light text-[#e7e7e7]">Team</p>
+          <h4 className="text-center text-[22px] font-semibold text-primary xl:text-[28px]">Build</h4>
+          <p className="text-center font-light text-[#e7e7e7] xl:text-[20px]">your own</p>
+          <p className="text-center font-light  text-[#e7e7e7] xl:text-[20px]">Team</p>
         </motion.div>
         <motion.div
           variants={CardItem}
-          className="h-[150px] w-[235px]  rounded-[15px] border-[1px] border-[#464646] bg-[#303030] pt-6 "
+          className="m-1 w-[180px] rounded-[15px] border-[1px] border-[#464646] bg-[#303030] py-6 xl:w-[235px]"
         >
-          <h4 className="text-center text-[28px] font-semibold text-primary">Draft</h4>
-          <p className="text-center text-[20px]  font-light text-[#e7e7e7]">your Squad</p>
+          <h4 className="text-center text-[22px] font-semibold text-primary xl:text-[28px]">Draft</h4>
+          <p className="text-center font-light text-[#e7e7e7] xl:text-[20px]">your Squad</p>
         </motion.div>
         <motion.div
           variants={CardItem}
-          className="h-[150px] w-[235px]  rounded-[15px] border-[1px] border-[#464646] bg-[#303030] pt-6"
+          className="m-1 w-[180px] rounded-[15px] border-[1px] border-[#464646] bg-[#303030] py-6 xl:w-[235px]"
         >
-          <h4 className="text-center text-[28px] font-semibold text-primary">Challenge</h4>
-          <p className="text-center text-[20px]  font-light text-[#e7e7e7]">other Leaguers</p>
+          <h4 className="text-center text-[22px] font-semibold text-primary xl:text-[28px]">Challenge</h4>
+          <p className="text-center font-light text-[#e7e7e7] xl:text-[20px]">other Leaguers</p>
         </motion.div>
         <motion.div
           variants={CardItem}
-          className="h-[150px] w-[235px]  rounded-[15px] border-[1px] border-[#464646] bg-[#303030] pt-6"
+          className="m-1 w-full  rounded-[15px] border-[1px] border-[#464646] bg-[#303030] py-6 xl:w-[235px]"
         >
-          <h4 className="text-center text-[28px] font-semibold text-primary">Win</h4>
-          <p className="text-center text-[20px]  font-light text-[#e7e7e7]">rewards!</p>
+          <h4 className="text-center text-[22px] font-semibold text-primary xl:text-[28px]">Win</h4>
+          <p className="text-center font-light text-[#e7e7e7] xl:text-[20px]">rewards!</p>
         </motion.div>
       </motion.div>
       <motion.div
         initial={{ opacity: 0 }}
         animate={controls}
         variants={openSupportedGamesText}
-        className="mt-5 text-center font-poppins text-[36px] font-normal text-[#a8a8a8]"
+        className="mt-5 text-center font-poppins text-[26px] font-normal text-[#a8a8a8] xl:text-[36px]"
       >
         Supported games
       </motion.div>
       <motion.div
-        className="mx-[18rem] flex justify-evenly"
+        className="flex flex-wrap justify-evenly xl:mx-[18rem] xl:flex-nowrap"
         variants={GameContainer}
         initial="hidden"
         animate={controls}

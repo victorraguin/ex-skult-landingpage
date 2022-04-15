@@ -7,11 +7,11 @@
 }
 
 .HomeTitle {
-  @apply bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text pt-28 font-poppins text-[65px] font-bold  text-transparent;
+  @apply bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text pt-24 xl:pt-28 font-poppins text-[40px] xl:text-[65px] font-bold  text-transparent;
 }
 
 .HomeLittleTitle {
-  @apply bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text font-poppins text-[50px] font-light  text-transparent;
+  @apply bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text font-poppins text-[30px] xl:text-[50px] font-light  text-transparent;
 }
 
 .floatingDiscordButton {

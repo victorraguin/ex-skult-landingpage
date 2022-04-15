@@ -3,8 +3,8 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <div className="mx-20 flex h-[8rem] flex-row">
-      <div className="mx-4 flex w-[15rem] flex-col justify-center ">
+    <div className="flex h-[8rem] flex-row flex-wrap xl:mx-20">
+      <div className="mx-4 flex w-[15rem] flex-col">
         <img className="m-4 mb-0 h-[3rem]" src={`./elements/logo-skult.png`} alt="User" />
         <p className="pt-2 text-center font-poppins text-[15px] text-white">© 2022 - SKULT</p>
       </div>
@@ -23,7 +23,7 @@ const Footer = () => {
           />
         </form>
       </div>
-      <div className="flex flex-row justify-between 2xl:ml-[25%]">
+      <div className="flex flex-row flex-wrap 2xl:ml-[25%]">
         <img
           src="./elements/social/discord.svg"
           className="m-auto mx-2 h-[4rem] cursor-pointer hover:scale-105"
