@@ -3,12 +3,12 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <div className="flex h-[8rem] flex-row flex-wrap xl:mx-20">
-      <div className="mx-4 flex w-[15rem] flex-col">
-        <img className="m-4 mb-0 h-[3rem]" src={`./elements/logo-skult.png`} alt="User" />
-        <p className="pt-2 text-center font-poppins text-[15px] text-white">© 2022 - SKULT</p>
+    <div className="flex flex-row flex-wrap xl:mx-20 xl:h-[8rem]">
+      <div className="mx-auto flex w-[15rem] flex-col xl:mx-4">
+        <img className="m-4 mb-0 hidden h-[3rem] xl:inline" src={`./elements/logo-skult.png`} alt="User" />
+        <p className="hidden pt-2 text-center font-poppins text-[15px] text-white xl:inline">© 2022 - SKULT</p>
       </div>
-      <div className="flex flex-col pt-10">
+      <div className="mx-5 flex flex-col pt-10 pb-10 xl:mx-0 ">
         <form>
           <input
             className="mx-4 border-b border-[#a9a9a9] bg-[#222222] font-light text-[#a9a9a9] focus:bg-[#252525]"
@@ -23,35 +23,35 @@ const Footer = () => {
           />
         </form>
       </div>
-      <div className="flex flex-row flex-wrap 2xl:ml-[25%]">
+      <div className="flex flex-row flex-wrap pb-10 2xl:ml-[25%]">
         <img
           src="./elements/social/discord.svg"
-          className="m-auto mx-2 h-[4rem] cursor-pointer hover:scale-105"
+          className="m-auto mx-2 h-[3rem] cursor-pointer hover:scale-105 xl:h-[4rem] "
           alt="Discord"
         />
         <img
           src="./elements/social/facebook.svg"
-          className="m-auto mx-2  h-[4rem] cursor-pointer hover:scale-105"
+          className="m-auto mx-2  h-[3rem] cursor-pointer hover:scale-105 xl:h-[4rem]"
           alt="Facebook"
         />
         <img
           src="./elements/social/instagram.svg"
-          className="m-auto mx-2 h-[4rem] cursor-pointer hover:scale-105"
+          className="m-auto mx-2 h-[3rem] cursor-pointer hover:scale-105 xl:h-[4rem]"
           alt="Instagram"
         />
         <img
           src="./elements/social/reddit.svg"
-          className="m-auto mx-2 h-[4rem] cursor-pointer hover:scale-105"
+          className="m-auto mx-2 h-[3rem] cursor-pointer hover:scale-105 xl:h-[4rem]"
           alt="Reddit"
         />
         <img
           src="./elements/social/twitter-test.svg"
-          className="m-auto mx-2 h-[4rem] cursor-pointer hover:scale-105"
+          className="m-auto mx-2 h-[3rem] cursor-pointer hover:scale-105 xl:h-[4rem]"
           alt="Twitter"
         />
         <img
           src="./elements/social/medium.svg"
-          className="m-auto mx-2 h-[4rem] cursor-pointer hover:scale-105"
+          className="m-auto mx-2 h-[3rem] cursor-pointer hover:scale-105 xl:h-[4rem]"
           alt="Medium"
         />
       </div>

@@ -38,7 +38,7 @@ const CollectiblesBlock = () => {
 
   return (
     <motion.div className="h-full bg-[#222222]" variants={CardContainer} initial="hidden" animate={controls} ref={ref}>
-      <motion.div className="mx-60 flex  flex-row justify-around">
+      <motion.div className="flex flex-row flex-wrap justify-around xl:mx-60 xl:flex-nowrap">
         <motion.div className=" flex flex-col" variants={CardItem}>
           <img src="/elements/skult-collecte-icon-.svg" alt="Collect Icon" className="h-[125px]" />
           <h4 className="text-center text-[28px] font-bold text-primary">Collect</h4>
@@ -55,7 +55,7 @@ const CollectiblesBlock = () => {
           </p>
         </motion.div>
         <motion.div className=" flex flex-col" variants={CardItem}>
-          <img src="/elements/skult-compete-icon.svg" alt="Collect Icon" className="h-[125px] scale-125" />
+          <img src="/elements/skult-compete-icon.svg" alt="Collect Icon" className="h-[160px]" />
           <h4 className="text-center text-[28px] font-bold text-primary">Compete</h4>
           <p className="mx-auto w-2/3 text-center text-[18px] font-medium  text-[#b8b8b8]">
             Draft your Squad and enter weekly Leagues. Your final score will depend on the real-world performances of
@@ -63,7 +63,7 @@ const CollectiblesBlock = () => {
           </p>
         </motion.div>
       </motion.div>
-      <motion.div className="mx-60 mt-20 flex flex-row justify-around">
+      <motion.div className="mt-20 flex flex-row flex-wrap justify-around xl:mx-60 xl:flex-nowrap">
         <motion.div className=" flex flex-col" variants={CardItem}>
           <img src="/elements/skult-support-icon.svg" alt="Collect Icon" className="h-[125px]" />
           <h4 className="text-center text-[28px] font-bold text-primary">Support</h4>
