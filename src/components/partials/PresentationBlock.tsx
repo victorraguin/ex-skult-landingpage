@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React, { useEffect } from 'react';
 import { useAnimation, motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
@@ -113,7 +114,7 @@ const PresentationBlock = () => {
         Victory!
       </motion.h3>
       <div className="relative flex flex-col ">
-        <div className="relative left-[19%] z-10 w-[920px] rounded-[15px] bg-[#282828] 2xl:left-[22%] 3xl:left-[28.5%]">
+        <div className="relative left-[19%] z-10 w-[920px] rounded-[15px] bg-[#282828] 2xl:left-[22%] 3xl:left-[28.5%] 4xl:left-[33%]">
           <motion.video
             className="relative z-20 w-[920px] rounded-[15px]"
             animate={controls}
@@ -130,7 +131,7 @@ const PresentationBlock = () => {
           <motion.img
             src="./elements/lueur-1.webp"
             alt="SKULT TV"
-            className="absolute left-[3%] top-[-38%] z-0 blur-3xl 2xl:left-[8%] 3xl:left-[19%]"
+            className="absolute left-[3%] top-[-48%] z-0 blur-3xl 2xl:left-[8%] 3xl:left-[17%] 4xl:left-[24%]"
             animate={controls}
             initial="visible"
             variants={lueurVariant}
@@ -138,7 +139,7 @@ const PresentationBlock = () => {
           <motion.img
             src="./elements/lueur-2.webp"
             alt="SKULT TV"
-            className="absolute left-[3%] top-[-38%] z-0 blur-3xl  2xl:left-[8%] 3xl:left-[19%]"
+            className="absolute left-[3%] top-[-48%] z-0 blur-3xl  2xl:left-[8%] 3xl:left-[17%] 4xl:left-[24%]"
             animate={controls}
             initial="hidden"
             variants={lueurVariantViolet}

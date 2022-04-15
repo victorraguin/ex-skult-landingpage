@@ -110,10 +110,10 @@ const StreamersLeaguersBlock = () => {
         Nobody
         <p className="pl-2 text-center text-[48px] font-light text-[#e7e7e7]"> is Left Behind!</p>
       </motion.h1>
-      <div className="m-auto flex justify-around pt-[4.5rem] 2xl:pt-[6rem]">
+      <div className="m-auto flex justify-around pt-[4.5rem] 2xl:pt-[6rem] 4xl:pt-[12rem]">
         <div className="pr-[323px]">
           <div className="relative right-[-30%]">
-            <div className="pb-[15rem] 2xl:pb-[17rem]">
+            <div className="pb-[15rem] 2xl:pb-[17rem] 4xl:pb-[20rem]">
               <div className="relative">
                 <motion.img
                   initial={{ opacity: 0 }}
@@ -181,7 +181,7 @@ const StreamersLeaguersBlock = () => {
         </div>
         <div className="bg-[#222222] pl-80 pb-96">
           <div className="relative left-[-30%]">
-            <div className="pb-[15rem] 2xl:pb-[17rem]">
+            <div className="pb-[15rem] 2xl:pb-[17rem] 4xl:pb-[20rem]">
               <div className="relative">
                 <motion.img
                   initial={{ opacity: 0 }}
