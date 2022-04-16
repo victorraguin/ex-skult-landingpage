@@ -87,7 +87,7 @@ const CollectiblesBlock = () => {
             security.
           </p>
         </motion.div>
-        <motion.div className="mr-8 flex flex-col" variants={CardItem}>
+        <motion.div className="flex flex-col xl:mr-8" variants={CardItem}>
           <img src="/elements/skult-airdrop-icon.svg" alt="Collect Icon" className="h-[125px]" />
           <h4 className="pt-5 text-center font-poppins text-[28px] font-semibold text-primary">Earn</h4>
           <p className="mx-auto w-2/3 pt-4 text-center font-poppins text-[18px] font-medium text-[#b8b8b8]">
@@ -95,7 +95,7 @@ const CollectiblesBlock = () => {
           </p>
         </motion.div>
       </motion.div>
-      <div className="pb-20 xl:pb-40"></div>
+      <div className="xl:pb-20 2xl:pb-40"></div>
     </motion.div>
   );
 };

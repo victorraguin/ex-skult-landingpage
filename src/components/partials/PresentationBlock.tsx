@@ -96,7 +96,7 @@ const PresentationBlock = () => {
   }, [controls, inView]);
 
   return (
-    <motion.div className="flex flex-col bg-[#282828] shadow-2xl shadow-black" ref={ref}>
+    <motion.div className="flex flex-col bg-[#282828] shadow-lg shadow-black" ref={ref}>
       <motion.h3
         className="mx-2 mt-5 text-center font-poppins text-[32px] font-light text-[#e7e7e7] xl:mx-0 xl:text-[36px] 2xl:text-[48px]"
         initial={{ opacity: 0 }}
@@ -131,7 +131,7 @@ const PresentationBlock = () => {
           <motion.img
             src="./elements/lueur-1.webp"
             alt="SKULT TV"
-            className="absolute left-[3%] top-[-48%] z-0 blur-3xl 2xl:left-[8%] 3xl:left-[17%] 4xl:left-[24%]"
+            className="absolute left-[3%] top-[-48%] z-0 blur-3xl xl:left-[1%] xl:top-[-44%] 2xl:left-[3%] 3xl:left-[12%] 4xl:left-[24%]"
             animate={controls}
             initial="visible"
             variants={lueurVariant}
@@ -139,7 +139,7 @@ const PresentationBlock = () => {
           <motion.img
             src="./elements/lueur-2.webp"
             alt="SKULT TV"
-            className="absolute left-[3%] top-[-48%] z-0 blur-3xl  2xl:left-[8%] 3xl:left-[17%] 4xl:left-[24%]"
+            className="absolute left-[3%] top-[-48%] z-0 blur-3xl  xl:left-[1%] xl:top-[-44%] 2xl:left-[3%] 3xl:left-[12%] 4xl:left-[24%]"
             animate={controls}
             initial="hidden"
             variants={lueurVariantViolet}
@@ -162,7 +162,7 @@ const PresentationBlock = () => {
       >
         <motion.div
           variants={CardItem}
-          className="m-1 w-[180px] rounded-[15px] border-[1px] border-[#464646] bg-[#303030] py-6 xl:w-[200px]"
+          className="m-2 w-[160px] rounded-[15px] border-[1px] border-[#464646] bg-[#303030] py-6 xl:w-[200px]"
         >
           <h4 className="text-center text-[22px] font-semibold text-primary xl:text-[24px]">Collect cards</h4>
           <p className="text-center font-light text-[#e7e7e7] xl:text-[16px]">of your favorites</p>
@@ -170,7 +170,7 @@ const PresentationBlock = () => {
         </motion.div>
         <motion.div
           variants={CardItem}
-          className="m-1 w-[180px] rounded-[15px] border-[1px] border-[#464646] bg-[#303030] pt-6 xl:w-[200px]"
+          className="m-2 w-[160px] rounded-[15px] border-[1px] border-[#464646] bg-[#303030] pt-6 xl:w-[200px]"
         >
           <h4 className="text-center text-[22px] font-semibold text-primary xl:text-[24px]">Build</h4>
           <p className="text-center font-light text-[#e7e7e7] xl:text-[16px]">your own</p>
@@ -178,21 +178,21 @@ const PresentationBlock = () => {
         </motion.div>
         <motion.div
           variants={CardItem}
-          className="m-1 w-[180px] rounded-[15px] border-[1px] border-[#464646] bg-[#303030] py-6 xl:w-[200px]"
+          className="m-2 w-[160px] rounded-[15px] border-[1px] border-[#464646] bg-[#303030] py-6 xl:w-[200px]"
         >
           <h4 className="text-center text-[22px] font-semibold text-primary xl:text-[24px]">Draft</h4>
           <p className="text-center font-light text-[#e7e7e7] xl:text-[16px]">your Squad</p>
         </motion.div>
         <motion.div
           variants={CardItem}
-          className="m-1 w-[180px] rounded-[15px] border-[1px] border-[#464646] bg-[#303030] py-6 xl:w-[200px]"
+          className="m-2 w-[160px] rounded-[15px] border-[1px] border-[#464646] bg-[#303030] py-6 xl:w-[200px]"
         >
           <h4 className="text-center text-[22px] font-semibold text-primary xl:text-[24px]">Challenge</h4>
           <p className="text-center font-light text-[#e7e7e7] xl:text-[16px]">other Leaguers</p>
         </motion.div>
         <motion.div
           variants={CardItem}
-          className="m-1 w-full  rounded-[15px] border-[1px] border-[#464646] bg-[#303030] py-6 xl:w-[200px]"
+          className="m-2 w-[90%]  rounded-[15px] border-[1px] border-[#464646] bg-[#303030] py-6 xl:w-[200px]"
         >
           <h4 className="text-center text-[22px] font-semibold text-primary xl:text-[24px]">Win</h4>
           <p className="text-center font-light text-[#e7e7e7] xl:text-[16px]">rewards!</p>
@@ -202,7 +202,7 @@ const PresentationBlock = () => {
         initial={{ opacity: 0 }}
         animate={controls}
         variants={openSupportedGamesText}
-        className="mt-5 text-center font-poppins text-[26px] font-normal text-[#a8a8a8] xl:text-[32px] 2xl:text-[48px]"
+        className="text-center font-poppins text-[26px] font-normal text-[#a8a8a8] xl:mt-5 xl:text-[32px] 2xl:text-[48px]"
       >
         Supported games
       </motion.div>
@@ -212,10 +212,10 @@ const PresentationBlock = () => {
         initial="hidden"
         animate={controls}
       >
-        <motion.img variants={GameItem} src="/elements/GAME/WARZONE.svg" alt="Warzone" className="h-[100px]" />
+        <motion.img variants={GameItem} src="/elements/GAME/warzone.svg" alt="Warzone" className="h-[100px]" />
         <motion.img variants={GameItem} src="/elements/GAME/fortnite.svg" alt="Fortnite" className="h-[100px]" />
-        <motion.img variants={GameItem} src="/elements/GAME/APEX.svg" alt="APEX" className="h-[100px]" />
-        <motion.img variants={GameItem} src="/elements/GAME/valorant.svg" alt="valorant" className="h-[100px]" />
+        <motion.img variants={GameItem} src="/elements/GAME/apex.svg" alt="APApexEX" className="h-[100px]" />
+        <motion.img variants={GameItem} src="/elements/GAME/valorant.svg" alt="Valorant" className="h-[100px]" />
       </motion.div>
       <motion.p
         initial={{ opacity: 0 }}

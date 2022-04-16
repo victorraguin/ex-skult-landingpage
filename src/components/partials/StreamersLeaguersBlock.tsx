@@ -120,7 +120,7 @@ const StreamersLeaguersBlock = () => {
       <div className="m-auto flex flex-wrap justify-around pt-[4.5rem] xl:flex-nowrap 2xl:pt-[6rem] 4xl:pt-[12rem]">
         <div className="xl:pr-[323px]">
           <div className="relative mx-5 xl:right-[-30%] xl:mx-0">
-            <div className="pb-[15rem] xl:pb-[11rem] 2xl:pb-[17rem] 4xl:pb-[20rem]">
+            <div className="pb-[11rem] xl:pb-[11rem] 2xl:pb-[13rem] 3xl:pb-[15rem] 4xl:pb-[20rem]">
               <div className="relative">
                 <motion.img
                   initial={{ opacity: 0 }}
@@ -128,7 +128,7 @@ const StreamersLeaguersBlock = () => {
                   variants={openStreamerLueur}
                   src="/elements/lueur-streamer.webp"
                   alt="Streamer"
-                  className="absolute z-10 3xl:top-[-4rem] 3xl:w-full"
+                  className="absolute z-10  3xl:top-[-4rem] 3xl:w-full"
                 />
                 <motion.img
                   initial={{ opacity: 0 }}
@@ -152,7 +152,7 @@ const StreamersLeaguersBlock = () => {
               initial={{ opacity: 0 }}
               animate={controls}
               variants={openAnyStreamerText}
-              className=" bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text pb-10 text-center font-poppins font-semibold text-transparent xl:text-[32px] 2xl:text-[48px]"
+              className=" bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text pb-10 text-center font-poppins text-[32px] font-semibold text-transparent 2xl:text-[48px]"
             >
               Any Streamer
             </motion.h2>
@@ -193,7 +193,7 @@ const StreamersLeaguersBlock = () => {
         </div>
         <div className="bg-[#222222] pb-40 pt-10 xl:pt-0 xl:pl-80">
           <div className="relative mx-5 xl:left-[-30%] xl:mx-0">
-            <div className="pb-[15rem] xl:pb-[11rem] 2xl:pb-[17rem] 4xl:pb-[20rem]">
+            <div className="pb-[11rem] xl:pb-[11rem] 2xl:pb-[13rem] 3xl:pb-[15rem] 4xl:pb-[20rem]">
               <div className="relative">
                 <motion.img
                   initial={{ opacity: 0 }}
@@ -225,7 +225,7 @@ const StreamersLeaguersBlock = () => {
               initial={{ opacity: 0 }}
               animate={controls}
               variants={openAnyLeaguerText}
-              className="bg-gradient-to-r from-[#7517F8] to-[#E323FF] bg-clip-text pb-10 text-center font-poppins font-semibold text-transparent xl:text-[32px] 2xl:text-[48px]"
+              className="bg-gradient-to-r from-[#7517F8] to-[#E323FF] bg-clip-text pb-10 text-center font-poppins text-[32px] font-semibold text-transparent 2xl:text-[48px]"
             >
               Leaguers
             </motion.h2>
@@ -276,20 +276,24 @@ const StreamersLeaguersBlock = () => {
         <motion.img
           src="./elements/skyrroz.svg"
           alt="header"
-          className="absolute top-[-20rem] z-30 mx-auto origin-bottom scale-[60%] xl:top-0 xl:scale-[90%]"
+          className="absolute top-[-5rem] z-30 mx-auto origin-bottom scale-50 xl:top-0 xl:scale-[90%]"
         />
         <img
           src="./elements/natasha.svg"
           alt="header"
-          className="absolute left-[21%] top-[-20rem] z-20 origin-bottom rotate-[18deg] scale-[60%] xl:left-[47%] xl:top-0 xl:scale-[90%]"
+          className="absolute left-[21%] top-[-4rem] z-20 origin-bottom rotate-[18deg] scale-50 xl:left-[47%] xl:top-0 xl:scale-[90%]"
         />
         <img
           src="./elements/waartex.svg"
           alt="header"
-          className="absolute right-[21%] top-[-20rem] z-10 origin-bottom rotate-[350deg] scale-[60%] xl:right-[47%] xl:top-0 xl:scale-[90%]"
+          className="absolute right-[21%] top-[-4rem] z-10 origin-bottom rotate-[350deg] scale-50 xl:right-[47%] xl:top-0 xl:scale-[90%]"
         />
       </div>
-      <img src="/elements/bas.webp" alt="Streamer" className="invisible relative left-0 bottom-0 w-full xl:visible" />
+      <img
+        src="/elements/bas.webp"
+        alt="Streamer"
+        className="invisible relative left-0 bottom-0 w-full pb-20 xl:visible xl:pb-0"
+      />
     </motion.div>
   );
 };
