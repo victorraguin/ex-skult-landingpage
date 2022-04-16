@@ -25,7 +25,7 @@ const Header = () => {
         </motion.div>
         <motion.div initial={{ y: -250 }} animate={{ y: -10 }} transition={{ delay: 1, type: 'spring', stiffness: 70 }}>
           <motion.button
-            className={`${styles.HeaderJoinDiscord} absolute top-[-2.6rem] right-[-2rem] scale-[60%] rounded-full bg-gradient-to-br from-[#FFCC00] to-[#ED713C] p-0.5 text-sm hover:scale-105 xl:top-[-3rem] xl:right-20 xl:scale-[90%]`}
+            className={`${styles.HeaderJoinDiscord} absolute top-[-2.6rem] right-[-2rem] scale-50 rounded-full bg-gradient-to-br from-[#FFCC00] to-[#ED713C] p-0.5 text-sm hover:scale-105 xl:top-[-3rem] xl:right-20 xl:scale-[90%]`}
           >
             <motion.div className="relative flex flex-row rounded-full bg-[#262626] px-6 pt-[8px]">
               <DiscordButton fill={'#fff'} />

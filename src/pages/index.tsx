@@ -9,6 +9,7 @@ import CollectiblesBlock from '../components/partials/CollectiblesBlock';
 import { motion } from 'framer-motion';
 import SocialBlock from '../components/partials/SocialBlock';
 import Footer from '../components/partials/Footer';
+import FantasyandGamesPart from '../components/partials/FantasyandGames';
 
 const Home: NextPage = () => {
   return (
@@ -18,6 +19,7 @@ const Home: NextPage = () => {
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5, duration: 1 }}>
         <StartBlock />
         <PresentationBlock />
+        <FantasyandGamesPart />
         <StreamersLeaguersBlock />
         <CollectiblesBlock />
         <SocialBlock />

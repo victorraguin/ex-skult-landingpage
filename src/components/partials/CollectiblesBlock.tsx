@@ -69,7 +69,7 @@ const CollectiblesBlock = () => {
           </p>
         </motion.div>
       </motion.div>
-      <motion.div className="mt-20 flex flex-row flex-wrap justify-around xl:mx-60 xl:flex-nowrap">
+      <motion.div className="flex flex-row flex-wrap justify-around xl:mx-60 xl:mt-20 xl:flex-nowrap">
         <motion.div className=" flex flex-col" variants={CardItem}>
           <img src="/elements/skult-support-icon.svg" alt="Collect Icon" className="h-[125px]" />
           <h4 className="pt-5 text-center font-poppins text-[28px] font-semibold text-primary">Support</h4>
