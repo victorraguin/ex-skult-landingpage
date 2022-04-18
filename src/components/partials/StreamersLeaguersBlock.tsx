@@ -29,72 +29,72 @@ const StreamersLeaguersBlock = () => {
   };
 
   const openStreamerLogo = {
-    visible: { opacity: 1, transition: { delay: 1.25, duration: 0.5 } },
+    visible: { opacity: 1, transition: { delay: 1, duration: 0.5 } },
     hidden: { opacity: 0 },
   };
 
   const openAnyStreamerText = {
-    visible: { opacity: 1, scale: 1, transition: { delay: 1.75, duration: 0.5 } },
+    visible: { opacity: 1, scale: 1, transition: { delay: 1.5, duration: 0.5 } },
     hidden: { opacity: 0, scale: 0 },
   };
 
   const openLeaguerLogoShadow = {
-    visible: { opacity: 1, transition: { delay: 2, duration: 0.5 } },
+    visible: { opacity: 1, transition: { delay: 1.75, duration: 0.5 } },
     hidden: { opacity: 0 },
   };
 
   const openLeaguerLueur = {
-    visible: { opacity: 1, transition: { delay: 2.5, duration: 0.5 } },
+    visible: { opacity: 1, transition: { delay: 2.25, duration: 0.5 } },
     hidden: { opacity: 0 },
   };
 
   const openLeaguerLogo = {
-    visible: { opacity: 1, transition: { delay: 3.25, duration: 0.5 } },
+    visible: { opacity: 1, transition: { delay: 2.75, duration: 0.5 } },
     hidden: { opacity: 0 },
   };
 
   const openAnyLeaguerText = {
-    visible: { opacity: 1, scale: 1, transition: { delay: 3.75, duration: 0.5 } },
+    visible: { opacity: 1, scale: 1, transition: { delay: 3.25, duration: 0.5 } },
     hidden: { opacity: 0, scale: 0 },
   };
 
   const openCommunityBlock = {
-    visible: { opacity: 1, transition: { delay: 4.25, duration: 0.5 } },
+    visible: { opacity: 1, transition: { delay: 3.5, duration: 0.5 } },
     hidden: { opacity: 0, scale: 0 },
   };
 
   const openFunBlock = {
-    visible: { opacity: 1, transition: { delay: 6.25, duration: 0.5 } },
+    visible: { opacity: 1, transition: { delay: 5.5, duration: 0.5 } },
     hidden: { opacity: 0, scale: 0 },
   };
 
   const openEngagementBlock = {
-    visible: { opacity: 1, transition: { delay: 4.75, duration: 0.5 } },
+    visible: { opacity: 1, transition: { delay: 4, duration: 0.5 } },
     hidden: { opacity: 0, scale: 0 },
   };
 
   const openRewardsBlock = {
-    visible: { opacity: 1, transition: { delay: 6.75, duration: 0.5 } },
+    visible: { opacity: 1, transition: { delay: 6, duration: 0.5 } },
     hidden: { opacity: 0, scale: 0 },
   };
 
   const openEarnCashStreamersBlock = {
-    visible: { opacity: 1, transition: { delay: 5.25, duration: 0.5 } },
+    visible: { opacity: 1, transition: { delay: 4.5, duration: 0.5 } },
     hidden: { opacity: 0, scale: 0 },
   };
 
   const openEarnCashLeaguersBlock = {
-    visible: { opacity: 1, transition: { delay: 7.25, duration: 0.5 } },
+    visible: { opacity: 1, transition: { delay: 6.5, duration: 0.5 } },
     hidden: { opacity: 0, scale: 0 },
   };
 
   const openButtonStreamerBlock = {
-    visible: { opacity: 1, transition: { delay: 5.75, duration: 0.5 } },
+    visible: { opacity: 1, transition: { delay: 5, duration: 0.5 } },
     hidden: { opacity: 0, scale: 0 },
   };
 
   const openButtonLeaguerBlock = {
-    visible: { opacity: 1, transition: { delay: 7.75, duration: 0.5 } },
+    visible: { opacity: 1, transition: { delay: 7, duration: 0.5 } },
     hidden: { opacity: 0, scale: 0 },
   };
 

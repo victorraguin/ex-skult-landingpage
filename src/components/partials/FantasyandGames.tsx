@@ -2,24 +2,25 @@
 import React, { useEffect } from 'react';
 import { useAnimation, motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { MdArrowForwardIos } from 'react-icons/md';
 
 const FantasyandGamesPart = () => {
   const openStreamerFantasyText = {
-    visible: { opacity: 1, scale: 1, transition: { duration: 1 } },
+    visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
     hidden: { opacity: 0, scale: 0 },
   };
   const openSupportedGamesText = {
-    visible: { opacity: 1, scale: 1, transition: { delay: 3, duration: 1 } },
+    visible: { opacity: 1, scale: 1, transition: { delay: 3, duration: 0.5 } },
     hidden: { opacity: 0, scale: 0 },
   };
   const CardContainer = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      delay: 2.5,
+      delay: 3,
       duration: 0.25,
       transition: {
-        delayChildren: 0.25,
+        delayChildren: 1,
         duration: 0.25,
         staggerChildren: 0.5,
       },
@@ -72,7 +73,7 @@ const FantasyandGamesPart = () => {
   }, [controls, inView]);
 
   return (
-    <motion.div className="flex flex-col bg-[#282828]" ref={ref}>
+    <motion.div className="flex flex-col bg-[#282828] pt-10 pb-20" ref={ref}>
       <motion.div
         className="mt-12 text-center font-poppins text-[26px] font-medium text-[#e7e7e7] xl:text-[32px] 2xl:text-[48px]"
         initial={{ opacity: 0 }}
@@ -97,6 +98,9 @@ const FantasyandGamesPart = () => {
           <p className="text-center font-poppins font-light text-[#e7e7e7] xl:text-[16px]">of your favorites</p>
           <p className="text-center font-poppins  font-light text-[#e7e7e7] xl:text-[16px]">Streamers</p>
         </motion.div>
+        <motion.div className="my-auto hidden xl:inline-block" variants={CardItem}>
+          <MdArrowForwardIos className=" text-2xl text-primary" />
+        </motion.div>
         <motion.div
           variants={CardItem}
           className="m-2 w-[160px] rounded-[15px] border-[1px] border-[#464646] bg-[#303030] pt-6 xl:w-[200px]"
@@ -105,6 +109,9 @@ const FantasyandGamesPart = () => {
           <p className="text-center font-poppins  font-light text-[#e7e7e7] xl:text-[16px]">your own</p>
           <p className="text-center font-poppins  font-light  text-[#e7e7e7] xl:text-[16px]">Team</p>
         </motion.div>
+        <motion.div className="my-auto hidden xl:inline-block" variants={CardItem}>
+          <MdArrowForwardIos className=" text-2xl text-primary" />
+        </motion.div>
         <motion.div
           variants={CardItem}
           className="m-2 w-[160px] rounded-[15px] border-[1px] border-[#464646] bg-[#303030] py-6 xl:w-[200px]"
@@ -112,12 +119,18 @@ const FantasyandGamesPart = () => {
           <h4 className="text-center font-poppins  text-[22px] font-semibold text-primary xl:text-[24px]">Draft</h4>
           <p className="text-center font-poppins   font-light text-[#e7e7e7] xl:text-[16px]">your Squad</p>
         </motion.div>
+        <motion.div className="my-auto hidden xl:inline-block" variants={CardItem}>
+          <MdArrowForwardIos className=" text-2xl text-primary" />
+        </motion.div>
         <motion.div
           variants={CardItem}
           className="m-2 w-[160px] rounded-[15px] border-[1px] border-[#464646] bg-[#303030] py-6 xl:w-[200px]"
         >
           <h4 className="text-center font-poppins  text-[22px] font-semibold text-primary xl:text-[24px]">Challenge</h4>
           <p className="text-center font-poppins  font-light text-[#e7e7e7] xl:text-[16px]">other Leaguers</p>
+        </motion.div>
+        <motion.div className="my-auto hidden xl:inline-block" variants={CardItem}>
+          <MdArrowForwardIos className=" text-2xl text-primary" />
         </motion.div>
         <motion.div
           variants={CardItem}
@@ -127,7 +140,7 @@ const FantasyandGamesPart = () => {
           <p className="text-center font-poppins  font-light text-[#e7e7e7] xl:text-[16px]">rewards!</p>
         </motion.div>
       </motion.div>
-      <motion.div
+      {/* <motion.div
         initial={{ opacity: 0 }}
         animate={controls}
         variants={openSupportedGamesText}
@@ -153,7 +166,7 @@ const FantasyandGamesPart = () => {
         className="font-regular mt-4 mb-20 text-center font-poppins text-[24px] text-[#585858]"
       >
         And more coming soon!
-      </motion.p>
+      </motion.p> */}
     </motion.div>
   );
 };
