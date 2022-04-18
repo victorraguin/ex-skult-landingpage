@@ -156,7 +156,7 @@ const FantasyandGamesPart = () => {
       >
         <motion.img variants={GameItem} src="/elements/GAME/warzone.svg" alt="Warzone" className="h-[100px]" />
         <motion.img variants={GameItem} src="/elements/GAME/fortnite.svg" alt="Fortnite" className="h-[100px]" />
-        <motion.img variants={GameItem} src="/elements/GAME/apex.svg" alt="APApexEX" className="h-[100px]" />
+        <motion.img variants={GameItem} src="/elements/GAME/APEX.svg" alt="APApexEX" className="h-[100px]" />
         <motion.img variants={GameItem} src="/elements/GAME/valorant.svg" alt="Valorant" className="h-[100px]" />
       </motion.div>
       <motion.p
