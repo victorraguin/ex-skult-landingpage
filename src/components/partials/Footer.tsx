@@ -5,13 +5,15 @@ const Footer = () => {
   return (
     <div className="mx-1 flex flex-row flex-wrap justify-around 2xl:mx-5 3xl:xl:mx-10">
       <div className="mx-auto flex w-[15rem] flex-col xl:py-4 2xl:mx-0 3xl:mx-4">
-        <img className="m-4 mb-0 hidden h-[3rem] xl:inline" src={`./elements/logo-skult.png`} alt="User" />
-        <p className="hidden pt-2 text-center font-poppins text-[15px] text-white xl:inline">© 2022 - SKULT</p>
+        <img className="m-4 mb-0 hidden h-[3rem] md:inline xl:inline" src={`./elements/logo-skult.png`} alt="User" />
+        <p className="hidden pt-2 text-center font-poppins text-[15px] text-white md:inline xl:inline">
+          © 2022 - SKULT
+        </p>
       </div>
       <div className="flex flex-row pt-10 pb-5 xl:mx-0">
         <form>
           <input
-            className="mx-4 w-40 border-b border-[#a9a9a9] bg-[#222222] pb-2 font-light text-[#a9a9a9] focus:outline-none xl:w-80"
+            className="mx-4 w-40 border-b border-[#a9a9a9] bg-[#222222] pb-2 font-light text-[#a9a9a9] focus:outline-none md:w-80 xl:w-80"
             type="email"
             name="email"
             defaultValue="Subscribe to our Newsletter"

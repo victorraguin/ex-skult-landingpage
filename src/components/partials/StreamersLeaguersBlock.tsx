@@ -120,7 +120,7 @@ const StreamersLeaguersBlock = () => {
       <div className="m-auto flex flex-wrap justify-around pt-[4.5rem] xl:flex-nowrap 2xl:pt-[6rem] 4xl:pt-[12rem]">
         <div className="xl:pr-[323px]">
           <div className="relative mx-5 xl:right-[-30%] xl:mx-0">
-            <div className="pb-[11rem] xl:pb-[11rem] 2xl:pb-[13rem] 3xl:pb-[15rem] 4xl:pb-[20rem]">
+            <div className="pb-[11rem] md:pb-[22rem] xl:pb-[11rem] 2xl:pb-[13rem] 3xl:pb-[15rem] 4xl:pb-[20rem]">
               <div className="relative">
                 <motion.img
                   initial={{ opacity: 0 }}
@@ -128,7 +128,7 @@ const StreamersLeaguersBlock = () => {
                   variants={openStreamerLueur}
                   src="/elements/lueur-streamer.webp"
                   alt="Streamer"
-                  className="absolute z-10  3xl:top-[-4rem] 3xl:w-full"
+                  className="absolute z-10  md:w-full 3xl:top-[-4rem] 3xl:w-full"
                 />
                 <motion.img
                   initial={{ opacity: 0 }}
@@ -136,7 +136,7 @@ const StreamersLeaguersBlock = () => {
                   variants={openStreamerLogoShadow}
                   src="/elements/skult-streamer-icon-2.svg"
                   alt="Streamer"
-                  className="absolute z-10 ml-[25%] w-[50%] 3xl:ml-[31%] 3xl:w-[40%]"
+                  className="absolute z-10 ml-[25%] w-[50%] md:top-12 md:ml-[31%] md:w-[40%] lg:top-0 3xl:ml-[31%] 3xl:w-[40%]"
                 />
                 <motion.img
                   initial={{ opacity: 0 }}
@@ -144,7 +144,7 @@ const StreamersLeaguersBlock = () => {
                   variants={openStreamerLogo}
                   src="/elements/skult-streamer-icon-1.svg"
                   alt="Streamer"
-                  className="absolute z-10 ml-[25%] w-[50%] 3xl:ml-[31%] 3xl:w-[40%]"
+                  className="absolute z-10 ml-[25%] w-[50%] md:top-12 md:ml-[31%] md:w-[40%]  lg:top-0 3xl:ml-[31%] 3xl:w-[40%]"
                 />
               </div>
             </div>
@@ -193,7 +193,7 @@ const StreamersLeaguersBlock = () => {
         </div>
         <div className="bg-[#222222] pb-40 pt-10 xl:pt-0 xl:pl-80">
           <div className="relative mx-5 xl:left-[-30%] xl:mx-0">
-            <div className="pb-[11rem] xl:pb-[11rem] 2xl:pb-[13rem] 3xl:pb-[15rem] 4xl:pb-[20rem]">
+            <div className="pb-[11rem] md:pb-[22rem] xl:pb-[11rem] 2xl:pb-[13rem] 3xl:pb-[15rem] 4xl:pb-[20rem]">
               <div className="relative">
                 <motion.img
                   initial={{ opacity: 0 }}
@@ -201,7 +201,7 @@ const StreamersLeaguersBlock = () => {
                   variants={openLeaguerLueur}
                   src="/elements/lueur-leaguers.webp"
                   alt="leaguers"
-                  className="absolute z-10 3xl:top-[-4rem] 3xl:w-full "
+                  className="absolute z-10 md:w-full 3xl:top-[-4rem] 3xl:w-full "
                 />
                 <motion.img
                   initial={{ opacity: 0 }}
@@ -209,7 +209,7 @@ const StreamersLeaguersBlock = () => {
                   variants={openLeaguerLogoShadow}
                   src="/elements/skult-leaguers-icon-1.svg"
                   alt="Streamer"
-                  className="absolute z-10 ml-[25%] w-[50%] 3xl:ml-[31%] 3xl:w-[40%]"
+                  className="absolute z-10 ml-[25%] w-[50%] md:top-[4rem]  md:ml-[31%] md:w-[40%] lg:top-0 3xl:ml-[31%] 3xl:w-[40%]"
                 />
                 <motion.img
                   initial={{ opacity: 0 }}
@@ -217,7 +217,7 @@ const StreamersLeaguersBlock = () => {
                   variants={openLeaguerLogo}
                   src="/elements/skult-leaguers-icon-2.svg"
                   alt="Streamer"
-                  className="absolute z-10 ml-[25%] w-[50%] 3xl:ml-[31%] 3xl:w-[40%]"
+                  className="absolute z-10 ml-[25%] w-[50%] md:top-[4rem] md:ml-[31%] md:w-[40%] lg:top-0 3xl:ml-[31%] 3xl:w-[40%]"
                 />
               </div>
             </div>
@@ -276,17 +276,17 @@ const StreamersLeaguersBlock = () => {
         <motion.img
           src="./elements/skyrroz.svg"
           alt="header"
-          className="absolute top-[-5rem] z-30 mx-auto origin-bottom scale-50 xl:top-0 xl:scale-[90%]"
+          className="absolute top-[-5rem] z-30 mx-auto origin-bottom scale-50 md:top-0 md:scale-[0.8] xl:top-0 xl:scale-[90%]"
         />
         <img
           src="./elements/natasha.svg"
           alt="header"
-          className="absolute left-[21%] top-[-4rem] z-20 origin-bottom rotate-[18deg] scale-50 xl:left-[47%] xl:top-0 xl:scale-[90%]"
+          className="absolute left-[21%] top-[-4rem] z-20 origin-bottom rotate-[18deg] scale-50 md:top-0 md:left-[35%] md:scale-[0.8] xl:left-[47%] xl:top-0 xl:scale-[90%]"
         />
         <img
           src="./elements/waartex.svg"
           alt="header"
-          className="absolute right-[21%] top-[-4rem] z-10 origin-bottom rotate-[350deg] scale-50 xl:right-[47%] xl:top-0 xl:scale-[90%]"
+          className="absolute right-[21%] top-[-4rem] z-10 origin-bottom rotate-[350deg] scale-50 md:top-0 md:right-[37%] md:scale-[0.8] xl:right-[47%] xl:top-0 xl:scale-[90%]"
         />
       </div>
       <img

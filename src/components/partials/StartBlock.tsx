@@ -12,7 +12,7 @@ const StartBlock = () => {
         backgroundImage: `url("/elements/bckground-1.webp")`,
       }}
     >
-      <div className="relative px-10 pb-[18rem] xl:py-40 xl:px-40 3xl:px-96 3xl:pb-[18rem] 3xl:pt-[15rem]">
+      <div className="relative px-10 pb-[18rem] md:py-10 xl:py-40 xl:px-40 3xl:px-96 3xl:pb-[18rem] 3xl:pt-[15rem]">
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1, duration: 1 }}>
           <h1 className={`${styles.HomeTitle} pb-3 leading-none`}>Let's go</h1>
         </motion.div>
@@ -32,21 +32,21 @@ const StartBlock = () => {
         <motion.img
           src="./elements/skyrroz.svg"
           alt="header"
-          className="absolute top-[14rem] right-[3.5rem] z-30 h-80 scale-50 transition duration-200 ease-in-out xl:top-60 xl:right-60 xl:scale-100 3xl:top-[18rem] 3xl:right-[31rem]"
+          className="absolute top-[14rem] right-[3.5rem] z-30 h-80 scale-50 transition duration-200 ease-in-out md:top-[1rem] md:scale-[0.6] lg:top-0 xl:top-60 xl:right-60 xl:scale-100 3xl:top-[18rem] 3xl:right-[31rem]"
         />
       </motion.div>
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 2.5, duration: 0.5 }}>
         <img
           src="./elements/natasha.svg"
           alt="header"
-          className="absolute top-[15rem] right-[-1rem] z-20 h-80  rotate-[18deg] scale-50 transition duration-200 ease-in-out xl:right-[8rem] xl:scale-100 3xl:top-[20rem] 3xl:right-[23rem]"
+          className="absolute top-[15rem] right-[-1rem] z-20 h-80  rotate-[18deg] scale-50 transition duration-200 ease-in-out md:top-[2rem] md:scale-[0.6] lg:top-60 xl:right-[8rem] xl:scale-100 3xl:top-[20rem] 3xl:right-[23rem]"
         />
       </motion.div>
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 3, duration: 0.5 }}>
         <img
           src="./elements/waartex.svg"
           alt="header"
-          className="absolute top-[16rem] right-[8rem] z-10 h-80 rotate-[350deg] scale-50 transition duration-200 ease-in-out xl:right-[22rem] xl:scale-100 3xl:top-[21rem] 3xl:right-[39rem]"
+          className="absolute top-[16rem] right-[8rem] z-10 h-80 rotate-[350deg] scale-50 transition duration-200 ease-in-out md:top-[2rem] md:scale-[0.6] lg:top-60 xl:right-[22rem] xl:scale-100 3xl:top-[21rem] 3xl:right-[39rem]"
         />
       </motion.div>
     </div>

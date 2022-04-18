@@ -134,7 +134,7 @@ const FantasyandGamesPart = () => {
         </motion.div>
         <motion.div
           variants={CardItem}
-          className="m-2 w-[90%]  rounded-[15px] border-[1px] border-[#464646] bg-[#303030] py-6 xl:w-[200px]"
+          className="m-2 w-[90%] rounded-[15px]  border-[1px] border-[#464646] bg-[#303030] py-6 md:w-[400px] xl:w-[200px]"
         >
           <h4 className="text-center font-poppins  text-[22px] font-semibold text-primary xl:text-[24px]">Win</h4>
           <p className="text-center font-poppins  font-light text-[#e7e7e7] xl:text-[16px]">rewards!</p>
