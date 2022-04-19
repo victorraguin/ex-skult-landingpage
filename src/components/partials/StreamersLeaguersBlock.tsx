@@ -136,7 +136,7 @@ const StreamersLeaguersBlock = () => {
                   variants={openStreamerLogoShadow}
                   src="/elements/skult-streamer-icon-2.svg"
                   alt="Streamer"
-                  className="absolute z-10 ml-[25%] w-[50%] md:top-12 md:ml-[31%] md:w-[40%] lg:top-0 3xl:ml-[31%] 3xl:w-[40%]"
+                  className="absolute z-10 ml-[25%] w-[50%] md:top-[4rem] md:ml-[31%] md:w-[40%] lg:top-0 xl:ml-[25%] xl:w-[50%] 3xl:ml-[29%] 3xl:w-[40%]"
                 />
                 <motion.img
                   initial={{ opacity: 0 }}
@@ -144,7 +144,7 @@ const StreamersLeaguersBlock = () => {
                   variants={openStreamerLogo}
                   src="/elements/skult-streamer-icon-1.svg"
                   alt="Streamer"
-                  className="absolute z-10 ml-[25%] w-[50%] md:top-12 md:ml-[31%] md:w-[40%]  lg:top-0 3xl:ml-[31%] 3xl:w-[40%]"
+                  className="absolute z-10 ml-[25%] w-[50%] md:top-[4rem] md:ml-[31%] md:w-[40%] lg:top-0 xl:ml-[25%] xl:w-[50%] 3xl:ml-[29%] 3xl:w-[40%]"
                 />
               </div>
             </div>
@@ -209,7 +209,7 @@ const StreamersLeaguersBlock = () => {
                   variants={openLeaguerLogoShadow}
                   src="/elements/skult-leaguers-icon-1.svg"
                   alt="Streamer"
-                  className="absolute z-10 ml-[25%] w-[50%] md:top-[4rem]  md:ml-[31%] md:w-[40%] lg:top-0 3xl:ml-[31%] 3xl:w-[40%]"
+                  className="absolute z-10 ml-[25%] w-[50%] md:top-[4rem] md:ml-[31%] md:w-[40%] lg:top-0 xl:ml-[25%] xl:w-[50%] 3xl:ml-[31%] 3xl:w-[40%]"
                 />
                 <motion.img
                   initial={{ opacity: 0 }}
@@ -217,7 +217,7 @@ const StreamersLeaguersBlock = () => {
                   variants={openLeaguerLogo}
                   src="/elements/skult-leaguers-icon-2.svg"
                   alt="Streamer"
-                  className="absolute z-10 ml-[25%] w-[50%] md:top-[4rem] md:ml-[31%] md:w-[40%] lg:top-0 3xl:ml-[31%] 3xl:w-[40%]"
+                  className="absolute z-10 ml-[25%] w-[50%] md:top-[4rem] md:ml-[31%] md:w-[40%] lg:top-0 xl:ml-[25%] xl:w-[50%] 3xl:ml-[31%] 3xl:w-[40%]"
                 />
               </div>
             </div>

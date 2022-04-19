@@ -1,15 +1,15 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable max-len */
 import React from 'react';
 
 const Footer = () => {
   return (
     <div className="mx-1 flex flex-row flex-wrap justify-around 2xl:mx-5 3xl:xl:mx-10">
-      <div className="mx-auto flex w-[15rem] flex-col xl:py-4 2xl:mx-0 3xl:mx-4">
-        <img className="m-4 mb-0 hidden h-[3rem] md:inline xl:inline" src={`./elements/logo-skult.png`} alt="User" />
-        <p className="hidden pt-2 text-center font-poppins text-[15px] text-white md:inline xl:inline">
-          © 2022 - SKULT
-        </p>
+      <div className="mx-auto flex hidden w-[15rem] flex-col md:inline xl:py-4 2xl:mx-0 3xl:mx-4">
+        <img className="m-4 mb-0 h-[3rem]" src={`./elements/logo-skult.png`} alt="User" />
+        <p className="pt-2 text-center font-poppins text-[15px] text-white ">© 2022 - SKULT</p>
       </div>
+      <p className="my-auto cursor-pointer pt-2 text-center text-primary underline md:pt-0">We're hiring !</p>
       <div className="flex flex-row pt-10 pb-5 xl:mx-0">
         <form>
           <input

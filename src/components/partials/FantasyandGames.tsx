@@ -9,10 +9,10 @@ const FantasyandGamesPart = () => {
     visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
     hidden: { opacity: 0, scale: 0 },
   };
-  const openSupportedGamesText = {
-    visible: { opacity: 1, scale: 1, transition: { delay: 3, duration: 0.5 } },
-    hidden: { opacity: 0, scale: 0 },
-  };
+  // const openSupportedGamesText = {
+  //   visible: { opacity: 1, scale: 1, transition: { delay: 3, duration: 0.5 } },
+  //   hidden: { opacity: 0, scale: 0 },
+  // };
   const CardContainer = {
     hidden: { opacity: 0 },
     visible: {
@@ -36,34 +36,34 @@ const FantasyandGamesPart = () => {
       },
     },
   };
-  const GameContainer = {
-    hidden: { opacity: 1, scale: 0 },
-    visible: {
-      opacity: 1,
-      scale: 1,
-      delay: 10,
-      duration: 0.25,
-      transition: {
-        delayChildren: 3.5,
-        duration: 0.25,
-        staggerChildren: 0.5,
-      },
-    },
-  };
-  const GameItem = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        duration: 0.25,
-        ease: 'easeInOut',
-      },
-    },
-  };
-  const openComingSoonText = {
-    visible: { opacity: 1, scale: 1, transition: { delay: 8, duration: 1 } },
-    hidden: { opacity: 0, scale: 0 },
-  };
+  // const GameContainer = {
+  //   hidden: { opacity: 1, scale: 0 },
+  //   visible: {
+  //     opacity: 1,
+  //     scale: 1,
+  //     delay: 10,
+  //     duration: 0.25,
+  //     transition: {
+  //       delayChildren: 3.5,
+  //       duration: 0.25,
+  //       staggerChildren: 0.5,
+  //     },
+  //   },
+  // };
+  // const GameItem = {
+  //   hidden: { opacity: 0 },
+  //   visible: {
+  //     opacity: 1,
+  //     transition: {
+  //       duration: 0.25,
+  //       ease: 'easeInOut',
+  //     },
+  //   },
+  // };
+  // const openComingSoonText = {
+  //   visible: { opacity: 1, scale: 1, transition: { delay: 8, duration: 1 } },
+  //   hidden: { opacity: 0, scale: 0 },
+  // };
   const controls = useAnimation();
   const [ref, inView] = useInView({ threshold: 0.7 });
   useEffect(() => {
