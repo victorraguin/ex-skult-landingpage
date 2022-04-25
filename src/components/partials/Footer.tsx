@@ -1,6 +1,8 @@
+/* eslint-disable prettier/prettier */
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable max-len */
 import React from 'react';
+import Link from 'next/link';
 
 const Footer = () => {
   return (
@@ -9,7 +11,14 @@ const Footer = () => {
         <img className="m-4 mb-0 h-[3rem]" src={`./elements/logo-skult.png`} alt="User" />
         <p className="pt-2 text-center font-poppins text-[15px] text-white ">© 2022 - SKULT</p>
       </div>
-      <p className="my-auto cursor-pointer pt-2 text-center text-primary underline md:pt-0">We're hiring !</p>
+      <a
+        target="_blank"
+        className="my-auto cursor-pointer pt-2 text-primary hover:underline"
+        href="https://vivid-tadpole-074.notion.site/Job-Board-a686e214017142d08fb73cf1f83ca4ad"
+        rel="noopener noreferrer"
+      >
+        <p className=" text-center text-primary md:pt-0">Oh, and by the way, we're hiring! Check this out!</p>
+      </a>
       <div className="flex flex-row pt-10 pb-5 xl:mx-0">
         <form>
           <input

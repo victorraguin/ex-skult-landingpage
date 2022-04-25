@@ -7,17 +7,17 @@
 }
 
 .HomeTitle {
-  @apply bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text pt-24 xl:pt-28 font-poppins text-[40px] xl:text-[65px] font-bold  text-transparent;
+  @apply bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text pt-24 font-poppins text-[40px] font-bold text-transparent xl:pt-28  xl:text-[65px];
 }
 
 .HomeLittleTitle {
-  @apply bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text font-poppins text-[30px] xl:text-[50px] font-light  text-transparent;
+  @apply bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text font-poppins text-[30px] font-light text-transparent  xl:text-[50px];
 }
 
 .floatingDiscordButton {
-  @apply relative  top-[-14rem] mx-auto w-60 font-poppins  cursor-pointer rounded-[15px] border-2 border-[#e7e7e72f] bg-[#222222] py-5 text-center text-[24px] font-normal text-[#e7e7e7] 2xl:top-[-15rem];
+  @apply relative  top-[-14rem] mx-auto w-60 cursor-pointer  rounded-[15px] border-2 border-[#e7e7e72f] bg-[#222222] p-2 text-center font-poppins text-[24px] font-normal text-[#e7e7e7] 2xl:top-[-15rem];
 }
 
 .floatingOmberButton {
-  @apply relative top-[-12rem] mx-auto w-[18rem]  rounded-[15px] border-2 border-[#e7e7e72f] bg-[#040303] py-2 text-center font-poppins text-[42px] font-normal text-[#e7e7e7] blur 2xl:top-[-13rem];
+  @apply relative top-[-12rem] mx-auto w-[17rem]  rounded-[15px] border-2 border-[#e7e7e72f] bg-[#040303] py-2 text-center font-poppins text-[42px] font-normal text-[#e7e7e7] blur 2xl:top-[-13rem];
 }

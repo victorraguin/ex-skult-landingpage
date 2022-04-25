@@ -8,10 +8,10 @@ const SocialBlock = () => {
     visible: { opacity: 1, transition: { duration: 2 } },
     hidden: { opacity: 0 },
   };
-  const lueurVariantViolet = {
-    visible: { opacity: [1, 0.4], transition: { delay: 1, duration: 0.1, yoyo: 5 } },
-    hidden: { opacity: 0 },
-  };
+  // const lueurVariantViolet = {
+  //   visible: { opacity: [1, 0.4], transition: { delay: 1, duration: 0.1, yoyo: 5 } },
+  //   hidden: { opacity: 0 },
+  // };
 
   const container = {
     visible: { opacity: 1, transition: { delay: 1, duration: 1 } },
@@ -59,7 +59,7 @@ const SocialBlock = () => {
       </motion.div>
       <motion.div animate={controls} variants={container} initial="hidden">
         <motion.p animate={controls} variants={discord} className={`${styles.floatingDiscordButton}`}>
-          Discord
+          <img src="/elements/discord-logo-vector.svg" alt="Discord" />
         </motion.p>
         <motion.p animate={controls} variants={ombre} className={`${styles.floatingOmberButton}`}></motion.p>
       </motion.div>
