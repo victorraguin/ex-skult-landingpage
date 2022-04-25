@@ -2,7 +2,6 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable max-len */
 import React from 'react';
-import Link from 'next/link';
 
 const Footer = () => {
   return (
