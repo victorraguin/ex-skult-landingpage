@@ -12,7 +12,7 @@ const Footer = () => {
       </div>
       <a
         target="_blank"
-        className="my-auto cursor-pointer pt-2 text-primary hover:underline"
+        className="my-auto cursor-pointer pt-4 text-primary hover:underline"
         href="https://vivid-tadpole-074.notion.site/Job-Board-a686e214017142d08fb73cf1f83ca4ad"
         rel="noopener noreferrer"
       >
@@ -21,10 +21,16 @@ const Footer = () => {
       <div className="flex flex-row pt-10 pb-5 xl:mx-0">
         <form>
           <input
-            className="mx-4 w-40 border-b border-[#a9a9a9] bg-[#222222] pb-2 font-light text-[#a9a9a9] focus:outline-none md:w-80 xl:w-80"
+            className="mx-4 hidden w-40 border-b border-[#a9a9a9] bg-[#222222] pb-2 font-light text-[#a9a9a9] focus:outline-none sm:inline-block md:w-80 xl:w-80"
             type="email"
             name="email"
             defaultValue="Subscribe to our Newsletter"
+          />
+          <input
+            className=" mx-4 w-40 border-b border-[#a9a9a9] bg-[#222222] pb-2 font-light text-[#a9a9a9] focus:outline-none sm:hidden md:w-80 xl:w-80"
+            type="email"
+            name="email"
+            defaultValue="Our Newsletter"
           />
           <input
             type="submit"

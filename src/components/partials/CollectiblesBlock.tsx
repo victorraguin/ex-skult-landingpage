@@ -5,7 +5,7 @@ import { useInView } from 'react-intersection-observer';
 
 const CollectiblesBlock = () => {
   const controls = useAnimation();
-  const [ref, inView] = useInView({ threshold: 0.2 });
+  const [ref, inView] = useInView({ threshold: 0.05 });
   useEffect(() => {
     if (inView) {
       controls.start('visible');
