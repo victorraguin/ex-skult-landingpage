@@ -72,7 +72,7 @@ const PresentationBlock = () => {
           <motion.img
             src="./elements/lueur-1.webp"
             alt="SKULT TV"
-            className="absolute  top-[-48%] z-0 blur-3xl md:top-[-30%] xl:left-[1%] xl:top-[-44%] 2xl:left-[8%] 3xl:left-[12%] 4xl:left-[24%]"
+            className="absolute  top-[-48%] z-0 blur-3xl md:top-[-30%] xl:left-[1%] xl:top-[-47%] 2xl:left-[7%] 3xl:left-[12%] 4xl:left-[24%]"
             animate={controls}
             initial="visible"
             variants={lueurVariant}
@@ -80,7 +80,7 @@ const PresentationBlock = () => {
           <motion.img
             src="./elements/lueur-2.webp"
             alt="SKULT TV"
-            className="absolute top-[-48%] z-0 blur-3xl md:top-[-30%]  xl:left-[1%] xl:top-[-44%] 2xl:left-[8%] 3xl:left-[12%] 4xl:left-[24%]"
+            className="absolute top-[-48%] z-0 blur-3xl md:top-[-30%]  xl:left-[1%] xl:top-[-47%] 2xl:left-[7%] 3xl:left-[12%] 4xl:left-[24%]"
             animate={controls}
             initial="hidden"
             variants={lueurVariantViolet}

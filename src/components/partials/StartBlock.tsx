@@ -39,14 +39,14 @@ const StartBlock = () => {
         <img
           src="./elements/natasha.svg"
           alt="header"
-          className="absolute top-[15rem] right-[-1rem] z-20 h-80  rotate-[18deg] scale-50 transition duration-200 ease-in-out md:top-[2rem] md:scale-[0.6]  xl:right-[8rem] xl:scale-100 3xl:top-[20rem] 3xl:right-[23rem]"
+          className="absolute top-[15rem] right-[-1rem] z-20 h-80  rotate-[18deg] scale-50 transition duration-200 ease-in-out md:top-[2rem] md:scale-[0.6] xl:top-60 xl:right-[8rem] xl:scale-100 3xl:top-[20rem] 3xl:right-[23rem]"
         />
       </motion.div>
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 3, duration: 0.5 }}>
         <img
           src="./elements/waartex.svg"
           alt="header"
-          className="absolute top-[16rem] right-[8rem] z-10 h-80 rotate-[350deg] scale-50 transition duration-200 ease-in-out md:top-[2rem] md:scale-[0.6]  xl:right-[22rem] xl:scale-100 3xl:top-[21rem] 3xl:right-[39rem]"
+          className="absolute top-[16rem] right-[8rem] z-10 h-80 rotate-[350deg] scale-50 transition duration-200 ease-in-out md:top-[2rem] md:scale-[0.6] xl:top-60 xl:right-[22rem] xl:scale-100 3xl:top-[21rem] 3xl:right-[39rem]"
         />
       </motion.div>
     </div>

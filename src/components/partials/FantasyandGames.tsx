@@ -65,7 +65,7 @@ const FantasyandGamesPart = () => {
   //   hidden: { opacity: 0, scale: 0 },
   // };
   const controls = useAnimation();
-  const [ref, inView] = useInView({ threshold: 0.4 });
+  const [ref, inView] = useInView({ threshold: 0.5 });
   useEffect(() => {
     if (inView) {
       controls.start('visible');
