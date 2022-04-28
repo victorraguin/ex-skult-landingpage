@@ -20,9 +20,9 @@ const FantasyandGamesPart = () => {
       delay: 3,
       duration: 0.25,
       transition: {
-        delayChildren: 1,
+        delayChildren: 0.5,
         duration: 0.25,
-        staggerChildren: 0.5,
+        staggerChildren: 0.25,
       },
     },
   };
@@ -65,7 +65,7 @@ const FantasyandGamesPart = () => {
   //   hidden: { opacity: 0, scale: 0 },
   // };
   const controls = useAnimation();
-  const [ref, inView] = useInView({ threshold: 0.2 });
+  const [ref, inView] = useInView({ threshold: 0.4 });
   useEffect(() => {
     if (inView) {
       controls.start('visible');

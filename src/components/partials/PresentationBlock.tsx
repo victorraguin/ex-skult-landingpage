@@ -55,9 +55,9 @@ const PresentationBlock = () => {
         Victory!
       </motion.h3>
       <div className="relative flex flex-col ">
-        <div className="left-[13%] z-10 mx-auto rounded-[15px] xl:relative xl:left-[16%] xl:mx-0 xl:w-[920px] xl:bg-[#282828] 2xl:left-[23%] 3xl:left-[25.5%] 4xl:left-[33%]">
+        <div className="z-10 mx-auto rounded-[15px] xl:w-[920px] xl:bg-[#282828]">
           <motion.video
-            className="relative z-20 w-[300px] rounded-[15px] md:w-[580px] xl:w-[920px]"
+            className="relative z-20 w-[450px] rounded-[15px] md:w-[680px] lg:w-[880px] xl:w-[920px]"
             animate={controls}
             initial={{ opacity: 1 }}
             variants={videoVariant}
