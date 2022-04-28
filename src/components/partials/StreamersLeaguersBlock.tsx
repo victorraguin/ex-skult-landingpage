@@ -120,7 +120,7 @@ const StreamersLeaguersBlock = () => {
       <div className="m-auto flex flex-wrap justify-around pt-[4.5rem] xl:flex-nowrap 2xl:pt-[6rem] 4xl:pt-[12rem]">
         <div className="xl:pr-[323px]">
           <div className="relative mx-5 xl:right-[-30%] xl:mx-0">
-            <div className="pb-[11rem] md:pb-[22rem] xl:pb-[11rem] 2xl:pb-[15rem] 3xl:pb-[15rem] 4xl:pb-[20rem]">
+            <div className="pb-[44%] md:pb-[44%] xl:pb-[47%] 2xl:pb-[46%] 3xl:pb-[39%] 4xl:pb-[37%]">
               <div className="relative">
                 <motion.img
                   initial={{ opacity: 0 }}
@@ -128,7 +128,7 @@ const StreamersLeaguersBlock = () => {
                   variants={openStreamerLueur}
                   src="/elements/lueur-streamer.webp"
                   alt="Streamer"
-                  className="absolute z-10  md:w-full 3xl:top-[-4rem] 3xl:w-full"
+                  className="absolute z-10 w-full 3xl:top-[-4rem]"
                 />
                 <motion.img
                   initial={{ opacity: 0 }}
@@ -136,7 +136,7 @@ const StreamersLeaguersBlock = () => {
                   variants={openStreamerLogoShadow}
                   src="/elements/skult-streamer-icon-2.svg"
                   alt="Streamer"
-                  className="absolute z-10 ml-[25%] w-[50%] md:top-[4rem] md:ml-[31%] md:w-[40%] lg:top-0 xl:ml-[25%] xl:w-[50%] 3xl:ml-[29%] 3xl:w-[40%]"
+                  className="absolute z-10 ml-[25%] w-[50%] md:top-[4rem] md:ml-[31%] md:w-[40%] xl:top-0 xl:ml-[25%] xl:w-[50%] 3xl:ml-[29%] 3xl:w-[40%]"
                 />
                 <motion.img
                   initial={{ opacity: 0 }}
@@ -144,7 +144,7 @@ const StreamersLeaguersBlock = () => {
                   variants={openStreamerLogo}
                   src="/elements/skult-streamer-icon-1.svg"
                   alt="Streamer"
-                  className="absolute z-10 ml-[25%] w-[50%] md:top-[4rem] md:ml-[31%] md:w-[40%] lg:top-0 xl:ml-[25%] xl:w-[50%] 3xl:ml-[29%] 3xl:w-[40%]"
+                  className="absolute z-10 ml-[25%] w-[50%] md:top-[4rem] md:ml-[31%] md:w-[40%] xl:top-0 xl:ml-[25%] xl:w-[50%] 3xl:ml-[29%] 3xl:w-[40%]"
                 />
               </div>
             </div>
@@ -193,7 +193,7 @@ const StreamersLeaguersBlock = () => {
         </div>
         <div className="bg-[#222222] pb-40 pt-10 xl:pt-0 xl:pl-80">
           <div className="relative mx-5 xl:left-[-30%] xl:mx-0">
-            <div className="pb-[11rem] md:pb-[22rem] xl:pb-[11rem] 2xl:pb-[15rem] 3xl:pb-[15rem] 4xl:pb-[20rem]">
+            <div className="pb-[44%] md:pb-[4%] xl:pb-[47%] 2xl:pb-[46%] 3xl:pb-[39%] 4xl:pb-[37%]">
               <div className="relative">
                 <motion.img
                   initial={{ opacity: 0 }}
@@ -209,7 +209,7 @@ const StreamersLeaguersBlock = () => {
                   variants={openLeaguerLogoShadow}
                   src="/elements/skult-leaguers-icon-1.svg"
                   alt="Streamer"
-                  className="absolute z-10 ml-[25%] w-[50%] md:top-[4rem] md:ml-[31%] md:w-[40%] lg:top-0 xl:ml-[25%] xl:w-[50%] 3xl:ml-[29%] 3xl:w-[40%]"
+                  className="absolute z-10 ml-[25%] w-[50%] md:top-[5rem] md:ml-[31%] md:w-[40%] xl:top-0 xl:ml-[25%] xl:w-[50%] 3xl:ml-[29%] 3xl:w-[40%]"
                 />
                 <motion.img
                   initial={{ opacity: 0 }}
@@ -217,7 +217,7 @@ const StreamersLeaguersBlock = () => {
                   variants={openLeaguerLogo}
                   src="/elements/skult-leaguers-icon-2.svg"
                   alt="Streamer"
-                  className="absolute z-10 ml-[25%] w-[50%] md:top-[4rem] md:ml-[31%] md:w-[40%] lg:top-0 xl:ml-[25%] xl:w-[50%] 3xl:ml-[29%] 3xl:w-[40%]"
+                  className="absolute z-10 ml-[25%] w-[50%] md:top-[5rem] md:ml-[31%] md:w-[40%] xl:top-0 xl:ml-[25%] xl:w-[50%] 3xl:ml-[29%] 3xl:w-[40%]"
                 />
               </div>
             </div>
