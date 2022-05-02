@@ -193,7 +193,7 @@ const StreamersLeaguersBlock = () => {
         </div>
         <div className="bg-[#222222] pb-40 pt-10 xl:pt-0 xl:pl-80">
           <div className="relative mx-5 xl:left-[-30%] xl:mx-0">
-            <div className="pb-[44%] md:pb-[4%] xl:pb-[47%] 2xl:pb-[46%] 3xl:pb-[39%] 4xl:pb-[37%]">
+            <div className="pb-[44%] md:pb-[46%] xl:pb-[47%] 2xl:pb-[46%] 3xl:pb-[39%] 4xl:pb-[37%]">
               <div className="relative">
                 <motion.img
                   initial={{ opacity: 0 }}

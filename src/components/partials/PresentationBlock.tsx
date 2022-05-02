@@ -55,9 +55,9 @@ const PresentationBlock = () => {
         Victory!
       </motion.h3>
       <div className="relative flex flex-col ">
-        <div className="z-10 mx-auto rounded-[15px] xl:w-[920px] xl:bg-[#282828]">
+        <div className="z-10 mx-auto rounded-[15px] xl:w-[920px] xl:bg-[#282828] 4xl:w-[1320px]">
           <motion.video
-            className="relative z-20 w-[450px] rounded-[15px] md:w-[680px] lg:w-[880px] xl:w-[920px]"
+            className="relative z-20 w-[340px] rounded-[15px] sm:w-[480px] md:w-[680px] lg:w-[880px] xl:w-[920px] 4xl:w-[1320px]"
             animate={controls}
             initial={{ opacity: 1 }}
             variants={videoVariant}
@@ -72,7 +72,7 @@ const PresentationBlock = () => {
           <motion.img
             src="./elements/lueur-1.webp"
             alt="SKULT TV"
-            className="absolute  top-[-48%] z-0 blur-3xl md:top-[-30%] xl:left-[1%] xl:top-[-47%] 2xl:left-[7%] 3xl:left-[12%] 4xl:left-[24%]"
+            className="absolute  top-[-12%] z-0 blur-3xl md:top-[-30%] xl:left-[1%] xl:top-[-47%] xl:w-[99%] 2xl:left-[7%] 2xl:w-[92%] 3xl:left-[12%] 3xl:w-[78%] 4xl:left-[12%]"
             animate={controls}
             initial="visible"
             variants={lueurVariant}
@@ -80,7 +80,7 @@ const PresentationBlock = () => {
           <motion.img
             src="./elements/lueur-2.webp"
             alt="SKULT TV"
-            className="absolute top-[-48%] z-0 blur-3xl md:top-[-30%]  xl:left-[1%] xl:top-[-47%] 2xl:left-[7%] 3xl:left-[12%] 4xl:left-[24%]"
+            className="absolute top-[-12%] z-0 blur-3xl md:top-[-30%]  xl:left-[1%] xl:top-[-47%] xl:w-[99%] 2xl:left-[7%] 2xl:w-[92%] 3xl:left-[12%] 3xl:w-[78%] 4xl:left-[12%]"
             animate={controls}
             initial="hidden"
             variants={lueurVariantViolet}

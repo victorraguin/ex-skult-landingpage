@@ -37,31 +37,26 @@ const SocialBlock = () => {
   }, [controls, inView]);
 
   return (
-    <motion.div className={`h-screen flex-auto bg-[#222222] xl:h-screen`} ref={ref}>
+    <motion.div className={`relative h-screen flex-auto bg-[#222222] xl:h-screen`} ref={ref}>
       <motion.div
         style={{
           backgroundImage: `url("/elements/social-2OK.webp")`,
         }}
-        className="h-full w-full bg-cover bg-center bg-no-repeat"
+        className="absolute h-full w-full bg-cover bg-center bg-no-repeat"
         animate={controls}
         initial="hidden"
         variants={lueurVariant}
       >
-        {/* <motion.div
-          style={{
-            backgroundImage: `url("/elements/social-2OK.webp")`,
-          }}
-          className="h-full w-full bg-cover bg-center bg-no-repeat"
-          animate={controls}
-          initial="hidden"
-          variants={lueurVariantViolet}
-        ></motion.div> */}
-      </motion.div>
-      <motion.div animate={controls} variants={container} initial="hidden">
-        <motion.p animate={controls} variants={discord} className={`${styles.floatingDiscordButton}`}>
-          <img src="/elements/discord-logo-vector.svg" alt="Discord" />
-        </motion.p>
-        <motion.p animate={controls} variants={ombre} className={`${styles.floatingOmberButton}`}></motion.p>
+        <motion.div animate={controls} variants={container} initial="hidden">
+          <motion.img
+            animate={controls}
+            variants={discord}
+            className={`${styles.floatingDiscordButton}`}
+            src="/elements/logo-discord.webp"
+            alt="Discord"
+          />
+          <motion.p animate={controls} variants={ombre} className={`${styles.floatingOmberButton}`}></motion.p>
+        </motion.div>
       </motion.div>
     </motion.div>
   );
