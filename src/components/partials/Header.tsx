@@ -10,7 +10,7 @@ const Header = () => {
       <motion.img
         src="./elements/header.webp"
         alt="header"
-        className="z-1 relative inset-0 h-32 w-screen md:top-[-5px] xl:top-[-20px] xl:h-auto xl:w-screen 3xl:top-[-50px] 4xl:top-[-90px]"
+        className="z-1 relative inset-0 h-32 w-screen md:top-[-5px] xl:top-[-20px] xl:h-auto xl:w-screen 3xl:top-[-65px] 4xl:top-[-90px]"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}

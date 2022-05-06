@@ -37,7 +37,7 @@ const SocialBlock = () => {
   }, [controls, inView]);
 
   return (
-    <motion.div className={`relative h-screen flex-auto bg-[#222222] xl:h-screen`} ref={ref}>
+    <motion.div className={`relative h-screen w-full flex-auto bg-[#222222] xl:h-screen`} ref={ref}>
       <motion.div
         style={{
           backgroundImage: `url("/elements/social-2OK.webp")`,

@@ -29,72 +29,72 @@ const StreamersLeaguersBlock = () => {
   };
 
   const openStreamerLogo = {
-    visible: { opacity: 1, transition: { delay: 0.8, duration: 0.3 } },
+    visible: { opacity: 1, transition: { delay: 0.6, duration: 0.3 } },
     hidden: { opacity: 0 },
   };
 
   const openAnyStreamerText = {
-    visible: { opacity: 1, scale: 1, transition: { delay: 1, duration: 0.3 } },
+    visible: { opacity: 1, scale: 1, transition: { delay: 0.9, duration: 0.3 } },
     hidden: { opacity: 0, scale: 0 },
   };
 
   const openLeaguerLogoShadow = {
-    visible: { opacity: 1, transition: { delay: 2.7, duration: 0.3 } },
+    visible: { opacity: 1, transition: { duration: 0.3 } },
     hidden: { opacity: 0 },
   };
 
   const openLeaguerLueur = {
-    visible: { opacity: 1, transition: { delay: 3, duration: 0.3 } },
+    visible: { opacity: 1, transition: { delay: 0.3, duration: 0.3 } },
     hidden: { opacity: 0 },
   };
 
   const openLeaguerLogo = {
-    visible: { opacity: 1, transition: { delay: 3.5, duration: 0.5 } },
+    visible: { opacity: 1, transition: { delay: 0.6, duration: 0.3 } },
     hidden: { opacity: 0 },
   };
 
   const openAnyLeaguerText = {
-    visible: { opacity: 1, scale: 1, transition: { delay: 3.7, duration: 0.3 } },
+    visible: { opacity: 1, scale: 1, transition: { delay: 0.9, duration: 0.3 } },
     hidden: { opacity: 0, scale: 0 },
   };
 
   const openCommunityBlock = {
-    visible: { opacity: 1, transition: { delay: 1.3, duration: 0.3 } },
+    visible: { opacity: 1, transition: { delay: 1.2, duration: 0.3 } },
     hidden: { opacity: 0, scale: 0 },
   };
 
   const openFunBlock = {
-    visible: { opacity: 1, transition: { delay: 4, duration: 0.3 } },
+    visible: { opacity: 1, transition: { delay: 1.2, duration: 0.3 } },
     hidden: { opacity: 0, scale: 0 },
   };
 
   const openEngagementBlock = {
-    visible: { opacity: 1, transition: { delay: 1.6, duration: 0.3 } },
+    visible: { opacity: 1, transition: { delay: 1.5, duration: 0.3 } },
     hidden: { opacity: 0, scale: 0 },
   };
 
   const openRewardsBlock = {
-    visible: { opacity: 1, transition: { delay: 4.3, duration: 0.3 } },
+    visible: { opacity: 1, transition: { delay: 1.5, duration: 0.3 } },
     hidden: { opacity: 0, scale: 0 },
   };
 
   const openEarnCashStreamersBlock = {
-    visible: { opacity: 1, transition: { delay: 1.9, duration: 0.3 } },
+    visible: { opacity: 1, transition: { delay: 1.8, duration: 0.3 } },
     hidden: { opacity: 0, scale: 0 },
   };
 
   const openEarnCashLeaguersBlock = {
-    visible: { opacity: 1, transition: { delay: 4.6, duration: 0.3 } },
+    visible: { opacity: 1, transition: { delay: 1.8, duration: 0.3 } },
     hidden: { opacity: 0, scale: 0 },
   };
 
   const openButtonStreamerBlock = {
-    visible: { opacity: 1, transition: { delay: 2.2, duration: 0.3 } },
+    visible: { opacity: 1, transition: { delay: 2.1, duration: 0.3 } },
     hidden: { opacity: 0, scale: 0 },
   };
 
   const openButtonLeaguerBlock = {
-    visible: { opacity: 1, transition: { delay: 4.9, duration: 0.3 } },
+    visible: { opacity: 1, transition: { delay: 2.1, duration: 0.3 } },
     hidden: { opacity: 0, scale: 0 },
   };
 
@@ -191,7 +191,7 @@ const StreamersLeaguersBlock = () => {
             </motion.div>
           </div>
         </div>
-        <div className="bg-[#222222] pb-40 pt-10 xl:pt-0 xl:pl-80">
+        <div className="pb-10 pt-10 xl:bg-[#222222] xl:pt-0 xl:pl-80">
           <div className="relative mx-5 xl:left-[-30%] xl:mx-0">
             <div className="pb-[44%] md:pb-[46%] xl:pb-[47%] 2xl:pb-[46%] 3xl:pb-[39%] 4xl:pb-[37%]">
               <div className="relative">
@@ -249,7 +249,7 @@ const StreamersLeaguersBlock = () => {
             </motion.div>
             <motion.div initial={{ opacity: 0 }} animate={controls} variants={openButtonLeaguerBlock}>
               <button
-                className={`relative rounded-full bg-gradient-to-l from-[#7517F8] to-[#E323ff] p-0.5 text-sm hover:scale-105`}
+                className={`relative rounded-full bg-gradient-to-l from-[#7517F8] to-[#E323ff] p-[3px] text-sm hover:scale-105`}
               >
                 <div className="relative flex flex-row rounded-full bg-[#262626] px-6 pt-3">
                   <div className={` pb-3 font-poppins text-[20px] text-[#a9a9a9]  `}>Let's Play</div>
@@ -276,17 +276,17 @@ const StreamersLeaguersBlock = () => {
         <motion.img
           src="./elements/skyrroz.svg"
           alt="header"
-          className="absolute top-[-5rem] z-30 mx-auto origin-bottom scale-50 md:top-0 md:scale-[0.8] xl:top-0 xl:scale-[90%]"
+          className="absolute top-[-3rem] z-30 mx-auto origin-bottom scale-50 md:top-0 md:scale-[0.8] xl:top-[4rem] xl:scale-[90%]"
         />
         <img
           src="./elements/natasha.svg"
           alt="header"
-          className="absolute left-[21%] top-[-4rem] z-20 origin-bottom rotate-[18deg] scale-50 md:top-0 md:left-[35%] md:scale-[0.8] xl:left-[47%] xl:top-0 xl:scale-[90%]"
+          className="absolute left-[21%] top-[-2rem] z-20 origin-bottom rotate-[18deg] scale-50 md:top-0 md:left-[35%] md:scale-[0.8] xl:left-[47%] xl:top-[5rem] xl:scale-[90%]"
         />
         <img
           src="./elements/waartex.svg"
           alt="header"
-          className="absolute right-[21%] top-[-4rem] z-10 origin-bottom rotate-[350deg] scale-50 md:top-0 md:right-[37%] md:scale-[0.8] xl:right-[47%] xl:top-0 xl:scale-[90%]"
+          className="absolute right-[21%] top-[-2rem] z-10 origin-bottom rotate-[350deg] scale-50 md:top-0 md:right-[37%] md:scale-[0.8] xl:right-[47%] xl:top-[5rem] xl:scale-[90%]"
         />
       </div>
       <img

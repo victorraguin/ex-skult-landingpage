@@ -38,7 +38,7 @@ const CollectiblesBlock = () => {
 
   return (
     <motion.div
-      className="h-full bg-[#222222] pt-10 xl:pt-0"
+      className="h-full bg-[#222222] pt-20 xl:pt-0"
       variants={CardContainer}
       initial="hidden"
       animate={controls}
