@@ -4,7 +4,6 @@ import React, { useEffect } from 'react';
 import { useAnimation, motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import Carousel from 'react-material-ui-carousel';
-import { Paper, Button } from '@mui/material';
 
 const CollectiblesExclusiveEvent = () => {
   const controls = useAnimation();
@@ -67,9 +66,9 @@ const CollectiblesExclusiveEvent = () => {
 
   function Item(props: {
     item: {
-      image: string | undefined;
-      name: string | null | undefined;
-      description: string | null | undefined;
+      image: string;
+      name: string;
+      description: string;
     };
   }) {
     return (

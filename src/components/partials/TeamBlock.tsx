@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable max-len */
 /* eslint-disable react/no-unescaped-entities */
 import React, { useEffect } from 'react';
@@ -27,17 +26,6 @@ const TeamBlock = () => {
     },
   };
 
-  const CardItem = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        duration: 0.25,
-        ease: 'easeInOut',
-      },
-    },
-  };
-
   return (
     <motion.div className="h-full bg-[#222222] " variants={CardContainer} initial="hidden" animate={controls} ref={ref}>
       <div>
@@ -55,7 +43,7 @@ const TeamBlock = () => {
                 <div className="overflow-hidden rounded bg-[#303030] shadow-md">
                   <div className="absolute -mt-20 flex w-full justify-center">
                     <div className="h-32 w-32">
-                      <img src="/Alex.png" alt className="h-full w-full rounded-full object-cover shadow-md" />
+                      <img src="/Alex.png" alt="Team" className="h-full w-full rounded-full object-cover shadow-md" />
                     </div>
                   </div>
                   <div className="mt-16 px-6">
@@ -128,7 +116,7 @@ const TeamBlock = () => {
                 <div className="overflow-hidden rounded bg-[#303030] shadow-md">
                   <div className="absolute -mt-20 flex w-full justify-center">
                     <div className="h-32 w-32">
-                      <img src="/Raph.png" alt className="h-full w-full rounded-full object-cover shadow-md" />
+                      <img src="/Raph.png" alt="Team" className="h-full w-full rounded-full object-cover shadow-md" />
                     </div>
                   </div>
                   <div className="mt-16 px-6">
@@ -203,7 +191,7 @@ const TeamBlock = () => {
                     <div className="h-32 w-32">
                       <img
                         src="https://cdn.tuk.dev/assets/photo-1564061170517-d3907caa96ea.jfif"
-                        alt
+                        alt="Team"
                         className="h-full w-full rounded-full object-cover shadow-md"
                       />
                     </div>
@@ -278,7 +266,7 @@ const TeamBlock = () => {
                 <div className="overflow-hidden rounded bg-[#303030] shadow-md">
                   <div className="absolute -mt-20 flex w-full justify-center">
                     <div className="h-32 w-32">
-                      <img src="/Jerem.png" alt className="h-full w-full rounded-full object-cover shadow-md" />
+                      <img src="/Jerem.png" alt="Team" className="h-full w-full rounded-full object-cover shadow-md" />
                     </div>
                   </div>
                   <div className="mt-16 px-6">
@@ -351,7 +339,11 @@ const TeamBlock = () => {
                 <div className="overflow-hidden rounded bg-[#303030] shadow-md">
                   <div className="absolute -mt-20 flex w-full justify-center">
                     <div className="h-32 w-32">
-                      <img src="/Victor.png" alt className="h-full w-full rounded-full object-contain shadow-md" />
+                      <img
+                        src="/Victor.png"
+                        alt="Team"
+                        className="h-full w-full rounded-full object-contain shadow-md"
+                      />
                     </div>
                   </div>
                   <div className="mt-16 px-6">
@@ -426,7 +418,7 @@ const TeamBlock = () => {
                     <div className="h-32 w-32">
                       <img
                         src="https://cdn.tuk.dev/assets/photo-1564061170517-d3907caa96ea.jfif"
-                        alt
+                        alt="Team"
                         className="h-full w-full rounded-full object-cover shadow-md"
                       />
                     </div>
@@ -501,7 +493,11 @@ const TeamBlock = () => {
                 <div className="overflow-hidden rounded bg-[#303030] shadow-md">
                   <div className="absolute -mt-20 flex w-full justify-center">
                     <div className="h-32 w-32">
-                      <img src="/Thibault.jpeg" alt className="h-full w-full rounded-full object-cover shadow-md" />
+                      <img
+                        src="/Thibault.jpeg"
+                        alt="Team"
+                        className="h-full w-full rounded-full object-cover shadow-md"
+                      />
                     </div>
                   </div>
                   <div className="mt-16 px-6">
@@ -574,7 +570,11 @@ const TeamBlock = () => {
                 <div className="overflow-hidden rounded bg-[#303030] shadow-md">
                   <div className="absolute -mt-20 flex w-full justify-center">
                     <div className="h-32 w-32">
-                      <img src="/Didier.jpeg" alt className="h-full w-full rounded-full object-cover shadow-md" />
+                      <img
+                        src="/Didier.jpeg"
+                        alt="Team"
+                        className="h-full w-full rounded-full object-cover shadow-md"
+                      />
                     </div>
                   </div>
                   <div className="mt-16 px-6">
