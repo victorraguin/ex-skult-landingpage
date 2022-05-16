@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 /* eslint-disable react/no-unescaped-entities */
 import React, { useEffect } from 'react';
 import { useAnimation, motion } from 'framer-motion';
@@ -38,13 +39,13 @@ const CollectiblesBlockFirst = () => {
 
   return (
     <motion.div
-      className="h-full bg-[#282828] pt-20 xl:pt-40"
+      className="h-full bg-[#282828] pt-20 xl:mx-20 xl:pt-40 2xl:mx-0"
       variants={CardContainer}
       initial="hidden"
       animate={controls}
       ref={ref}
     >
-      <motion.div className="flex w-2/3 flex-row flex-wrap justify-around xl:mx-[19rem] xl:flex-nowrap">
+      <motion.div className="mx-auto flex flex-row flex-wrap justify-around xl:flex-nowrap 3xl:mx-[18rem] 3xl:w-2/3">
         <motion.div className=" flex flex-col" variants={CardItem}>
           <img src="/elements/skult-collecte-icon-.svg" alt="Collect Icon" className="h-[125px]" />
           <h4 className="pt-5 text-center font-poppins text-[28px] font-semibold text-primary">Collect</h4>

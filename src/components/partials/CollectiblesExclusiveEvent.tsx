@@ -15,8 +15,18 @@ const CollectiblesExclusiveEvent = () => {
     }
   }, [controls, inView]);
 
-  const openStreamerFantasyText = {
+  const openTitle = {
     visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
+    hidden: { opacity: 0, scale: 0 },
+  };
+
+  const openDescription = {
+    visible: { opacity: 1, scale: 1, transition: { delay: 1, duration: 0.5 } },
+    hidden: { opacity: 0, scale: 0 },
+  };
+
+  const openUseCases = {
+    visible: { opacity: 1, scale: 1, transition: { delay: 2, duration: 0.5 } },
     hidden: { opacity: 0, scale: 0 },
   };
 
@@ -29,17 +39,6 @@ const CollectiblesExclusiveEvent = () => {
         delayChildren: 0.25,
         duration: 0.25,
         staggerChildren: 0.5,
-      },
-    },
-  };
-
-  const CardItem = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        duration: 0.25,
-        ease: 'easeInOut',
       },
     },
   };
@@ -66,11 +65,21 @@ const CollectiblesExclusiveEvent = () => {
     },
   ];
 
-  function Item(props) {
+  function Item(props: {
+    item: {
+      image: string | undefined;
+      name: string | null | undefined;
+      description: string | null | undefined;
+    };
+  }) {
     return (
       <div>
-        <div className="flex flex-row">
-          <img src={props.item.image} alt={props.item.name} className="h-[13rem] w-[13rem] rounded-xl" />
+        <div className="flex flex-row flex-wrap xl:flex-nowrap">
+          <img
+            src={props.item.image}
+            alt={props.item.name}
+            className="mx-auto h-[13rem] w-[13rem] rounded-xl xl:mx-0"
+          />
           <div className="m-10 flex flex-col">
             <h2 className="bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text text-[24px] font-bold text-transparent">
               {props.item.name}
@@ -85,26 +94,26 @@ const CollectiblesExclusiveEvent = () => {
   return (
     <motion.div className="h-full bg-[#282828]" variants={CardContainer} initial="hidden" animate={controls} ref={ref}>
       <motion.div
-        className="pb-10 text-center font-poppins text-[26px] font-medium text-[#e7e7e7] xl:text-[32px] 2xl:text-[40px]"
+        className="pb-10 pt-10 text-center font-poppins text-[26px] font-medium text-[#e7e7e7] xl:pt-0 xl:text-[32px] 2xl:text-[40px]"
         initial={{ opacity: 0 }}
         animate={controls}
-        variants={openStreamerFantasyText}
+        variants={openTitle}
       >
         Exclusive{' '}
         <span className="bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text text-transparent">Events</span>
       </motion.div>
       <motion.div
-        className="mx-auto w-2/3 pb-10 text-center font-poppins text-[22px] font-medium text-[#e7e7e7]"
+        className="mx-auto pb-10 text-center font-poppins text-[22px] font-medium text-[#e7e7e7] xl:w-2/3"
         initial={{ opacity: 0 }}
         animate={controls}
-        variants={openStreamerFantasyText}
+        variants={openDescription}
       >
         Drops, giveaways, exclusive content, in real life events… Everything is possible!{' '}
         <h4>Streamers can create any kind of exeperiences they want and make their community participate to them!</h4>
-        <h4 className="pt-5">Only collectible holders can enter!</h4>
+        <h4 className="pt-5 text-primary">Only collectible holders can enter!</h4>
       </motion.div>
-      <motion.div className="" initial={{ opacity: 0 }} animate={controls} variants={openStreamerFantasyText}>
-        <Carousel className="mx-auto w-1/2" duration={1000} interval={6000} navButtonsAlwaysVisible={true}>
+      <motion.div className="" initial={{ opacity: 0 }} animate={controls} variants={openUseCases}>
+        <Carousel className="mx-auto xl:w-1/2" duration={1000} interval={6000} navButtonsAlwaysVisible={true}>
           {events.map((item, i) => (
             <Item key={i} item={item} />
           ))}

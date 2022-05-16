@@ -9,6 +9,7 @@ import CollectiblesBlockFirst from '../components/partials/CollectiblesBlockFirs
 import CollectiblesBlockSecond from '../components/partials/CollectiblesBlockSecond';
 import CollectiblesUseCaseBlock from '../components/partials/CollectiblesUseCaseBlock';
 import CollectiblesExclusiveEvent from '../components/partials/CollectiblesExclusiveEvent';
+import TeamBlock from '../components/partials/TeamBlock';
 import { motion } from 'framer-motion';
 import SocialBlock from '../components/partials/SocialBlock';
 import Footer from '../components/partials/Footer';
@@ -28,6 +29,7 @@ const Home: NextPage = () => {
         <CollectiblesExclusiveEvent />
         <FantasyandGamesPart />
         <StreamersLeaguersBlock />
+        <TeamBlock />
         <SocialBlock />
         <Footer />
       </motion.div>

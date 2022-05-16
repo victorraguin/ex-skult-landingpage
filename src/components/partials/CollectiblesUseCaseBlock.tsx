@@ -51,14 +51,14 @@ const CollectiblesUseCaseBlock = () => {
       ref={ref}
     >
       <motion.div
-        className="mt-12 pb-10 text-center font-poppins text-[26px] font-medium text-[#e7e7e7] xl:text-[32px] 2xl:text-[48px]"
+        className="mt-12 pb-10 text-center font-poppins text-[26px] font-medium text-[#e7e7e7] xl:text-[32px] 2xl:text-[42px]"
         initial={{ opacity: 0 }}
         animate={controls}
         variants={openStreamerFantasyText}
       >
         What can you do with your Collectibles ?
       </motion.div>
-      <motion.div className="flex flex-row flex-wrap justify-around xl:mx-60 xl:flex-nowrap">
+      <motion.div className="flex flex-row flex-wrap justify-around xl:flex-nowrap 2xl:mx-60">
         <motion.div className=" flex flex-col" variants={CardItem}>
           <h4 className="pt-5 text-center font-poppins text-[28px] font-semibold text-white">
             Participate in
