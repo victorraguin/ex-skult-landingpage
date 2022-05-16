@@ -9,10 +9,10 @@ const FantasyandGamesPart = () => {
     visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
     hidden: { opacity: 0, scale: 0 },
   };
-  // const openSupportedGamesText = {
-  //   visible: { opacity: 1, scale: 1, transition: { delay: 3, duration: 0.5 } },
-  //   hidden: { opacity: 0, scale: 0 },
-  // };
+  const openSupportedGamesText = {
+    visible: { opacity: 1, scale: 1, transition: { delay: 3, duration: 0.5 } },
+    hidden: { opacity: 0, scale: 0 },
+  };
   const CardContainer = {
     hidden: { opacity: 0 },
     visible: {
@@ -36,34 +36,34 @@ const FantasyandGamesPart = () => {
       },
     },
   };
-  // const GameContainer = {
-  //   hidden: { opacity: 1, scale: 0 },
-  //   visible: {
-  //     opacity: 1,
-  //     scale: 1,
-  //     delay: 10,
-  //     duration: 0.25,
-  //     transition: {
-  //       delayChildren: 3.5,
-  //       duration: 0.25,
-  //       staggerChildren: 0.5,
-  //     },
-  //   },
-  // };
-  // const GameItem = {
-  //   hidden: { opacity: 0 },
-  //   visible: {
-  //     opacity: 1,
-  //     transition: {
-  //       duration: 0.25,
-  //       ease: 'easeInOut',
-  //     },
-  //   },
-  // };
-  // const openComingSoonText = {
-  //   visible: { opacity: 1, scale: 1, transition: { delay: 8, duration: 1 } },
-  //   hidden: { opacity: 0, scale: 0 },
-  // };
+  const GameContainer = {
+    hidden: { opacity: 1, scale: 0 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      delay: 10,
+      duration: 0.25,
+      transition: {
+        delayChildren: 3.5,
+        duration: 0.25,
+        staggerChildren: 0.5,
+      },
+    },
+  };
+  const GameItem = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        duration: 0.25,
+        ease: 'easeInOut',
+      },
+    },
+  };
+  const openComingSoonText = {
+    visible: { opacity: 1, scale: 1, transition: { delay: 8, duration: 1 } },
+    hidden: { opacity: 0, scale: 0 },
+  };
   const controls = useAnimation();
   const [ref, inView] = useInView({ threshold: 0.5 });
   useEffect(() => {
@@ -75,12 +75,15 @@ const FantasyandGamesPart = () => {
   return (
     <motion.div className="flex flex-col bg-[#282828] pt-10 pb-20" ref={ref}>
       <motion.div
-        className="mt-12 text-center font-poppins text-[26px] font-medium text-[#e7e7e7] xl:text-[32px] 2xl:text-[48px]"
+        className="mt-12 text-center font-poppins text-[26px] font-medium text-[#e7e7e7] xl:text-[32px] 2xl:text-[40px]"
         initial={{ opacity: 0 }}
         animate={controls}
         variants={openStreamerFantasyText}
       >
-        Streamer Fantasy Leagues
+        Streamer{' '}
+        <span className="bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text text-transparent">
+          Fantasy Leagues
+        </span>
       </motion.div>
       <motion.div
         className="mt-10 mb-10 flex flex-row flex-wrap justify-around xl:justify-evenly 3xl:px-60"
@@ -140,13 +143,13 @@ const FantasyandGamesPart = () => {
           <p className="text-center font-poppins  font-light text-[#e7e7e7] xl:text-[16px]">rewards!</p>
         </motion.div>
       </motion.div>
-      {/* <motion.div
+      <motion.div
         initial={{ opacity: 0 }}
         animate={controls}
         variants={openSupportedGamesText}
-        className="text-center font-poppins text-[26px] font-normal text-[#a8a8a8] xl:mt-5 xl:text-[32px] 2xl:text-[48px]"
+        className="text-center font-poppins text-[26px] font-normal text-[#e7e7e7] xl:mt-5 xl:text-[32px] 2xl:text-[36px]"
       >
-        Supported games
+        Available for
       </motion.div>
       <motion.div
         className="flex flex-wrap justify-evenly xl:mx-[18rem] xl:flex-nowrap"
@@ -154,10 +157,8 @@ const FantasyandGamesPart = () => {
         initial="hidden"
         animate={controls}
       >
-        <motion.img variants={GameItem} src="/elements/GAME/warzone.svg" alt="Warzone" className="h-[100px]" />
-        <motion.img variants={GameItem} src="/elements/GAME/fortnite.svg" alt="Fortnite" className="h-[100px]" />
-        <motion.img variants={GameItem} src="/elements/GAME/APEX.svg" alt="APApexEX" className="h-[100px]" />
-        <motion.img variants={GameItem} src="/elements/GAME/valorant.svg" alt="Valorant" className="h-[100px]" />
+        <motion.img variants={GameItem} src="/elements/GAME/warzone.svg" alt="Warzone" className="h-[150px]" />
+        <motion.img variants={GameItem} src="/elements/GAME/fortnite.svg" alt="Fortnite" className="h-[150px]" />
       </motion.div>
       <motion.p
         initial={{ opacity: 0 }}
@@ -165,8 +166,8 @@ const FantasyandGamesPart = () => {
         variants={openComingSoonText}
         className="font-regular mt-4 mb-20 text-center font-poppins text-[24px] text-[#585858]"
       >
-        And more coming soon!
-      </motion.p> */}
+        More coming soon...
+      </motion.p>
     </motion.div>
   );
 };

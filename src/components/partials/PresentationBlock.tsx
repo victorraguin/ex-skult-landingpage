@@ -37,24 +37,24 @@ const PresentationBlock = () => {
   }, [controls, inView]);
 
   return (
-    <motion.div className="flex flex-col bg-[#282828]" ref={ref}>
+    <motion.div className="flex flex-col" ref={ref}>
       <motion.h3
         className="mx-2 mt-5 text-center font-poppins text-[32px] font-light text-[#e7e7e7] xl:mx-0 xl:text-[36px] 2xl:text-[48px]"
         initial={{ opacity: 0 }}
         animate={controls}
         variants={openTitleText}
       >
-        Every Game is a step further towards
+        A world where new gaming experiences
       </motion.h3>
       <motion.h3
-        className="mb-20 text-center font-poppins text-[40px] font-light text-[#FFC000] xl:text-[36px] 2xl:text-[48px]"
+        className="mb-[8rem] text-center font-poppins text-[40px] font-light text-[#FFC000] xl:text-[36px] 2xl:text-[48px]"
         initial={{ opacity: 0 }}
         animate={controls}
         variants={openLittleTitleText}
       >
-        Victory!
+        can come alive.
       </motion.h3>
-      <div className="relative flex flex-col ">
+      <div className="relative flex flex-col">
         <div className="z-10 mx-auto rounded-[15px] xl:w-[920px] xl:bg-[#282828] 4xl:w-[1320px]">
           <motion.video
             className="relative z-20 w-[340px] rounded-[15px] sm:w-[480px] md:w-[680px] lg:w-[880px] xl:w-[920px] 4xl:w-[1320px]"
@@ -72,7 +72,7 @@ const PresentationBlock = () => {
           <motion.img
             src="./elements/lueur-1.webp"
             alt="SKULT TV"
-            className="absolute  top-[-12%] z-0 blur-3xl md:top-[-30%] xl:left-[1%] xl:top-[-55%] xl:w-[99%] 2xl:left-[7%] 2xl:w-[92%] 3xl:left-[12%] 3xl:w-[78%] 4xl:left-[12%]"
+            className="absolute  top-[-12%] z-0 blur-3xl md:top-[-30%] xl:left-[1%] xl:top-[-55%] xl:w-[99%] 2xl:left-[7%] 2xl:w-[92%] 3xl:left-[18%] 3xl:w-[68%] 4xl:left-[12%]"
             animate={controls}
             initial="visible"
             variants={lueurVariant}
@@ -80,7 +80,7 @@ const PresentationBlock = () => {
           <motion.img
             src="./elements/lueur-2.webp"
             alt="SKULT TV"
-            className="absolute top-[-12%] z-0 blur-3xl md:top-[-30%]  xl:left-[1%] xl:top-[-55%] xl:w-[99%] 2xl:left-[7%] 2xl:w-[92%] 3xl:left-[12%] 3xl:w-[78%] 4xl:left-[12%]"
+            className="absolute top-[-12%] z-0 blur-3xl md:top-[-30%]  xl:left-[1%] xl:top-[-55%] xl:w-[99%] 2xl:left-[7%] 2xl:w-[92%] 3xl:left-[18%] 3xl:w-[68%] 4xl:left-[12%]"
             animate={controls}
             initial="hidden"
             variants={lueurVariantViolet}

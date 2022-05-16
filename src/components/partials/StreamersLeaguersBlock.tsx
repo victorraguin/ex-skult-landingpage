@@ -117,7 +117,7 @@ const StreamersLeaguersBlock = () => {
           is Left Behind!
         </p>
       </motion.h1>
-      <div className="m-auto flex flex-wrap justify-around pt-[4.5rem] xl:flex-nowrap 2xl:pt-[6rem] 4xl:pt-[12rem]">
+      <div className="m-auto flex flex-wrap justify-around pt-[4.5rem] xl:flex-nowrap 2xl:pt-[8rem] 4xl:pt-[12rem]">
         <div className="xl:pr-[323px]">
           <div className="relative mx-5 xl:right-[-30%] xl:mx-0">
             <div className="pb-[44%] md:pb-[44%] xl:pb-[47%] 2xl:pb-[46%] 3xl:pb-[39%] 4xl:pb-[37%]">
@@ -157,9 +157,9 @@ const StreamersLeaguersBlock = () => {
               Any Streamer
             </motion.h2>
             <motion.div initial={{ opacity: 0 }} animate={controls} variants={openCommunityBlock}>
-              <p className="font-poppins text-[18px]  font-medium text-primary">Develop you Community</p>
+              <p className="font-poppins text-[18px]  font-medium text-primary">Develop your Community</p>
               <p className="pb-5 font-poppins text-[18px] font-medium text-[#b8b8b8]">
-                Get discovered thanks to a level-based League system: any Streamer can get an audience!
+                Get discovered thanks to level-based : any Streamer can get an audience!
               </p>
             </motion.div>
             <motion.div initial={{ opacity: 0 }} animate={controls} variants={openEngagementBlock}>
@@ -192,7 +192,7 @@ const StreamersLeaguersBlock = () => {
           </div>
         </div>
         <div className="pb-10 pt-10 xl:bg-[#222222] xl:pt-0 xl:pl-80">
-          <div className="relative mx-5 xl:left-[-30%] xl:mx-0">
+          <div className="relative mx-5 xl:left-[-20%] xl:mx-0">
             <div className="pb-[44%] md:pb-[46%] xl:pb-[47%] 2xl:pb-[46%] 3xl:pb-[39%] 4xl:pb-[37%]">
               <div className="relative">
                 <motion.img
@@ -227,18 +227,22 @@ const StreamersLeaguersBlock = () => {
               variants={openAnyLeaguerText}
               className="bg-gradient-to-r from-[#7517F8] to-[#E323FF] bg-clip-text pb-10 text-center font-poppins text-[32px] font-semibold text-transparent 2xl:text-[48px]"
             >
-              Leaguers
+              Anyone
             </motion.h2>
             <motion.div initial={{ opacity: 0 }} animate={controls} variants={openFunBlock}>
-              <p className="font-poppins text-[18px] font-medium  text-[#a80cfb]">Get fun while watching Streams</p>
+              <p className="font-poppins text-[18px] font-medium  text-[#a80cfb]">
+                Get fun while following your favorite Streamers
+              </p>
               <p className="pb-5 font-poppins text-[18px] font-medium text-[#b8b8b8] ">
-                Discover the best Streamers and enroll them in your Team through their collectibles
+                Enroll Streamer in your Team through their collectibles and participate in their exclusive and
+                personalized events!
               </p>
             </motion.div>
             <motion.div initial={{ opacity: 0 }} animate={controls} variants={openRewardsBlock}>
               <p className="font-poppins text-[18px] font-medium text-[#C820FD]">Play & Earn Rewards</p>
               <p className="pb-5 font-poppins text-[18px] font-medium text-[#b8b8b8] ">
-                Draft your Squad weekly, challenge other Leaguers, and get rewarded
+                Challenge other participants in SKULT immersive games, and get rewarded. Our first game is a Fantasy
+                League!
               </p>
             </motion.div>
             <motion.div initial={{ opacity: 0 }} animate={controls} variants={openEarnCashLeaguersBlock}>
