@@ -45,22 +45,16 @@ const CollectiblesExclusiveEvent = () => {
   const events = [
     {
       image: '/iryanne.png',
-      name: 'Community RAID : World of Warcraft',
+      name: 'Community raid : World of Warcraft',
       description:
         '" I need 10 mates for the Onyxia Lair Raid! The first 10 to check-in can team-up with me and we GO! "',
       social: 'https://www.twitch.tv/iryanne',
     },
     {
       image: '/skult_rocketleague_training.jpg',
-      name: 'Community TRAINING with eSport Player : Rocket League',
+      name: 'Community training  : Rocket League',
       description:
         '" Join us for the first ever eSport training session with Rocket League! We will be playing against each other and we will be playing with the best players in the world! "',
-    },
-    {
-      image: '/skult-lol.jpg',
-      name: 'Community FIGHT : League Of Legend',
-      description:
-        '" Join us for the first ever League of Legends tournament! We will be playing against each other and we will be playing with the best players in the world! "',
     },
   ];
 
@@ -73,7 +67,7 @@ const CollectiblesExclusiveEvent = () => {
   }) {
     return (
       <div>
-        <div className="flex flex-row flex-wrap xl:flex-nowrap">
+        <div className="flex flex-row flex-wrap sm:mx-10 sm:flex-nowrap xl:mx-0">
           <img
             src={props.item.image}
             alt={props.item.name}
@@ -102,14 +96,14 @@ const CollectiblesExclusiveEvent = () => {
         <span className="bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text text-transparent">Events</span>
       </motion.div>
       <motion.div
-        className="mx-auto pb-10 text-center font-poppins text-[22px] font-medium text-[#e7e7e7] xl:w-2/3"
+        className="font-base mx-auto pb-10 text-center font-poppins text-[22px] text-[#e7e7e7] sm:mx-10 4xl:w-full"
         initial={{ opacity: 0 }}
         animate={controls}
         variants={openDescription}
       >
         Drops, giveaways, exclusive content, in real life events… Everything is possible!{' '}
         <h4>Streamers can create any kind of exeperiences they want and make their community participate to them!</h4>
-        <h4 className="pt-5 text-primary">Only collectible holders can enter!</h4>
+        <h4 className="pt-5 font-medium text-primary">Only collectible holders can enter!</h4>
       </motion.div>
       <motion.div className="" initial={{ opacity: 0 }} animate={controls} variants={openUseCases}>
         <Carousel className="mx-auto xl:w-1/2" duration={1000} interval={6000} navButtonsAlwaysVisible={true}>

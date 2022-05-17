@@ -73,7 +73,7 @@ const FantasyandGamesPart = () => {
   }, [controls, inView]);
 
   return (
-    <motion.div className="mx-20 flex flex-col bg-[#282828] pt-10 pb-20 3xl:mx-0" ref={ref}>
+    <motion.div className="flex flex-col bg-[#282828] pt-10 pb-20 xl:mx-20 3xl:mx-0" ref={ref}>
       <motion.div
         className="mt-12 text-center font-poppins text-[26px] font-medium text-[#e7e7e7] xl:text-[32px] 2xl:text-[40px]"
         initial={{ opacity: 0 }}

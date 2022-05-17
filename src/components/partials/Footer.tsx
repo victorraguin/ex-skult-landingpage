@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div className="mx-1 flex flex-row flex-wrap justify-around 2xl:mx-5 3xl:xl:mx-10">
       <div className="mx-auto hidden w-[15rem] flex-col sm:mx-4 md:inline lg:mx-0 xl:py-4 2xl:mx-0 3xl:mx-4">
-        <img className="m-4 mb-0 h-[3rem]" src={`./elements/logo-skult.png`} alt="User" />
+        <img className="m-4 mb-0 h-[3rem]" src={`./elements/SKULT.png`} alt="SKULT" />
         <p className="pt-2 text-center font-poppins text-[15px] text-white ">© 2022 - SKULT</p>
       </div>
       <a
@@ -21,16 +21,16 @@ const Footer = () => {
       <div className="flex flex-row pb-5 lg:pt-10 xl:mx-0">
         <form>
           <input
-            className="mx-4 hidden w-40 border-b border-[#a9a9a9] bg-[#222222] pb-2 font-light text-[#a9a9a9] focus:outline-none sm:inline-block md:w-80 xl:w-80"
+            className="mx-4 hidden w-40 rounded-lg border-b border-[#a9a9a9] bg-[#222222] p-2 pb-2 font-light text-[#a9a9a9] focus:outline-none sm:inline-block md:w-80 xl:w-80"
             type="email"
             name="email"
             defaultValue="Subscribe to our Newsletter"
           />
           <input
-            className=" mx-4 w-40 border-b border-[#a9a9a9] bg-[#222222] pb-2 font-light text-[#a9a9a9] focus:outline-none sm:hidden md:w-80 xl:w-80"
+            className=" mx-4 w-40 rounded-lg border-b border-[#a9a9a9] bg-[#222222] p-2 pb-2 font-light text-[#a9a9a9] focus:outline-none sm:hidden md:w-80 xl:w-80"
             type="email"
             name="email"
-            defaultValue="Our Newsletter"
+            defaultValue=" Our Newsletter"
           />
           <input
             type="submit"
@@ -39,37 +39,47 @@ const Footer = () => {
           />
         </form>
       </div>
-      <div className="flex flex-row flex-wrap pb-5">
-        <img
-          src="./elements/social/discord.svg"
-          className="m-auto mx-1 h-[3rem] cursor-pointer hover:scale-105 hover:brightness-150 xl:mx-2 xl:h-[3rem] "
-          alt="Discord"
-        />
-        <img
-          src="./elements/social/facebook.svg"
-          className="m-auto mx-1 h-[3rem]  cursor-pointer hover:scale-105 hover:brightness-150 xl:mx-2 xl:h-[3rem]"
-          alt="Facebook"
-        />
-        <img
-          src="./elements/social/instagram.svg"
-          className="m-auto mx-1 h-[3rem] cursor-pointer hover:scale-105 hover:brightness-150 xl:mx-2 xl:h-[3rem]"
-          alt="Instagram"
-        />
-        <img
-          src="./elements/social/reddit.svg"
-          className="m-auto mx-1 h-[3rem] cursor-pointer hover:scale-105 hover:brightness-150 xl:mx-2 xl:h-[3rem]"
-          alt="Reddit"
-        />
-        <img
-          src="./elements/social/twitter-test.svg"
-          className="m-auto mx-1 h-[3rem] cursor-pointer hover:scale-105 hover:brightness-150 xl:mx-2 xl:h-[3rem]"
-          alt="Twitter"
-        />
-        <img
+      <div className="my-auto flex flex-row flex-wrap pb-5">
+        <a href="https://discord.gg/fJvrQCJr4W" target="_blank" rel="noopener noreferrer">
+          <img
+            src="./elements/social/discord.svg"
+            className="m-auto mx-1 h-[3rem] cursor-pointer hover:scale-105 hover:brightness-150 xl:mx-2 xl:h-[3rem] "
+            alt="Discord"
+          />
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=100075407260088" target="_blank" rel="noopener noreferrer">
+          <img
+            src="./elements/social/facebook.svg"
+            className="m-auto mx-1 h-[3rem]  cursor-pointer hover:scale-105 hover:brightness-150 xl:mx-2 xl:h-[3rem]"
+            alt="Facebook"
+          />
+        </a>
+        <a href="https://www.instagram.com/skult.gg/" target="_blank" rel="noopener noreferrer">
+          <img
+            src="./elements/social/instagram.svg"
+            className="m-auto mx-1 h-[3rem] cursor-pointer hover:scale-105 hover:brightness-150 xl:mx-2 xl:h-[3rem]"
+            alt="Instagram"
+          />
+        </a>
+        <a href="https://www.reddit.com/r/Skult_gg/" target="_blank" rel="noopener noreferrer">
+          <img
+            src="./elements/social/reddit.svg"
+            className="m-auto mx-1 h-[3rem] cursor-pointer hover:scale-105 hover:brightness-150 xl:mx-2 xl:h-[3rem]"
+            alt="Reddit"
+          />
+        </a>
+        <a href="https://twitter.com/SKULT_gg" target="_blank" rel="noopener noreferrer">
+          <img
+            src="./elements/social/twitter-test.svg"
+            className="m-auto mx-1 h-[3rem] cursor-pointer hover:scale-105 hover:brightness-150 xl:mx-2 xl:h-[3rem]"
+            alt="Twitter"
+          />
+        </a>
+        {/* <img
           src="./elements/social/medium.svg"
           className="m-auto mx-1 h-[3rem] cursor-pointer hover:scale-105 hover:brightness-150 xl:mx-2 xl:h-[3rem]"
           alt="Medium"
-        />
+        /> */}
       </div>
     </div>
   );

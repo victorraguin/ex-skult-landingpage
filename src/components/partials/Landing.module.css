@@ -15,9 +15,9 @@
 }
 
 .floatingDiscordButton {
-  @apply absolute bottom-[8rem] right-[22%] mx-auto w-52 cursor-pointer sm:right-[39%]  sm:w-60 xl:right-[41%] 2xl:bottom-[10rem] 3xl:bottom-[12rem] 3xl:right-[44%] 4xl:right-[42%]  4xl:w-96;
+  @apply absolute bottom-[8rem] right-[22%] mx-auto w-52 cursor-pointer sm:right-[35%]  sm:w-60 xl:right-[41%] 2xl:bottom-[10rem] 3xl:bottom-[12rem] 3xl:right-[44%] 4xl:right-[42%]  4xl:w-96;
 }
 
 .floatingOmberButton {
-  @apply absolute bottom-[5rem] right-[22%] mx-auto w-[13rem] bg-[#040303] py-2  text-center blur sm:right-[40.7%] xl:right-[42%] 2xl:bottom-[6rem]  3xl:bottom-[7rem] 3xl:right-[44.8%] 4xl:right-[43.5%] 4xl:w-[20rem];
+  @apply absolute bottom-[5rem] right-[22%] mx-auto w-[13rem] bg-[#040303] py-2  text-center blur sm:right-[36.5%] xl:right-[42%] 2xl:bottom-[6rem]  3xl:bottom-[7rem] 3xl:right-[44.8%] 4xl:right-[43.5%] 4xl:w-[20rem];
 }

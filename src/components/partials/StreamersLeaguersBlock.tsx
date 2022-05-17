@@ -260,7 +260,7 @@ const StreamersLeaguersBlock = () => {
                   className={`relative rounded-full bg-gradient-to-l from-[#7517F8] to-[#E323ff] p-[3px] text-sm hover:scale-105`}
                 >
                   <div className="relative flex flex-row rounded-full bg-[#262626] px-6 pt-3">
-                    <div className={` pb-3 font-poppins text-[20px] text-[#a9a9a9]  `}>Let's Play</div>
+                    <div className={` pb-3  font-poppins text-[20px] text-[#a9a9a9]  `}>Let's Play</div>
                   </div>
                 </button>
               </motion.div>
@@ -268,7 +268,7 @@ const StreamersLeaguersBlock = () => {
           </div>
         </div>
       </div>
-      <div className="relative top-[-8rem] flex flex-row justify-center pt-10">
+      <div className="relative top-[-8rem] flex flex-row justify-center pt-10 4xl:pb-20">
         {/* <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -285,17 +285,17 @@ const StreamersLeaguersBlock = () => {
         <motion.img
           src="./elements/skyrroz.svg"
           alt="header"
-          className="absolute top-[-3rem] z-30 mx-auto origin-bottom scale-50 md:top-0 md:scale-[0.8] xl:top-[10rem] xl:scale-[90%]"
+          className="absolute top-[-3rem] z-30 mx-auto origin-bottom scale-50 md:top-0 md:scale-[0.8] xl:top-[10rem] xl:scale-[90%] 4xl:top-[17rem]"
         />
         <img
           src="./elements/natasha.svg"
           alt="header"
-          className="absolute left-[21%] top-[-2rem] z-20 origin-bottom rotate-[18deg] scale-50 md:top-0 md:left-[35%] md:scale-[0.8] xl:left-[47%] xl:top-[12rem] xl:scale-[90%]"
+          className="absolute left-[21%] top-[-2rem] z-20 origin-bottom rotate-[18deg] scale-50 md:top-0 md:left-[35%] md:scale-[0.8] xl:left-[47%] xl:top-[12rem] xl:scale-[90%] 4xl:top-[18rem]"
         />
         <img
           src="./elements/waartex.svg"
           alt="header"
-          className="absolute right-[21%] top-[-2rem] z-10 origin-bottom rotate-[350deg] scale-50 md:top-0 md:right-[37%] md:scale-[0.8] xl:right-[47%] xl:top-[12rem] xl:scale-[90%]"
+          className="absolute right-[21%] top-[-2rem] z-10 origin-bottom rotate-[350deg] scale-50 md:top-0 md:right-[37%] md:scale-[0.8] xl:right-[47%] xl:top-[12rem] xl:scale-[90%] 4xl:top-[18rem]"
         />
       </div>
       <img

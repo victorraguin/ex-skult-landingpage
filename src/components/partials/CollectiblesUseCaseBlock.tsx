@@ -58,7 +58,7 @@ const CollectiblesUseCaseBlock = () => {
       >
         What can you do with your Collectibles ?
       </motion.div>
-      <motion.div className="flex flex-row flex-wrap justify-around xl:flex-nowrap 2xl:mx-60">
+      <motion.div className="flex flex-row flex-wrap justify-around sm:flex-nowrap 2xl:mx-60">
         <motion.div className=" flex flex-col" variants={CardItem}>
           <h4 className="pt-5 text-center font-poppins text-[28px] font-semibold text-white">
             Participate in

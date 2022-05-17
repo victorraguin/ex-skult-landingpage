@@ -48,13 +48,15 @@ const SocialBlock = () => {
         variants={lueurVariant}
       >
         <motion.div animate={controls} variants={container} initial="hidden">
-          <motion.img
-            animate={controls}
-            variants={discord}
-            className={`${styles.floatingDiscordButton}`}
-            src="/elements/logo-discord.webp"
-            alt="Discord"
-          />
+          <a href="https://discord.gg/fJvrQCJr4W" target="_blank" rel="noopener noreferrer">
+            <motion.img
+              animate={controls}
+              variants={discord}
+              className={`${styles.floatingDiscordButton}`}
+              src="/elements/logo-discord.webp"
+              alt="Discord"
+            />
+          </a>
           <motion.p animate={controls} variants={ombre} className={`${styles.floatingOmberButton}`}></motion.p>
         </motion.div>
       </motion.div>
