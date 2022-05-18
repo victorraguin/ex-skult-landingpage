@@ -3,6 +3,7 @@
 import React, { useEffect } from 'react';
 import { useAnimation, motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import Link from 'next/link';
 
 const StreamersLeaguersBlock = () => {
   const controls = useAnimation();
@@ -109,6 +110,7 @@ const StreamersLeaguersBlock = () => {
         initial={{ opacity: 0 }}
         animate={controls}
         variants={openTitleText}
+        id="Streamer-Anybody"
         className="relative mx-auto flex flex-row font-poppins text-[32px] font-semibold text-primary xl:text-[32px] 2xl:text-[48px]"
       >
         Nobody
@@ -189,7 +191,9 @@ const StreamersLeaguersBlock = () => {
               className={`relative rounded-full bg-gradient-to-r from-[#FFCC00] to-[#ED713C] p-0.5 text-sm hover:scale-105`}
             >
               <div className="relative flex flex-row rounded-full bg-[#262626] px-6 pt-3">
-                <div className={`pb-3 font-poppins text-[20px]  text-[#a9a9a9]`}>I'm a Streamer!</div>
+                <Link href="/streamer" passHref>
+                  <div className={`pb-3 font-poppins text-[20px]  text-[#a9a9a9]`}>I'm a Streamer!</div>
+                </Link>
               </div>
             </button>
           </motion.div>
