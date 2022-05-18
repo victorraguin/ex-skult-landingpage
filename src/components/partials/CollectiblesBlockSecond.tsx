@@ -39,7 +39,7 @@ const CollectiblesBlockSecond = () => {
 
   return (
     <motion.div
-      className="h-full bg-[#282828] xl:mx-20  xl:pt-10 2xl:mx-[12rem] 3xl:mx-0  4xl:mr-40"
+      className="h-full bg-[#282828] xl:mx-0  xl:pt-10 2xl:mx-[12rem] 3xl:mx-0  4xl:mr-40"
       variants={CardContainer}
       initial="hidden"
       animate={controls}

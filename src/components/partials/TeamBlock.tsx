@@ -38,18 +38,12 @@ const TeamBlock = () => {
   };
 
   return (
-    <motion.div
-      className="h-full bg-[#222222] pb-1"
-      variants={CardContainer}
-      initial="hidden"
-      animate={controls}
-      ref={ref}
-    >
+    <motion.div className="h-full bg-[#222222]" variants={CardContainer} initial="hidden" animate={controls} ref={ref}>
       <div>
-        <div className="container mx-auto flex justify-center pt-16 xl:pt-40 2xl:pt-16 4xl:pt-0">
+        <div className="container mx-auto flex justify-center pt-16 pb-20 xl:pt-20 2xl:pt-20 4xl:pt-0">
           <motion.div variants={CardItem}>
-            <p className="bg-gradient-to-tr from-[#FFCC00] to-[#ED713C] bg-clip-text pb-3 text-center font-poppins text-[32px] font-bold text-transparent ">
-              Building Team
+            <p className="bg-gradient-to-tr from-[#FFCC00] to-[#ED713C] bg-clip-text pb-3 text-center font-poppins font-bold text-transparent xl:text-[40px] 2xl:text-[42px] ">
+              The Dream Team
             </p>
           </motion.div>
         </div>
@@ -187,13 +181,6 @@ const TeamBlock = () => {
                   </div>
                 </div>
               </motion.div>
-              <div className="container mx-auto flex justify-center pb-5">
-                <motion.div variants={CardItem}>
-                  <p className="bg-gradient-to-tr from-[#FFCC00] to-[#ED713C] bg-clip-text pb-3 text-center font-poppins text-[32px] font-bold text-transparent ">
-                    Tech Team
-                  </p>
-                </motion.div>
-              </div>
               <motion.div
                 variants={CardItem}
                 className="relative mt-16 mb-32 transition  duration-300 ease-in-out hover:shadow-xl sm:mb-24 sm:w-3/4 md:w-2/5 lg:w-2/5 xl:w-1/3 xl:max-w-sm"
@@ -355,13 +342,6 @@ const TeamBlock = () => {
                   </div>
                 </div>
               </motion.div>
-              <div className="container mx-auto flex justify-center pb-5 xl:pt-5">
-                <motion.div variants={CardItem}>
-                  <p className="bg-gradient-to-tr from-[#FFCC00] to-[#ED713C] bg-clip-text pb-3 text-center font-poppins text-[32px] font-bold text-transparent ">
-                    Advisors
-                  </p>
-                </motion.div>
-              </div>
               <motion.div
                 variants={CardItem}
                 className="relative mt-16 mb-32 transition duration-300 ease-in-out hover:shadow-xl sm:mb-24 sm:w-3/4 md:w-2/5 lg:w-2/5 xl:w-1/3 xl:max-w-sm"

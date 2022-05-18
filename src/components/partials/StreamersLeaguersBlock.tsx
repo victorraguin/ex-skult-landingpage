@@ -100,7 +100,7 @@ const StreamersLeaguersBlock = () => {
   };
 
   return (
-    <motion.div className="relative flex flex-col flex-wrap  bg-[#262626] pt-10 2xl:pt-20 3xl:pt-20" ref={ref}>
+    <motion.div className="relative flex flex-col flex-wrap  bg-[#262626] pt-20 2xl:pt-20 3xl:pt-20" ref={ref}>
       {/* <img
         src="/elements/haut.webp"
         alt="Streamer"
@@ -111,10 +111,10 @@ const StreamersLeaguersBlock = () => {
         animate={controls}
         variants={openTitleText}
         id="Streamer-Anybody"
-        className="relative mx-auto flex flex-row font-poppins text-[32px] font-semibold text-primary xl:text-[32px] 2xl:text-[48px]"
+        className="relative mx-auto flex flex-row font-poppins text-[32px] font-semibold text-primary xl:text-[40px] 2xl:text-[48px]"
       >
         Nobody
-        <p className="pl-2 text-center font-poppins text-[32px] font-light text-[#e7e7e7] xl:text-[32px] 2xl:text-[48px]">
+        <p className="pl-2 text-center font-poppins text-[32px] font-light text-[#e7e7e7] xl:text-[40px] 2xl:text-[48px]">
           {' '}
           is Left Behind!
         </p>
@@ -272,41 +272,12 @@ const StreamersLeaguersBlock = () => {
           </div>
         </div>
       </div>
-      <div className="relative top-[-8rem] flex flex-row justify-center pt-10 4xl:pb-20">
-        {/* <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 15, duration: 1 }}
-          // onClick={() => console.log('Bravo!')}
-          aria-hidden="true"
-        >
-          <motion.img
-            src="./elements/skult-nft-icon.svg"
-            alt="header"
-            className=" absolute right-[39.5%] top-[8.5rem] z-20 mx-auto h-20 cursor-pointer transition duration-300 ease-in-out hover:scale-125 hover:invert xl:top-0 xl:right-[48.35%]"
-          />
-        </motion.div> */}
-        <motion.img
-          src="./elements/skyrroz.svg"
-          alt="header"
-          className="absolute top-[-3rem] z-30 mx-auto origin-bottom scale-50 md:top-0 md:scale-[0.8] xl:top-[10rem] xl:scale-[90%] 4xl:top-[17rem]"
-        />
-        <img
-          src="./elements/natasha.svg"
-          alt="header"
-          className="absolute left-[21%] top-[-2rem] z-20 origin-bottom rotate-[18deg] scale-50 md:top-0 md:left-[35%] md:scale-[0.8] xl:left-[47%] xl:top-[12rem] xl:scale-[90%] 4xl:top-[18rem]"
-        />
-        <img
-          src="./elements/waartex.svg"
-          alt="header"
-          className="absolute right-[21%] top-[-2rem] z-10 origin-bottom rotate-[350deg] scale-50 md:top-0 md:right-[37%] md:scale-[0.8] xl:right-[47%] xl:top-[12rem] xl:scale-[90%] 4xl:top-[18rem]"
-        />
-      </div>
-      <img
+      {/* <img
         src="/elements/bas.webp"
         alt="Streamer"
-        className="invisible relative left-0 bottom-0 w-full pb-20 xl:visible xl:pb-0"
-      />
+        className="invisible relative left-0 bottom-0 w-full xl:visible xl:pb-0"
+      /> */}
+      <div className="xl:pb-20 2xl:pb-40"></div>
     </motion.div>
   );
 };

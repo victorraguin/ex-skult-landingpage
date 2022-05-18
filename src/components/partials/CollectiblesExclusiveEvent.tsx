@@ -20,12 +20,17 @@ const CollectiblesExclusiveEvent = () => {
   };
 
   const openDescription = {
+    visible: { opacity: 1, scale: 1, transition: { delay: 0.5, duration: 0.5 } },
+    hidden: { opacity: 0, scale: 0 },
+  };
+
+  const openCollectibleHolders = {
     visible: { opacity: 1, scale: 1, transition: { delay: 1, duration: 0.5 } },
     hidden: { opacity: 0, scale: 0 },
   };
 
   const openUseCases = {
-    visible: { opacity: 1, scale: 1, transition: { delay: 2, duration: 0.5 } },
+    visible: { opacity: 1, scale: 1, transition: { delay: 1.5, duration: 0.5 } },
     hidden: { opacity: 0, scale: 0 },
   };
 
@@ -85,9 +90,15 @@ const CollectiblesExclusiveEvent = () => {
   }
 
   return (
-    <motion.div className="h-full bg-[#282828]" variants={CardContainer} initial="hidden" animate={controls} ref={ref}>
+    <motion.div
+      className="h-full bg-[#282828] pb-20"
+      variants={CardContainer}
+      initial="hidden"
+      animate={controls}
+      ref={ref}
+    >
       <motion.div
-        className="pb-10 pt-10 text-center font-poppins text-[26px] font-medium text-[#e7e7e7] xl:pt-0 xl:text-[32px] 2xl:text-[40px]"
+        className="mt-10 pb-20  text-center font-poppins text-[26px] font-medium text-[#e7e7e7]  xl:pt-10 xl:text-[40px] 2xl:text-[42px]"
         initial={{ opacity: 0 }}
         animate={controls}
         variants={openTitle}
@@ -103,8 +114,15 @@ const CollectiblesExclusiveEvent = () => {
       >
         Drops, giveaways, exclusive content, in real life events… Everything is possible!{' '}
         <h4>Streamers can create any kind of exeperiences they want and make their community participate to them!</h4>
-        <h4 className="pt-5 font-medium text-primary">Only collectible holders can enter!</h4>
       </motion.div>
+      <motion.h4
+        animate={controls}
+        variants={openCollectibleHolders}
+        initial={{ opacity: 0 }}
+        className="font-base mx-auto pb-20 pt-10 text-center font-poppins text-[22px] font-medium text-primary sm:mx-10 4xl:w-full"
+      >
+        Only collectible holders can enter!
+      </motion.h4>
       <motion.div className="" initial={{ opacity: 0 }} animate={controls} variants={openUseCases}>
         <Carousel className="mx-auto xl:w-1/2" duration={1000} interval={6000} navButtonsAlwaysVisible={true}>
           {events.map((item, i) => (
