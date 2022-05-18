@@ -119,7 +119,7 @@ const StreamersLeaguersBlock = () => {
           is Left Behind!
         </p>
       </motion.h1>
-      <div className=" mx-5 flex flex-row flex-wrap justify-around pt-[4.5rem] xl:mx-0 xl:flex-nowrap 2xl:pt-[8rem] 4xl:pt-[12rem]">
+      <div className=" mx-5 flex flex-row flex-wrap justify-around pt-[4.5rem] xl:mx-10 xl:flex-nowrap 2xl:pt-[8rem] 4xl:pt-[12rem]">
         <div className="xl:w-1/3">
           <div className="pb-[44%] xl:pb-[47%] 2xl:pb-[46%] 3xl:pb-[39%] 4xl:pb-[37%]">
             <div className="relative">
@@ -199,7 +199,7 @@ const StreamersLeaguersBlock = () => {
           </motion.div>
         </div>
         <div className="pt-20 xl:w-1/3 xl:pt-0">
-          <div className="relative xl:left-[-20%] xl:mx-0">
+          <div className="xl:left-[-20%] xl:mx-0">
             <div className="pb-[44%] md:pb-[46%] xl:pb-[47%] 2xl:pb-[46%] 3xl:pb-[39%] 4xl:pb-[37%]">
               <div className="relative">
                 <motion.img

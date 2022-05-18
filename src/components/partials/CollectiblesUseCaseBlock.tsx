@@ -76,7 +76,7 @@ const CollectiblesUseCaseBlock = () => {
             Play
             <span className="bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text text-transparent"> & Earn</span>
           </h4>
-          <img src="/skult-event.png" alt="SKULT Event" className="mx-auto w-[20rem] pt-10" />
+          <img src="/test.svg" alt="SKULT Event" className="mx-auto w-[20rem] scale-[0.8] pt-10" />
           <p className="mx-auto w-2/3 pt-4 text-center font-poppins text-[22px] font-medium text-[#b8b8b8]">
             Play your collectibles on SKULT Fantasy Leagues and earn fantastic rewards !
           </p>
