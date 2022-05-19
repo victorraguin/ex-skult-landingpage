@@ -100,7 +100,7 @@ const StreamersLeaguersBlock = () => {
   };
 
   return (
-    <motion.div className="relative flex flex-col flex-wrap  bg-[#262626] pt-20 2xl:pt-20 3xl:pt-20" ref={ref}>
+    <motion.div className="relative flex flex-col flex-wrap  bg-[#282828] pt-20 2xl:pt-20 3xl:pt-20" ref={ref}>
       {/* <img
         src="/elements/haut.webp"
         alt="Streamer"
@@ -111,10 +111,10 @@ const StreamersLeaguersBlock = () => {
         animate={controls}
         variants={openTitleText}
         id="Streamer-Anybody"
-        className="relative mx-auto flex flex-row font-poppins text-[32px] font-semibold text-primary xl:text-[40px] 2xl:text-[48px]"
+        className="relative mx-auto flex flex-row bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text font-poppins text-[32px] font-normal text-transparent xl:text-[36px] 2xl:text-[48px]"
       >
         Nobody
-        <p className="pl-2 text-center font-poppins text-[32px] font-light text-[#e7e7e7] xl:text-[40px] 2xl:text-[48px]">
+        <p className="pl-2 text-center font-poppins text-[32px] font-light text-[#e7e7e7] xl:text-[36px] 2xl:text-[48px]">
           {' '}
           is Left Behind!
         </p>
@@ -190,9 +190,11 @@ const StreamersLeaguersBlock = () => {
             <button
               className={`relative rounded-full bg-gradient-to-r from-[#FFCC00] to-[#ED713C] p-0.5 text-sm hover:scale-105`}
             >
-              <div className="relative flex flex-row rounded-full bg-[#262626] px-6 pt-3">
+              <div className="relative flex flex-row rounded-full bg-[#262626] px-6 pt-3 ">
                 <Link href="/streamer" passHref>
-                  <div className={`pb-3 font-poppins text-[20px]  text-[#a9a9a9]`}>I'm a Streamer!</div>
+                  <div className={`pb-3 font-poppins text-[20px]  text-[#a9a9a9] hover:brightness-150`}>
+                    I'm a Streamer!
+                  </div>
                 </Link>
               </div>
             </button>
@@ -264,7 +266,9 @@ const StreamersLeaguersBlock = () => {
                   className={`relative rounded-full bg-gradient-to-l from-[#7517F8] to-[#E323ff] p-[3px] text-sm hover:scale-105`}
                 >
                   <div className="relative flex flex-row rounded-full bg-[#262626] px-6 pt-3">
-                    <div className={` pb-3  font-poppins text-[20px] text-[#a9a9a9]  `}>Let's Play</div>
+                    <div className={` pb-3  font-poppins text-[20px] text-[#a9a9a9] hover:brightness-150`}>
+                      Let's Play
+                    </div>
                   </div>
                 </button>
               </motion.div>
@@ -277,7 +281,7 @@ const StreamersLeaguersBlock = () => {
         alt="Streamer"
         className="invisible relative left-0 bottom-0 w-full xl:visible xl:pb-0"
       /> */}
-      <div className="xl:pb-20 2xl:pb-40"></div>
+      <div className="pb-20 xl:pb-20 2xl:pb-40"></div>
     </motion.div>
   );
 };

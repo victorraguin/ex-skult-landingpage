@@ -30,7 +30,9 @@ const Header = () => {
             >
               <motion.div className="relative flex flex-row rounded-full bg-[#262626] px-6 pt-[8px]">
                 <DiscordButton fill={'#fff'} />
-                <motion.div className={`pt-[6px] pl-2 font-poppins text-[20px] font-light text-[#a9a9a9]`}>
+                <motion.div
+                  className={`pt-[6px] pl-2 font-poppins text-[20px] font-light text-[#a9a9a9] hover:brightness-150`}
+                >
                   Join the Discord
                 </motion.div>
               </motion.div>

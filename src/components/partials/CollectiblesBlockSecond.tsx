@@ -6,7 +6,7 @@ import { useInView } from 'react-intersection-observer';
 
 const CollectiblesBlockSecond = () => {
   const controls = useAnimation();
-  const [ref, inView] = useInView({ threshold: 0.7 });
+  const [ref, inView] = useInView({ threshold: 0.6 });
   useEffect(() => {
     if (inView) {
       controls.start('visible');
@@ -39,22 +39,22 @@ const CollectiblesBlockSecond = () => {
 
   return (
     <motion.div
-      className="h-full bg-[#282828] xl:mx-0  xl:pt-10 2xl:mx-[12rem] 3xl:mx-0  4xl:mr-40"
+      className="h-full bg-[#282828] sm:ml-10 xl:pt-10"
       variants={CardContainer}
       initial="hidden"
       animate={controls}
       ref={ref}
     >
-      <motion.div className="mx-auto flex flex-row flex-wrap justify-around sm:flex-nowrap 3xl:mx-[18rem] 3xl:w-2/3 4xl:mx-auto 4xl:w-3/4">
-        <motion.div className=" flex flex-col xl:ml-12" variants={CardItem}>
+      <motion.div className="mx-auto flex flex-row flex-wrap justify-around sm:flex-nowrap 3xl:w-2/3 4xl:w-3/4">
+        <motion.div className=" flex flex-col" variants={CardItem}>
           <img src="/elements/skult-support-icon.svg" alt="Collect Icon" className="h-[125px]" />
           <h4 className="pt-5 text-center font-poppins text-[28px] font-semibold text-primary">Support</h4>
-          <p className="mx-auto w-2/3 pt-4 text-center font-poppins text-[18px] font-medium text-[#b8b8b8]">
+          <p className="mx-auto w-[75%] pt-4 text-center font-poppins text-[18px] font-medium text-[#b8b8b8]">
             Streamers receive a share every time a Leaguer buys one of his cards. Are you a real fan? Then show them
             your love!
           </p>
         </motion.div>
-        <motion.div className="flex flex-col xl:ml-10" variants={CardItem}>
+        <motion.div className="flex flex-col" variants={CardItem}>
           <img src="/elements/skult-nft-icon.svg" alt="Collect Icon" className="h-[125px]" />
           <h4 className="pt-5 text-center font-poppins text-[28px] font-semibold text-primary">Unique &</h4>
           <h4 className="text-center font-poppins text-[28px] font-semibold text-primary">Counterfeit proof</h4>
@@ -71,7 +71,7 @@ const CollectiblesBlockSecond = () => {
           </p>
         </motion.div>
       </motion.div>
-      <div className="2xl:pb-42 xl:pb-20"></div>
+      <div className="2xl:pb-42 pb-20"></div>
     </motion.div>
   );
 };

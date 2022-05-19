@@ -47,7 +47,7 @@ const PresentationBlock = () => {
         A world where new gaming experiences
       </motion.h3>
       <motion.h3
-        className="mb-[8rem] text-center font-poppins text-[40px] font-light text-[#FFC000] xl:text-[36px] 2xl:text-[48px]"
+        className="mb-[8rem] bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text text-center font-poppins text-[40px] font-normal text-transparent xl:text-[36px] 2xl:text-[48px]"
         initial={{ opacity: 0 }}
         animate={controls}
         variants={openLittleTitleText}
