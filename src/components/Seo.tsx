@@ -8,16 +8,16 @@ const Seo: React.FC<SEOProps> = ({ description, keywords, title }) => (
     <meta name="keywords" content={keywords?.join(', ')} />
     <meta property="og:type" content="website" />
     <meta name="og:title" property="og:title" content={title} />
+    <meta property="og:image" content="https://skult-assets.s3.eu-west-3.amazonaws.com/SKULT_Banner.png" />
     <meta name="og:description" property="og:description" content={description} />
-    <meta property="og:site_name" content="" />
-    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="SKULT" />
+    <meta property="og:url" content="https://landing.skult.gg" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
-    <meta name="twitter:site" content="" />
-    <meta name="twitter:creator" content="@Skult" />
-    <meta name="twitter:image" content="" />
-    <meta property="og:image" content="" />
+    <meta name="twitter:site" content="https://landing.skult.gg" />
+    <meta name="twitter:creator" content="@SKULT_gg" />
+    <meta name="twitter:image" content="https://skult-assets.s3.eu-west-3.amazonaws.com/SKULT_Banner.png" />
     <link rel="icon" type="image/png" href={`/favicon.ico`} />
     <link rel="apple-touch-icon" type="image/png" href="/favicon.ico" />
   </Head>
@@ -32,8 +32,8 @@ export interface SEOProps {
 }
 
 Seo.defaultProps = {
-  description: '',
-  keywords: ['Streamers', 'Skult', 'games', 'Leaguers'],
+  description: 'SKULT Description',
+  keywords: ['Streamers', 'SKULT', 'Games', 'Cryptocurrency', 'Blockchain', 'Twitch', 'YouTube', 'Discord'],
 };
 
 export default Seo;
