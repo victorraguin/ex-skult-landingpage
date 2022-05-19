@@ -16,7 +16,9 @@ const Footer = () => {
         href="https://vivid-tadpole-074.notion.site/Job-Board-a686e214017142d08fb73cf1f83ca4ad"
         rel="noopener noreferrer"
       >
-        <p className=" text-center text-primary md:pt-0">Oh, and by the way, we're hiring! Check this out!</p>
+        <p className=" mx-10 pb-5 text-center text-primary md:pt-0">
+          Oh, and by the way, we're hiring! Check this out!
+        </p>
       </a>
       <div className="flex flex-row pb-5 lg:pt-10 xl:mx-0">
         <form>
