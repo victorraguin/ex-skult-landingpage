@@ -73,7 +73,7 @@ const TeamBlock = () => {
                   <div className="overflow-hidden rounded bg-[#303030] shadow-md">
                     <div className="absolute -mt-20 flex w-full justify-center">
                       <div className="h-32 w-32">
-                        <img src="/Alex.png" alt="Team" className="h-full w-full rounded-full object-cover shadow-md" />
+                        <img src="/Alex.png" alt="Alex" className="h-full w-full rounded-full object-cover shadow-md" />
                       </div>
                     </div>
                     <div className="mt-16 px-6">
@@ -136,7 +136,7 @@ const TeamBlock = () => {
                   <div className="overflow-hidden rounded bg-[#303030] shadow-md">
                     <div className="absolute -mt-20 flex w-full justify-center">
                       <div className="h-32 w-32">
-                        <img src="/Raph.png" alt="Team" className="h-full w-full rounded-full object-cover shadow-md" />
+                        <img src="/Raph.png" alt="Raph" className="h-full w-full rounded-full object-cover shadow-md" />
                       </div>
                     </div>
                     <div className="mt-16 px-6">
@@ -200,15 +200,15 @@ const TeamBlock = () => {
                     <div className="absolute -mt-20 flex w-full justify-center">
                       <div className="h-32 w-32">
                         <img
-                          src="Mohammed.png"
-                          alt="Team"
+                          src="Mohamed.png"
+                          alt="Mohamed"
                           className="h-full w-full rounded-full object-cover shadow-md"
                         />
                       </div>
                     </div>
                     <div className="mt-16 px-6">
                       <div className="bg-gradient-to-tr from-[#FFCC00] to-[#ED713C] bg-clip-text pb-1 text-center text-3xl font-bold text-transparent">
-                        Mohammed Belkamel
+                        Mohamed Belkamel
                       </div>
                       <p className="text-md text-center text-[#e7e7e7]">DevOps & Back-End Developer</p>
                       <div className="flex w-full justify-center pt-5 pb-5">
@@ -250,7 +250,7 @@ const TeamBlock = () => {
                       <div className="h-32 w-32">
                         <img
                           src="/Jerem.png"
-                          alt="Team"
+                          alt="Jérémie"
                           className="h-full w-full rounded-full object-cover shadow-md"
                         />
                       </div>
@@ -299,7 +299,7 @@ const TeamBlock = () => {
                       <div className="h-32 w-32">
                         <img
                           src="/Victor.png"
-                          alt="Team"
+                          alt="Victor"
                           className="h-full w-full rounded-full object-contain shadow-md"
                         />
                       </div>
@@ -373,7 +373,7 @@ const TeamBlock = () => {
                       <div className="h-32 w-32">
                         <img
                           src="/Thibault.jpeg"
-                          alt="Team"
+                          alt="Thibault"
                           className="h-full w-full rounded-full object-cover shadow-md"
                         />
                       </div>
@@ -422,7 +422,7 @@ const TeamBlock = () => {
                       <div className="h-32 w-32">
                         <img
                           src="/Didier.jpeg"
-                          alt="Team"
+                          alt="Didier"
                           className="h-full w-full rounded-full object-cover shadow-md"
                         />
                       </div>

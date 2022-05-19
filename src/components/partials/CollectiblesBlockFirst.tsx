@@ -88,14 +88,14 @@ const CollectiblesBlockFirst = () => {
             </p>
           </motion.div>
           <motion.div className="flex flex-col" variants={CardItem}>
-            <img src="/elements/skult-trade-icon.svg" alt="Collect Icon" className="h-[125px]" />
+            <img src="/elements/skult-trade-icon.svg" alt="Trade Icon" className="h-[125px]" />
             <h4 className="pt-5 text-center font-poppins text-[28px] font-semibold text-primary">Trade</h4>
             <p className="mx-auto w-2/3 pt-4 text-center font-poppins text-[18px] font-medium text-[#b8b8b8]">
               Trade with other Leaguers across the globe. Sell the cards you won't need: real cash is coming your way!
             </p>
           </motion.div>
           <motion.div className="flex flex-col" variants={CardItem}>
-            <img src="/elements/skult-compete-icon.svg" alt="Collect Icon" className="h-[125px]" />
+            <img src="/elements/skult-compete-icon.svg" alt="Compete Icon" className="h-[125px]" />
             <h4 className="pt-5 text-center font-poppins text-[28px] font-semibold text-primary">Compete</h4>
             <p className="mx-auto w-2/3 pt-4 text-center font-poppins text-[18px] font-medium text-[#b8b8b8]">
               Draft your Squad and enter weekly Leagues. Your final score will depend on the real-world performances of

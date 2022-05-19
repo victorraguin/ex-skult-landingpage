@@ -47,7 +47,7 @@ const CollectiblesBlockSecond = () => {
     >
       <motion.div className="mx-auto flex flex-row flex-wrap justify-around sm:flex-nowrap 3xl:w-2/3 4xl:w-3/4">
         <motion.div className=" flex flex-col" variants={CardItem}>
-          <img src="/elements/skult-support-icon.svg" alt="Collect Icon" className="h-[125px]" />
+          <img src="/elements/skult-support-icon.svg" alt="Support Icon" className="h-[125px]" />
           <h4 className="pt-5 text-center font-poppins text-[28px] font-semibold text-primary">Support</h4>
           <p className="mx-auto w-[75%] pt-4 text-center font-poppins text-[18px] font-medium text-[#b8b8b8]">
             Streamers receive a share every time a Leaguer buys one of his cards. Are you a real fan? Then show them
@@ -55,7 +55,7 @@ const CollectiblesBlockSecond = () => {
           </p>
         </motion.div>
         <motion.div className="flex flex-col" variants={CardItem}>
-          <img src="/elements/skult-nft-icon.svg" alt="Collect Icon" className="h-[125px]" />
+          <img src="/elements/skult-nft-icon.svg" alt="Unique & Counterfeit Icon" className="h-[125px]" />
           <h4 className="pt-5 text-center font-poppins text-[28px] font-semibold text-primary">Unique &</h4>
           <h4 className="text-center font-poppins text-[28px] font-semibold text-primary">Counterfeit proof</h4>
           <p className="mx-auto w-2/3 pt-4 text-center font-poppins text-[18px] font-medium text-[#b8b8b8]">
@@ -64,7 +64,7 @@ const CollectiblesBlockSecond = () => {
           </p>
         </motion.div>
         <motion.div className="flex flex-col" variants={CardItem}>
-          <img src="/elements/skult-airdrop-icon.svg" alt="Collect Icon" className="h-[125px]" />
+          <img src="/elements/skult-airdrop-icon.svg" alt="Earn Icon" className="h-[125px]" />
           <h4 className="pt-5 text-center font-poppins text-[28px] font-semibold text-primary">Earn</h4>
           <p className="mx-auto w-2/3 pt-4 text-center font-poppins text-[18px] font-medium text-[#b8b8b8]">
             Coins, cards, rewards and free drops are all for grab! Watch out: you might be ending up winning something!

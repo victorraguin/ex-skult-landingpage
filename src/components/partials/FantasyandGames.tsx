@@ -96,7 +96,7 @@ const FantasyandGamesPart = () => {
           animate={controls}
           variants={openImage}
           src="/skult-cards.svg"
-          alt="SKULT Event"
+          alt="SKULT Cards"
           className="mx-auto scale-[0.8] sm:w-[25rem] sm:pt-10 sm:pb-20"
         />
         <motion.div

@@ -128,7 +128,7 @@ const StreamersLeaguersBlock = () => {
                 animate={controls}
                 variants={openStreamerLueur}
                 src="/elements/lueur-streamer.webp"
-                alt="Streamer"
+                alt="Streamer Lueur 1"
                 className="absolute z-10 w-full 3xl:top-[-4rem]"
               />
               <motion.img
@@ -136,7 +136,7 @@ const StreamersLeaguersBlock = () => {
                 animate={controls}
                 variants={openStreamerLogoShadow}
                 src="/elements/skult-streamer-icon-2.svg"
-                alt="Streamer"
+                alt="Streamer Icon Shadow"
                 className="absolute z-10 ml-[25%] w-[50%] md:top-[4rem] md:ml-[31%] md:w-[40%] xl:top-0 xl:ml-[25%] xl:w-[50%] 3xl:ml-[29%] 3xl:w-[40%]"
               />
               <motion.img
@@ -144,7 +144,7 @@ const StreamersLeaguersBlock = () => {
                 animate={controls}
                 variants={openStreamerLogo}
                 src="/elements/skult-streamer-icon-1.svg"
-                alt="Streamer"
+                alt="Streamer Icon"
                 className="absolute z-10 ml-[25%] w-[50%] md:top-[4rem] md:ml-[31%] md:w-[40%] xl:top-0 xl:ml-[25%] xl:w-[50%] 3xl:ml-[29%] 3xl:w-[40%]"
               />
             </div>
@@ -209,7 +209,7 @@ const StreamersLeaguersBlock = () => {
                   animate={controls}
                   variants={openLeaguerLueur}
                   src="/elements/lueur-leaguers.webp"
-                  alt="leaguers"
+                  alt="Anyone"
                   className="absolute z-10 md:w-full 3xl:top-[-4rem] 3xl:w-full "
                 />
                 <motion.img
@@ -217,7 +217,7 @@ const StreamersLeaguersBlock = () => {
                   animate={controls}
                   variants={openLeaguerLogoShadow}
                   src="/elements/skult-leaguers-icon-1.svg"
-                  alt="Streamer"
+                  alt="Anyone Icon Shadow"
                   className="absolute z-10 ml-[25%] w-[50%] md:top-[5rem] md:ml-[31%] md:w-[40%] xl:top-0 xl:ml-[25%] xl:w-[50%] 3xl:ml-[29%] 3xl:w-[40%]"
                 />
                 <motion.img
@@ -225,7 +225,7 @@ const StreamersLeaguersBlock = () => {
                   animate={controls}
                   variants={openLeaguerLogo}
                   src="/elements/skult-leaguers-icon-2.svg"
-                  alt="Streamer"
+                  alt="Anyone Icon"
                   className="absolute z-10 ml-[25%] w-[50%] md:top-[5rem] md:ml-[31%] md:w-[40%] xl:top-0 xl:ml-[25%] xl:w-[50%] 3xl:ml-[29%] 3xl:w-[40%]"
                 />
               </div>
