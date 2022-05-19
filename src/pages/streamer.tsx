@@ -8,7 +8,7 @@ import Footer from '../components/partials/Footer';
 
 const Streamer: NextPage = () => {
   return (
-    <div className="h-screen bg-[#282828]">
+    <div className=" bg-[#282828]">
       <Seo title={'Hello | Streamer'} />
       <HeaderStreamer />
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5, duration: 1 }}>

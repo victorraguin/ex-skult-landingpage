@@ -97,7 +97,7 @@ const FantasyandGamesPart = () => {
           variants={openImage}
           src="/skult-cards.svg"
           alt="SKULT Cards"
-          className="mx-auto scale-[0.8] sm:w-[25rem] sm:pt-10 sm:pb-20"
+          className="mx-auto scale-[0.8] sm:w-[20rem] sm:pt-10 sm:pb-20"
         />
         <motion.div
           className="mt-20 mb-10 flex flex-row flex-wrap justify-around xl:justify-evenly xl:px-20 2xl:px-40 3xl:px-60"
