@@ -4,6 +4,12 @@ import type { AppProps } from 'next/app';
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 
+declare global {
+  interface Window {
+    gtag: any;
+  }
+}
+
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
   useEffect(() => {
