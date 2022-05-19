@@ -4,7 +4,7 @@ import Head from 'next/head';
 const Seo: React.FC<SEOProps> = ({ description, keywords, title }) => (
   <Head>
     <title>SKULT | {title}</title>
-    <meta name="description" content={description} />
+    <meta name="description" content={`SKULT - ${description}`} />
     <meta name="keywords" content={keywords?.join(', ')} />
     <meta property="og:type" content="website" />
     <meta name="og:title" property="og:title" content={title} />
@@ -14,10 +14,10 @@ const Seo: React.FC<SEOProps> = ({ description, keywords, title }) => (
     <meta property="og:url" content="https://landing.skult.gg" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content={title} />
-    <meta name="twitter:description" content={description} />
+    <meta name="twitter:description" content={`SKULT - ${description}`} />
     <meta name="twitter:site" content="https://landing.skult.gg" />
     <meta name="twitter:creator" content="@SKULT_gg" />
-    <meta name="twitter:image" content="https://skult-assets.s3.eu-west-3.amazonaws.com/SKULT_Banner.png" />
+    <meta name="twitter:image" content="https://skult-assets.s3.eu-west-3.amazonaws.com/SKULT_twitter.png" />
     <link rel="icon" type="image/png" href={`/favicon.ico`} />
     <link rel="apple-touch-icon" type="image/png" href="/favicon.ico" />
   </Head>

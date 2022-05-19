@@ -9,7 +9,7 @@ import { useMediaQuery } from 'react-responsive';
 
 const CollectiblesUseCaseBlock = () => {
   const controls = useAnimation();
-  const [ref, inView] = useInView({ threshold: 0.4 });
+  const [ref, inView] = useInView({ threshold: 0.2 });
   useEffect(() => {
     if (inView) {
       controls.start('visible');
