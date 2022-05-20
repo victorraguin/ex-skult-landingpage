@@ -81,7 +81,7 @@ const FantasyandGamesPart = () => {
     <div>
       <motion.div className="flex flex-col bg-[#222222]  pb-20 sm:pt-40" ref={ref}>
         <motion.div
-          className="mt-12 pb-20 text-center font-poppins text-[26px] font-light text-[#e7e7e7] xl:text-[33px] 2xl:text-[42px]"
+          className="mx-20 mt-12 pb-20 text-center font-poppins text-[26px] font-light text-[#e7e7e7] sm:mx-0 xl:text-[33px] 2xl:text-[42px]"
           initial={{ opacity: 0 }}
           animate={controls}
           variants={openStreamerFantasyText}

@@ -5,7 +5,6 @@ import { useAnimation, motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import Carousel from 'react-material-ui-carousel';
 import Divider from '@mui/material/Divider';
-import { useMediaQuery } from 'react-responsive';
 
 const CollectiblesUseCaseBlock = () => {
   const controls = useAnimation();
@@ -15,8 +14,6 @@ const CollectiblesUseCaseBlock = () => {
       controls.start('visible');
     }
   }, [controls, inView]);
-
-  const isMobile = useMediaQuery({ query: '(max-width: 760px)' });
 
   const openCollectiblesTitle = {
     visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
@@ -161,8 +158,7 @@ const CollectiblesUseCaseBlock = () => {
         </motion.h4>
         <motion.div initial={{ opacity: 0 }} animate={controls} variants={openUseCases} className="h-[20rem] pb-10">
           <Carousel
-            height={isMobile ? 400 : 200}
-            className="mx-auto xl:w-3/4 2xl:w-1/2"
+            className="mx-auto max-h-[400px] sm:max-h-[200px] xl:w-3/4 2xl:w-1/2 "
             duration={1000}
             interval={6000}
             navButtonsAlwaysVisible={true}
