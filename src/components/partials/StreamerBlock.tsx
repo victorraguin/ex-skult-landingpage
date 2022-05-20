@@ -86,7 +86,7 @@ const StreamerBlock = () => {
           </div>
           <img
             src="https://skult-assets.s3.eu-west-3.amazonaws.com/skult-event-ticket.svg"
-            alt="SKULT Logo"
+            alt="SKULT Exclusive Events"
             className="mb-20 h-[120px] rotate-[-12deg] px-5 "
           />
           <p className="font-base mx-auto pb-10 text-center font-poppins text-[22px] font-light text-[#e7e7e7]">
@@ -104,7 +104,11 @@ const StreamerBlock = () => {
               Earn{' '}
             </span>
           </div>
-          <img src="/skult-play-earn.svg" alt="SKULT Logo" className="mb-20 h-[150px] px-5 " />
+          <img
+            src="https://skult-assets.s3.eu-west-3.amazonaws.com/SKULT-play-earn.svg"
+            alt="SKULT Play and Earn"
+            className="mb-20 h-[150px] px-5 "
+          />
           <p className="font-base mx-auto pb-10 text-center font-poppins text-[22px] font-light text-[#e7e7e7]">
             Let your audience <span className="text-primary"> play games</span> while your streaming! Our first game:
             <span className="text-primary"> Fantasy Leagues</span>! Entertain your community with{' '}
