@@ -117,66 +117,71 @@ const StreamerBlock = () => {
           </p>
         </div>
       </div>
-      <div
-        id="cash"
-        className="text-center font-poppins text-[32px] font-light text-[#e7e7e7] sm:pt-20 xl:text-[36px] 2xl:text-[48px]"
-      >
-        The More You Go
-        <span className="bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text font-normal text-transparent">
-          {' '}
-          Up the Ladder{' '}
-        </span>
-        The
-        <span className="bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text font-normal text-transparent">
-          {' '}
-          More you Earn
-        </span>
-      </div>
-      <div className="flex flex-row flex-wrap justify-evenly sm:mx-40 sm:flex-nowrap">
-        <div className="flex flex-col flex-wrap pt-20 sm:mx-auto sm:w-[45%] sm:flex-nowrap">
-          <div className="text-center font-poppins text-[28px] font-light text-[#e7e7e7] sm:mx-10 xl:text-[32px] 2xl:text-[36px]">
-            Streamer
-            <span className="bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text font-normal text-transparent">
-              {' '}
-              Ranks{' '}
-            </span>
-            Based on{' '}
-            <div className="bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text font-normal text-transparent">
-              {' '}
-              Your Popularity
-            </div>
-          </div>
-          <img
-            src="https://skult-assets.s3.eu-west-3.amazonaws.com/SKULT_rank.svg"
-            alt="SKULT Logo"
-            className="scale-125 sm:px-5"
-          />
+
+      <img src="/Page_breaker1.svg" alt="Page Breaker" className="w-full" />
+      <div className="bg-[#282828]">
+        <div
+          id="cash"
+          className="text-center font-poppins text-[32px] font-light text-[#e7e7e7] sm:pt-10 xl:text-[36px] 2xl:text-[48px]"
+        >
+          The More You Go
+          <span className="bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text font-normal text-transparent">
+            {' '}
+            Up the Ladder{' '}
+          </span>
+          The
+          <span className="bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text font-normal text-transparent">
+            {' '}
+            More you Earn
+          </span>
         </div>
-        <div className="mx-auto flex flex-col flex-wrap pb-20 sm:w-[33%] sm:flex-nowrap sm:pt-20 xl:w-[45%] 2xl:w-[33%]">
-          <div className="pb-10 pt-10 text-center  font-poppins text-[28px] font-light text-[#e7e7e7] sm:pt-0 sm:pb-0 xl:text-[32px] 2xl:text-[36px]">
-            For Every Card you Sold
-            <div className="bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text font-normal text-transparent">
-              {' '}
-              You Get:{' '}
+        <div className="flex flex-row flex-wrap justify-evenly sm:mx-40 sm:flex-nowrap">
+          <div className="flex flex-col flex-wrap pt-20 sm:mx-auto sm:w-[45%] sm:flex-nowrap">
+            <div className="text-center font-poppins text-[28px] font-light text-[#e7e7e7] sm:mx-10 xl:text-[32px] 2xl:text-[36px]">
+              Streamer
+              <span className="bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text font-normal text-transparent">
+                {' '}
+                Ranks{' '}
+              </span>
+              Based on{' '}
+              <div className="bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text font-normal text-transparent">
+                {' '}
+                Your Popularity
+              </div>
             </div>
+            <img
+              src="https://skult-assets.s3.eu-west-3.amazonaws.com/SKULT_rank.svg"
+              alt="SKULT Logo"
+              className="scale-125 sm:px-5"
+            />
           </div>
-          <p className="font-base mx-auto text-left font-poppins text-[28px] font-light text-[#e7e7e7]">
-            <div className="my-2 rounded-[15px] border-[1px] border-[#464646] p-2  text-center text-[35px] shadow-sm shadow-black">
-              <span className="text-[28px] text-primary">Legend:</span> 25%
+          <div className="mx-auto flex flex-col flex-wrap pb-20 sm:w-[33%] sm:flex-nowrap sm:pt-20 xl:w-[45%] 2xl:w-[33%]">
+            <div className="pb-10 pt-10 text-center  font-poppins text-[28px] font-light text-[#e7e7e7] sm:pt-0 sm:pb-0 xl:text-[32px] 2xl:text-[36px]">
+              For Every Card you Sold
+              <div className="bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text font-normal text-transparent">
+                {' '}
+                You Get:{' '}
+              </div>
             </div>
-            <div className="my-2 rounded-[15px] border-[1px] border-[#464646] p-2  text-center text-[32px] shadow-sm shadow-black">
-              <span className="text-[28px] text-primary ">Hero:</span> 15%
-            </div>
-            <div className="my-2 w-60 rounded-[15px] border-[1px] border-[#464646] p-2 text-center text-[28px] shadow-sm shadow-black">
-              <span className="text-[28px] text-primary ">Rookie:</span> 10%
-            </div>
-          </p>
+            <p className="font-base mx-auto text-left font-poppins text-[28px] font-light text-[#e7e7e7]">
+              <div className="my-2 rounded-[15px] border-[1px] border-[#464646] p-2  text-center text-[35px] shadow-sm shadow-black">
+                <span className="text-[28px] text-primary">Legend:</span> 25%
+              </div>
+              <div className="my-2 rounded-[15px] border-[1px] border-[#464646] p-2  text-center text-[32px] shadow-sm shadow-black">
+                <span className="text-[28px] text-primary ">Hero:</span> 15%
+              </div>
+              <div className="my-2 w-60 rounded-[15px] border-[1px] border-[#464646] p-2 text-center text-[28px] shadow-sm shadow-black">
+                <span className="text-[28px] text-primary ">Rookie:</span> 10%
+              </div>
+            </p>
+          </div>
         </div>
+        <p className="font-base mx-auto text-center font-poppins text-[22px] font-light text-[#e7e7e7] sm:pb-10">
+          Our games however, are designed for any Streamer to get an audience and for any Player to get rewarded
+        </p>
       </div>
-      <p className="font-base mx-auto text-center font-poppins text-[22px] font-light text-[#e7e7e7] sm:pb-10">
-        Our games however, are designed for any Streamer to get an audience and for any Player to get rewarded
-      </p>
-      <div className="mx-auto flex flex-col justify-center pt-40">
+      <img src="/Page_breaker2.svg" alt="Page Breaker" className="w-full" />
+      <div className="mx-auto flex flex-col justify-center pt-20">
         <div className="text-center font-poppins text-[38px] font-light text-[#e7e7e7] xl:text-[36px] 2xl:text-[48px]">
           Come and Play With
           <span className="bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text font-normal text-transparent">
@@ -189,7 +194,7 @@ const StreamerBlock = () => {
           alt="SKULT Logo"
           className="mx-auto scale-90 pb-20 sm:w-[20%]"
         />
-        <div className="text-center font-poppins text-[32px] font-light text-[#e7e7e7] xl:text-[32px]">
+        <div className="text-center font-poppins text-[32px] font-light text-[#e7e7e7] xl:text-[26px]">
           Wanna know more about it ?
           <div className="bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text font-normal text-transparent">
             {' '}
@@ -198,14 +203,14 @@ const StreamerBlock = () => {
           <div className="pb-40">
             <form>
               <input
-                className="mx-4 w-60 rounded-lg border-b border-[#a9a9a9] bg-[#222222] p-2 pb-2 font-light text-[#a9a9a9] sm:w-80 sm:w-40  md:w-80 xl:w-80"
+                className="mx-4 w-60 rounded-lg border-b border-[#a9a9a9] bg-[#222222] p-2 pt-10 pb-2 font-light text-[#a9a9a9] sm:w-80 sm:w-40  md:w-80 xl:w-80"
                 type="email"
                 name="email"
                 defaultValue="Your Email"
               />
               <input
                 type="submit"
-                value="Bonjour"
+                value="Submit"
                 className="pfont-light mx-4 mt-4 cursor-pointer rounded-full border border-[#a9a9a9] bg-[#222222] py-1 px-4 text-[#a9a9a9] hover:scale-105 hover:brightness-150"
               />
             </form>

@@ -107,7 +107,7 @@ const CollectiblesUseCaseBlock = () => {
         ref={ref}
       >
         <motion.div
-          className="pb-20 text-center font-poppins text-[32px] font-light text-[#e7e7e7] xl:text-[36px] 2xl:text-[48px]"
+          className="pb-20 text-center font-poppins text-[32px] font-light text-[#e7e7e7] xl:text-[36px] 2xl:text-[48px] 3xl:text-[55px]"
           initial={{ opacity: 0 }}
           animate={controls}
           variants={openCollectiblesTitle}
@@ -123,10 +123,7 @@ const CollectiblesUseCaseBlock = () => {
           animate={controls}
           variants={openTitle}
         >
-          Participate in Exclusive{' '}
-          <span className="bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text font-normal text-transparent">
-            Events
-          </span>
+          Participate in Exclusive <span className="font-normal text-primary">Events</span>
         </motion.div>
         <div className="mx-auto w-[75%] rotate-[-8deg] sm:w-fit">
           <motion.img
@@ -139,29 +136,29 @@ const CollectiblesUseCaseBlock = () => {
           />
         </div>
         <motion.div
-          className="font-base mx-auto pb-10 text-center font-poppins text-[22px] font-light text-[#e7e7e7] sm:mx-10 4xl:w-full"
+          className="font-base mx-auto pb-10 text-center font-poppins text-[22px] font-light text-[#e7e7e7] sm:mx-10"
           initial={{ opacity: 0 }}
           animate={controls}
           variants={openDescription}
         >
           Drops, giveaways, exclusive content, in real life events…{' '}
-          <span className="text-primary">Everything is possible!</span>
+          <span className="font-semibold text-primary">Everything is possible!</span>
           <h4>Streamers can create any kind of exeperiences they want and make their community participate to them!</h4>
         </motion.div>
         <motion.h4
           animate={controls}
           variants={openCollectibleHolders}
           initial={{ opacity: 0 }}
-          className="font-base mx-auto pb-20 pt-10 text-center font-poppins text-[22px] font-normal text-primary sm:mx-10 4xl:w-full"
+          className="mx-auto pb-20 pt-10 text-center font-poppins text-[22px] font-semibold text-primary sm:mx-10 "
         >
           Your cards can unlock exclusive events created by your favorite Streamers !
         </motion.h4>
         <motion.div initial={{ opacity: 0 }} animate={controls} variants={openUseCases} className="h-[20rem] pb-10">
           <Carousel
-            className="mx-auto max-h-[400px] sm:max-h-[200px] xl:w-3/4 2xl:w-1/2 "
+            className="mx-auto xl:w-3/4 2xl:w-1/2 "
             duration={1000}
-            interval={6000}
-            navButtonsAlwaysVisible={true}
+            interval={8000}
+            navButtonsAlwaysVisible={false}
             animation="slide"
           >
             {events.map((item, i) => (

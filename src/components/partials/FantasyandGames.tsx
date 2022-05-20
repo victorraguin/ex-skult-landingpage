@@ -86,10 +86,7 @@ const FantasyandGamesPart = () => {
           animate={controls}
           variants={openStreamerFantasyText}
         >
-          Play Streamer{' '}
-          <span className="bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text font-normal text-transparent">
-            Fantasy Leagues
-          </span>
+          Play Streamer <span className=" font-normal text-primary">Fantasy Leagues</span>
         </motion.div>
         <motion.img
           initial={{ opacity: 0 }}
@@ -100,7 +97,7 @@ const FantasyandGamesPart = () => {
           className="mx-auto scale-[0.8] sm:w-[20rem] sm:pt-10 sm:pb-20"
         />
         <motion.div
-          className="mt-20 mb-10 flex flex-row flex-wrap justify-around xl:justify-evenly xl:px-20 2xl:px-40 3xl:px-60"
+          className="mt-20 mb-10 flex flex-row flex-wrap justify-around xl:justify-evenly xl:px-20 2xl:px-40 3xl:px-80 4xl:px-96"
           variants={CardContainer}
           initial="hidden"
           animate={controls}
@@ -180,7 +177,7 @@ const FantasyandGamesPart = () => {
           initial={{ opacity: 0 }}
           animate={controls}
           variants={openComingSoonText}
-          className="font-regular mt-4 pt-20 text-center font-poppins text-[24px] text-[#e7e7e7e7] "
+          className="font-regular mt-4 pt-10 text-center font-poppins text-[24px] text-[#e7e7e7e7] "
         >
           More coming soon...
         </motion.p>

@@ -59,7 +59,7 @@ const TeamBlock = () => {
             </motion.div>
           </div>
           <motion.div
-            className="w-full bg-[#222222] px-10 xl:px-0 3xl:px-60"
+            className=" w-full bg-[#222222] px-10 xl:px-0 3xl:px-60 4xl:px-[32rem]"
             variants={CardContainer}
             initial="hidden"
             animate={controls}
