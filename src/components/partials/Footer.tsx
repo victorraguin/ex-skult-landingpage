@@ -26,13 +26,13 @@ const Footer = () => {
             className="mx-4 hidden w-40 rounded-lg border-b border-[#a9a9a9] bg-[#222222] p-2 pb-2 font-light text-[#a9a9a9] focus:outline-none sm:inline-block md:w-80 xl:w-80"
             type="email"
             name="email"
-            defaultValue="Subscribe to our Newsletter"
+            placeholder="Subscribe to our Newsletter"
           />
           <input
             className=" mx-4 w-40 rounded-lg border-b border-[#a9a9a9] bg-[#222222] p-2 pb-2 font-light text-[#a9a9a9] focus:outline-none sm:hidden md:w-80 xl:w-80"
             type="email"
             name="email"
-            defaultValue=" Our Newsletter"
+            placeholder=" Our Newsletter"
           />
           <input
             type="submit"

@@ -65,7 +65,7 @@ const TeamBlock = () => {
             animate={controls}
           >
             <div className="container mx-auto">
-              <div className="flex-wrap items-center sm:flex sm:justify-around md:flex md:justify-around lg:flex lg:justify-evenly">
+              <div className="flex-wrap items-center sm:mx-2 sm:flex sm:justify-around md:flex md:justify-around lg:flex lg:justify-evenly">
                 <motion.div
                   variants={CardItem}
                   className="relative mt-16 mb-32 transition duration-300 ease-in-out hover:shadow-xl sm:mb-24 sm:w-3/4 md:w-2/5 lg:w-2/5 xl:w-1/3 xl:max-w-sm"

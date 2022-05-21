@@ -82,7 +82,7 @@ const CollectiblesUseCaseBlock = () => {
     };
   }) {
     return (
-      <div className="flex flex-row flex-wrap sm:mx-10 sm:flex-nowrap xl:mx-0">
+      <div className="flex  min-h-[14rem] flex-row flex-wrap sm:mx-10 sm:flex-nowrap xl:mx-0">
         <img
           src={props.item.image}
           alt={props.item.name}
@@ -155,11 +155,11 @@ const CollectiblesUseCaseBlock = () => {
         </motion.h4>
         <motion.div initial={{ opacity: 0 }} animate={controls} variants={openUseCases} className="h-[20rem] pb-10">
           <Carousel
-            className="mx-auto xl:w-3/4 2xl:w-1/2 "
+            className="mx-auto xl:w-3/4 2xl:w-1/2"
             duration={1000}
             interval={8000}
             navButtonsAlwaysVisible={false}
-            animation="slide"
+            animation="fade"
           >
             {events.map((item, i) => (
               <Item key={i} item={item} />

@@ -3,6 +3,7 @@ import React from 'react';
 import styles from './Landing.module.css';
 import DiscordButton from './images/DiscordButton';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 const Header = () => {
   return (
@@ -17,11 +18,13 @@ const Header = () => {
       />
       <div className="z-2 absolute inset-0">
         <motion.div initial={{ y: -250 }} animate={{ y: -10 }} transition={{ type: 'spring', stiffness: 40 }}>
-          <img
-            className=" mx-10 mt-6 h-8 md:mx-auto md:mt-5 xl:mx-auto xl:mt-7 xl:h-12 2xl:h-14 4xl:h-16"
-            src={`./elements/SKULT.png`}
-            alt="SKULT"
-          />
+          <Link href="#top" passHref>
+            <img
+              className=" mx-10 mt-6 h-8 cursor-pointer hover:scale-[1.05] md:mx-auto md:mt-5 xl:mx-auto xl:mt-7 xl:h-12 2xl:h-14 4xl:h-16"
+              src={`./elements/SKULT.png`}
+              alt="SKULT"
+            />
+          </Link>
         </motion.div>
         <motion.div initial={{ y: -250 }} animate={{ y: -10 }} transition={{ delay: 1, type: 'spring', stiffness: 70 }}>
           <a href="https://discord.gg/fJvrQCJr4W" target="_blank" rel="noopener noreferrer">

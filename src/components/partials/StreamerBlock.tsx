@@ -1,42 +1,8 @@
 /* eslint-disable max-len */
 /* eslint-disable react/no-unescaped-entities */
-import React, { useEffect } from 'react';
-import { useAnimation, motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
+import React from 'react';
 
 const StreamerBlock = () => {
-  const controls = useAnimation();
-  const [ref, inView] = useInView({ threshold: 0.6 });
-  useEffect(() => {
-    if (inView) {
-      controls.start('visible');
-    }
-  }, [controls, inView]);
-
-  const CardContainer = {
-    hidden: { opacity: 1 },
-    visible: {
-      opacity: 1,
-      duration: 0.25,
-      transition: {
-        delayChildren: 0.25,
-        duration: 0.25,
-        staggerChildren: 0.5,
-      },
-    },
-  };
-
-  const CardItem = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        duration: 0.25,
-        ease: 'easeInOut',
-      },
-    },
-  };
-
   return (
     <div className="h-full w-full bg-[#222222] px-10 pt-40 sm:px-0">
       <div className="mx-auto  flex flex-row flex-wrap justify-center sm:pt-20">
@@ -195,7 +161,7 @@ const StreamerBlock = () => {
           className="mx-auto scale-90 pb-20 sm:w-[20%]"
         />
         <div className="text-center font-poppins text-[32px] font-light text-[#e7e7e7] xl:text-[26px]">
-          Wanna know more about it ?
+          Wanna know more about it?
           <div className="bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text font-normal text-transparent">
             {' '}
             Enter your email!
@@ -203,10 +169,10 @@ const StreamerBlock = () => {
           <div className="pb-40">
             <form>
               <input
-                className="mx-4 w-60 rounded-lg border-b border-[#a9a9a9] bg-[#222222] p-2 pt-10 pb-2 font-light text-[#a9a9a9] sm:w-80 sm:w-40  md:w-80 xl:w-80"
+                className="mx-4 mt-10 w-60 rounded-lg border-b border-[#a9a9a9] bg-[#222222] p-2 pb-2 font-light text-[#a9a9a9] focus:outline-none sm:w-80  sm:w-40 md:w-80 xl:w-80 "
                 type="email"
                 name="email"
-                defaultValue="Your Email"
+                placeholder="Your Email"
               />
               <input
                 type="submit"
