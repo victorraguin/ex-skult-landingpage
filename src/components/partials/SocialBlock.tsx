@@ -19,7 +19,7 @@ const SocialBlock = () => {
   };
 
   const discord = {
-    visible: { translateY: 7, transition: { delay: 1, duration: 0.7, yoyo: Number.POSITIVE_INFINITY } },
+    visible: { translateY: 10, transition: { delay: 1, duration: 0.7, yoyo: Number.POSITIVE_INFINITY } },
     hidden: { opacity: 0 },
   };
 

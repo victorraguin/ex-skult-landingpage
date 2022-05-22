@@ -15,7 +15,7 @@
 }
 
 .floatingDiscordButton {
-  @apply absolute bottom-[8rem] right-[22%] mx-auto w-52 cursor-pointer sm:right-[35%]  sm:w-60 xl:right-[41%] 2xl:bottom-[10rem] 3xl:bottom-[12rem] 3xl:right-[44%] 4xl:right-[42%]  4xl:w-96;
+  @apply absolute bottom-[8rem] right-[22%] mx-auto w-52 cursor-pointer sm:right-[35%]  sm:w-60 xl:right-[41%] 2xl:bottom-[8rem] 3xl:bottom-[12rem] 3xl:right-[44%] 4xl:right-[42%]  4xl:w-96;
 }
 
 .floatingOmberButton {

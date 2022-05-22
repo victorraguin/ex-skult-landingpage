@@ -4,7 +4,7 @@ import React from 'react';
 
 const StreamerBlock = () => {
   return (
-    <div className="h-full w-full bg-[#222222] px-10 pt-40 sm:px-0">
+    <div className=" h-full w-full bg-[#222222] pt-40 sm:px-0">
       <div className="mx-auto  flex flex-row flex-wrap justify-center sm:pt-20">
         <img
           src="https://skult-assets.s3.eu-west-3.amazonaws.com/SKULT_logo.png"
@@ -53,7 +53,7 @@ const StreamerBlock = () => {
           <img
             src="https://skult-assets.s3.eu-west-3.amazonaws.com/skult-event-ticket.svg"
             alt="SKULT Exclusive Events"
-            className="mb-20 h-[120px] rotate-[-12deg] px-5 "
+            className="mb-20 h-[120px] w-[95%] rotate-[-12deg] scale-90 px-5 sm:w-[100%] sm:scale-100 "
           />
           <p className="font-base mx-auto pb-10 text-center font-poppins text-[22px] font-light text-[#e7e7e7]">
             We will provide you with the toolbox<span className="text-primary"> to generate unique events</span> for
@@ -118,7 +118,7 @@ const StreamerBlock = () => {
             <img
               src="https://skult-assets.s3.eu-west-3.amazonaws.com/SKULT_rank.svg"
               alt="SKULT Logo"
-              className="scale-125 sm:px-5"
+              className="sm:scale-125 sm:px-5"
             />
           </div>
           <div className="mx-auto flex flex-col flex-wrap pb-20 sm:w-[33%] sm:flex-nowrap sm:pt-20 xl:w-[45%] 2xl:w-[33%]">

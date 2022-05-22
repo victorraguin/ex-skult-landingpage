@@ -2,12 +2,15 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable max-len */
 import React from 'react';
+import Link from 'next/link';
 
 const Footer = () => {
   return (
     <div className="mx-1 flex flex-row flex-wrap justify-around 2xl:mx-5 3xl:xl:mx-10">
       <div className="mx-auto hidden w-[15rem] flex-col sm:mx-4 md:inline lg:mx-0 xl:py-4 2xl:mx-0 3xl:mx-4">
-        <img className="m-4 mb-0 h-[3rem]" src={`./elements/SKULT.png`} alt="SKULT" />
+        <Link href="#top" passHref>
+          <img className=" m-4 mb-0 h-[3rem] cursor-pointer hover:scale-105" src={`./elements/SKULT.png`} alt="SKULT" />
+        </Link>
         <p className="pt-2 text-center font-poppins text-[15px] text-white ">© 2022 - SKULT</p>
       </div>
       <a
