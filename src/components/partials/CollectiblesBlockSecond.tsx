@@ -38,15 +38,9 @@ const CollectiblesBlockSecond = () => {
   };
 
   return (
-    <motion.div
-      className="h-full bg-[#282828] sm:ml-10 xl:pt-10"
-      variants={CardContainer}
-      initial="hidden"
-      animate={controls}
-      ref={ref}
-    >
+    <motion.div className="h-full bg-[#282828]" variants={CardContainer} initial="hidden" animate={controls} ref={ref}>
       <motion.div className="mx-auto flex flex-row flex-wrap justify-around sm:flex-nowrap 3xl:w-2/3 4xl:w-3/4">
-        <motion.div className=" flex flex-col" variants={CardItem}>
+        <motion.div className="flex flex-1 flex-col" variants={CardItem}>
           <img src="/elements/skult-support-icon.svg" alt="Support Icon" className="h-[125px]" />
           <h4 className="pt-5 text-center font-poppins text-[28px] font-semibold text-primary">Support</h4>
           <p className="mx-auto w-[75%] pt-4 text-center font-poppins text-[18px] font-medium text-[#b8b8b8]">
@@ -54,7 +48,7 @@ const CollectiblesBlockSecond = () => {
             your love!
           </p>
         </motion.div>
-        <motion.div className="flex flex-col" variants={CardItem}>
+        <motion.div className="flex flex-1 flex-col" variants={CardItem}>
           <img src="/elements/skult-nft-icon.svg" alt="Unique & Counterfeit Icon" className="h-[125px]" />
           <h4 className="pt-5 text-center font-poppins text-[28px] font-semibold text-primary">Unique &</h4>
           <h4 className="text-center font-poppins text-[28px] font-semibold text-primary">Counterfeit proof</h4>
@@ -63,7 +57,7 @@ const CollectiblesBlockSecond = () => {
             security.
           </p>
         </motion.div>
-        <motion.div className="flex flex-col" variants={CardItem}>
+        <motion.div className="flex flex-1 flex-col" variants={CardItem}>
           <img src="/elements/skult-airdrop-icon.svg" alt="Earn Icon" className="h-[125px]" />
           <h4 className="pt-5 text-center font-poppins text-[28px] font-semibold text-primary">Earn</h4>
           <p className="mx-auto w-2/3 pt-4 text-center font-poppins text-[18px] font-medium text-[#b8b8b8]">
