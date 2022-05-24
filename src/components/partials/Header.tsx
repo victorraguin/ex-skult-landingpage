@@ -1,7 +1,6 @@
 /* eslint-disable max-len */
 import React from 'react';
 import styles from './Landing.module.css';
-import DiscordButton from './images/DiscordButton';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 
@@ -27,20 +26,17 @@ const Header = () => {
           </Link>
         </motion.div>
         <motion.div initial={{ y: -250 }} animate={{ y: -10 }} transition={{ delay: 1, type: 'spring', stiffness: 70 }}>
-          <a href="https://discord.gg/fJvrQCJr4W" target="_blank" rel="noopener noreferrer">
+          <Link href="/streamer" passHref>
             <motion.button
               className={`${styles.HeaderJoinDiscord} absolute top-[-2.6rem] right-[-2rem] scale-[0.6] rounded-full bg-gradient-to-br from-[#FFCC00] to-[#ED713C] p-0.5 text-sm hover:scale-[0.65] md:right-[0rem] md:scale-[0.7] md:hover:scale-[0.75]  xl:top-[-3rem] xl:right-20 xl:scale-[0.8] xl:hover:scale-[0.85] 2xl:scale-[0.9] 2xl:hover:scale-[0.95] 3xl:scale-[0.95] 3xl:hover:scale-[1] 4xl:scale-[1] 4xl:hover:scale-[1.05]`}
             >
-              <motion.div className="relative flex flex-row rounded-full bg-[#262626] px-6 pt-[8px]">
-                <DiscordButton fill={'#fff'} />
-                <motion.div
-                  className={`pt-[6px] pl-2 font-poppins text-[20px] font-light text-[#a9a9a9] hover:brightness-150`}
-                >
-                  Join the Discord
+              <motion.div className="relative flex flex-row rounded-full bg-[#262626] px-6 py-[8px] hover:brightness-150">
+                <motion.div className="py-[6px] font-poppins text-[20px] font-light text-[#a9a9a9]">
+                  I&apos;m a Streamer
                 </motion.div>
               </motion.div>
             </motion.button>
-          </a>
+          </Link>
         </motion.div>
       </div>
     </div>
