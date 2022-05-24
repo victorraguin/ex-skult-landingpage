@@ -24,7 +24,7 @@ const Footer = () => {
           <input
             className="w-20 border-b border-[#a9a9a9] bg-transparent px-2 pb-2 text-sm font-light text-[#a9a9a9] focus:border-b-2 focus:outline-none sm:inline-block md:w-40"
             name="name"
-            placeholder="Name"
+            placeholder="Firstname"
           />
           <input
             className="hidden w-32 border-b border-[#a9a9a9] bg-transparent px-2 pb-2 text-sm font-light text-[#a9a9a9] focus:border-b-2 focus:outline-none sm:inline-block md:w-48"
