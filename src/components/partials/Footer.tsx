@@ -65,9 +65,16 @@ const Footer = () => {
         </a>
         <a href="https://twitter.com/SKULT_gg" target="_blank" rel="noopener noreferrer">
           <img
-            src="./elements/social/twitter-test.svg"
-            className="m-auto mx-1 h-[3rem] cursor-pointer hover:scale-105 hover:brightness-150 xl:mx-2 xl:h-[3rem]"
+            src="./elements/social/twitter-circled.svg"
+            className="m-auto mx-1 h-12 cursor-pointer hover:scale-105 hover:brightness-150 xl:mx-2 xl:h-12"
             alt="Twitter"
+          />
+        </a>
+        <a href="https://www.linkedin.com/company/skultgg/" target="_blank" rel="noopener noreferrer">
+          <img
+            src="./elements/social/linkedin-circled.svg"
+            className="m-auto mx-1 h-12 cursor-pointer hover:scale-105 hover:brightness-150 xl:mx-2 xl:h-12"
+            alt="LinkedIn"
           />
         </a>
         {/* <img
