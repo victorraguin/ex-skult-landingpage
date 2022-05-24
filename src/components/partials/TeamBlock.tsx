@@ -466,6 +466,16 @@ const TeamBlock = () => {
             </div>
           </motion.div>
         </div>
+        <div className="flex flex-1 justify-center py-6">
+          <a
+            target="_blank"
+            className="cursor-pointer text-xl text-primary hover:underline"
+            href="https://vivid-tadpole-074.notion.site/Job-Board-a686e214017142d08fb73cf1f83ca4ad"
+            rel="noopener noreferrer"
+          >
+            Join the squad!
+          </a>
+        </div>
       </motion.div>
     </motion.div>
   );

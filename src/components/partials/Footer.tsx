@@ -13,16 +13,6 @@ const Footer = () => {
         </Link>
         <p className="pt-2 text-center font-poppins text-[15px] text-white ">© 2022 - SKULT</p>
       </div>
-      <a
-        target="_blank"
-        className="my-auto cursor-pointer pt-4 text-primary hover:underline"
-        href="https://vivid-tadpole-074.notion.site/Job-Board-a686e214017142d08fb73cf1f83ca4ad"
-        rel="noopener noreferrer"
-      >
-        <p className=" mx-10 pb-5 text-center text-primary md:pt-0">
-          Oh, and by the way, we're hiring! Check this out!
-        </p>
-      </a>
       <div className="flex flex-row pb-5 lg:pt-10 xl:mx-0">
         <form>
           <input
