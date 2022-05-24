@@ -4,16 +4,16 @@ import React from 'react';
 
 const StreamerBlock = () => {
   return (
-    <div className=" h-full w-full bg-[#222222] pt-40 sm:px-0">
-      <div className="mx-auto  flex flex-row flex-wrap justify-center sm:pt-20">
+    <div className="h-full w-full bg-[#222222] pt-40 sm:pt-60">
+      <div className="flex flex-row flex-wrap items-baseline justify-center gap-x-2 pb-20">
         <img
           src="https://skult-assets.s3.eu-west-3.amazonaws.com/SKULT_logo.png"
           alt="SKULT Logo"
-          className="h-[60px] px-5"
+          className="h-[40px]"
         />
-        <div className="mt-1 pb-20 text-center font-poppins text-[32px] font-light text-[#e7e7e7] xl:text-[36px] 2xl:text-[48px]">
+        <div className="text-center font-poppins text-3xl font-light leading-none text-[#e7e7e7] xl:text-[36px] 2xl:text-[48px]">
           For
-          <span className="bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text font-normal text-transparent">
+          <span className="bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text font-normal leading-none text-transparent">
             {' '}
             Streamers
           </span>
