@@ -56,18 +56,15 @@ const FantasyandGamesPart = () => {
     },
   };
   const GameItem = {
-    hidden: { opacity: 0 },
+    hidden: { opacity: 0, scale: 0 },
     visible: {
       opacity: 1,
+      scale: 1,
       transition: {
         duration: 0.25,
         ease: 'easeInOut',
       },
     },
-  };
-  const openComingSoonText = {
-    visible: { opacity: 1, scale: 1, transition: { delay: 6, duration: 1 } },
-    hidden: { opacity: 0, scale: 0 },
   };
   const controls = useAnimation();
   const [ref, inView] = useInView({ threshold: 0.3 });
@@ -102,16 +99,6 @@ const FantasyandGamesPart = () => {
           initial="hidden"
           animate={controls}
         >
-          <motion.div
-            variants={CardItem}
-            className="m-2 w-[160px] rounded-[15px] border-[1px] border-[#464646] bg-[#303030] py-6 xl:w-[200px]"
-          >
-            <h4 className="text-center font-poppins  text-[22px] font-semibold text-primary xl:text-[24px]">
-              Collect cards
-            </h4>
-            <p className="text-center font-poppins font-light text-[#e7e7e7] xl:text-[16px]">of your favorites</p>
-            <p className="text-center font-poppins  font-light text-[#e7e7e7] xl:text-[16px]">Streamers</p>
-          </motion.div>
           <motion.div className="my-auto hidden xl:inline-block" variants={CardItem}>
             <MdArrowForwardIos className=" text-2xl text-primary" />
           </motion.div>
@@ -165,22 +152,21 @@ const FantasyandGamesPart = () => {
           Available for
         </motion.div>
         <motion.div
-          className="mx-10 flex flex-wrap justify-evenly xl:mx-[25rem] xl:flex-nowrap"
+          className="mx-10 flex flex-wrap items-center justify-evenly xl:mx-[25rem] xl:flex-nowrap"
           variants={GameContainer}
           initial="hidden"
           animate={controls}
         >
           <motion.img variants={GameItem} src="/elements/GAME/warzone.svg" alt="Warzone" className="h-[120px]" />
           <motion.img variants={GameItem} src="/elements/GAME/fortnite.svg" alt="Fortnite" className="h-[120px]" />
+          <motion.p
+            initial={{ opacity: 0 }}
+            variants={GameItem}
+            className="font-regular flex h-[100px] items-center pt-5 font-poppins text-[28px] text-[#5C5B5B] "
+          >
+            More coming soon...
+          </motion.p>
         </motion.div>
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={controls}
-          variants={openComingSoonText}
-          className="font-regular mt-4 pt-10 text-center font-poppins text-[24px] text-[#e7e7e7e7] "
-        >
-          More coming soon...
-        </motion.p>
       </motion.div>
       <img src="/Page_breaker1.svg" alt="Page Breaker" className="w-full" />
     </div>
