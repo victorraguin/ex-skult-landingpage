@@ -167,9 +167,9 @@ const StreamerBlock = () => {
             Enter your email!
           </div>
           <div className="pb-40">
-            <form>
+            <form className="space-x-4">
               <input
-                className="mx-4 mt-10 w-60 rounded-lg border-b border-[#a9a9a9] bg-[#222222] p-2 pb-2 font-light text-[#a9a9a9] focus:outline-none sm:w-80  sm:w-40 md:w-80 xl:w-80 "
+                className="mt-10 w-60 border-b border-[#a9a9a9] bg-[#222222] p-2 pb-2 font-light text-[#a9a9a9] focus:outline-none sm:w-80  sm:w-40 md:w-80 xl:w-80 "
                 type="email"
                 name="email"
                 placeholder="Your Email"
@@ -177,7 +177,7 @@ const StreamerBlock = () => {
               <input
                 type="submit"
                 value="Submit"
-                className="pfont-light mx-4 mt-4 cursor-pointer rounded-full border border-[#a9a9a9] bg-[#222222] py-1 px-4 text-[#a9a9a9] hover:scale-105 hover:brightness-150"
+                className="pfont-light mt-4 cursor-pointer rounded-full border border-[#a9a9a9] bg-[#222222] py-1 px-4 text-[#a9a9a9] hover:scale-105 hover:brightness-150"
               />
             </form>
           </div>
