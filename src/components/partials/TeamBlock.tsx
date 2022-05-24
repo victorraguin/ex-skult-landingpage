@@ -374,7 +374,7 @@ const TeamBlock = () => {
                         <img
                           src="/Thibault.jpeg"
                           alt="Thibault"
-                          className="h-full w-full rounded-full object-cover shadow-md"
+                          className="h-full w-full rounded-full object-cover shadow-md grayscale"
                         />
                       </div>
                     </div>
@@ -423,7 +423,7 @@ const TeamBlock = () => {
                         <img
                           src="/Didier.jpeg"
                           alt="Didier"
-                          className="h-full w-full rounded-full object-cover shadow-md"
+                          className="h-full w-full rounded-full object-cover shadow-md grayscale"
                         />
                       </div>
                     </div>
