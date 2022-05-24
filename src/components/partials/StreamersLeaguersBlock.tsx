@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 const StreamersLeaguersBlock = () => {
   const controls = useAnimation();
-  const [ref, inView] = useInView({ threshold: 0.3 });
+  const [ref, inView] = useInView({ threshold: 0.1 });
   useEffect(() => {
     if (inView) {
       controls.start('visible');
