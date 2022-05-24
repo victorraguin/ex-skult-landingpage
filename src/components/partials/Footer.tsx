@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <div className="mx-1 flex flex-row flex-wrap justify-around 2xl:mx-5 3xl:xl:mx-10">
+    <div className="mx-1 flex flex-row flex-wrap justify-around py-2 2xl:mx-5 3xl:xl:mx-10">
       <div className="mx-auto hidden w-[15rem] flex-col sm:mx-4 md:inline lg:mx-0 xl:py-4 2xl:mx-0 3xl:mx-4">
         <Link href="#top" passHref>
           <img className="mx-4 h-12 cursor-pointer hover:scale-105" src={`./elements/SKULT.png`} alt="SKULT" />
@@ -14,23 +14,28 @@ const Footer = () => {
         <p className="pt-2 text-center font-poppins text-[15px] text-white ">© 2022 - SKULT</p>
       </div>
       <div className="my-auto flex flex-row xl:mx-0">
-        <form>
+        <form
+          className="flex flex-row gap-x-4"
+          onSubmit={evt => {
+            evt.preventDefault();
+            // console.log(evt.target[0].value);
+          }}
+        >
           <input
-            className="mx-4 hidden w-40 rounded-lg border-b border-[#a9a9a9] bg-[#222222] p-2 pb-2 font-light text-[#a9a9a9] focus:outline-none sm:inline-block md:w-80 xl:w-80"
-            type="email"
-            name="email"
-            placeholder="Subscribe to our Newsletter"
+            className="w-20 border-b border-[#a9a9a9] bg-transparent px-2 pb-2 text-sm font-light text-[#a9a9a9] focus:border-b-2 focus:outline-none sm:inline-block md:w-40"
+            name="name"
+            placeholder="Name"
           />
           <input
-            className=" mx-4 w-40 rounded-lg border-b border-[#a9a9a9] bg-[#222222] p-2 pb-2 font-light text-[#a9a9a9] focus:outline-none sm:hidden md:w-80 xl:w-80"
+            className="hidden w-32 border-b border-[#a9a9a9] bg-transparent px-2 pb-2 text-sm font-light text-[#a9a9a9] focus:border-b-2 focus:outline-none sm:inline-block md:w-48"
             type="email"
             name="email"
-            placeholder=" Our Newsletter"
+            placeholder="Email"
           />
           <input
             type="submit"
             value="Subscribe"
-            className="mx-4 cursor-pointer rounded-full border border-[#a9a9a9] bg-[#222222] p-2 px-4 font-light text-[#a9a9a9] hover:scale-105 hover:brightness-150"
+            className="cursor-pointer rounded-full border border-[#a9a9a9] bg-[#222222] py-1 px-2 font-light text-[#a9a9a9] hover:scale-105 hover:brightness-150"
           />
         </form>
       </div>
