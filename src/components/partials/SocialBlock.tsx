@@ -37,27 +37,42 @@ const SocialBlock = () => {
   }, [controls, inView]);
 
   return (
-    <motion.div className={`relative h-screen w-full flex-auto bg-[#222222] xl:h-screen`} ref={ref}>
+    <motion.div className="relative h-screen w-full flex-auto bg-[#222222] xl:h-screen" ref={ref}>
       <motion.div
-        style={{
-          backgroundImage: `url("/elements/social-2OK.webp")`,
-        }}
-        className="absolute h-full w-full bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url("/elements/social-2OK.webp")` }}
+        className="flex h-full w-full items-end justify-center bg-cover bg-center bg-no-repeat"
         animate={controls}
         initial="hidden"
         variants={lueurVariant}
       >
-        <motion.div animate={controls} variants={container} initial="hidden">
-          <a href="https://discord.gg/fJvrQCJr4W" target="_blank" rel="noopener noreferrer">
+        <motion.div
+          animate={controls}
+          variants={container}
+          initial="hidden"
+          // className="flex justify-center"
+        >
+          <a
+            href="https://discord.gg/fJvrQCJr4W"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex justify-center"
+          >
             <motion.img
               animate={controls}
               variants={discord}
-              className={`${styles.floatingDiscordButton}`}
+              className="absolute bottom-32 w-52 cursor-pointer sm:w-60 xl:bottom-40 2xl:w-80 3xl:bottom-48 4xl:w-96"
               src="/elements/logo-discord.webp"
               alt="Discord"
             />
           </a>
-          <motion.p animate={controls} variants={ombre} className={`${styles.floatingOmberButton}`}></motion.p>
+          <motion.p
+            animate={controls}
+            variants={ombre}
+            className={`
+              absolute inset-x-0 bottom-20 mx-auto w-52 bg-[#040303]
+              py-2 text-center blur xl:w-60 2xl:w-64 4xl:w-80
+            `}
+          ></motion.p>
         </motion.div>
       </motion.div>
     </motion.div>
