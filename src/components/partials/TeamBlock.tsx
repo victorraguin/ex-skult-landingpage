@@ -343,14 +343,18 @@ const TeamBlock = () => {
           </motion.div>
         </div>
         <div className="flex flex-1 justify-center py-6">
-          <a
-            target="_blank"
-            className="cursor-pointer text-xl text-primary hover:underline"
-            href="https://vivid-tadpole-074.notion.site/Job-Board-a686e214017142d08fb73cf1f83ca4ad"
-            rel="noopener noreferrer"
-          >
-            Join the squad!
-          </a>
+          <button className="relative rounded-full bg-gradient-to-r from-[#FFCC00] to-[#ED713C] p-0.5 text-sm hover:scale-105 hover:brightness-150">
+            <div className="relative flex flex-row rounded-full bg-[#262626] px-6 pt-3 ">
+              <a
+                target="_blank"
+                className="cursor-pointer pb-3 font-poppins text-xl text-[#a9a9a9]"
+                href="https://vivid-tadpole-074.notion.site/Job-Board-a686e214017142d08fb73cf1f83ca4ad"
+                rel="noopener noreferrer"
+              >
+                Hey! We're hiring! Join the squad!
+              </a>
+            </div>
+          </button>
         </div>
       </motion.div>
     </motion.div>
