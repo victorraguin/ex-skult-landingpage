@@ -10,7 +10,7 @@ const Header = () => {
       <motion.img
         src="./elements/header.webp"
         alt="header"
-        className="z-1 relative inset-0 h-32 w-screen md:top-[-5px] xl:top-[-20px] xl:h-auto xl:w-screen 3xl:top-[-55px] 4xl:top-[-90px]"
+        className="z-1 relative h-32 w-screen xl:h-48 2xl:h-56"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
@@ -19,7 +19,7 @@ const Header = () => {
         <motion.div initial={{ y: -250 }} animate={{ y: -10 }} transition={{ type: 'spring', stiffness: 40 }}>
           <Link href="#top" passHref>
             <img
-              className=" mx-10 mt-6 h-8 cursor-pointer hover:scale-[1.05] md:mx-auto md:mt-5 xl:mx-auto xl:mt-7 xl:h-12 2xl:h-14 4xl:h-16"
+              className="mx-10 mt-6 h-8 cursor-pointer hover:scale-[1.05] md:mx-auto md:mt-5 xl:mx-auto xl:mt-7 xl:h-12 2xl:h-14 4xl:h-16"
               src={`./elements/SKULT.png`}
               alt="SKULT"
             />
