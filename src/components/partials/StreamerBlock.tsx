@@ -12,11 +12,11 @@ const StreamerBlock = () => {
           alt="SKULT Logo"
           className="h-[40px]"
         />
-        <div className="text-center font-poppins text-3xl font-light leading-none text-[#e7e7e7] xl:text-[36px] 2xl:text-[48px]">
-          For
-          <span className="bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text font-normal leading-none text-transparent">
+        <div className="text-center font-poppins text-5xl font-light leading-none text-[#A9A9A9]">
+          for
+          <span className="bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text leading-none text-transparent">
             {' '}
-            Streamers
+            streamers
           </span>
         </div>
       </div>
