@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { useAnimation, motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import styles from './Landing.module.css';
 
 const SocialBlock = () => {
   const lueurVariant = {
