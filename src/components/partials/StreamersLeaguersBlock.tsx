@@ -107,11 +107,6 @@ const StreamersLeaguersBlock = () => {
   return (
     <>
       <motion.div className="relative flex flex-col flex-wrap  bg-[#282828] pt-20 2xl:pt-20 3xl:pt-20" ref={ref}>
-        {/* <img
-        src="/elements/haut.webp"
-        alt="Streamer"
-        className="invisible absolute right-0 top-[-2rem] w-full xl:visible"
-      /> */}
         <motion.h1
           initial={{ opacity: 0 }}
           animate={controls}
@@ -159,12 +154,12 @@ const StreamersLeaguersBlock = () => {
               initial={{ opacity: 0 }}
               animate={controls}
               variants={openAnyStreamerText}
-              className=" bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text pb-10 text-center font-poppins text-[32px] font-semibold text-transparent 2xl:text-[48px]"
+              className=" bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text pt-5 pb-10 text-center font-poppins text-[32px] font-semibold text-transparent 2xl:text-[48px]"
             >
               Any Streamer
             </motion.h2>
             <motion.div initial={{ opacity: 0 }} animate={controls} variants={openCommunityBlock}>
-              <p className="font-poppins text-[18px]  font-medium text-primary">Develop your Community</p>
+              <p className="font-poppins text-[18px] font-medium text-primary">Develop your Community</p>
               <p className="pb-5 font-poppins text-[18px] font-medium text-[#b8b8b8]">
                 Get discovered thanks to level-based games: any Streamer can get an audience!
               </p>
@@ -246,7 +241,7 @@ const StreamersLeaguersBlock = () => {
                 initial={{ opacity: 0 }}
                 animate={controls}
                 variants={openAnyLeaguerText}
-                className="bg-gradient-to-r from-[#7517F8] to-[#E323FF] bg-clip-text pb-10 text-center font-poppins text-[32px] font-semibold text-transparent 2xl:text-[48px]"
+                className="bg-gradient-to-r from-[#7517F8] to-[#E323FF] bg-clip-text pt-5 pb-10 text-center font-poppins text-[32px] font-semibold text-transparent 2xl:text-[48px]"
               >
                 Anyone
               </motion.h2>
