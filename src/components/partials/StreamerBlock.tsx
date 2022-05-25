@@ -1,6 +1,7 @@
 /* eslint-disable max-len */
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
+import { ContactForm } from './ContactForm';
 
 const StreamerBlock = () => {
   return (
@@ -147,7 +148,7 @@ const StreamerBlock = () => {
         </p>
       </div>
       <img src="/Page_breaker2.svg" alt="Page Breaker" className="w-full" />
-      <div className="mx-auto flex flex-col justify-center pt-20">
+      <div className="mx-auto flex flex-col justify-center pt-20 pb-40">
         <div className="text-center font-poppins text-[38px] font-light text-[#e7e7e7] xl:text-[36px] 2xl:text-[48px]">
           Come and Play With
           <span className="bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text font-normal text-transparent">
@@ -160,26 +161,10 @@ const StreamerBlock = () => {
           alt="SKULT Logo"
           className="mx-auto scale-90 pb-20 sm:w-[20%]"
         />
-        <div className="text-center font-poppins text-[32px] font-light text-[#e7e7e7] xl:text-[26px]">
-          Wanna know more about it?
-          <div className="bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text font-normal text-transparent">
-            {' '}
-            Enter your email!
-          </div>
-          <div className="pb-40">
-            <form className="space-x-4">
-              <input
-                className="mt-10 w-60 border-b border-[#a9a9a9] bg-[#222222] p-2 pb-2 font-light text-[#a9a9a9] focus:outline-none sm:w-80  sm:w-40 md:w-80 xl:w-80 "
-                type="email"
-                name="email"
-                placeholder="Your Email"
-              />
-              <input
-                type="submit"
-                value="Submit"
-                className="pfont-light mt-4 cursor-pointer rounded-full border border-[#a9a9a9] bg-[#222222] py-1 px-4 text-[#a9a9a9] hover:scale-105 hover:brightness-150"
-              />
-            </form>
+        <div className="flex flex-col items-center space-y-4 font-poppins font-light text-[#e7e7e7]">
+          <p className="text-4xl xl:text-3xl">Wanna know more about it?</p>
+          <div className="my-auto flex max-w-2xl flex-row justify-center">
+            <ContactForm />
           </div>
         </div>
       </div>
