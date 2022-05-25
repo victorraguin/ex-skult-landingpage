@@ -21,7 +21,7 @@ const CollectiblesBlockSecond = () => {
       transition: {
         delayChildren: 0.25,
         duration: 0.25,
-        staggerChildren: 0.5,
+        staggerChildren: 0.25,
       },
     },
   };
@@ -31,7 +31,7 @@ const CollectiblesBlockSecond = () => {
     visible: {
       opacity: 1,
       transition: {
-        duration: 0.25,
+        duration: 0.1,
         ease: 'easeInOut',
       },
     },
