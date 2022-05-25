@@ -144,17 +144,18 @@ const StreamerBlock = () => {
           </div>
         </div>
         <p className="font-base mx-auto text-center font-poppins text-[22px] font-light text-[#e7e7e7] sm:pb-10">
-          Our games however, are designed for any Streamer to get an audience and for any Player to get rewarded
+          Our games are designed for any Streamer to get an audience and for any Player to get rewarded
         </p>
       </div>
       <img src="/Page_breaker2.svg" alt="Page Breaker" className="w-full" />
       <div className="mx-auto flex flex-col justify-center pt-20 pb-40">
         <div className="text-center font-poppins text-[38px] font-light text-[#e7e7e7] xl:text-[36px] 2xl:text-[48px]">
-          Come and Play With
+          Come and
           <span className="bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text font-normal text-transparent">
             {' '}
-            Us
+            Play{' '}
           </span>
+          With Us
         </div>
         <img
           src="https://skult-assets.s3.eu-west-3.amazonaws.com/SKULT_logo.png"

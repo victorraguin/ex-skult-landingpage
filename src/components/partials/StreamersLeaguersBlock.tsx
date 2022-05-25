@@ -166,7 +166,7 @@ const StreamersLeaguersBlock = () => {
             <motion.div initial={{ opacity: 0 }} animate={controls} variants={openCommunityBlock}>
               <p className="font-poppins text-[18px]  font-medium text-primary">Develop your Community</p>
               <p className="pb-5 font-poppins text-[18px] font-medium text-[#b8b8b8]">
-                Get discovered thanks to level-based : any Streamer can get an audience!
+                Get discovered thanks to level-based games: any Streamer can get an audience!
               </p>
             </motion.div>
             <motion.div
@@ -189,7 +189,8 @@ const StreamersLeaguersBlock = () => {
             >
               <p className="font-poppins text-[18px] font-medium text-[#ed713c]">Earn Cash</p>
               <p className="mb-10 pb-5 font-poppins text-[18px] font-medium text-[#b8b8b8]">
-                From your collectibles and your in-game actions. The better you play, the more valuable you are!
+                From your cards and your in-game actions. The better you play and the best you entertain your fans, the
+                more valuable you are!
               </p>
             </motion.div>
             <motion.div
@@ -255,7 +256,7 @@ const StreamersLeaguersBlock = () => {
                     Get fun while following your favorite Streamers
                   </p>
                   <p className="pb-5 font-poppins text-[18px] font-medium text-[#b8b8b8] ">
-                    Enroll Streamer in your Team through their collectibles and participate in their exclusive and
+                    Enroll Streamers in your Team through their cards and participate in their exclusive and
                     personalized events!
                   </p>
                 </motion.div>
@@ -269,7 +270,7 @@ const StreamersLeaguersBlock = () => {
                 <motion.div initial={{ opacity: 0 }} animate={controls} variants={openEarnCashLeaguersBlock}>
                   <p className="font-poppins text-[18px] font-medium text-[#e323ff] ">Earn Cash</p>
                   <p className="mb-10 pb-5 font-poppins text-[18px] font-medium text-[#b8b8b8] ">
-                    Keep you team strong and sell other Streamers you don't need: earn cash from collectible trading
+                    Keep your team strong and sell other Streamers you don't need: earn cash from card trading
                   </p>
                 </motion.div>
                 <motion.div initial={{ opacity: 0 }} animate={controls} variants={openButtonLeaguerBlock}>
@@ -288,11 +289,6 @@ const StreamersLeaguersBlock = () => {
             </div>
           </div>
         </div>
-        {/* <img
-        src="/elements/bas.webp"
-        alt="Streamer"
-        className="invisible relative left-0 bottom-0 w-full xl:visible xl:pb-0"
-      /> */}
         <div className="pb-20 xl:pb-20 2xl:pb-40"></div>
       </motion.div>
 

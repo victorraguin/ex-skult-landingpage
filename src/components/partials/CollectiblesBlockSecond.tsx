@@ -44,8 +44,8 @@ const CollectiblesBlockSecond = () => {
           <img src="/elements/skult-support-icon.svg" alt="Support Icon" className="h-[125px]" />
           <h4 className="pt-5 text-center font-poppins text-[28px] font-semibold text-primary">Support</h4>
           <p className="mx-auto w-[75%] pt-4 text-center font-poppins text-[18px] font-medium text-[#b8b8b8]">
-            Streamers receive a share every time a Leaguer buys one of his cards. Are you a real fan? Then show them
-            your love!
+            Streamers receive a share every time you buy one of their cards. Are you a real fan? Then show them your
+            love!
           </p>
         </motion.div>
         <motion.div className="flex flex-1 flex-col" variants={CardItem}>
