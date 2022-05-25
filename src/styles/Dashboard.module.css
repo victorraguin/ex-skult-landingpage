@@ -2,11 +2,11 @@
   @apply fixed top-0 z-10 flex w-full flex-wrap items-center justify-between bg-bg-1 p-2 shadow;
 }
 .body {
-  @apply top-0 z-10 flex min-h-screen  w-full flex-wrap items-center  items-center justify-between bg-bg-1 bg-center;
+  @apply top-0 z-10 flex min-h-screen  w-full flex-wrap items-center justify-between bg-bg-1 bg-center;
   @apply w-full max-w-screen-2xl;
 }
 .container {
-  @apply fixed top-0 z-10 flex min-h-screen w-full flex-wrap items-center  items-center justify-between bg-gray-500 bg-center;
+  @apply fixed top-0 z-10 flex min-h-screen w-full flex-wrap items-center justify-between bg-gray-500 bg-center;
   @apply w-full;
 }
 .blockstyle {
