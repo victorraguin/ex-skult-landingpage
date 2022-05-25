@@ -28,6 +28,18 @@ export default class MyDocument extends Document {
             src="//js-eu1.hs-scripts.com/25458610.js"
           ></script>
           {/* <!-- End of HubSpot Embed Code --> */}
+
+          {/* eslint-disable-next-line @next/next/no-sync-scripts */}
+          <script charSet="utf-8" type="text/javascript" src="//js-eu1.hsforms.net/forms/v2.js"></script>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `hbspt.forms.create({
+                region: "eu1",
+                portalId: "25458610",
+                formId: "36f5828c-8d7c-4e90-b6a1-a02a350ddeb2"
+              });`,
+            }}
+          />
         </Head>
         <body>
           <Main />
