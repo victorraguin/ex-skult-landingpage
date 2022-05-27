@@ -1,6 +1,5 @@
 /* eslint-disable security/detect-object-injection */
 /* eslint-disable max-len */
-import { GradientText } from './partials/GradientText';
 import Image from 'next/image';
 import { Dispatch, SetStateAction, useEffect, useRef, useState } from 'react';
 import { useSwipe } from 'beautiful-react-hooks';
@@ -12,7 +11,7 @@ export const CollectiblesUseCaseEvents = () => {
 
   return (
     <div className="flex flex-1 justify-center bg-[#222222] pb-12 pt-40 sm:pt-28">
-      <div className="flex max-w-xs flex-col gap-y-8 lg:max-w-md xl:max-w-xl 2xl:max-w-2xl">
+      <div className="flex max-w-xs flex-col gap-y-8 lg:max-w-md xl:max-w-xl 2xl:max-w-4xl">
         <Title />
         <Description />
         <Carousel activeItem={activeItem} onChange={setActiveItem} />
@@ -31,10 +30,8 @@ export const CollectiblesUseCaseEvents = () => {
 
 const Title = () => (
   <div className="flex flex-row items-center justify-center">
-    <img alt="img here" />
-    <h3 className="text-3xl">
-      Participate in <GradientText>Exclusive Events</GradientText>
-    </h3>
+    {/* <img alt="img here" /> */}
+    <h3 className="text-3xl font-semibold text-[#FCC000]">Participate in Exclusive Events</h3>
   </div>
 );
 
