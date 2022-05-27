@@ -191,9 +191,9 @@ const Streamer = ({ controls }: { controls: AnimationControls }) => {
         className="xl:pt-8 xl:pb-0 2xl:pt-2 3xl:pt-0"
       >
         <button
-          className={`relative rounded-full bg-gradient-to-r from-[#FFCC00] to-[#ED713C] p-[3px] text-sm hover:scale-105`}
+          className={`group relative rounded-full bg-gradient-to-r from-[#FFCC00] to-[#ED713C] p-[3px] text-sm hover:scale-105`}
         >
-          <div className="group relative flex flex-row rounded-full bg-[#262626] px-6 pt-3">
+          <div className="relative flex flex-row rounded-full bg-[#262626] px-6 pt-3">
             <Link href="/streamer" passHref>
               <div className="pb-3 font-poppins text-[20px]  text-[#a9a9a9] group-hover:brightness-150">
                 I'm a Streamer!
@@ -332,9 +332,9 @@ const Leaguer = ({
           >
             <button
               onClick={() => setIsLeaguerModalOpen(true)}
-              className={`relative rounded-full bg-gradient-to-l from-[#7517F8] to-[#E323ff] p-[3px] text-sm hover:scale-105`}
+              className={`group relative rounded-full bg-gradient-to-l from-[#7517F8] to-[#E323ff] p-[3px] text-sm hover:scale-105`}
             >
-              <div className="group relative flex flex-row rounded-full bg-[#262626] px-6 pt-3">
+              <div className="relative flex flex-row rounded-full bg-[#262626] px-6 pt-3">
                 <div className="pb-3 font-poppins text-[20px] text-[#a9a9a9] group-hover:brightness-150">
                   Let's Play
                 </div>
