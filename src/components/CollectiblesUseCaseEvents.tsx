@@ -11,7 +11,7 @@ export const CollectiblesUseCaseEvents = () => {
 
   return (
     <div className="flex flex-1 justify-center bg-[#222222] pb-12 pt-48 sm:pt-36">
-      <div className="flex max-w-xs flex-col gap-y-16 lg:max-w-md xl:max-w-xl 2xl:max-w-4xl">
+      <div className="flex max-w-xs flex-col gap-y-16 lg:max-w-md xl:max-w-xl 2xl:max-w-2xl">
         <Title />
         <Description />
         <Carousel activeItem={activeItem} onChange={setActiveItem} />
