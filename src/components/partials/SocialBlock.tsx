@@ -69,7 +69,7 @@ const SocialBlock = () => {
             variants={ombre}
             className={`
               absolute inset-x-0 bottom-20 mx-auto w-52 bg-[#040303]
-              py-2 text-center blur xl:w-60 2xl:w-64 4xl:w-80
+              py-2 text-center blur xl:w-72 2xl:w-80 4xl:w-96
             `}
           ></motion.p>
         </motion.div>
