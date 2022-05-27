@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import LeagueRules from '../../public/elements/collectiblesUseCase/league.svg';
+import LeagueRules from '../../../public/elements/collectiblesUseCase/league.svg';
 
 export const CollectiblesUseCaseLeagues = () => {
   return (

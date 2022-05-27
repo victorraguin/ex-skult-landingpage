@@ -1,6 +1,6 @@
 import React from 'react';
-import { CollectiblesUseCaseEvents } from '../CollectiblesUseCaseEvents';
-import { CollectiblesUseCaseLeagues } from '../CollectiblesUseCaseLeagues';
+import { CollectiblesUseCaseEvents } from './CollectiblesUseCaseEvents';
+import { CollectiblesUseCaseLeagues } from './CollectiblesUseCaseLeagues';
 import { GradientText } from './GradientText';
 
 const CollectiblesUseCaseBlock = () => {
