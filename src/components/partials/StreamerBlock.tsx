@@ -12,11 +12,11 @@ const StreamerBlock = () => {
         <StreamerBenefits />
       </div>
 
-      <div className="bg-gradient-to-r from-[#FFCC00] to-[#E323ff] pt-[4px]" />
+      <img src="/Page_breaker2.svg" alt="Page Breaker" className="w-full" />
       <StreamerExperiences />
       <img src="/Page_breaker1.svg" alt="Page Breaker" className="w-full" />
       <StreamerRanks />
-      <img src="/Page_breaker2.svg" alt="Page Breaker" className="w-full" />
+      <div className="bg-gradient-to-r from-[#FFCC00] to-[#E323ff] pt-[4px]" />
       <StreamerInvitation />
     </div>
   );

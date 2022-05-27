@@ -9,13 +9,20 @@ const Footer = () => {
 
   return (
     <div className="mx-1 flex flex-row flex-wrap justify-around py-2 2xl:mx-5 3xl:xl:mx-10">
-      <div className="mx-auto hidden w-[15rem] flex-col sm:mx-4 md:inline lg:mx-0 xl:py-4 2xl:mx-0 3xl:mx-4">
+      <div
+        className={`
+        mx-auto hidden w-[15rem] flex-col py-8
+        sm:mx-4 md:inline lg:mx-0 lg:py-0 xl:py-4 2xl:mx-0 3xl:mx-4
+      `}
+      >
         <Link href="#top" passHref>
           <img className="mx-4 h-12 cursor-pointer hover:scale-105" src={`./elements/SKULT.png`} alt="SKULT" />
         </Link>
-        <p className="pt-2 text-center font-poppins text-[15px] text-white ">© 2022 - SKULT</p>
+        <p className="pt-2 text-center font-poppins text-[15px] text-[#a9a9a9]">© 2022 - SKULT</p>
       </div>
-      <div className={`my-auto flex flex-row xl:mx-0 ${isOnStreamerPage && 'invisible'}`}>
+      <div
+        className={`my-auto flex flex-row py-8 lg:py-0 xl:mx-0 ${isOnStreamerPage && 'hidden lg:invisible lg:flex'}`}
+      >
         <ContactForm />
       </div>
       <div className="my-auto flex flex-row flex-wrap gap-x-1 xl:gap-x-2">

@@ -35,6 +35,6 @@ export const StreamerBenefits = () => (
 const Benefit = ({ icon, advantage }: { icon: StaticImageData; advantage: React.ReactNode }) => (
   <div className="flex flex-col items-center">
     <Image src={icon} width={100} height={100} layout="fixed" />
-    <div className="w-52 text-center text-2xl font-extralight">{advantage}</div>
+    <div className="w-52 text-center text-2xl font-extralight 2xl:text-3xl">{advantage}</div>
   </div>
 );

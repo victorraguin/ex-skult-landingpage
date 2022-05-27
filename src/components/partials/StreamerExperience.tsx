@@ -4,8 +4,13 @@ import cardPlayEarnIcon from '../../../public/elements/streamer/CARD-PLAY-EARN.p
 import { GradientText } from './GradientText';
 
 export const StreamerExperiences = () => (
-  <div className="flex h-[70vh] flex-1 bg-[#222222] pb-20">
-    <div className="m-auto flex max-w-7xl flex-1 flex-col items-center justify-around gap-y-16 md:flex-row">
+  <div className="flex min-h-[70vh] flex-1 bg-[#222222] pb-20">
+    <div
+      className={`
+        m-auto flex max-w-xs flex-1 flex-col items-center justify-around
+        gap-y-16 gap-x-8 md:max-w-xl md:flex-row lg:max-w-7xl lg:gap-x-0
+      `}
+    >
       <Experience
         icon={eventIcon}
         title={
@@ -46,9 +51,9 @@ const Experience = ({
   title: React.ReactNode;
   description: string;
 }) => (
-  <div className="flex max-w-sm flex-1 flex-col items-center">
+  <div className="flex max-w-sm flex-1 flex-col items-center 2xl:gap-y-6">
     <Image src={icon} layout="fixed" width={150} height={150} />
-    <p className="text-xl font-medium">{title}</p>
-    <p className="pt-4 text-center text-[#B8B8B8]">{description}</p>
+    <p className="text-xl font-medium 2xl:text-3xl">{title}</p>
+    <p className="pt-4 text-center text-lg text-[#B8B8B8] 2xl:text-xl">{description}</p>
   </div>
 );

@@ -5,9 +5,9 @@ import LegendIcon from '../../../public/elements/streamer/3stars.png';
 import Image from 'next/image';
 
 export const StreamerRanks = () => (
-  <div className="flex h-[70vh] flex-col gap-y-28 py-10">
+  <div className="flex min-h-[65vh] flex-col gap-y-28 py-10 text-lg 2xl:text-xl">
     <Title />
-    <p className="text-center font-medium text-[#989898]">
+    <p className="mx-auto max-w-xs text-center font-medium text-[#e7e7e7] md:max-w-xl">
       Streamer Ranks Based on Your Popularity
       <br />
       For Every Card you Sold You get:
@@ -17,7 +17,7 @@ export const StreamerRanks = () => (
       {ranks.map(({ icon, name, royalties }) => (
         <div key={name} className="flex flex-col items-center">
           <Image src={icon} layout="fixed" width={200} height={100} />
-          <p className="text-lg font-semibold text-[#f3bf00]">{name}</p>
+          <p className="text-xl font-semibold text-[#f3bf00] 2xl:text-2xl">{name}</p>
           <p>
             <span className="font-medium text-[#989898]">Get</span> {royalties}%
           </p>
@@ -25,14 +25,14 @@ export const StreamerRanks = () => (
       ))}
     </div>
 
-    <p className="mx-auto max-w-md text-center">
+    <p className="mx-auto max-w-xs text-center md:max-w-xl">
       Our games are designed for any Streamer to get an audience and for any Player to get rewarded
     </p>
   </div>
 );
 
 const Title = () => (
-  <p className="text-center text-3xl text-[#e7e7e7]">
+  <p className="mx-auto max-w-xs text-center text-3xl text-[#e7e7e7] md:max-w-xl lg:max-w-7xl 2xl:text-4xl">
     The More You Go <GradientText>Up the Ladder</GradientText> The <GradientText>More you Earn</GradientText>
   </p>
 );
