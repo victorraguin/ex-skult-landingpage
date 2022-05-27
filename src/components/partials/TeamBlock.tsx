@@ -21,7 +21,7 @@ const TeamBlock = () => {
       transition: {
         delayChildren: 0.25,
         duration: 0.25,
-        staggerChildren: 0.5,
+        staggerChildren: 0.2,
       },
     },
   };
