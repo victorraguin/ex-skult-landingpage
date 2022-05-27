@@ -12,7 +12,6 @@ import TeamBlock from '../components/partials/TeamBlock';
 import { motion } from 'framer-motion';
 import SocialBlock from '../components/partials/SocialBlock';
 import Footer from '../components/partials/Footer';
-import FantasyandGamesPart from '../components/partials/FantasyandGames';
 
 const Home: NextPage = () => {
   return (
@@ -24,8 +23,9 @@ const Home: NextPage = () => {
         <PresentationBlock />
         <CollectiblesBlockFirst />
         <CollectiblesBlockSecond />
+        <div className="bg-gradient-to-r from-[#FFCC00] to-[#E323ff] pt-[2px]" />
         <CollectiblesUseCaseBlock />
-        <FantasyandGamesPart />
+        <div className="bg-gradient-to-r from-[#FFCC00] to-[#E323ff] pt-[2px]" />
         <StreamersLeaguersBlock />
         <TeamBlock />
         <SocialBlock />
