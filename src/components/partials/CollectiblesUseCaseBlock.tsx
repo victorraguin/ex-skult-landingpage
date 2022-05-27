@@ -6,7 +6,7 @@ import { GradientText } from './GradientText';
 const CollectiblesUseCaseBlock = () => {
   return (
     <div className="relative flex min-h-[90vh] flex-1 flex-col gap-y-8 text-[#E7E7E7] sm:flex-row">
-      <h2 className="absolute inset-0 top-8 h-max text-center text-4xl">
+      <h2 className="absolute inset-0 top-8 h-max text-center text-5xl">
         What can you do with <GradientText>your Cards</GradientText>?
       </h2>
       <CollectiblesUseCaseEvents />

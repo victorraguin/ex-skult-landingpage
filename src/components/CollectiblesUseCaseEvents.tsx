@@ -10,8 +10,8 @@ export const CollectiblesUseCaseEvents = () => {
   const [activeItem, setActiveItem] = useState(1);
 
   return (
-    <div className="flex flex-1 justify-center bg-[#222222] pb-12 pt-40 sm:pt-28">
-      <div className="flex max-w-xs flex-col gap-y-8 lg:max-w-md xl:max-w-xl 2xl:max-w-4xl">
+    <div className="flex flex-1 justify-center bg-[#222222] pb-12 pt-48 sm:pt-36">
+      <div className="flex max-w-xs flex-col gap-y-16 lg:max-w-md xl:max-w-xl 2xl:max-w-4xl">
         <Title />
         <Description />
         <Carousel activeItem={activeItem} onChange={setActiveItem} />
@@ -62,7 +62,7 @@ const Carousel = ({ activeItem, onChange }: { activeItem: number; onChange: Disp
   }, [swipeState]);
 
   return (
-    <div ref={swipeRef} className="relative flex flex-row items-center gap-x-4">
+    <div ref={swipeRef} className="relative flex flex-row items-center justify-center gap-x-4">
       <button
         onTouchEnd={() => onChange(v => (v === 0 ? events.length : v) - 1)}
         onClick={() => onChange(v => (v === 0 ? events.length : v) - 1)}
