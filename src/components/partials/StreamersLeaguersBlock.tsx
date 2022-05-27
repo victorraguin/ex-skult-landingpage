@@ -106,7 +106,7 @@ const StreamersLeaguersBlock = () => {
 
   return (
     <>
-      <motion.div className="relative flex flex-col flex-wrap  bg-[#282828] pt-20 2xl:pt-20 3xl:pt-20" ref={ref}>
+      <motion.div className="relative flex flex-col flex-wrap bg-[#282828] pt-20 2xl:pt-20 3xl:pt-20" ref={ref}>
         <motion.h1
           initial={{ opacity: 0 }}
           animate={controls}
@@ -158,36 +158,37 @@ const StreamersLeaguersBlock = () => {
             >
               Any Streamer
             </motion.h2>
-            <motion.div initial={{ opacity: 0 }} animate={controls} variants={openCommunityBlock}>
-              <p className="font-poppins text-[18px] font-medium text-primary">Develop your Community</p>
-              <p className="pb-5 font-poppins text-[18px] font-medium text-[#b8b8b8]">
-                Get discovered thanks to level-based games: any Streamer can get an audience!
-              </p>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={controls}
-              variants={openEngagementBlock}
-              className="pt-[22px]"
-            >
-              <p className="font-poppins text-[18px] font-medium text-[#f49124]">Boost Engagement</p>
-              <p className="pb-5 font-poppins  text-[18px] font-medium text-[#b8b8b8] ">
-                {' '}
-                Grow your fan base and increase interactions with your followers.{' '}
-              </p>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={controls}
-              variants={openEarnCashStreamersBlock}
-              className="pt-[26px]"
-            >
-              <p className="font-poppins text-[18px] font-medium text-[#ed713c]">Earn Cash</p>
-              <p className="mb-10 pb-5 font-poppins text-[18px] font-medium text-[#b8b8b8]">
-                From your cards and your in-game actions. The better you play and the best you entertain your fans, the
-                more valuable you are!
-              </p>
-            </motion.div>
+            <div className="h-[26rem]">
+              <motion.div initial={{ opacity: 0 }} animate={controls} variants={openCommunityBlock}>
+                <p className="font-poppins text-[18px] font-medium text-primary">Develop your Community</p>
+                <p className="pb-5 font-poppins text-[18px] font-medium text-[#b8b8b8]">
+                  Get discovered thanks to level-based games: any Streamer can get an audience!
+                </p>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={controls}
+                variants={openEngagementBlock}
+                className="pt-[22px]"
+              >
+                <p className="font-poppins text-[18px] font-medium text-[#f49124]">Boost Engagement</p>
+                <p className="pb-5 font-poppins  text-[18px] font-medium text-[#b8b8b8]">
+                  Grow your fan base and increase interactions with your followers.
+                </p>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={controls}
+                variants={openEarnCashStreamersBlock}
+                className="pt-[26px]"
+              >
+                <p className="font-poppins text-[18px] font-medium text-[#ed713c]">Earn Cash</p>
+                <p className="mb-10 pb-5 font-poppins text-[18px] font-medium text-[#b8b8b8]">
+                  From your cards and your in-game actions. The better you play and the best you entertain your fans,
+                  the more valuable you are!
+                </p>
+              </motion.div>
+            </div>
             <motion.div
               initial={{ opacity: 0 }}
               animate={controls}
@@ -195,11 +196,11 @@ const StreamersLeaguersBlock = () => {
               className="xl:pt-8 xl:pb-0 2xl:pt-2 3xl:pt-0"
             >
               <button
-                className={`relative rounded-full bg-gradient-to-r from-[#FFCC00] to-[#ED713C] p-0.5 text-sm hover:scale-105`}
+                className={`relative rounded-full bg-gradient-to-r from-[#FFCC00] to-[#ED713C] p-[3px] text-sm hover:scale-105`}
               >
-                <div className="relative flex flex-row rounded-full bg-[#262626] px-6 pt-3 ">
+                <div className="group relative flex flex-row rounded-full bg-[#262626] px-6 pt-3">
                   <Link href="/streamer" passHref>
-                    <div className={`pb-3 font-poppins text-[20px]  text-[#a9a9a9] hover:brightness-150`}>
+                    <div className="pb-3 font-poppins text-[20px]  text-[#a9a9a9] group-hover:brightness-150">
                       I'm a Streamer!
                     </div>
                   </Link>
@@ -207,6 +208,7 @@ const StreamersLeaguersBlock = () => {
               </button>
             </motion.div>
           </div>
+
           <div className="pt-20 xl:w-1/3 xl:pt-0">
             <div className="xl:left-[-20%] xl:mx-0">
               <div className="pb-[44%] md:pb-[46%] xl:pb-[47%] 2xl:pb-[46%] 3xl:pb-[39%] 4xl:pb-[37%]">
@@ -241,40 +243,47 @@ const StreamersLeaguersBlock = () => {
                 initial={{ opacity: 0 }}
                 animate={controls}
                 variants={openAnyLeaguerText}
-                className="bg-gradient-to-r from-[#7517F8] to-[#E323FF] bg-clip-text pt-5 pb-10 text-center font-poppins text-[32px] font-semibold text-transparent 2xl:text-[48px]"
+                className="bg-gradient-to-r from-[#E323FF] to-[#7517F8] bg-clip-text pt-5 pb-10 text-center font-poppins text-[32px] font-semibold text-transparent 2xl:text-[48px]"
               >
                 Anyone
               </motion.h2>
               <div className="xl:ml-10">
-                <motion.div initial={{ opacity: 0 }} animate={controls} variants={openFunBlock}>
-                  <p className="font-poppins text-[18px] font-medium  text-[#a80cfb]">
-                    Get fun while following your favorite Streamers
-                  </p>
-                  <p className="pb-5 font-poppins text-[18px] font-medium text-[#b8b8b8] ">
-                    Enroll Streamers in your Team through their cards and participate in their exclusive and
-                    personalized events!
-                  </p>
-                </motion.div>
-                <motion.div initial={{ opacity: 0 }} animate={controls} variants={openRewardsBlock}>
-                  <p className="font-poppins text-[18px] font-medium text-[#C820FD]">Play & Earn Rewards</p>
-                  <p className="pb-5 font-poppins text-[18px] font-medium text-[#b8b8b8] ">
-                    Challenge other participants in SKULT immersive games, and get rewarded. Our first game is a Fantasy
-                    League!
-                  </p>
-                </motion.div>
-                <motion.div initial={{ opacity: 0 }} animate={controls} variants={openEarnCashLeaguersBlock}>
-                  <p className="font-poppins text-[18px] font-medium text-[#e323ff] ">Earn Cash</p>
-                  <p className="mb-10 pb-5 font-poppins text-[18px] font-medium text-[#b8b8b8] ">
-                    Keep your team strong and sell other Streamers you don't need: earn cash from card trading
-                  </p>
-                </motion.div>
-                <motion.div initial={{ opacity: 0 }} animate={controls} variants={openButtonLeaguerBlock}>
+                <div className="h-[26rem]">
+                  <motion.div initial={{ opacity: 0 }} animate={controls} variants={openFunBlock}>
+                    <p className="font-poppins text-[18px] font-medium  text-[#e323ff]">
+                      Get fun while following your favorite Streamers
+                    </p>
+                    <p className="pb-5 font-poppins text-[18px] font-medium text-[#b8b8b8] ">
+                      Enroll Streamers in your Team through their cards and participate in their exclusive and
+                      personalized events!
+                    </p>
+                  </motion.div>
+                  <motion.div initial={{ opacity: 0 }} animate={controls} variants={openRewardsBlock}>
+                    <p className="font-poppins text-[18px] font-medium text-[#C820FD]">Play & Earn Rewards</p>
+                    <p className="pb-5 font-poppins text-[18px] font-medium text-[#b8b8b8] ">
+                      Challenge other participants in SKULT immersive games, and get rewarded. Our first game is a
+                      Fantasy League!
+                    </p>
+                  </motion.div>
+                  <motion.div initial={{ opacity: 0 }} animate={controls} variants={openEarnCashLeaguersBlock}>
+                    <p className="font-poppins text-[18px] font-medium text-[#a80cfb] ">Earn Cash</p>
+                    <p className="mb-10 pb-5 font-poppins text-[18px] font-medium text-[#b8b8b8] ">
+                      Keep your team strong and sell other Streamers you don't need: earn cash from card trading
+                    </p>
+                  </motion.div>
+                </div>
+                <motion.div
+                  className="xl:pt-8 xl:pb-0 2xl:pt-2 3xl:pt-0"
+                  initial={{ opacity: 0 }}
+                  animate={controls}
+                  variants={openButtonLeaguerBlock}
+                >
                   <button
                     onClick={() => setIsLeaguerModalOpen(true)}
                     className={`relative rounded-full bg-gradient-to-l from-[#7517F8] to-[#E323ff] p-[3px] text-sm hover:scale-105`}
                   >
-                    <div className="relative flex flex-row rounded-full bg-[#262626] px-6 pt-3">
-                      <div className={` pb-3  font-poppins text-[20px] text-[#a9a9a9] hover:brightness-150`}>
+                    <div className="group relative flex flex-row rounded-full bg-[#262626] px-6 pt-3">
+                      <div className="pb-3 font-poppins text-[20px] text-[#a9a9a9] group-hover:brightness-150">
                         Let's Play
                       </div>
                     </div>
