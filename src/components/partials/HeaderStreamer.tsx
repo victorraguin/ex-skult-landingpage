@@ -58,12 +58,12 @@ const Header = () => {
         <motion.div initial={{ y: -250 }} animate={{ y: -10 }} transition={{ delay: 1, type: 'spring', stiffness: 70 }}>
           <a href="https://discord.gg/fJvrQCJr4W" target="_blank" rel="noopener noreferrer">
             <motion.button
-              className={`${styles.HeaderJoinDiscord} absolute top-[-2.6rem] right-[1rem] scale-[0.6] rounded-full bg-gradient-to-br from-[#FFCC00] to-[#ED713C] p-0.5 text-sm hover:scale-[0.65] sm:right-[-2rem] md:right-[0rem] md:scale-[0.7] md:hover:scale-[0.75]  xl:top-[-3.3rem] xl:right-20 xl:scale-[0.8] xl:hover:scale-[0.85] 2xl:scale-[0.9] 2xl:hover:scale-[0.95] 3xl:scale-[0.95] 3xl:hover:scale-[1] 4xl:scale-[1.25] 4xl:hover:scale-[1.3]`}
+              className={`${styles.HeaderJoinDiscord} absolute top-[-2.6rem] right-[1rem] scale-[0.6] rounded-full bg-gradient-to-br from-[#FFCC00] to-[#ED713C] p-0.5 text-sm hover:scale-[0.65] sm:right-[-2rem] md:right-[0rem] md:scale-[0.7] md:hover:scale-[0.75]  xl:top-[-3.3rem] xl:right-20 xl:scale-[0.8] xl:hover:scale-[0.85] 2xl:scale-[0.9] 2xl:hover:scale-[0.95] 3xl:scale-[0.95] 3xl:hover:scale-[1] 4xl:hover:scale-[1.05]`}
             >
-              <motion.div className="relative flex flex-row rounded-full bg-[#262626] px-6 pt-[8px]">
-                <DiscordButton fill={'#fff'} />
+              <motion.div className="group relative flex flex-row rounded-full bg-[#262626] px-6 pt-2">
+                <DiscordButton fill="#fff" />
                 <motion.div
-                  className={`hidden pt-[6px] pl-2 font-poppins text-[20px] font-light text-[#a9a9a9] hover:brightness-150 sm:flex`}
+                  className={`hidden pt-1.5 pl-2 font-poppins text-[20px] font-light text-[#a9a9a9] group-hover:brightness-150 sm:flex`}
                 >
                   Join the Discord
                 </motion.div>

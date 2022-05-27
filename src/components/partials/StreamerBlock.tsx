@@ -7,7 +7,7 @@ import { StreamerRanks } from './StreamerRanks';
 const StreamerBlock = () => {
   return (
     <div className="h-full w-full bg-[#282828] pt-40 font-poppins sm:pt-60">
-      <div className="min-h-full md:h-[60vh]">
+      <div className="min-h-full sm:space-y-12 sm:pb-16">
         <Title />
         <StreamerBenefits />
       </div>

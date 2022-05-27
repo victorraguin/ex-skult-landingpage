@@ -5,7 +5,7 @@ import LegendIcon from '../../../public/elements/streamer/3stars.png';
 import Image from 'next/image';
 
 export const StreamerRanks = () => (
-  <div className="flex min-h-[65vh] flex-col gap-y-28 py-10 text-lg 2xl:text-xl">
+  <div className="flex flex-col gap-y-28 pt-10 pb-32 text-lg 2xl:text-xl">
     <Title />
     <p className="mx-auto max-w-xs text-center font-medium text-[#e7e7e7] md:max-w-xl">
       Streamer Ranks Based on Your Popularity
