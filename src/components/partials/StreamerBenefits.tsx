@@ -1,6 +1,6 @@
-import visibilityIcon from '../../../public/elements/streamer/visibility.png';
-import engageIcon from '../../../public/elements/streamer/engage.png';
-import earnCashIcon from '../../../public/elements/streamer/earn-cash.png';
+import visibilityIcon from '../../../public/elements/streamer/visibility.svg';
+import engageIcon from '../../../public/elements/streamer/engage.svg';
+import earnCashIcon from '../../../public/elements/streamer/earn-cash.svg';
 import Image, { StaticImageData } from 'next/image';
 
 export const StreamerBenefits = () => (
@@ -12,6 +12,7 @@ export const StreamerBenefits = () => (
           Increase your <span className="font-semibold">Visibility</span>
         </p>
       }
+      shadowColor="shadow-[#9E30FE]"
     />
     <Benefit
       icon={engageIcon}
@@ -20,6 +21,7 @@ export const StreamerBenefits = () => (
           <span className="font-semibold">Engage</span> Your Audience
         </p>
       }
+      shadowColor="shadow-[#ED713C]"
     />
     <Benefit
       icon={earnCashIcon}
@@ -28,13 +30,29 @@ export const StreamerBenefits = () => (
           <span className="font-semibold">Earn</span> cash
         </p>
       }
+      shadowColor="shadow-[#FFC000]"
     />
   </div>
 );
 
-const Benefit = ({ icon, advantage }: { icon: StaticImageData; advantage: React.ReactNode }) => (
-  <div className="flex flex-col items-center">
-    <Image src={icon} width={100} height={100} layout="fixed" />
+const Benefit = ({
+  icon,
+  advantage,
+  shadowColor,
+}: {
+  icon: StaticImageData;
+  advantage: React.ReactNode;
+  shadowColor: string;
+}) => (
+  <div className="flex flex-col items-center gap-y-6">
+    <div
+      className={`
+        rounded-lg
+        shadow-[0_0_10px_5px_rgba(0,0,0,0.3)] ${shadowColor} flex h-14 w-14 items-center justify-center xl:h-20 xl:w-20
+      `}
+    >
+      <Image src={icon} width={42} height={42} layout="intrinsic" />
+    </div>
     <div className="w-52 text-center text-2xl font-extralight 2xl:text-3xl">{advantage}</div>
   </div>
 );
