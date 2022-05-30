@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React from 'react';
 import Head from 'next/head';
 
@@ -34,8 +35,21 @@ export interface SEOProps {
 }
 
 Seo.defaultProps = {
-  description: 'SKULT Description',
-  keywords: ['Streamers', 'SKULT', 'Games', 'Cryptocurrency', 'Blockchain', 'Twitch', 'YouTube', 'Discord'],
+  description:
+    'Collect Cards of your favorite Streamers and participate in exclusive events & Fantasy Leagues! Enter the SKULT Community and challenge other Leaguers: earn rewards from the in-game actions of the Streamers you love!',
+  keywords: [
+    'Streamers',
+    'SKULT',
+    'Games',
+    'Cryptocurrency',
+    'Blockchain',
+    'Twitch',
+    'Cards',
+    'Discord',
+    'Fantasy',
+    'Earn',
+    'Web3',
+  ],
 };
 
 export default Seo;
