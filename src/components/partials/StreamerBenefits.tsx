@@ -9,7 +9,7 @@ export const StreamerBenefits = () => (
       icon={visibilityIcon}
       advantage={
         <p>
-          Increase your <span className="font-semibold">Visibility</span>
+          Increase your <span className="font-semibold">visibility</span>
         </p>
       }
       shadowColor="shadow-[#9E30FE]"
@@ -18,7 +18,7 @@ export const StreamerBenefits = () => (
       icon={engageIcon}
       advantage={
         <p>
-          <span className="font-semibold">Engage</span> Your Audience
+          <span className="font-semibold">Engage</span> your audience
         </p>
       }
       shadowColor="shadow-[#ED713C]"

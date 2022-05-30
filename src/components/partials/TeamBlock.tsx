@@ -52,9 +52,9 @@ const TeamBlock = () => {
               <p className=" pb-3 text-center font-poppins text-[32px]  font-light text-white xl:text-[36px] 2xl:text-[48px]">
                 The{' '}
                 <span className="bg-gradient-to-tr from-[#FFCC00] to-[#ED713C] bg-clip-text font-poppins font-normal text-transparent xl:text-[36px] 2xl:text-[48px]">
-                  Dream
+                  dream
                 </span>{' '}
-                Team
+                team
               </p>
             </motion.div>
           </div>

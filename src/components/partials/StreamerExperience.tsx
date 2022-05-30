@@ -15,7 +15,7 @@ export const StreamerExperiences = () => (
         icon={eventIcon}
         title={
           <span>
-            Create <GradientText className="font-semibold">Exclusive</GradientText> Events
+            Create <GradientText className="font-semibold">exclusive</GradientText> events
           </span>
         }
         description={`

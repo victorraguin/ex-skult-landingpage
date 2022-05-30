@@ -8,9 +8,9 @@ export const StreamerRanks = () => (
   <div className="flex flex-col gap-y-28 pt-10 pb-32 text-lg 2xl:text-xl">
     <Title />
     <p className="mx-auto max-w-xs text-center font-medium text-[#e7e7e7] md:max-w-xl">
-      Streamer Ranks Based on Your Popularity
+      Streamer Ranks based on your popularity
       <br />
-      For Every Card you Sold You get:
+      For every Card you sell you get:
     </p>
 
     <div className="mx-auto flex w-full max-w-7xl flex-row flex-wrap items-center justify-evenly gap-y-8">
@@ -33,7 +33,7 @@ export const StreamerRanks = () => (
 
 const Title = () => (
   <p className="mx-auto max-w-xs text-center text-3xl text-[#e7e7e7] md:max-w-xl lg:max-w-7xl xl:text-5xl 2xl:text-4xl">
-    The More You Go <GradientText>Up the Ladder</GradientText> The <GradientText>More you Earn</GradientText>
+    The more you go <GradientText>up the ladder</GradientText> the <GradientText>more you earn</GradientText>
   </p>
 );
 

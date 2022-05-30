@@ -31,7 +31,7 @@ const Title = () => (
       for
       <span className="bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text leading-none text-transparent">
         {' '}
-        streamers
+        Streamers
       </span>
     </div>
   </div>

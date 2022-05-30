@@ -4,7 +4,7 @@ import { GradientText } from './GradientText';
 export const StreamerInvitation = () => (
   <div className="flex min-h-[70vh] flex-col justify-center gap-y-20 bg-[#222222]">
     <div className="text-center font-poppins text-3xl font-light text-[#e7e7e7] xl:text-5xl">
-      Come and <GradientText>Play</GradientText> With Us
+      Come and <GradientText>Play</GradientText> with us
     </div>
 
     <div className="flex flex-col items-center space-y-12 font-poppins font-light text-[#e7e7e7]">

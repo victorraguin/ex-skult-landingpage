@@ -37,7 +37,7 @@ const StreamersLeaguersBlock = () => {
           Nobody
           <p className="pl-2 text-center font-poppins text-3xl font-light text-[#e7e7e7] xl:pl-3 xl:text-5xl">
             {' '}
-            is Left Behind!
+            is left behind!
           </p>
         </motion.h1>
         <div className="mx-5 flex flex-row flex-wrap justify-around gap-y-20 pt-[4.5rem] xl:mx-0 xl:flex-nowrap 2xl:pt-[8rem] 4xl:pt-[12rem]">
@@ -336,7 +336,7 @@ const Leaguer = ({
             >
               <div className="relative flex flex-row rounded-full bg-[#262626] px-6 pt-3">
                 <div className="pb-3 font-poppins text-[20px] text-[#a9a9a9] group-hover:brightness-150">
-                  Let's Play
+                  Let's play
                 </div>
               </div>
             </button>
