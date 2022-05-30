@@ -38,14 +38,14 @@ const CollectiblesBlockFirst = () => {
   };
 
   return (
-    <motion.div className="h-full bg-[#282828]">
+    <motion.div className="mt-28 h-full bg-[#282828]">
       <motion.img
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
         src="/skult-streamer-cards.png"
         alt="SKULT Streamer Cards"
-        className="mx-auto mt-28 mb-12 hidden h-72 sm:flex lg:h-80 xl:h-96"
+        className="mx-auto mb-12 hidden h-72 sm:flex lg:h-80 xl:h-96"
       />
       <motion.div
         className="h-full bg-[#282828]"
