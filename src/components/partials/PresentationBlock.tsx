@@ -57,9 +57,9 @@ const PresentationBlock = () => {
         </motion.h3>
       </div>
       <div className="relative flex flex-col">
-        <div className="z-10 mx-auto rounded-[15px] xl:h-[504px] xl:w-[896px] xl:bg-[#282828] 4xl:w-[1320px]">
+        <div className="z-10 mx-auto rounded-[15px] xl:h-[504px] xl:w-[896px] xl:bg-[#282828] 4xl:w-[900px]">
           <motion.video
-            className="relative z-20 w-[340px] rounded-[15px] sm:w-[480px] md:w-[680px] lg:w-[880px] xl:h-[504px] xl:w-[896px] 4xl:w-[1320px]"
+            className="relative z-20 w-[340px] rounded-[15px] sm:w-[480px] md:w-[680px] lg:w-[880px] xl:h-[504px] xl:w-[896px] 4xl:w-[900px]"
             animate={controls}
             initial={{ opacity: 1 }}
             variants={videoVariant}
@@ -74,7 +74,7 @@ const PresentationBlock = () => {
           <motion.img
             src="./elements/lueur-1.webp"
             alt="SKULT TV"
-            className="absolute  top-[-12%] z-0 blur-3xl md:top-[-30%] xl:left-[1%] xl:top-[-38%] xl:w-[99%] 2xl:left-[5%] 2xl:w-[92%] 3xl:left-[16.5%] 3xl:w-[68%] 4xl:left-[12%] 4xl:top-[-50%] 4xl:w-[80%]"
+            className="absolute  top-[-12%] z-0 blur-3xl md:top-[-30%] xl:left-[1%] xl:top-[-38%] xl:w-[99%] 2xl:left-[5%] 2xl:w-[92%] 3xl:left-[16.5%] 3xl:w-[68%] 4xl:left-[18%] 4xl:top-[-50%] 4xl:w-[65%]"
             animate={controls}
             initial="visible"
             variants={lueurVariant}
@@ -82,7 +82,7 @@ const PresentationBlock = () => {
           <motion.img
             src="./elements/lueur-2.webp"
             alt="SKULT TV"
-            className="absolute top-[-5%] z-0 blur-3xl md:top-[-30%]  xl:left-[1%] xl:top-[-38%] xl:w-[99%] 2xl:left-[5%] 2xl:w-[92%] 3xl:left-[16.5%] 3xl:w-[68%] 4xl:left-[12%] 4xl:top-[-50%] 4xl:w-[80%]"
+            className="absolute top-[-5%] z-0 blur-3xl md:top-[-30%]  xl:left-[1%] xl:top-[-38%] xl:w-[99%] 2xl:left-[5%] 2xl:w-[92%] 3xl:left-[16.5%] 3xl:w-[68%] 4xl:left-[18%] 4xl:top-[-50%] 4xl:w-[65%]"
             animate={controls}
             initial="hidden"
             variants={lueurVariantViolet}
