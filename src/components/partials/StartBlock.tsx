@@ -39,13 +39,14 @@ const StartBlock = () => {
           >
             Streams can be much more than just a video!
           </motion.h2>
-          <div>
+          <div className="">
             <a href="https://discord.gg/fJvrQCJr4W" target="_blank" rel="noreferrer" className="group">
               <motion.button
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 2.5, duration: 1 }}
-                className={`mt-4 rounded-full bg-gradient-to-br from-[#FFCC00] to-[#ED713C] p-0.5 text-sm hover:scale-[0.65] md:scale-[0.7] md:hover:scale-[0.75] xl:scale-[0.8] xl:hover:scale-[0.85] 2xl:scale-[0.9] 2xl:hover:scale-[0.95] 3xl:scale-[0.95] 3xl:hover:scale-[1] 4xl:hover:scale-[1.05]`}
+                className={`mt-4
+                rounded-full bg-gradient-to-br from-[#FFCC00] to-[#ED713C] p-0.5 text-sm transition duration-100 ease-in-out group-hover:scale-[0.65] md:scale-[0.7] md:group-hover:scale-[0.75] xl:scale-[0.8] xl:group-hover:scale-[0.85] 2xl:scale-[0.9] 2xl:group-hover:scale-[0.95] 3xl:scale-[0.95] 3xl:group-hover:scale-[1] 4xl:group-hover:scale-[1.05]`}
               >
                 <motion.div className="group relative flex flex-row rounded-full bg-[#262626] px-6 pt-2">
                   <DiscordButton fill="#fff" />
@@ -63,7 +64,7 @@ const StartBlock = () => {
           <motion.img
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 2.5, duration: 0.5 }}
+            transition={{ delay: 3, duration: 1 }}
             src="/skult-streamer-cards.png"
             alt="SKULT Streamer Cards"
             className="xl:mt-[5rem] xl:scale-[90%] 3xl:mt-[3rem] 3xl:ml-10 3xl:scale-[90%]"

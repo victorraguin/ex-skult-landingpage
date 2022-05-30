@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React, { useEffect } from 'react';
 import { useAnimation, motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
@@ -59,7 +60,7 @@ const SocialBlock = () => {
             <motion.img
               animate={controls}
               variants={discord}
-              className="absolute bottom-32 w-52 cursor-pointer sm:w-60 xl:bottom-40 2xl:w-80 3xl:bottom-48 4xl:w-96"
+              className="absolute bottom-32 w-52 cursor-pointer sm:w-60 xl:bottom-[8rem] 2xl:w-80 3xl:bottom-48 4xl:w-96"
               src="/elements/logo-discord.webp"
               alt="Discord"
             />

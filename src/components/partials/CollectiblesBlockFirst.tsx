@@ -38,17 +38,17 @@ const CollectiblesBlockFirst = () => {
   };
 
   return (
-    <motion.div variants={CardContainer} initial="hidden" animate={controls} ref={ref} className="h-full bg-[#282828]">
+    <motion.div className="h-full bg-[#282828]">
       <motion.img
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
         src="/skult-streamer-cards.png"
         alt="SKULT Streamer Cards"
-        className="mx-auto hidden scale-[0.9] sm:flex 3xl:scale-[0.45]"
+        className="mx-auto hidden scale-[0.9] sm:flex xl:scale-[0.45]"
       />
       <motion.div
-        className="h-full bg-[#282828] pt-40 sm:pt-0"
+        className="h-full bg-[#282828]"
         variants={CardContainer}
         initial="hidden"
         animate={controls}

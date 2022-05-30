@@ -40,7 +40,7 @@ const StreamersLeaguersBlock = () => {
             is Left Behind!
           </p>
         </motion.h1>
-        <div className="mx-5 flex flex-row flex-wrap justify-around gap-y-20 pt-[4.5rem] xl:mx-10 xl:flex-nowrap 2xl:pt-[8rem] 4xl:pt-[12rem]">
+        <div className="mx-5 flex flex-row flex-wrap justify-around gap-y-20 pt-[4.5rem] xl:mx-0 xl:flex-nowrap 2xl:pt-[8rem] 4xl:pt-[12rem]">
           <Streamer controls={controls} />
           <Leaguer controls={controls} setIsLeaguerModalOpen={setIsLeaguerModalOpen} />
         </div>
@@ -119,7 +119,7 @@ const Streamer = ({ controls }: { controls: AnimationControls }) => {
   };
 
   return (
-    <div className="max-w-2xl">
+    <div className="max-w-xl">
       <div className="pb-[44%] xl:pb-[47%] 2xl:pb-[46%] 3xl:pb-[39%] 4xl:pb-[37%]">
         <div className="relative">
           <motion.img
@@ -254,7 +254,7 @@ const Leaguer = ({
   };
 
   return (
-    <div className="max-w-2xl">
+    <div className="max-w-xl">
       <div className="xl:left-[-20%] xl:mx-0">
         <div className="pb-[44%] md:pb-[46%] xl:pb-[47%] 2xl:pb-[46%] 3xl:pb-[39%] 4xl:pb-[37%]">
           <div className="relative">
@@ -264,7 +264,7 @@ const Leaguer = ({
               variants={openLeaguerLueur}
               src="/elements/lueur-leaguers.webp"
               alt="Anyone"
-              className="absolute z-10 md:w-full 3xl:top-[-4rem] 3xl:w-full "
+              className="absolute z-10 w-full 3xl:top-[-4rem] "
             />
             <motion.img
               initial={{ opacity: 0 }}
