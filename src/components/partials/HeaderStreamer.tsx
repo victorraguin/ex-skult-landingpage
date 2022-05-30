@@ -24,7 +24,7 @@ const Header = () => {
       >
         <Link href="/#Streamer-Anybody" passHref>
           <motion.button
-            className={`${styles.HeaderJoinDiscord} bottom-0  left-10 scale-[0.7]  rounded-full bg-gradient-to-br  from-[#FFCC00] to-[#ED713C] p-0.5 transition duration-100 ease-in-out hover:scale-[1] sm:scale-[0.9]`}
+            className={`${styles.HeaderJoinDiscord} group bottom-0 left-10 scale-[0.7] rounded-full bg-gradient-to-br  from-[#FFCC00] to-[#ED713C] p-0.5 transition duration-100 ease-in-out hover:scale-[1] sm:scale-[0.9]`}
           >
             <motion.div className=" flex flex-row rounded-full bg-[#262626] px-3 py-[12px]">
               <svg
@@ -33,11 +33,11 @@ const Header = () => {
                 height="24"
                 viewBox="0 0 24 24"
                 fill="#262626"
-                stroke="#fff"
+                stroke="#A9A9A9"
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="feather feather-arrow-left-circle"
+                className="feather feather-arrow-left-circle group-hover:stroke-white"
               >
                 <circle cx="12" cy="12" r="10"></circle>
                 <polyline points="12 8 8 12 12 16"></polyline>
@@ -60,10 +60,10 @@ const Header = () => {
         <motion.div initial={{ y: -250 }} animate={{ y: -10 }} transition={{ delay: 1, type: 'spring', stiffness: 70 }}>
           <a href="https://discord.gg/fJvrQCJr4W" target="_blank" rel="noopener noreferrer">
             <motion.button
-              className={`${styles.HeaderJoinDiscord} absolute top-[-2.6rem] right-[1rem] scale-[0.6] rounded-full bg-gradient-to-br from-[#FFCC00] to-[#ED713C] p-0.5 text-sm transition  duration-100 ease-in-out  hover:scale-[0.65] sm:right-[-2rem] md:right-[0rem] md:scale-[0.7] md:hover:scale-[0.75]  xl:top-[-3.3rem] xl:right-20 xl:scale-[0.8] xl:hover:scale-[0.85] 2xl:scale-[0.9] 2xl:hover:scale-[0.95] 3xl:scale-[0.95] 3xl:hover:scale-[1] 4xl:hover:scale-[1.05]`}
+              className={`${styles.HeaderJoinDiscord} group absolute top-[-2.6rem] right-[1rem] scale-[0.6] rounded-full bg-gradient-to-br from-[#FFCC00] to-[#ED713C] p-0.5 text-sm transition  duration-100 ease-in-out  hover:scale-[0.65] sm:right-[-2rem] md:right-[0rem] md:scale-[0.7] md:hover:scale-[0.75]  xl:top-[-3.3rem] xl:right-20 xl:scale-[0.8] xl:hover:scale-[0.85] 2xl:scale-[0.9] 2xl:hover:scale-[0.95] 3xl:scale-[0.95] 3xl:hover:scale-[1] 4xl:hover:scale-[1.05]`}
             >
-              <motion.div className="group relative flex flex-row rounded-full bg-[#262626] px-6 pt-2">
-                <DiscordButton fill="#fff" />
+              <motion.div className="relative flex flex-row rounded-full bg-[#262626] px-6 pt-2">
+                <DiscordButton fill="" className="fill-[#A9A9A9] group-hover:fill-white" />
                 <motion.div
                   className={`hidden pt-1.5 pl-2 font-poppins text-[20px] font-light text-[#a9a9a9] group-hover:brightness-150 sm:flex`}
                 >
