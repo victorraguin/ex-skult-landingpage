@@ -5,24 +5,27 @@ import { Dispatch, SetStateAction, useEffect, useRef, useState } from 'react';
 import { useSwipe } from 'beautiful-react-hooks';
 import ArrowBackIosOutlinedIcon from '@mui/icons-material/ArrowBackIosOutlined';
 import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
+import { GradientText } from './GradientText';
 
 export const CollectiblesUseCaseEvents = () => {
   const [activeItem, setActiveItem] = useState(1);
 
   return (
-    <div className="flex flex-1 justify-center bg-[#191919] pb-12 pt-40 sm:pt-36">
+    <div className="flex flex-1 justify-center bg-[#191919] pb-12 pt-48 sm:pt-44">
       <div className="flex max-w-xs flex-col gap-y-16 lg:max-w-md xl:max-w-xl 2xl:max-w-2xl">
         <Title />
         <Description />
-        <Carousel activeItem={activeItem} onChange={setActiveItem} />
-        <legend className="space-y-4">
-          <h4 className="flex h-14 text-center align-middle text-xl">{events[activeItem].name}</h4>
-          <p className="h-16 text-[#B8B8B8]">{events[activeItem].description}</p>
-        </legend>
+        <div className="h-96">
+          <Carousel activeItem={activeItem} onChange={setActiveItem} />
+          <legend className="pt-12 text-center">
+            <h4 className="flex h-14 justify-center text-center align-middle text-lg sm:text-xl">
+              {events[activeItem].name}
+            </h4>
+            <p className="h-16 text-xs italic text-[#B8B8B8] sm:text-sm">{events[activeItem].description}</p>
+          </legend>
+        </div>
 
-        <p className="text-center text-2xl text-[#B8B8B8]">
-          Your cards can unlock exclusive events created by your favorite Streamers!
-        </p>
+        <GradientText className="text-center text-2xl">Watching is over. It’s time to participate</GradientText>
       </div>
     </div>
   );
@@ -35,10 +38,9 @@ const Title = () => (
 );
 
 const Description = () => (
-  <p className="text-[#B8B8B8]">
-    Drops, giveaways, exclusive content, in real life events... Everything is possible! Streamers can create any kind of
-    experiences they want and make their commu- nity participate to them! Your cards can unlock exclusive events created
-    by your favorite Streamers!
+  <p className="h-36 text-[#B8B8B8]">
+    Your cards can unlock immersive events created by your favorite Streamers, exclusively for you! Game sessions,
+    drops, giveaways, exclusive content, in real life events... Everything is possible!
   </p>
 );
 
@@ -84,7 +86,13 @@ const Carousel = ({ activeItem, onChange }: { activeItem: number; onChange: Disp
 const EventItem = ({ item, isActive }: { item: Event; isActive: boolean }) => {
   return (
     <div className={`${!isActive ? 'hidden' : 'flex'} flex-col lg:flex`}>
-      <Image src={item.image} layout="intrinsic" width={isActive ? 250 : 150} height={isActive ? 250 : 150} />
+      <Image
+        src={item.image}
+        layout="intrinsic"
+        width={isActive ? 250 : 150}
+        height={isActive ? 250 : 150}
+        className="rounded"
+      />
     </div>
   );
 };
@@ -98,20 +106,22 @@ type Event = {
 
 const events: Event[] = [
   {
-    image: '/rocketleague.webp',
-    name: 'Community training  : Rocket League',
+    image: '/wow.png',
+    name: 'World of Warcraft - Community raid',
     description:
-      'Join us for the first ever eSport training session with Rocket League! We will be playing against each others!',
-  },
-  {
-    image: '/iryanne.png',
-    name: 'Community raid : World of Warcraft',
-    description: 'I need 10 mates for the Onyxia Lair Raid! The first 10 to check-in can team-up with me and we GO!',
+      '“I need 10 mates for the Black Temple raid in World of Warcraft! Silver Card holders: I need YOU! Come and join me! Let’s play together during my stream session this weekend!”',
     social: 'https://www.twitch.tv/iryanne',
   },
   {
-    image: '/sackzi_card.png',
-    name: 'Sackzi',
-    description: 'Lorem ipsum',
+    image: '/rtx3080.png',
+    name: 'Graphics card to win!',
+    description:
+      '“Raffle! I have a RTX 3080 Ti to give to one of my card holders! Enter the raffle and get a chance to bring it home! The winner will be drawn from all those that will check-in with their card!”',
+  },
+  {
+    image: '/worlds.png',
+    name: 'Come with me to the Worlds!',
+    description:
+      '“I’m playing at the League of Legends Worlds and I can bring one person with me! YOU, Gold Card holder! Come with be and follow the event from the backstage!”',
   },
 ];
