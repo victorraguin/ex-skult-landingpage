@@ -51,9 +51,9 @@ const Experience = ({
   title: React.ReactNode;
   description: string;
 }) => (
-  <div className="flex max-w-sm flex-1 flex-col items-center 2xl:gap-y-16">
+  <div className="flex max-w-sm flex-1 flex-col items-center gap-y-4 2xl:gap-y-16">
     <Image src={icon} layout="fixed" width={150} height={150} />
-    <p className="text-xl font-medium 2xl:text-3xl">{title}</p>
+    <h2 className="text-center text-3xl font-medium">{title}</h2>
     <p className="pt-4 text-center text-lg text-[#B8B8B8] 2xl:text-xl">{description}</p>
   </div>
 );

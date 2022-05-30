@@ -32,7 +32,7 @@ export const StreamerRanks = () => (
 );
 
 const Title = () => (
-  <p className="mx-auto max-w-xs text-center text-3xl text-[#e7e7e7] md:max-w-xl lg:max-w-7xl 2xl:text-4xl">
+  <p className="mx-auto max-w-xs text-center text-3xl text-[#e7e7e7] md:max-w-xl lg:max-w-7xl xl:text-5xl 2xl:text-4xl">
     The More You Go <GradientText>Up the Ladder</GradientText> The <GradientText>More you Earn</GradientText>
   </p>
 );

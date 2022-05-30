@@ -32,10 +32,10 @@ const StreamersLeaguersBlock = () => {
           animate={controls}
           variants={openTitleText}
           id="Streamer-Anybody"
-          className="relative mx-auto flex flex-row bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text font-poppins text-[32px] font-normal text-transparent xl:text-[36px] 2xl:text-[48px]"
+          className="relative mx-auto flex flex-row bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text font-poppins text-3xl font-normal text-transparent xl:text-5xl"
         >
           Nobody
-          <p className="pl-2 text-center font-poppins text-[32px] font-light text-[#e7e7e7] xl:text-[36px] 2xl:text-[48px]">
+          <p className="pl-2 text-center font-poppins text-3xl font-light text-[#e7e7e7] xl:pl-3 xl:text-5xl">
             {' '}
             is Left Behind!
           </p>
@@ -152,7 +152,7 @@ const Streamer = ({ controls }: { controls: AnimationControls }) => {
         initial={{ opacity: 0 }}
         animate={controls}
         variants={openAnyStreamerText}
-        className=" bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text pt-5 pb-10 text-center font-poppins text-[32px] font-semibold text-transparent 2xl:text-[48px]"
+        className=" bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text pt-5 pb-10 text-center font-poppins text-3xl font-semibold text-transparent xl:text-5xl"
       >
         Any Streamer
       </motion.h2>
@@ -288,7 +288,7 @@ const Leaguer = ({
           initial={{ opacity: 0 }}
           animate={controls}
           variants={openAnyLeaguerText}
-          className="bg-gradient-to-r from-[#E323FF] to-[#7517F8] bg-clip-text pt-5 pb-10 text-center font-poppins text-[32px] font-semibold text-transparent 2xl:text-[48px]"
+          className="bg-gradient-to-r from-[#E323FF] to-[#7517F8] bg-clip-text pt-5 pb-10 text-center font-poppins text-3xl font-semibold text-transparent xl:text-5xl"
         >
           Anyone
         </motion.h2>

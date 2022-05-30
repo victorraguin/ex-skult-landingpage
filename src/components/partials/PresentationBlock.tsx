@@ -39,7 +39,7 @@ const PresentationBlock = () => {
   return (
     <motion.div className="flex flex-col" ref={ref}>
       <motion.h3
-        className="mx-2 mt-5 text-center font-poppins text-[32px] font-light text-[#e7e7e7] xl:mx-0 xl:text-[36px] 2xl:text-[48px]"
+        className="mx-2 mt-5 text-center font-poppins text-3xl font-light text-[#e7e7e7] xl:mx-0 xl:text-5xl"
         initial={{ opacity: 0 }}
         animate={controls}
         variants={openTitleText}
@@ -47,7 +47,7 @@ const PresentationBlock = () => {
         A world where new gaming experiences
       </motion.h3>
       <motion.h3
-        className="mb-[8rem] bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text text-center font-poppins text-[40px] font-normal text-transparent xl:text-[36px] 2xl:text-[48px]"
+        className="mb-32 bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text text-center font-poppins text-3xl font-normal text-transparent xl:text-5xl"
         initial={{ opacity: 0 }}
         animate={controls}
         variants={openLittleTitleText}
