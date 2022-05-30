@@ -21,11 +21,11 @@ const PresentationBlock = () => {
     hidden: { opacity: 0, scale: 0 },
   };
   const lueurVariant = {
-    visible: { opacity: 1, scale: [1, 0.9], transition: { duration: 3, yoyo: Number.POSITIVE_INFINITY } },
+    visible: { opacity: 1, scale: [1, 0.9], transition: { duration: 1, yoyo: Number.POSITIVE_INFINITY } },
     hidden: { opacity: 0, scale: 0 },
   };
   const lueurVariantViolet = {
-    visible: { opacity: 1, scale: [0.9, 1], transition: { duration: 3, yoyo: Number.POSITIVE_INFINITY } },
+    visible: { opacity: 1, scale: [0.8, 1], transition: { duration: 1, yoyo: Number.POSITIVE_INFINITY } },
     hidden: { opacity: 0, scale: 0 },
   };
   const controls = useAnimation();
@@ -67,7 +67,7 @@ const PresentationBlock = () => {
             muted
             controls
           >
-            {/* <source src="/valorant.mp4" type="video/mp4" /> */}
+            <source src="https://cdn.skult.gg/SKULT.mp4" type="video/mp4" />
           </motion.video>
         </div>
         <motion.div initial={{ opacity: 0 }} animate={controls} variants={openLureurVariant} aria-hidden="true">

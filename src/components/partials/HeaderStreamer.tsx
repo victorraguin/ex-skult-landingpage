@@ -21,7 +21,7 @@ const Header = () => {
         transition={{ delay: 1, type: 'spring', stiffness: 70 }}
         className="absolute top-[15px] left-7 z-20 sm:top-[26px] sm:left-20"
       >
-        <Link href="/#Streamer-Anybody" passHref>
+        <Link href="/" passHref>
           <motion.button
             className={` group  bottom-0
             left-10 scale-[0.7] rounded-full bg-gradient-to-br from-[#FFCC00] to-[#ED713C] p-0.5 shadow-[0_0_15px_-3px_#ffcc00cf] transition transition  duration-200 duration-100 ease-in-out ease-in-out hover:bg-gradient-to-b hover:shadow-[0_0_25px_-3px_#ffcc00cf] sm:scale-[0.9]`}
