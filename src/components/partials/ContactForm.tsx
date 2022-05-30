@@ -1,10 +1,8 @@
 import { useState } from 'react';
-import CircularProgress from '@mui/material/CircularProgress';
 
 export const ContactForm = ({ className, inputClassname }: { className?: string; inputClassname?: string }) => {
   const [firstname, setFirstname] = useState('');
   const [email, setEmail] = useState('');
-  const [loading, setLoading] = useState(false);
   const [subscribe, setSubScribe] = useState('Subscribe');
 
   const resetValues = () => {
@@ -18,11 +16,9 @@ export const ContactForm = ({ className, inputClassname }: { className?: string;
       className={`flex w-80 flex-1 flex-col gap-x-3 gap-y-8 lg:flex-row lg:text-sm lg:font-light ${className}`}
       onSubmit={e => {
         e.preventDefault();
-        setLoading(true);
         setSubScribe('Subscribing...');
         setTimeout(() => {
           resetValues();
-          setLoading(false);
           setSubScribe('Subscribed!');
         }, 2000);
       }}

@@ -4,7 +4,6 @@ import React from 'react';
 import styles from './Landing.module.css';
 import { motion } from 'framer-motion';
 import DiscordButton from './images/DiscordButton';
-import Link from 'next/link';
 
 const StartBlock = () => {
   return (
