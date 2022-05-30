@@ -60,7 +60,7 @@ const SocialBlock = () => {
             <motion.img
               animate={controls}
               variants={discord}
-              className="absolute bottom-32 w-52 cursor-pointer sm:w-60 xl:bottom-[8rem] 2xl:w-80 3xl:bottom-48 4xl:w-96"
+              className="absolute bottom-32 w-52 cursor-pointer transition duration-100 ease-in-out hover:w-[16rem] sm:w-60 xl:bottom-[8rem]  2xl:w-60 3xl:bottom-48 4xl:w-96"
               src="/elements/logo-discord.webp"
               alt="Discord"
             />
@@ -70,7 +70,7 @@ const SocialBlock = () => {
             variants={ombre}
             className={`
               absolute inset-x-0 bottom-20 mx-auto w-52 bg-[#040303]
-              py-2 text-center blur xl:w-72 2xl:w-80 4xl:w-96
+              py-2 text-center blur xl:w-72 2xl:w-60 4xl:w-96
             `}
           ></motion.p>
         </motion.div>

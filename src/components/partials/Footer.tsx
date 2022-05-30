@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
@@ -11,7 +12,11 @@ const Footer = () => {
     <div className="mx-1 flex flex-row flex-wrap justify-around py-5">
       <div className="hidden flex-col items-center justify-center md:flex">
         <Link href="#top" passHref>
-          <img className="mx-4 h-[38px] cursor-pointer hover:scale-105" src="./elements/SKULT.png" alt="SKULT" />
+          <img
+            className="mx-4 h-[38px] cursor-pointer transition duration-100  ease-in-out hover:scale-105 "
+            src="./elements/SKULT.png"
+            alt="SKULT"
+          />
         </Link>
         <div className="relative w-[140px]">
           <p className="absolute right-0 top-0 w-32 text-center font-poppins text-xs text-[#a9a9a9]">© 2022 - SKULT</p>
@@ -27,7 +32,11 @@ const Footer = () => {
       <div className="my-auto flex flex-row flex-wrap gap-x-1 xl:gap-x-2">
         {socialIcons.map(({ linkTo, uri, alt }) => (
           <a href={linkTo} target="_blank" rel="noopener noreferrer" key={alt}>
-            <img src={uri} className="h-[38px] cursor-pointer hover:scale-105 hover:brightness-150" alt={alt} />
+            <img
+              src={uri}
+              className="h-[38px] cursor-pointer transition duration-100 ease-in-out  hover:scale-105 hover:brightness-150 "
+              alt={alt}
+            />
           </a>
         ))}
       </div>

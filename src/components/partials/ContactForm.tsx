@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import { useState } from 'react';
 
 export const ContactForm = ({ className, inputClassname }: { className?: string; inputClassname?: string }) => {
@@ -26,7 +27,7 @@ export const ContactForm = ({ className, inputClassname }: { className?: string;
       <input
         className={`
           border-b border-[#a9a9a9] bg-transparent px-1
-          text-[#a9a9a9] focus:border-b-2 focus:outline-none hover:border-b-2 lg:w-2/5 ${inputClassname}
+          text-[#a9a9a9] transition duration-100 ease-in-out  focus:border-b-2 focus:outline-none  hover:border-b-2 lg:w-2/5 ${inputClassname}
         `}
         name="name"
         required
@@ -37,7 +38,7 @@ export const ContactForm = ({ className, inputClassname }: { className?: string;
       <input
         className={`
           border-b border-[#a9a9a9] bg-transparent px-1 text-[#a9a9a9]
-          focus:border-b-2 focus:outline-none hover:border-b-2 lg:w-3/5 ${inputClassname}
+          transition duration-100 ease-in-out  focus:border-b-2 focus:outline-none  hover:border-b-2 lg:w-3/5 ${inputClassname}
         `}
         type="email"
         required
@@ -51,7 +52,7 @@ export const ContactForm = ({ className, inputClassname }: { className?: string;
         value={`${subscribe}`}
         className={`
           cursor-pointer rounded-full border border-[#a9a9a9] bg-[#222222] p-2
-          text-[#a9a9a9] hover:scale-105 hover:brightness-150
+          text-[#a9a9a9] transition  duration-100 ease-in-out  hover:scale-105 hover:brightness-150
         `}
       />
     </form>

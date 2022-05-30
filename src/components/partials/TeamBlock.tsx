@@ -343,11 +343,11 @@ const TeamBlock = () => {
           </motion.div>
         </div>
         <div className="flex flex-1 justify-center py-6">
-          <button className="group relative rounded-full bg-gradient-to-r from-[#FFCC00] to-[#ED713C] p-0.5 text-sm hover:scale-105">
+          <button className="group relative rounded-full bg-gradient-to-r from-[#FFCC00] to-[#ED713C] p-0.5 text-sm transition duration-100  ease-in-out hover:scale-105 ">
             <div className="relative flex flex-row rounded-full bg-[#262626] px-6 pt-3 ">
               <a
                 target="_blank"
-                className="cursor-pointer pb-3 font-poppins text-xl text-[#a9a9a9] group-hover:brightness-150"
+                className="cursor-pointer pb-3 font-poppins text-xl font-light text-[#a9a9a9] group-hover:brightness-150"
                 href="https://vivid-tadpole-074.notion.site/Job-Board-a686e214017142d08fb73cf1f83ca4ad"
                 rel="noopener noreferrer"
               >
