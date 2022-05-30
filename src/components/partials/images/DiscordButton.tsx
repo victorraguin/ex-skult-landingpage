@@ -7,7 +7,7 @@ interface Props {
 const DiscordButton = (props: Props) => {
   return (
     <div className="">
-      <svg viewBox="0 0 32 32" className="h-[40px] pb-1">
+      <svg viewBox="0 0 32 32" className="h-[30px] pb-1 sm:h-[40px]">
         <path
           fill={props.fill}
           d="M31.34,19.87c0,0.51,0,1.01,0,1.52c-1.52,2.36-3.71,3.37-6.24,4.05c-0.51,0.17-1.18,0.34-1.69,0.34
