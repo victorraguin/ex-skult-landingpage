@@ -38,11 +38,17 @@ const CollectiblesBlockSecond = () => {
   };
 
   return (
-    <motion.div className="h-full bg-[#282828]" variants={CardContainer} initial="hidden" animate={controls} ref={ref}>
-      <motion.div className="mx-auto flex flex-row flex-wrap justify-around sm:flex-nowrap 3xl:w-2/3 4xl:w-3/4">
+    <motion.div
+      className="h-full bg-[#282828] pt-8"
+      variants={CardContainer}
+      initial="hidden"
+      animate={controls}
+      ref={ref}
+    >
+      <motion.div className="mx-auto flex flex-col flex-wrap justify-around gap-y-8 sm:flex-nowrap md:flex-row 3xl:w-2/3 4xl:w-3/4">
         <motion.div className="flex flex-1 flex-col" variants={CardItem}>
           <img src="/elements/skult-support-icon.svg" alt="Support Icon" className="h-[125px]" />
-          <h4 className="pt-5 text-center font-poppins text-[28px] font-semibold text-primary">Support</h4>
+          <h4 className="pt-2 text-center font-poppins text-[28px] font-semibold text-primary md:pt-5">Support</h4>
           <p className="mx-auto w-[75%] pt-4 text-center font-poppins text-[18px] font-medium text-[#b8b8b8]">
             Streamers receive a share every time you buy one of their cards. Are you a real fan? Then show them your
             love!
@@ -50,7 +56,7 @@ const CollectiblesBlockSecond = () => {
         </motion.div>
         <motion.div className="flex flex-1 flex-col" variants={CardItem}>
           <img src="/elements/skult-nft-icon.svg" alt="Unique & Counterfeit Icon" className="h-[125px]" />
-          <h4 className="pt-5 text-center font-poppins text-[28px] font-semibold text-primary">Unique &</h4>
+          <h4 className="pt-2 text-center font-poppins text-[28px] font-semibold text-primary md:pt-5">Unique &</h4>
           <h4 className="text-center font-poppins text-[28px] font-semibold text-primary">Counterfeit proof</h4>
           <p className="mx-auto w-2/3 pt-4 text-center font-poppins text-[18px] font-medium text-[#b8b8b8]">
             Every card is a non-fungible token (NFT). The blockchain technology ensures its uniqueness and ownership
@@ -59,7 +65,7 @@ const CollectiblesBlockSecond = () => {
         </motion.div>
         <motion.div className="flex flex-1 flex-col" variants={CardItem}>
           <img src="/elements/skult-airdrop-icon.svg" alt="Earn Icon" className="h-[125px]" />
-          <h4 className="pt-5 text-center font-poppins text-[28px] font-semibold text-primary">Earn</h4>
+          <h4 className="pt-2 text-center font-poppins text-[28px] font-semibold text-primary md:pt-5">Earn</h4>
           <p className="mx-auto w-2/3 pt-4 text-center font-poppins text-[18px] font-medium text-[#b8b8b8]">
             Coins, cards, rewards and free drops are all for grab! Watch out: you might be ending up winning something!
           </p>
