@@ -23,9 +23,13 @@ const Home: NextPage = () => {
         <PresentationBlock />
         <CollectiblesBlockFirst />
         <CollectiblesBlockSecond />
-        <div className="bg-gradient-to-r from-[#FFCC00] to-[#E323ff] pt-[2px]" />
+
+        <img src="/Page_breaker2-1.svg" alt="" className="hidden w-screen sm:flex" />
+        <img src="/Page_breaker2-1_mobile.svg" alt="" className="flex w-screen sm:hidden" />
         <CollectiblesUseCaseBlock />
-        <div className="bg-gradient-to-r from-[#FFCC00] to-[#E323ff] pt-[2px]" />
+        <img src="/Page_breaker2-2.svg" alt="" className="hidden w-screen sm:flex" />
+        <img src="/Page_breaker1.svg" alt="" className="flex w-screen sm:hidden" />
+
         <StreamersLeaguersBlock />
         <TeamBlock />
         <SocialBlock />

@@ -3,7 +3,7 @@ import LeagueRules from '../../../public/elements/collectiblesUseCase/league.svg
 
 export const CollectiblesUseCaseLeagues = () => {
   return (
-    <div className="flex flex-1 justify-center bg-[#282828] pb-12 sm:pt-36">
+    <div className="flex flex-1 justify-center bg-[#222222] pb-4 pt-8 sm:pt-36">
       <div className="flex max-w-xs flex-col gap-y-8 lg:max-w-md xl:max-w-xl 2xl:max-w-2xl">
         <Title />
         <Description />
@@ -28,4 +28,4 @@ const Description = () => (
   </p>
 );
 
-const HowTo = () => <Image src={LeagueRules} alt="league rules" layout="intrinsic" width={381} height={672} />;
+const HowTo = () => <Image src={LeagueRules} alt="league rules" layout="intrinsic" />;

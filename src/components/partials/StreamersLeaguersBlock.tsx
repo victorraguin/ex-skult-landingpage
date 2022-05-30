@@ -195,7 +195,7 @@ const Streamer = ({ controls }: { controls: AnimationControls }) => {
         >
           <div className="relative flex flex-row rounded-full bg-[#262626] px-6 pt-3">
             <Link href="/streamer" passHref>
-              <div className="pb-3 font-poppins text-[20px]  text-[#a9a9a9] group-hover:brightness-150">
+              <div className="pb-3 font-poppins text-[20px] text-[#a9a9a9] group-hover:brightness-150">
                 I'm a Streamer!
               </div>
             </Link>
