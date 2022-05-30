@@ -1,6 +1,5 @@
 /* eslint-disable max-len */
 import React from 'react';
-import styles from './Landing.module.css';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 
