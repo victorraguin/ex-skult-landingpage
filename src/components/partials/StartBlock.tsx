@@ -45,8 +45,8 @@ const StartBlock = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 2.5, duration: 1 }}
-                className={`mt-4
-                rounded-full bg-gradient-to-br from-[#FFCC00] to-[#ED713C] p-0.5 text-sm transition duration-100 ease-in-out group-hover:scale-[0.65] md:scale-[0.7] md:group-hover:scale-[0.75] xl:scale-[0.8] xl:group-hover:scale-[0.85] 2xl:scale-[0.9] 2xl:group-hover:scale-[0.95] 3xl:scale-[0.95] 3xl:group-hover:scale-[1] 4xl:group-hover:scale-[1.05]`}
+                className={`mt-5 rounded-full
+                bg-gradient-to-br from-[#FFCC00]  to-[#ED713C] p-0.5 text-sm shadow-[0_0_15px_-3px_#ffcc00cf] transition duration-200 ease-in-out hover:translate-y-[-0.1rem]  hover:bg-gradient-to-b hover:shadow-[0_0_25px_-3px_#ffcc00cf] md:scale-[0.7]  xl:scale-[0.9] 2xl:scale-[1]`}
               >
                 <motion.div className="group relative flex flex-row rounded-full bg-[#262626] px-6 pt-2">
                   <DiscordButton fill="#fff" />
