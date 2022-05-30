@@ -52,7 +52,7 @@ export const ContactForm = ({ className, inputClassname }: { className?: string;
         value={`${subscribe}`}
         className={`
           cursor-pointer rounded-full border border-[#a9a9a9] bg-[#222222] p-2
-          text-[#a9a9a9] transition  duration-100 ease-in-out  hover:scale-105 hover:brightness-150
+          text-[#a9a9a9] transition  duration-100 ease-in-out  hover:scale-105
         `}
       />
     </form>
