@@ -40,7 +40,7 @@ const TeamBlock = () => {
   return (
     <motion.div className="bg-gradient-to-r from-[#FFCC00] to-[#E323ff] pt-[4px]">
       <motion.div
-        className="mb-[-8rem] h-full bg-[#222222] sm:mb-0"
+        className="h-full bg-[#222222] sm:mb-0"
         variants={CardContainer}
         initial="hidden"
         animate={controls}

@@ -20,6 +20,8 @@ const Seo: React.FC<SEOProps> = ({ description, keywords, title }) => (
     <meta name="twitter:image" content="https://cdn.skult.gg/SKULT_twitter.png" />
     <link rel="icon" type="image/png" href={`/favicon.ico`} />
     <link rel="apple-touch-icon" type="image/png" href="/favicon.ico" />
+    <link rel="preconnect" href="https://cdn.skult.gg/" crossOrigin="" />
+    <link rel="dns-prefetch" href="https://cdn.skult.gg/" />
   </Head>
 );
 
@@ -29,6 +31,7 @@ export interface SEOProps {
   meta?: never;
   keywords?: string[];
   title: string;
+  crossOrigin: string;
 }
 
 Seo.defaultProps = {
