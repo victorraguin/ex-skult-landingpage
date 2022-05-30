@@ -60,10 +60,10 @@ const Header = () => {
         <motion.div initial={{ y: -250 }} animate={{ y: -10 }} transition={{ delay: 1, type: 'spring', stiffness: 70 }}>
           <a href="https://discord.gg/fJvrQCJr4W" target="_blank" rel="noopener noreferrer">
             <motion.button
-              className={`group absolute top-[-2.6rem] right-[1rem] scale-[0.6] rounded-full bg-gradient-to-br from-[#FFCC00] to-[#ED713C] p-0.5 text-sm shadow-[0_0_15px_-3px_#ffcc00cf]  transition duration-200 ease-in-out hover:bg-gradient-to-b hover:shadow-[0_0_25px_-3px_#ffcc00cf] sm:right-[-2rem] md:right-[0rem]  md:scale-[0.7]  xl:top-[-3.3rem]
+              className={`group absolute top-[-2.25rem] right-[1.5rem] scale-[0.8] rounded-full bg-gradient-to-br from-[#FFCC00] to-[#ED713C] p-0.5 text-sm shadow-[0_0_15px_-3px_#ffcc00cf]  transition duration-200 ease-in-out hover:bg-gradient-to-b hover:shadow-[0_0_25px_-3px_#ffcc00cf] sm:right-[-2rem] md:right-[0rem]  md:scale-[0.7]  xl:top-[-3.3rem]
               xl:right-20 xl:scale-[0.8] 2xl:scale-[0.9] 3xl:scale-[0.95]`}
             >
-              <motion.div className="relative flex flex-row rounded-full bg-[#262626] px-6 pt-2">
+              <motion.div className="relative flex flex-row rounded-full bg-[#262626] px-3 pt-2">
                 <DiscordButton fill="" className="fill-[#A9A9A9] group-hover:fill-white" />
                 <motion.div
                   className={`hidden pt-1.5 pl-2 font-poppins text-[20px] font-light text-[#a9a9a9] group-hover:brightness-150 sm:flex`}

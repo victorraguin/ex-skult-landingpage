@@ -73,4 +73,9 @@ const socialIcons = [
     uri: './elements/social/linkedin-circled.svg',
     alt: 'LinkedIn',
   },
+  {
+    linkTo: 'https://medium.com/@SKULT',
+    uri: './elements/social/medium.svg',
+    alt: 'Medium',
+  },
 ];

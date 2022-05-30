@@ -92,6 +92,7 @@ const EventItem = ({ item, isActive }: { item: Event; isActive: boolean }) => {
         width={isActive ? 250 : 150}
         height={isActive ? 250 : 150}
         className="rounded"
+        alt="Item"
       />
     </div>
   );
