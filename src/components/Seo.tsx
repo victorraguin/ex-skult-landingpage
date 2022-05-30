@@ -31,7 +31,6 @@ export interface SEOProps {
   meta?: never;
   keywords?: string[];
   title: string;
-  crossOrigin: string;
 }
 
 Seo.defaultProps = {
