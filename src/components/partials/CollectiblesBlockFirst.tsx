@@ -45,7 +45,7 @@ const CollectiblesBlockFirst = () => {
         transition={{ duration: 0.5 }}
         src="/skult-streamer-cards.png"
         alt="SKULT Streamer Cards"
-        className="mx-auto hidden scale-[0.9] sm:flex xl:scale-[0.45]"
+        className="mx-auto mt-28 mb-12 hidden h-72 sm:flex lg:h-80 xl:h-96"
       />
       <motion.div
         className="h-full bg-[#282828]"
