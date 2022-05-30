@@ -38,41 +38,17 @@ const CollectiblesBlockFirst = () => {
   };
 
   return (
-    <motion.div
-      variants={CardContainer}
-      initial="hidden"
-      animate={controls}
-      ref={ref}
-      className="h-full bg-[#282828] sm:pt-20 xl:pt-60"
-    >
-      <motion.div className="relative top-[-5rem] hidden flex-row justify-center sm:flex sm:pt-10 xl:top-[-15rem] 4xl:pb-20">
-        <motion.img
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 2, duration: 1 }}
-          src="./elements/skyrroz.svg"
-          alt="Skyrroz"
-          className="absolute top-[-3rem] z-30 mx-auto origin-bottom scale-[0.45] md:top-0 md:scale-[0.8] xl:top-[10rem] xl:scale-[90%] 4xl:top-[17rem]"
-        />
-        <motion.img
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 2.5, duration: 1 }}
-          src="./elements/natasha.svg"
-          alt="Natasha"
-          className="absolute left-[21%] top-[-2rem] z-20 origin-bottom rotate-[18deg] scale-[0.45] md:top-0 md:left-[35%] md:scale-[0.8] xl:left-[47%] xl:top-[12rem] xl:scale-[90%] 4xl:top-[18rem]"
-        />
-        <motion.img
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 3, duration: 1 }}
-          src="./elements/waartex.svg"
-          alt="Waartex"
-          className="absolute right-[21%] top-[-2rem] z-10 origin-bottom rotate-[350deg] scale-[0.45] md:top-0 md:right-[37%] md:scale-[0.8] xl:right-[47%] xl:top-[12rem] xl:scale-[90%] 4xl:top-[18rem]"
-        />
-      </motion.div>
+    <motion.div variants={CardContainer} initial="hidden" animate={controls} ref={ref} className="h-full bg-[#282828]">
+      <motion.img
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5 }}
+        src="/skult-streamer-cards.png"
+        alt="SKULT Streamer Cards"
+        className="mx-auto hidden scale-[0.9] sm:flex 3xl:scale-[0.45]"
+      />
       <motion.div
-        className="h-full bg-[#282828] pt-20 sm:pt-80"
+        className="h-full bg-[#282828] pt-40 sm:pt-0"
         variants={CardContainer}
         initial="hidden"
         animate={controls}

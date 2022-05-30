@@ -325,7 +325,7 @@ const Leaguer = ({
             </motion.div>
           </div>
           <motion.div
-            className="xl:pt-8 xl:pb-0 2xl:pt-2 3xl:pt-0"
+            className="pt-5 xl:pt-8 xl:pb-0 2xl:pt-2 3xl:pt-0"
             initial={{ opacity: 0 }}
             animate={controls}
             variants={openButtonLeaguerBlock}
