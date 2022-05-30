@@ -325,14 +325,14 @@ const Leaguer = ({
             </motion.div>
           </div>
           <motion.div
-            className="pt-20 xl:pt-8 xl:pb-0 2xl:pt-2 3xl:pt-0"
+            className="xl:pt-8 xl:pb-0 2xl:pt-2 3xl:pt-0"
             initial={{ opacity: 0 }}
             animate={controls}
             variants={openButtonLeaguerBlock}
           >
             <button
               onClick={() => setIsLeaguerModalOpen(true)}
-              className={`group relative rounded-full bg-gradient-to-l from-[#7517F8] to-[#E323ff] p-[3px] text-sm shadow-[0_0_15px_-3px_#E323ff] transition duration-200  ease-in-out hover:shadow-[0_0_25px_-3px_#E323ff]`}
+              className={`group relative rounded-full bg-gradient-to-l from-[#7517F8] to-[#E323ff] p-[3px] text-sm shadow-[0_0_15px_-3px_#E323ff] transition duration-200 ease-in-out hover:shadow-[0_0_25px_-3px_#E323ff]`}
             >
               <div className="relative flex flex-row rounded-full bg-[#262626] px-6 pt-3">
                 <div className="pb-3 font-poppins text-[20px] text-[#a9a9a9] group-hover:brightness-150">
