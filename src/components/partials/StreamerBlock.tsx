@@ -25,7 +25,7 @@ const StreamerBlock = () => {
 export default StreamerBlock;
 
 const Title = () => (
-  <div className="flex flex-row flex-wrap items-baseline justify-center gap-x-2 pb-16">
+  <div className="flex flex-row flex-wrap items-baseline justify-center gap-x-4 pb-16">
     <img src="https://skult-assets.s3.eu-west-3.amazonaws.com/SKULT_logo.png" alt="SKULT Logo" className="h-10" />
     <div className="text-center font-poppins text-5xl font-light leading-none text-[#E7E7E7]">
       for
