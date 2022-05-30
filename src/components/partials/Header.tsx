@@ -34,14 +34,16 @@ const Header = () => {
           <Link href="/streamer" passHref>
             <motion.button
               className={`
-                ${styles.HeaderJoinDiscord} absolute top-[-2.6rem] right-[-2rem] scale-[0.6] rounded-full
+                absolute top-[-2.6rem] right-[-2rem] scale-[0.6] rounded-full
                 bg-gradient-to-br from-[#FFCC00] to-[#ED713C] p-0.5 text-sm
-                transition
-                duration-100 ease-in-out group-hover:scale-[0.65]
+                shadow-[0_0_15px_-3px_#ffcc00cf]
+                transition 
+                duration-200
+                ease-in-out group-hover:scale-[0.65] hover:translate-y-[-0.1rem] hover:bg-gradient-to-b hover:shadow-[0_0_25px_-3px_#ffcc00cf]
                 md:right-[0rem] md:scale-[0.7] md:group-hover:scale-[0.75] xl:top-[-3rem]
                 xl:right-20 xl:scale-[0.8]
-                xl:group-hover:scale-[0.8] 2xl:scale-[0.9]
-                2xl:group-hover:scale-[0.95] 3xl:scale-[0.95]
+                xl:group-hover:scale-[0.85] 2xl:scale-[0.9]
+                2xl:group-hover:scale-[0.9] 3xl:scale-[0.9]
                 3xl:group-hover:scale-[1] 4xl:scale-[1]  4xl:group-hover:scale-[1.05]
               `}
             >
