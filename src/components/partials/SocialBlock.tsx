@@ -60,7 +60,7 @@ const SocialBlock = () => {
             <motion.img
               animate={controls}
               variants={discord}
-              className="absolute bottom-32 w-52 cursor-pointer transition duration-100 ease-in-out hover:w-[16rem] sm:w-60 xl:bottom-[8rem]  2xl:w-60 3xl:bottom-48 4xl:w-96"
+              className="absolute bottom-32 w-52 cursor-pointer transition duration-100 ease-in-out sm:w-60 xl:bottom-[8rem]  2xl:w-60 3xl:bottom-48 4xl:w-96"
               src="/elements/logo-discord.webp"
               alt="Discord"
             />

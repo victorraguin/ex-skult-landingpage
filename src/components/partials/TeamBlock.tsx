@@ -343,7 +343,7 @@ const TeamBlock = () => {
           </motion.div>
         </div>
         <div className="flex flex-1 justify-center py-6">
-          <button className="group relative rounded-full bg-gradient-to-r from-[#FFCC00] to-[#ED713C] p-0.5 text-sm transition duration-100  ease-in-out hover:scale-105 ">
+          <button className="group relative rounded-full bg-gradient-to-r from-[#FFCC00] to-[#ED713C] p-0.5 text-sm shadow-[0_0_15px_-3px_#ffcc00cf] transition duration-200  ease-in-out hover:shadow-[0_0_25px_-3px_#ffcc00cf] ">
             <div className="relative flex flex-row rounded-full bg-[#262626] px-6 pt-3 ">
               <a
                 target="_blank"

@@ -45,11 +45,11 @@ const StartBlock = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 2.5, duration: 1 }}
-                className={`group mt-5 rounded-full
-                bg-gradient-to-br from-[#FFCC00]  to-[#ED713C] p-0.5 text-sm shadow-[0_0_15px_-3px_#ffcc00cf] transition duration-200 ease-in-out hover:translate-y-[-0.1rem]  hover:bg-gradient-to-b hover:shadow-[0_0_25px_-3px_#ffcc00cf] md:scale-[0.7]  xl:scale-[0.9] 2xl:scale-[1]`}
+                className={`mt-5 rounded-full
+                bg-gradient-to-br from-[#FFCC00]  to-[#ED713C] p-0.5 text-sm shadow-[0_0_15px_-3px_#ffcc00cf] transition duration-200 ease-in-out hover:bg-gradient-to-b hover:shadow-[0_0_25px_-3px_#ffcc00cf] md:scale-[0.7]  xl:scale-[0.9] 2xl:scale-[1]`}
               >
-                <motion.div className="relative flex flex-row rounded-full bg-[#262626] px-6 pt-2">
-                  <DiscordButton fill="" className="fill-[#A9A9A9] group-hover:fill-white" />
+                <motion.div className="group relative flex flex-row rounded-full bg-[#262626] px-6 pt-2">
+                  <DiscordButton fill="#fff" />
                   <motion.div
                     className={`hidden pt-1 pl-2 font-poppins text-[20px] font-light text-[#a9a9a9] group-hover:brightness-150 sm:flex sm:pt-1.5`}
                   >
