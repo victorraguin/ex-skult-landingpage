@@ -15,7 +15,6 @@ export const CollectiblesUseCaseLeagues = () => {
 
 const Title = () => (
   <div className="flex flex-row items-center justify-center">
-    {/* <img alt="img here" /> */}
     <h3 className="text-3xl font-semibold text-[#FCC000]">Play Streamer Fantasy Leagues</h3>
   </div>
 );

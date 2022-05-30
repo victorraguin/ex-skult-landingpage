@@ -30,7 +30,6 @@ export const CollectiblesUseCaseEvents = () => {
 
 const Title = () => (
   <div className="flex flex-row items-center justify-center">
-    {/* <img alt="img here" /> */}
     <h3 className="text-3xl font-semibold text-[#FCC000]">Participate in Exclusive Events</h3>
   </div>
 );
