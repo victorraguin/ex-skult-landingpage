@@ -78,7 +78,7 @@ const CollectiblesBlockFirst = () => {
         animate={controls}
         ref={ref}
       >
-        <motion.div className="mx-auto flex flex-row flex-wrap justify-around sm:flex-nowrap 3xl:w-2/3 4xl:w-3/4">
+        <motion.div className="mx-auto flex flex-col flex-wrap justify-around sm:flex-nowrap md:flex-row 3xl:w-2/3 4xl:w-3/4">
           <motion.div className="flex flex-1 flex-col" variants={CardItem}>
             <img src="/elements/skult-collecte-icon-.svg" alt="Collect Icon" className="h-[125px]" />
             <h4 className="pt-5 text-center font-poppins text-[28px] font-semibold text-primary">Collect</h4>
