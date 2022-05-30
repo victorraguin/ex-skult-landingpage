@@ -28,4 +28,4 @@ const Description = () => (
   </p>
 );
 
-const HowTo = () => <Image src={LeagueRules} alt="league rules" layout="intrinsic" width={381} height={672} />;
+const HowTo = () => <Image src={LeagueRules} alt="league rules" layout="intrinsic" />;
