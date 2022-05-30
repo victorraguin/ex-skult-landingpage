@@ -19,7 +19,7 @@ const Header = () => {
         <motion.div initial={{ y: -250 }} animate={{ y: -10 }} transition={{ type: 'spring', stiffness: 40 }}>
           <Link href="#top" passHref>
             <img
-              className="mx-10 mt-6 h-8 cursor-pointer hover:scale-[1.05] md:mx-auto md:mt-5 xl:mx-auto xl:mt-7 xl:h-12 2xl:h-14 4xl:h-16"
+              className="mx-10 mt-6 h-8 cursor-pointer transition  duration-100 ease-in-out  hover:scale-[1.05] md:mx-auto md:mt-5 xl:mx-auto xl:mt-7 xl:h-12 2xl:h-14 4xl:h-16"
               src={`./elements/SKULT.png`}
               alt="SKULT"
             />
