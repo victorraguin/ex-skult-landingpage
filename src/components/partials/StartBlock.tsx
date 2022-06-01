@@ -12,9 +12,10 @@ const StartBlock = () => {
       style={{
         backgroundImage: `url("/elements/bckground-1.webp")`,
       }}
+      id="top"
     >
       <div className="flex flex-row flex-wrap px-10 sm:flex-nowrap md:py-10 xl:px-[12rem] xl:pt-[9rem] xl:pb-[10rem] 3xl:px-[24rem] 3xl:pb-[15rem] 3xl:pt-[13rem] 4xl:px-[35rem]">
-        <div id="top" className="flex flex-col sm:w-1/2">
+        <div className="flex flex-col sm:w-1/2">
           <motion.h1
             className={`${styles.HomeTitle} pb-3 leading-none`}
             initial={{ opacity: 0 }}

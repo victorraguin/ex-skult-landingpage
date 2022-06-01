@@ -123,6 +123,6 @@ const events: Event[] = [
     image: '/worlds.png',
     name: 'Come with me to the Worlds!',
     description:
-      '“I’m playing at the League of Legends Worlds and I can bring one person with me! YOU, Gold Card holder! Come with be and follow the event from the backstage!”',
+      '“I’m playing at the League of Legends Worlds and I can bring one person with me! YOU, Gold Card holder! Come with me and follow the event from the backstage!”',
   },
 ];
