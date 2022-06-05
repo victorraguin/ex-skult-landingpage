@@ -1,5 +1,6 @@
 <p align="center">
 <a href="https://www.skult.gg/"><img src="https://static.wixstatic.com/media/7dd4af_ecec461d2c15430d8b0bfb67e1f90d4a~mv2.png/v1/crop/x_0,y_102,w_1187,h_380/fill/w_1165,h_380,al_c,q_90/skult_blanc.webp" alt="SKULT"></a>
+    <a href="https://www.skult.gg"><img alt="Website" src="https://img.shields.io/website?down_color=red&down_message=Offline&up_color=green&up_message=Online&url=https://www.skult.gg"></a>
 </p>
 
 # SKULT STREAMER FRONT-END WEB
