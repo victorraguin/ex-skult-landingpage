@@ -1,7 +1,4 @@
 import { GradientText } from './GradientText';
-import RookieIcon from '../../../public/elements/streamer/1stars.png';
-import HeroIcon from '../../../public/elements/streamer/2stars.png';
-import LegendIcon from '../../../public/elements/streamer/3stars.png';
 import Image from 'next/image';
 
 export const StreamerRanks = () => (
@@ -10,7 +7,7 @@ export const StreamerRanks = () => (
     <p className="mx-auto max-w-xs text-center font-medium text-[#e7e7e7] md:max-w-xl">
       Streamer Ranks based on your popularity
       <br />
-      For every Card you sell you get:
+      For every card sold you get:
     </p>
 
     <div className="mx-auto flex w-full max-w-7xl flex-row flex-wrap items-center justify-evenly gap-y-8">
@@ -39,17 +36,17 @@ const Title = () => (
 
 const ranks = [
   {
-    icon: RookieIcon,
+    icon: 'https://cdn.skult.gg/Landing+Page/1stars.png',
     name: 'ROOKIE',
     royalties: 10,
   },
   {
-    icon: HeroIcon,
+    icon: 'https://cdn.skult.gg/Landing+Page/2stars.png',
     name: 'HERO',
     royalties: 15,
   },
   {
-    icon: LegendIcon,
+    icon: 'https://cdn.skult.gg/Landing+Page/3stars.png',
     name: 'LEGEND',
     royalties: 25,
   },
