@@ -338,6 +338,42 @@ const TeamBlock = () => {
                     </div>
                   </div>
                 </motion.div>
+                <motion.div
+                  variants={CardItem}
+                  className="relative mt-16 mb-32 transition duration-300 ease-in-out hover:shadow-xl sm:mb-24 sm:w-3/4 md:w-2/5 lg:w-2/5 xl:w-1/3 xl:max-w-sm"
+                >
+                  <div className="overflow-hidden rounded bg-[#303030] shadow-md">
+                    <div className="absolute -mt-20 flex w-full justify-center">
+                      <div className="h-32 w-32">
+                        <img
+                          src="/skult-joachim-gillet.png"
+                          alt="Didier"
+                          className="h-full w-full rounded-full object-cover shadow-md grayscale"
+                        />
+                      </div>
+                    </div>
+                    <div className="mt-16 px-6">
+                      <div className="bg-gradient-to-tr from-[#FFCC00] to-[#ED713C] bg-clip-text pb-1 text-center text-3xl font-bold text-transparent">
+                        Joachim Gillet
+                      </div>
+                      <p className="text-md text-center text-[#e7e7e7]">Web3 Entrepreneur, Strategy & Growth</p>
+                      <div className="flex w-full justify-center pt-5 pb-5">
+                        <a
+                          href="https://www.linkedin.com/in/joachim-gillet-b91099133/"
+                          className="mx-5"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          <img
+                            src="./elements/social/linkedin.svg"
+                            className="h-12 cursor-pointer hover:scale-105 hover:brightness-150"
+                            alt="LinkedIn"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </motion.div>
               </div>
             </div>
           </motion.div>
