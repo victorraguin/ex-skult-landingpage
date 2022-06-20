@@ -7,7 +7,6 @@ export const StreamerRanks = () => (
     <p className="mx-auto text-center text-2xl font-medium text-[#e7e7e7]">
       Streamer Ranks based on your popularity and your actions
     </p>
-
     <div className="mx-auto flex w-full max-w-7xl flex-row flex-wrap items-center justify-evenly gap-y-8">
       {ranks.map(({ icon, name }) => (
         <div key={name} className="flex flex-col items-center">
@@ -16,13 +15,15 @@ export const StreamerRanks = () => (
         </div>
       ))}
     </div>
-    <p className="mx-auto px-2 text-center md:px-0">
-      <span className=" text-2xl text-primary">
+    <div className="space-y-4">
+      <p className=" mx-auto px-2 text-center text-2xl text-primary md:px-0 ">
         Get your share for every card sold: higher the Rank, bigger the share
-        <br />
-      </span>
-      Get in touch with us to know your Rank and understand how much you could earn with SKULT
-    </p>
+      </p>
+      <p className=" mx-auto px-2 text-center text-2xl text-white md:px-0 xl:pb-[5rem]">
+        {' '}
+        Get in touch with us to know your Rank and understand how much you could earn with SKULT
+      </p>
+    </div>
   </div>
 );
 
