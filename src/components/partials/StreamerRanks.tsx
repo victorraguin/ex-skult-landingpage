@@ -4,8 +4,8 @@ import Image from 'next/image';
 export const StreamerRanks = () => (
   <div className="flex flex-col gap-y-28 pt-10 pb-32 text-lg 2xl:text-xl">
     <Title />
-    <p className="mx-auto max-w-xs text-center text-2xl font-medium text-[#e7e7e7] md:max-w-xl">
-      Streamer Ranks based on your popularity
+    <p className="mx-auto text-center text-2xl font-medium text-[#e7e7e7]">
+      Streamer Ranks based on your popularity and your actions
     </p>
 
     <div className="mx-auto flex w-full max-w-7xl flex-row flex-wrap items-center justify-evenly gap-y-8">
@@ -16,11 +16,12 @@ export const StreamerRanks = () => (
         </div>
       ))}
     </div>
-    <p className="mx-auto max-w-xs text-center md:max-w-xl">
+    <p className="mx-auto px-2 text-center md:px-0">
       <span className=" text-2xl text-primary">
-        The more you rank, the more you earn. <br />
+        Get your share for every card sold: higher the Rank, bigger the share
+        <br />
       </span>
-      Our games are designed for any Streamer to get an audience and for any Player to get rewarded
+      Get in touch with us to know your Rank and understand how much you could earn with SKULT
     </p>
   </div>
 );
