@@ -66,7 +66,7 @@ const StartBlock = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 3, duration: 1 }}
-            src="/skult-streamer-cards.png"
+            src="https://cdn.skult.gg/Landing+Page/skult-streamer-cards.png"
             alt="SKULT Streamer Cards"
             className="xl:mt-[5rem] xl:scale-[90%] 3xl:mt-[3rem] 3xl:ml-10 3xl:scale-[90%]"
           />

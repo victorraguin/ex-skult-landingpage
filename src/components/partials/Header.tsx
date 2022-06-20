@@ -19,7 +19,7 @@ const Header = () => {
           <Link href="#top" passHref>
             <img
               className="mx-10 mt-6 h-8 cursor-pointer transition  duration-100 ease-in-out  md:mx-auto md:mt-5 xl:mx-auto xl:mt-7 xl:h-12 2xl:h-14 4xl:h-16"
-              src={`./elements/SKULT.png`}
+              src={`https://cdn.skult.gg/Landing+Page/SKULT.png`}
               alt="SKULT"
             />
           </Link>

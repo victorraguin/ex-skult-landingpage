@@ -1,6 +1,4 @@
-import Image, { StaticImageData } from 'next/image';
-import eventIcon from '../../../public/elements/streamer/EVENTS.png';
-import cardPlayEarnIcon from '../../../public/elements/streamer/CARD-PLAY-EARN.png';
+import Image from 'next/image';
 import { GradientText } from './GradientText';
 
 export const StreamerExperiences = () => (
@@ -12,7 +10,7 @@ export const StreamerExperiences = () => (
       `}
     >
       <Experience
-        icon={eventIcon}
+        icon="https://cdn.skult.gg/Landing+Page/EVENTS.png"
         title={
           <span>
             Create <GradientText className="font-semibold">exclusive</GradientText> events
@@ -25,7 +23,7 @@ export const StreamerExperiences = () => (
         `}
       />
       <Experience
-        icon={cardPlayEarnIcon}
+        icon="https://cdn.skult.gg/Landing+Page/CARD-PLAY-EARN.png"
         title={
           <span>
             Play & <GradientText className="font-semibold">Earn</GradientText>
@@ -42,15 +40,7 @@ export const StreamerExperiences = () => (
   </div>
 );
 
-const Experience = ({
-  icon,
-  title,
-  description,
-}: {
-  icon: StaticImageData;
-  title: React.ReactNode;
-  description: string;
-}) => (
+const Experience = ({ icon, title, description }: { icon: string; title: React.ReactNode; description: string }) => (
   <div className="flex max-w-sm flex-1 flex-col items-center gap-y-4 2xl:gap-y-16">
     <Image src={icon} layout="fixed" width={150} height={150} />
     <h2 className="text-center text-3xl font-medium">{title}</h2>

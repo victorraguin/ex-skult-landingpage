@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import LeagueRules from '../../../public/elements/collectiblesUseCase/league.svg';
 import { GradientText } from './GradientText';
 
 export const CollectiblesUseCaseLeagues = () => {
@@ -30,4 +29,12 @@ const Description = () => (
   </p>
 );
 
-const HowTo = () => <Image src={LeagueRules} alt="league rules" layout="intrinsic" height={384} width={384} />;
+const HowTo = () => (
+  <Image
+    src="https://cdn.skult.gg/Landing+Page/league.svg"
+    alt="league rules"
+    layout="intrinsic"
+    height={384}
+    width={384}
+  />
+);

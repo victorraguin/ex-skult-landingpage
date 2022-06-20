@@ -107,20 +107,20 @@ type Event = {
 
 const events: Event[] = [
   {
-    image: '/wow.png',
+    image: 'https://cdn.skult.gg/Landing+Page/wow.png',
     name: 'World of Warcraft - Community raid',
     description:
       '“I need 10 mates for the Black Temple raid in World of Warcraft! Silver Card holders: I need YOU! Come and join me! Let’s play together during my stream session this weekend!”',
     social: 'https://www.twitch.tv/iryanne',
   },
   {
-    image: '/rtx3080.png',
+    image: 'https://cdn.skult.gg/Landing+Page/rtx3080.png',
     name: 'Graphics card to win!',
     description:
       '“Raffle! I have a RTX 3080 Ti to give to one of my card holders! Enter the raffle and get a chance to bring it home! The winner will be drawn from all those that will check-in with their card!”',
   },
   {
-    image: '/worlds.png',
+    image: 'https://cdn.skult.gg/Landing+Page/worlds.png',
     name: 'Come with me to the Worlds!',
     description:
       '“I’m playing at the League of Legends Worlds and I can bring one person with me! YOU, Gold Card holder! Come with me and follow the event from the backstage!”',
