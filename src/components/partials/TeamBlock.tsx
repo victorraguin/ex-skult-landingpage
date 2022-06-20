@@ -356,7 +356,7 @@ const TeamBlock = () => {
                       <div className="bg-gradient-to-tr from-[#FFCC00] to-[#ED713C] bg-clip-text pb-1 text-center text-3xl font-bold text-transparent">
                         Joachim Gillet
                       </div>
-                      <p className="text-md text-center text-[#e7e7e7]">Web3 Entrepreneur, Strategy & Growth</p>
+                      <p className="text-md text-center text-[#e7e7e7]">Web3 Strategy & Growth Advisor</p>
                       <div className="flex w-full justify-center pt-5 pb-5">
                         <a
                           href="https://www.linkedin.com/in/joachim-gillet-b91099133/"
