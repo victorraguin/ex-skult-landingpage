@@ -176,12 +176,7 @@ const TeamBlock = () => {
                             alt="LinkedIn"
                           />
                         </a>
-                        <a
-                          href="https://mobile.twitter.com/Artkorino"
-                          className="mx-5"
-                          target="_blank"
-                          rel="noreferrer"
-                        >
+                        <a href="https://twitter.com/Artkorino" className="mx-5" target="_blank" rel="noreferrer">
                           <img
                             src="./elements/social/twitter.svg"
                             className="h-12 cursor-pointer hover:scale-105 hover:brightness-150"
