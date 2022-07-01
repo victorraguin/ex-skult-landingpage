@@ -1,6 +1,5 @@
 /* eslint-disable security/detect-object-injection */
 /* eslint-disable max-len */
-import Image from 'next/image';
 import { Dispatch, SetStateAction, useEffect, useRef, useState } from 'react';
 import { useSwipe } from 'beautiful-react-hooks';
 import ArrowBackIosOutlinedIcon from '@mui/icons-material/ArrowBackIosOutlined';
@@ -86,14 +85,7 @@ const Carousel = ({ activeItem, onChange }: { activeItem: number; onChange: Disp
 const EventItem = ({ item, isActive }: { item: Event; isActive: boolean }) => {
   return (
     <div className={`${!isActive ? 'hidden' : 'flex'} flex-col lg:flex`}>
-      <Image
-        src={item.image}
-        layout="intrinsic"
-        width={isActive ? 250 : 150}
-        height={isActive ? 250 : 150}
-        className="rounded"
-        alt="Item"
-      />
+      <img src={item.image} width={isActive ? 250 : 150} height={isActive ? 250 : 150} className="rounded" alt="Item" />
     </div>
   );
 };
