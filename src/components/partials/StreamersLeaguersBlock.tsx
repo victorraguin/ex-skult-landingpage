@@ -290,7 +290,7 @@ const Leaguer = ({
           variants={openAnyLeaguerText}
           className="bg-gradient-to-r from-[#E323FF] to-[#7517F8] bg-clip-text pt-5 pb-10 text-center font-poppins text-3xl font-semibold text-transparent xl:text-5xl"
         >
-          Anyone
+          Any Communities
         </motion.h2>
         <div className="xl:ml-10">
           <div className="h-96 space-y-4 sm:space-y-8">

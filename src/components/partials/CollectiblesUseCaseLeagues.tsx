@@ -9,7 +9,7 @@ export const CollectiblesUseCaseLeagues = () => {
         <Description />
         <HowTo />
 
-        <GradientText className="text-center text-2xl">Will you have what it takes?</GradientText>
+        <GradientText className="text-center text-2xl font-bold">Will you have what it takes?</GradientText>
       </div>
     </div>
   );
