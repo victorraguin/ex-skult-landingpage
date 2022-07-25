@@ -40,52 +40,52 @@ const StartBlock = () => {
           >
             Streams can be much more than just a video!
           </motion.h2>
-          <div className="flex flex-row md:flex-col space-x-5 md:space-x-0">
-          <div className="">
-            <a href="https://discord.gg/fJvrQCJr4W" target="_blank" rel="noreferrer" className="group">
-              <motion.button
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 2.5, duration: 1 }}
-                className={`mt-5 rounded-full
+          <div className="flex flex-row space-x-5 md:flex-col md:space-x-0">
+            <div className="">
+              <a href="https://discord.gg/fJvrQCJr4W" target="_blank" rel="noreferrer" className="group">
+                <motion.button
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 2.5, duration: 1 }}
+                  className={`mt-5 rounded-full
                 bg-gradient-to-br from-[#FFCC00]  to-[#ED713C] p-0.5 text-sm shadow-[0_0_15px_-3px_#ffcc00cf] transition duration-200 ease-in-out hover:bg-gradient-to-b hover:shadow-[0_0_25px_-3px_#ffcc00cf] md:scale-[0.7]  xl:scale-[0.9] 2xl:scale-[1]`}
-              >
-                <motion.div className="group relative flex flex-row rounded-full bg-[#262626] px-6 pt-2">
-                  <DiscordButton fill="#fff" />
-                  <motion.div
-                    className={`hidden pt-1 pl-2 font-poppins text-[20px] font-light text-[#a9a9a9] group-hover:brightness-150 sm:flex sm:pt-1.5`}
-                  >
-                    Join the Discord
+                >
+                  <motion.div className="group relative flex flex-row rounded-full bg-[#262626] px-6 pt-2">
+                    <DiscordButton fill="#fff" />
+                    <motion.div
+                      className={`hidden pt-1 pl-2 font-poppins text-[20px] font-light text-[#a9a9a9] group-hover:brightness-150 sm:flex sm:pt-1.5`}
+                    >
+                      Join the Discord
+                    </motion.div>
                   </motion.div>
-                </motion.div>
-              </motion.button>
-            </a>
-          </div>
-          <div className="">
-            <a
-              href="https://medium.com/@SKULT/welcome-to-the-skult-community-f37295ab1ffb"
-              target="_blank"
-              rel="noreferrer"
-              className="group"
-            >
-              <motion.button
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 3, duration: 1 }}
-                className={`mt-5 md:mt-5 rounded-full
-                bg-gradient-to-br from-[#FFCC00]  to-[#ED713C] p-0.5 text-sm shadow-[0_0_15px_-3px_#ffcc00cf] transition duration-200 ease-in-out hover:bg-gradient-to-b hover:shadow-[0_0_25px_-3px_#ffcc00cf] md:scale-[0.7]  xl:scale-[0.9] 2xl:scale-[1]`}
+                </motion.button>
+              </a>
+            </div>
+            <div className="">
+              <a
+                href="https://medium.com/@SKULT/welcome-to-the-skult-community-f37295ab1ffb"
+                target="_blank"
+                rel="noreferrer"
+                className="group"
               >
-                <motion.div className="group relative flex flex-row rounded-full bg-[#262626] px-6 pt-2">
-                  <img src="./elements/social/medium.svg" className="w-6 md:w-8 pb-2" alt="medium" />
-                  <motion.div
-                    className={`hidden pt-1 pl-2 font-poppins text-[20px] font-light text-[#a9a9a9] group-hover:brightness-150 sm:flex sm:pt-1.5`}
-                  >
-                    Litepaper
+                <motion.button
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 3, duration: 1 }}
+                  className={`mt-5 rounded-full bg-gradient-to-br
+                from-[#FFCC00] to-[#ED713C]  p-0.5 text-sm shadow-[0_0_15px_-3px_#ffcc00cf] transition duration-200 ease-in-out hover:bg-gradient-to-b hover:shadow-[0_0_25px_-3px_#ffcc00cf] md:mt-5 md:scale-[0.7]  xl:scale-[0.9] 2xl:scale-[1]`}
+                >
+                  <motion.div className="group relative flex flex-row rounded-full bg-[#262626] px-6 pt-2">
+                    <img src="./elements/social/medium.svg" className="w-6 pb-2 md:w-8" alt="medium" />
+                    <motion.div
+                      className={`hidden pt-1 pl-2 font-poppins text-[20px] font-light text-[#a9a9a9] group-hover:brightness-150 sm:flex sm:pt-1.5`}
+                    >
+                      Litepaper
+                    </motion.div>
                   </motion.div>
-                </motion.div>
-              </motion.button>
-            </a>
-          </div>
+                </motion.button>
+              </a>
+            </div>
           </div>
         </div>
         <div className="my-auto sm:w-1/2">
