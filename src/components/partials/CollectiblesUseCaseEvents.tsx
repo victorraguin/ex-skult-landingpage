@@ -24,7 +24,9 @@ export const CollectiblesUseCaseEvents = () => {
           </legend>
         </div>
 
-        <GradientText className="text-center text-2xl">Watching is over. It’s time to participate</GradientText>
+        <GradientText className="text-center text-2xl font-bold">
+          Watching is over. It’s time to participate
+        </GradientText>
       </div>
     </div>
   );
@@ -85,7 +87,13 @@ const Carousel = ({ activeItem, onChange }: { activeItem: number; onChange: Disp
 const EventItem = ({ item, isActive }: { item: Event; isActive: boolean }) => {
   return (
     <div className={`${!isActive ? 'hidden' : 'flex'} flex-col lg:flex`}>
-      <img src={item.image} width={isActive ? 250 : 150} height={isActive ? 250 : 150} className="rounded" alt="Item" />
+      <img
+        src={item.image}
+        width={isActive ? 250 : 150}
+        height={isActive ? 250 : 150}
+        className="rounded-3xl shadow-[0_0_10px_-3px_#ffcc00cf] "
+        alt="Item"
+      />
     </div>
   );
 };

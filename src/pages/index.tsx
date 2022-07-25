@@ -9,6 +9,7 @@ import CollectiblesBlockFirst from '../components/partials/CollectiblesBlockFirs
 import CollectiblesBlockSecond from '../components/partials/CollectiblesBlockSecond';
 import CollectiblesUseCaseBlock from '../components/partials/CollectiblesUseCaseBlock';
 import TeamBlock from '../components/partials/TeamBlock';
+import SpeakOfUs from '../components/partials/SpeakOfUs';
 import { motion } from 'framer-motion';
 import SocialBlock from '../components/partials/SocialBlock';
 import Footer from '../components/partials/Footer';
@@ -22,7 +23,7 @@ const Home: NextPage = () => {
         <StartBlock />
         <PresentationBlock />
         <CollectiblesBlockFirst />
-        <CollectiblesBlockSecond />
+        {/* <CollectiblesBlockSecond /> */}
 
         <img src="/Page_breaker2-1.svg" alt="Page Breaker" className="hidden w-screen sm:flex" />
         <img src="/Page_breaker2-1_mobile.svg" alt="Page Breaker Mobile" className="flex w-screen sm:hidden" />
@@ -32,6 +33,7 @@ const Home: NextPage = () => {
 
         <StreamersLeaguersBlock />
         <TeamBlock />
+        <SpeakOfUs />
         <SocialBlock />
         <Footer />
       </motion.div>
