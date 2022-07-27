@@ -3,8 +3,11 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { FlagIcon } from 'react-flag-kit';
+import { useRouter } from 'next/router';
 
 const Header = () => {
+  const router = useRouter();
+
   return (
     <div className="fixed z-50">
       <motion.img
@@ -64,11 +67,8 @@ const Header = () => {
         >
           <motion.button
             className={`
-<<<<<<< HEAD
-                absolute top-[-2.6rem] right-[1rem] scale-[0.6] rounded-full
-=======
-                absolute top-[-2.6rem] right-[-2rem] scale-[0.6] rounded-full
->>>>>>> 3a0c909ac96cf7f4eddd137849ad97a2ea10b6a3
+                absolute top-[-2.6rem] right-[-2rem] scale-[0.6]
+                rounded-full
                 bg-gradient-to-br from-[#FFCC00] to-[#ED713C] p-0.5 text-sm
                 shadow-[0_0_15px_-3px_#ffcc00cf]  transition
                 duration-200 ease-in-out hover:bg-gradient-to-b hover:shadow-[0_0_25px_-3px_#ffcc00cf]
@@ -84,7 +84,11 @@ const Header = () => {
           >
             <motion.div className="relative flex flex-row rounded-full bg-[#262626] px-3 py-[8px]">
               <motion.div className="py-[6px] font-poppins text-[20px] font-light text-[#a9a9a9]">
-                <FlagIcon code="FR" size={28} />
+                <FlagIcon
+                  code="FR"
+                  size={28}
+                  onClick={() => router.push(router.pathname, router.pathname, { locale: 'fr' })}
+                />
               </motion.div>
             </motion.div>
           </motion.button>
@@ -113,7 +117,11 @@ const Header = () => {
           >
             <motion.div className="relative flex flex-row rounded-full bg-[#262626] px-3 py-[8px]">
               <motion.div className="py-[6px] font-poppins text-[20px] font-light text-[#a9a9a9]">
-                <FlagIcon code="GB" size={28} />
+                <FlagIcon
+                  code="GB"
+                  size={28}
+                  onClick={() => router.push(router.pathname, router.pathname, { locale: 'en' })}
+                />
               </motion.div>
             </motion.div>
           </motion.button>
