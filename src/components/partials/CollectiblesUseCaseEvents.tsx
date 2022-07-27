@@ -5,9 +5,30 @@ import { useSwipe } from 'beautiful-react-hooks';
 import ArrowBackIosOutlinedIcon from '@mui/icons-material/ArrowBackIosOutlined';
 import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
 import { GradientText } from './GradientText';
+import { useTranslation } from 'next-i18next';
 
 export const CollectiblesUseCaseEvents = () => {
   const [activeItem, setActiveItem] = useState(1);
+  const { t } = useTranslation('home');
+
+  const events: Event[] = [
+    {
+      image: 'https://cdn.skult.gg/Landing+Page/wow.png',
+      name: t('collectiblesUseCases.events.iryanne.name'),
+      description: t('collectiblesUseCases.events.iryanne.description'),
+      social: 'https://www.twitch.tv/iryanne',
+    },
+    {
+      image: 'https://cdn.skult.gg/Landing+Page/rtx3080.png',
+      name: t('collectiblesUseCases.events.gpu.name'),
+      description: t('collectiblesUseCases.events.gpu.description'),
+    },
+    {
+      image: 'https://cdn.skult.gg/Landing+Page/worlds.png',
+      name: t('collectiblesUseCases.events.worlds.name'),
+      description: t('collectiblesUseCases.events.worlds.description'),
+    },
+  ];
 
   return (
     <div className="flex flex-1 justify-center bg-[#191919] pb-12 pt-48 sm:pt-44">
@@ -15,7 +36,7 @@ export const CollectiblesUseCaseEvents = () => {
         <Title />
         <Description />
         <div className="h-96">
-          <Carousel activeItem={activeItem} onChange={setActiveItem} />
+          <Carousel activeItem={activeItem} onChange={setActiveItem} events={events} />
           <legend className="pt-12 text-center">
             <h4 className="flex h-14 justify-center text-center align-middle text-lg sm:text-xl">
               {events[activeItem].name}
@@ -24,28 +45,37 @@ export const CollectiblesUseCaseEvents = () => {
           </legend>
         </div>
 
-        <GradientText className="text-center text-2xl font-bold">
-          Watching is over. It’s time to participate
-        </GradientText>
+        <GradientText className="text-center text-2xl font-bold">{t('collectiblesUseCases.catchphrase')}</GradientText>
       </div>
     </div>
   );
 };
 
-const Title = () => (
-  <div className="flex flex-row items-center justify-center">
-    <h3 className="text-3xl font-semibold text-[#FCC000]">Participate in Exclusive Events</h3>
-  </div>
-);
+const Title = () => {
+  const { t } = useTranslation('home');
 
-const Description = () => (
-  <p className="h-36 text-[#B8B8B8]">
-    Your cards can unlock immersive events created by your favorite Streamers, exclusively for you! Game sessions,
-    drops, giveaways, exclusive content, in real life events... Everything is possible!
-  </p>
-);
+  return (
+    <div className="flex flex-row items-center justify-center">
+      <h3 className="text-3xl font-semibold text-[#FCC000]">{t('collectiblesUseCases.events.title')}</h3>
+    </div>
+  );
+};
 
-const Carousel = ({ activeItem, onChange }: { activeItem: number; onChange: Dispatch<SetStateAction<number>> }) => {
+const Description = () => {
+  const { t } = useTranslation('home');
+
+  return <p className="h-36 text-[#B8B8B8]">{t('collectiblesUseCases.events.description')}</p>;
+};
+
+const Carousel = ({
+  activeItem,
+  onChange,
+  events,
+}: {
+  activeItem: number;
+  onChange: Dispatch<SetStateAction<number>>;
+  events: Event[];
+}) => {
   const prevItemIdx = (activeItem === 0 ? events.length : activeItem) - 1;
   const nextItemIdx = (activeItem + 1) % 3;
   const items = [events[prevItemIdx], events[activeItem], events[nextItemIdx]];
@@ -84,6 +114,13 @@ const Carousel = ({ activeItem, onChange }: { activeItem: number; onChange: Disp
   );
 };
 
+type Event = {
+  image: string;
+  name: string;
+  description: string;
+  social?: string;
+};
+
 const EventItem = ({ item, isActive }: { item: Event; isActive: boolean }) => {
   return (
     <div className={`${!isActive ? 'hidden' : 'flex'} flex-col lg:flex`}>
@@ -97,32 +134,3 @@ const EventItem = ({ item, isActive }: { item: Event; isActive: boolean }) => {
     </div>
   );
 };
-
-type Event = {
-  image: string;
-  name: string;
-  description: string;
-  social?: string;
-};
-
-const events: Event[] = [
-  {
-    image: 'https://cdn.skult.gg/Landing+Page/wow.png',
-    name: 'World of Warcraft - Community raid',
-    description:
-      '“I need 10 mates for the Black Temple raid in World of Warcraft! Silver Card holders: I need YOU! Come and join me! Let’s play together during my stream session this weekend!”',
-    social: 'https://www.twitch.tv/iryanne',
-  },
-  {
-    image: 'https://cdn.skult.gg/Landing+Page/rtx3080.png',
-    name: 'Graphics card to win!',
-    description:
-      '“Raffle! I have a RTX 3080 Ti to give to one of my card holders! Enter the raffle and get a chance to bring it home! The winner will be drawn from all those that will check-in with their card!”',
-  },
-  {
-    image: 'https://cdn.skult.gg/Landing+Page/worlds.png',
-    name: 'Come with me to the Worlds!',
-    description:
-      '“I’m playing at the League of Legends Worlds and I can bring one person with me! YOU, Gold Card holder! Come with me and follow the event from the backstage!”',
-  },
-];

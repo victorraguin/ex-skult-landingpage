@@ -1,5 +1,18 @@
 {
-  "collectibles": {
-    "collect": "Collect"
+  "cta": {
+    "discord": "Join the Discord",
+    "medium": "Litepaper",
+    "streamer": "I'm a Streamer"
+  },
+  "form": {
+    "contact": {
+      "firstname": "Firstname",
+      "email": "Email",
+      "cta": {
+        "todo": "Subscribe",
+        "pending": "Subscribing...",
+        "done": "Subscribed!"
+      }
+    }
   }
 }
