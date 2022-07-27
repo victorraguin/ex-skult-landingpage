@@ -66,6 +66,7 @@ const Header = () => {
           className="group"
         >
           <motion.button
+            onClick={() => router.push(router.pathname, router.pathname, { locale: 'fr' })}
             className={`
                 absolute top-[-2.6rem] right-[-2rem] scale-[0.6]
                 rounded-full
@@ -84,11 +85,7 @@ const Header = () => {
           >
             <motion.div className="relative flex flex-row rounded-full bg-[#262626] px-3 py-[8px]">
               <motion.div className="py-[6px] font-poppins text-[20px] font-light text-[#a9a9a9]">
-                <FlagIcon
-                  code="FR"
-                  size={28}
-                  onClick={() => router.push(router.pathname, router.pathname, { locale: 'fr' })}
-                />
+                <FlagIcon code="FR" size={28} />
               </motion.div>
             </motion.div>
           </motion.button>
@@ -100,6 +97,7 @@ const Header = () => {
           className="group"
         >
           <motion.button
+            onClick={() => router.push(router.pathname, router.pathname, { locale: 'en' })}
             className={`
                 absolute top-[-2.6rem] right-[-1rem] scale-[0.6] rounded-full
                 bg-gradient-to-br from-[#FFCC00] to-[#ED713C] p-0.5 text-sm
@@ -117,11 +115,7 @@ const Header = () => {
           >
             <motion.div className="relative flex flex-row rounded-full bg-[#262626] px-3 py-[8px]">
               <motion.div className="py-[6px] font-poppins text-[20px] font-light text-[#a9a9a9]">
-                <FlagIcon
-                  code="GB"
-                  size={28}
-                  onClick={() => router.push(router.pathname, router.pathname, { locale: 'en' })}
-                />
+                <FlagIcon code="GB" size={28} />
               </motion.div>
             </motion.div>
           </motion.button>
