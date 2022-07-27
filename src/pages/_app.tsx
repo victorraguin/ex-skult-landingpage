@@ -3,6 +3,7 @@ import { SnackbarProvider } from 'notistack';
 import type { AppProps } from 'next/app';
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
+import { appWithTranslation } from 'next-i18next';
 
 declare global {
   interface Window {
@@ -30,4 +31,4 @@ function MyApp({ Component, pageProps }: AppProps) {
     </SnackbarProvider>
   );
 }
-export default MyApp;
+export default appWithTranslation(MyApp);
