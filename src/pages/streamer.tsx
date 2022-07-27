@@ -24,6 +24,6 @@ export default Streamer;
 
 export const getStaticProps = async ({ locale }: { locale: 'en' | 'fr' }) => ({
   props: {
-    ...(await serverSideTranslations(locale, ['common', 'streamer'])),
+    ...(await serverSideTranslations(locale, ['common', 'streamers'])),
   },
 });
