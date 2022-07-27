@@ -4,41 +4,45 @@ import React from 'react';
 import styles from './Landing.module.css';
 import { motion } from 'framer-motion';
 import DiscordButton from './images/DiscordButton';
+import { Trans, useTranslation } from 'next-i18next';
 
 const StartBlock = () => {
+  const { t } = useTranslation('home');
+  const { t: tCommon } = useTranslation('common');
+
   return (
     <div
       className="bg-[#222222] bg-cover bg-center bg-no-repeat"
-      style={{
-        backgroundImage: `url("/elements/bckground-1.webp")`,
-      }}
+      style={{ backgroundImage: `url("/elements/bckground-1.webp")` }}
       id="top"
     >
       <div className="flex flex-row flex-wrap px-10 sm:flex-nowrap md:py-10 xl:px-[12rem] xl:pt-[9rem] xl:pb-[10rem] 3xl:px-[24rem] 3xl:pb-[15rem] 3xl:pt-[13rem] 4xl:px-[35rem]">
         <div className="flex flex-col sm:w-1/2">
-          <motion.h1
-            className={`${styles.HomeTitle} pb-3 leading-none`}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1, duration: 1 }}
-          >
-            Let's go
-          </motion.h1>
-          <motion.h1
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1.5, duration: 1 }}
-            className={`${styles.HomeLittleTitle}`}
-          >
-            beyond Gameplay
-          </motion.h1>
+          <Trans i18nKey="start.title" ns="home">
+            <motion.h1
+              className={`${styles.HomeTitle} pb-3 leading-none`}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 1, duration: 1 }}
+            >
+              Let's go
+            </motion.h1>
+            <motion.h1
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 1.5, duration: 1 }}
+              className={`${styles.HomeLittleTitle}`}
+            >
+              beyond Gameplay
+            </motion.h1>
+          </Trans>
           <motion.h2
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 2, duration: 1 }}
             className="mt-2 font-poppins text-[18px] font-light text-[#e7e7e7] xl:text-[24px]"
           >
-            Streams can be much more than just a video!
+            {t('start.catchphrase')}
           </motion.h2>
           <div className="flex flex-row space-x-5 md:flex-col md:space-x-0">
             <div className="">
@@ -55,13 +59,13 @@ const StartBlock = () => {
                     <motion.div
                       className={`hidden pt-1 pl-2 font-poppins text-[20px] font-light text-[#a9a9a9] group-hover:brightness-150 sm:flex sm:pt-1.5`}
                     >
-                      Join the Discord
+                      {tCommon('cta.discord')}
                     </motion.div>
                   </motion.div>
                 </motion.button>
               </a>
             </div>
-            <div className="">
+            <div>
               <a
                 href="https://medium.com/@SKULT/welcome-to-the-skult-community-f37295ab1ffb"
                 target="_blank"
@@ -80,7 +84,7 @@ const StartBlock = () => {
                     <motion.div
                       className={`hidden pt-1 pl-2 font-poppins text-[20px] font-light text-[#a9a9a9] group-hover:brightness-150 sm:flex sm:pt-1.5`}
                     >
-                      Litepaper
+                      {tCommon('cta.medium')}
                     </motion.div>
                   </motion.div>
                 </motion.button>

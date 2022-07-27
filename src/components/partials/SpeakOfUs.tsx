@@ -3,8 +3,10 @@
 import React, { useEffect } from 'react';
 import { useAnimation, motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { Trans, useTranslation } from 'next-i18next';
 
 const SpeakOfUs = () => {
+  const { t } = useTranslation('home');
   const controls = useAnimation();
   const [ref, inView] = useInView({ threshold: 0.1 });
   useEffect(() => {
@@ -49,12 +51,14 @@ const SpeakOfUs = () => {
         <div>
           <div className="container mx-auto flex justify-center pt-8 pb-20 xl:pt-10 2xl:pt-20 4xl:pt-40">
             <motion.div variants={CardItem}>
-              <p className=" pb-3 text-center font-poppins text-[32px]  font-light text-white xl:text-[36px] 2xl:text-[48px]">
-                They{' '}
-                <span className="bg-gradient-to-tr from-[#FFCC00] to-[#ED713C] bg-clip-text font-poppins font-normal text-transparent xl:text-[36px] 2xl:text-[48px]">
-                  Speak of Us
-                </span>{' '}
-              </p>
+              <Trans i18nKey="partners.title" ns="home">
+                <p className=" pb-3 text-center font-poppins text-[32px]  font-light text-white xl:text-[36px] 2xl:text-[48px]">
+                  They{' '}
+                  <span className="bg-gradient-to-tr from-[#FFCC00] to-[#ED713C] bg-clip-text font-poppins font-normal text-transparent xl:text-[36px] 2xl:text-[48px]">
+                    Speak of Us
+                  </span>{' '}
+                </p>
+              </Trans>
             </motion.div>
           </div>
           <motion.div
@@ -83,7 +87,7 @@ const SpeakOfUs = () => {
                       <div className="bg-gradient-to-tr from-[#FFCC00] to-[#ED713C] bg-clip-text pb-1 text-center text-3xl font-bold text-transparent">
                         Zlataneur89
                       </div>
-                      <p className="text-md text-center text-[#e7e7e7]">Content Creator on Web3 Play&Earn</p>
+                      <p className="text-md text-center text-[#e7e7e7]">{t('partners.creator')}</p>
                       <div className="flex w-full items-center justify-center py-4">
                         <a href="https://youtu.be/V1VjHXJHBQM" target="_blank" className="mx-5" rel="noreferrer">
                           <img
@@ -114,7 +118,7 @@ const SpeakOfUs = () => {
                       <div className="bg-gradient-to-tr from-[#FFCC00] to-[#ED713C] bg-clip-text pb-1 text-center text-3xl font-bold text-transparent">
                         Fomaw
                       </div>
-                      <p className="text-md text-center text-[#e7e7e7]">Content Creator on Web3 Play&Earn</p>
+                      <p className="text-md text-center text-[#e7e7e7]">{t('partners.creator')}</p>
                       <div className="flex w-full items-center justify-center py-4">
                         <a href="https://youtu.be/Gr2kK2dxYdo" target="_blank" className="mx-5" rel="noreferrer">
                           <img
@@ -145,7 +149,7 @@ const SpeakOfUs = () => {
                       <div className="bg-gradient-to-tr from-[#FFCC00] to-[#ED713C] bg-clip-text pb-1 text-center text-3xl font-bold text-transparent">
                         Quentin Morin
                       </div>
-                      <p className="text-md text-center text-[#e7e7e7]">Marketing Manager</p>
+                      <p className="text-md text-center text-[#e7e7e7]">{t('team.quentin')}</p>
                       <div className="flex w-full items-center justify-center py-4">
                         <a
                           href="https://www.linkedin.com/in/quentinmorin/"

@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react';
 import { useAnimation, motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { Trans } from 'next-i18next';
 
 const PresentationBlock = () => {
   const videoVariant = {
@@ -39,22 +40,24 @@ const PresentationBlock = () => {
   return (
     <motion.div className="flex flex-col" ref={ref}>
       <div className="flex flex-col items-center">
-        <motion.h3
-          className="mx-2 mt-5 text-center font-poppins text-3xl font-light text-[#e7e7e7] xl:mx-0 xl:text-5xl"
-          initial={{ opacity: 0 }}
-          animate={controls}
-          variants={openTitleText}
-        >
-          A world where new gaming experiences
-        </motion.h3>
-        <motion.h3
-          className="mb-32 max-w-max bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text text-center font-poppins text-3xl font-normal text-transparent xl:text-5xl"
-          initial={{ opacity: 0 }}
-          animate={controls}
-          variants={openLittleTitleText}
-        >
-          can come alive.
-        </motion.h3>
+        <Trans i18nKey="presentation.title" ns="home">
+          <motion.h3
+            className="mx-2 mt-5 text-center font-poppins text-3xl font-light text-[#e7e7e7] xl:mx-0 xl:text-5xl"
+            initial={{ opacity: 0 }}
+            animate={controls}
+            variants={openTitleText}
+          >
+            A world where new gaming experiences
+          </motion.h3>
+          <motion.h3
+            className="mb-32 max-w-max bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text text-center font-poppins text-3xl font-normal text-transparent xl:text-5xl"
+            initial={{ opacity: 0 }}
+            animate={controls}
+            variants={openLittleTitleText}
+          >
+            can come alive.
+          </motion.h3>
+        </Trans>
       </div>
       <div className="relative flex flex-col">
         <div className="z-10 mx-auto rounded-[15px] xl:h-[504px] xl:w-[896px] xl:bg-[#282828] 4xl:w-[900px]">

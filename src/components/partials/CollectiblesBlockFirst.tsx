@@ -3,8 +3,10 @@
 import React, { useEffect } from 'react';
 import { useAnimation, motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { useTranslation } from 'next-i18next';
 
 const CollectiblesBlockFirst = () => {
+  const { t } = useTranslation('home');
   const controls = useAnimation();
   const [ref, inView] = useInView({ threshold: 0.6 });
   useEffect(() => {
@@ -57,26 +59,29 @@ const CollectiblesBlockFirst = () => {
         <motion.div className="mx-auto flex flex-col flex-wrap justify-around gap-y-8 sm:flex-nowrap md:flex-row 3xl:w-2/3 4xl:w-3/4">
           <motion.div className="flex flex-1 flex-col" variants={CardItem}>
             <img src="/elements/skult-collecte-icon-.svg" alt="Collect Icon" className="h-[125px]" />
-            <h4 className="pt-2 text-center font-poppins text-3xl font-semibold text-primary md:pt-5">Collect</h4>
+            <h4 className="pt-2 text-center font-poppins text-3xl font-semibold text-primary md:pt-5">
+              {t('collectibles.collect.title')}
+            </h4>
             <p className="mx-auto w-2/3 pt-4 text-center font-poppins text-[18px] font-medium text-[#b8b8b8]">
-              Create your deck by collecting the cards of the best Streamers you can find! You'll need them to
-              participate into their exclusive events & our Fantasy Leagues!
+              {t('collectibles.collect.description')}
             </p>
           </motion.div>
           <motion.div className="flex flex-1 flex-col" variants={CardItem}>
             <img src="/elements/skult-trade-icon.svg" alt="Trade Icon" className="h-[125px]" />
-            <h4 className="pt-2 text-center font-poppins text-3xl font-semibold text-primary md:pt-5">Trade</h4>
+            <h4 className="pt-2 text-center font-poppins text-3xl font-semibold text-primary md:pt-5">
+              {t('collectibles.trade.title')}
+            </h4>
             <p className="mx-auto w-2/3 pt-4 text-center font-poppins text-[18px] font-medium text-[#b8b8b8]">
-              Trade with other members of the SKULT Community across the globe. Sell the cards you won't need: real cash
-              is coming your way!
+              {t('collectibles.trade.description')}
             </p>
           </motion.div>
           <motion.div className="flex flex-1 flex-col" variants={CardItem}>
             <img src="/elements/skult-compete-icon.svg" alt="Compete Icon" className="h-[125px]" />
-            <h4 className="pt-2 text-center font-poppins text-3xl font-semibold text-primary md:pt-5">Compete</h4>
+            <h4 className="pt-2 text-center font-poppins text-3xl font-semibold text-primary md:pt-5">
+              {t('collectibles.compete.title')}
+            </h4>
             <p className="mx-auto w-2/3 pt-4 text-center font-poppins text-[18px] font-medium text-[#b8b8b8]">
-              Draft your Squad and enter weekly Leagues. Your final score will depend on the real-world performances of
-              your Streamers.
+              {t('collectibles.trade.description')}
             </p>
           </motion.div>
         </motion.div>
