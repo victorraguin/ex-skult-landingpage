@@ -59,8 +59,8 @@ const CollectiblesBlockSecond = () => {
           <h4 className="pt-2 text-center font-poppins text-3xl font-semibold text-primary md:pt-5">Unique &</h4>
           <h4 className="text-center font-poppins text-3xl font-semibold text-primary">Counterfeit proof</h4>
           <p className="mx-auto w-2/3 pt-4 text-center font-poppins text-[18px] font-medium text-[#b8b8b8]">
-            Every card is a non-fungible token (NFT). The blockchain technology ensures its uniqueness and ownership
-            security.
+            Every card can be a non-fungible token (NFT): the blockchain technology ensures your ownership if you want
+            to take your card outside SKULT
           </p>
         </motion.div>
         <motion.div className="flex flex-1 flex-col" variants={CardItem}>
