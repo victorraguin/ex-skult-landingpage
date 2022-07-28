@@ -1,5 +1,4 @@
 import '../styles/globals.css';
-import { SnackbarProvider } from 'notistack';
 import type { AppProps } from 'next/app';
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
@@ -25,10 +24,6 @@ function MyApp({ Component, pageProps }: AppProps) {
     };
   }, [router.events]);
 
-  return (
-    <SnackbarProvider maxSnack={3}>
-      <Component {...pageProps} />
-    </SnackbarProvider>
-  );
+  return <Component {...pageProps} />;
 }
 export default appWithTranslation(MyApp);
