@@ -6,13 +6,14 @@ import StartBlock from '../components/partials/StartBlock';
 import PresentationBlock from '../components/partials/PresentationBlock';
 import StreamersLeaguersBlock from '../components/partials/StreamersLeaguersBlock';
 import CollectiblesBlockFirst from '../components/partials/CollectiblesBlockFirst';
-import CollectiblesBlockSecond from '../components/partials/CollectiblesBlockSecond';
+// import CollectiblesBlockSecond from '../components/partials/CollectiblesBlockSecond';
 import CollectiblesUseCaseBlock from '../components/partials/CollectiblesUseCaseBlock';
 import TeamBlock from '../components/partials/TeamBlock';
 import SpeakOfUs from '../components/partials/SpeakOfUs';
 import { motion } from 'framer-motion';
 import SocialBlock from '../components/partials/SocialBlock';
 import Footer from '../components/partials/Footer';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 const Home: NextPage = () => {
   return (
@@ -42,3 +43,9 @@ const Home: NextPage = () => {
 };
 
 export default Home;
+
+export const getStaticProps = async ({ locale }: { locale: 'en' | 'fr' }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ['common', 'home'])),
+  },
+});

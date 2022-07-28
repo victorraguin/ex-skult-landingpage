@@ -3,8 +3,11 @@ import React from 'react';
 import DiscordButton from './images/DiscordButton';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import { useTranslation } from 'next-i18next';
 
 const Header = () => {
+  const { t } = useTranslation('common');
+
   return (
     <div className="fixed z-50">
       <motion.img
@@ -68,7 +71,7 @@ const Header = () => {
                 <motion.div
                   className={`hidden pt-1.5 pl-2 font-poppins text-[20px] font-light text-[#a9a9a9] group-hover:brightness-150 sm:flex`}
                 >
-                  Join the Discord
+                  {t('cta.discord')}
                 </motion.div>
               </motion.div>
             </motion.button>

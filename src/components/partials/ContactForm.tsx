@@ -1,10 +1,12 @@
 /* eslint-disable max-len */
+import { useTranslation } from 'next-i18next';
 import { useState } from 'react';
 
 export const ContactForm = ({ className, inputClassname }: { className?: string; inputClassname?: string }) => {
+  const { t } = useTranslation('common');
   const [firstname, setFirstname] = useState('');
   const [email, setEmail] = useState('');
-  const [subscribe, setSubScribe] = useState('Subscribe');
+  const [subscribe, setSubScribe] = useState(t('form.contact.cta.todo'));
 
   const resetValues = () => {
     setFirstname('');
@@ -17,10 +19,10 @@ export const ContactForm = ({ className, inputClassname }: { className?: string;
       className={`flex w-80 flex-1 flex-col gap-x-3 gap-y-8 lg:flex-row lg:text-sm lg:font-light ${className}`}
       onSubmit={e => {
         e.preventDefault();
-        setSubScribe('Subscribing...');
+        setSubScribe(t('form.contact.cta.pending'));
         setTimeout(() => {
           resetValues();
-          setSubScribe('Subscribed!');
+          setSubScribe(t('form.contact.cta.done'));
         }, 2000);
       }}
     >
@@ -31,7 +33,7 @@ export const ContactForm = ({ className, inputClassname }: { className?: string;
         `}
         name="name"
         required
-        placeholder="Firstname"
+        placeholder={t('form.contact.firstname')}
         value={firstname}
         onChange={e => setFirstname(e.target.value)}
       />
@@ -43,7 +45,7 @@ export const ContactForm = ({ className, inputClassname }: { className?: string;
         type="email"
         required
         name="email"
-        placeholder="Email"
+        placeholder={t('form.contact.email')}
         value={email}
         onChange={e => setEmail(e.target.value)}
       />

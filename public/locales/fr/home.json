@@ -1,0 +1,15 @@
+{
+  "start": {
+    "title": "<0>ABC</0> <1>def</1>",
+    "catchphrase": "Streams can be much more than just a video!"
+  },
+  "collectibles": {
+    "collect": {
+      "title": "",
+      "description": ""
+    }
+  },
+  "collectiblesUseCases": {
+    "title": "Comment utiliser <1>vos Cartes</1> ?"
+  }
+}

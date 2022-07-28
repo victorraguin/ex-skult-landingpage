@@ -5,6 +5,7 @@ import HeaderStreamer from '../components/partials/HeaderStreamer';
 import StreamerBlock from '../components/partials/StreamerBlock';
 import { motion } from 'framer-motion';
 import Footer from '../components/partials/Footer';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 const Streamer: NextPage = () => {
   return (
@@ -20,3 +21,9 @@ const Streamer: NextPage = () => {
 };
 
 export default Streamer;
+
+export const getStaticProps = async ({ locale }: { locale: 'en' | 'fr' }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ['common', 'streamers'])),
+  },
+});

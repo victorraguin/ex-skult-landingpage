@@ -3,8 +3,10 @@
 import React, { useEffect } from 'react';
 import { useAnimation, motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { Trans, useTranslation } from 'next-i18next';
 
 const TeamBlock = () => {
+  const { t } = useTranslation('home');
   const controls = useAnimation();
   const [ref, inView] = useInView({ threshold: 0.1 });
   useEffect(() => {
@@ -49,13 +51,15 @@ const TeamBlock = () => {
         <div>
           <div className="container mx-auto flex justify-center pt-16 pb-20 xl:pt-20 2xl:pt-40 4xl:pt-40">
             <motion.div variants={CardItem}>
-              <p className=" pb-3 text-center font-poppins text-[32px]  font-light text-white xl:text-[36px] 2xl:text-[48px]">
-                The{' '}
-                <span className="bg-gradient-to-tr from-[#FFCC00] to-[#ED713C] bg-clip-text font-poppins font-normal text-transparent xl:text-[36px] 2xl:text-[48px]">
-                  dream
-                </span>{' '}
-                team
-              </p>
+              <Trans i18nKey="team.title" ns="home">
+                <p className=" pb-3 text-center font-poppins text-[32px]  font-light text-white xl:text-[36px] 2xl:text-[48px]">
+                  The{' '}
+                  <span className="bg-gradient-to-tr from-[#FFCC00] to-[#ED713C] bg-clip-text font-poppins font-normal text-transparent xl:text-[36px] 2xl:text-[48px]">
+                    dream
+                  </span>{' '}
+                  team
+                </p>
+              </Trans>
             </motion.div>
           </div>
           <motion.div
@@ -80,7 +84,7 @@ const TeamBlock = () => {
                       <div className="bg-gradient-to-tr from-[#FFCC00] to-[#ED713C] bg-clip-text pb-1 text-center text-3xl font-bold text-transparent">
                         Alex Larose
                       </div>
-                      <p className="text-md text-center text-[#e7e7e7]">Founder & CEO</p>
+                      <p className="text-md text-center text-[#e7e7e7]">{t('team.alex')}</p>
                       <div className="flex w-full items-center justify-center py-4">
                         <a
                           href="https://www.linkedin.com/in/alexandrelarose/"
@@ -119,7 +123,7 @@ const TeamBlock = () => {
                       <div className="bg-gradient-to-tr from-[#FFCC00] to-[#ED713C] bg-clip-text pb-1 text-center text-3xl font-bold text-transparent">
                         Raphael André
                       </div>
-                      <p className="text-md text-center text-[#e7e7e7]">Marketing Project Manager</p>
+                      <p className="text-md text-center text-[#e7e7e7]">{t('team.raph')}</p>
                       <div className="flex w-full items-center justify-center py-4">
                         <a
                           href="https://www.linkedin.com/in/raphael-andre-aa26b022a/"
@@ -162,7 +166,7 @@ const TeamBlock = () => {
                       <div className="bg-gradient-to-tr from-[#FFCC00] to-[#ED713C] bg-clip-text pb-1 text-center text-3xl font-bold text-transparent">
                         Quentin Morin
                       </div>
-                      <p className="text-md text-center text-[#e7e7e7]">Marketing Manager</p>
+                      <p className="text-md text-center text-[#e7e7e7]">{t('team.quentin')}</p>
                       <div className="flex w-full items-center justify-center py-4">
                         <a
                           href="https://www.linkedin.com/in/quentinmorin/"
@@ -205,7 +209,7 @@ const TeamBlock = () => {
                       <div className="bg-gradient-to-tr from-[#FFCC00] to-[#ED713C] bg-clip-text pb-1 text-center text-3xl font-bold text-transparent">
                         Mohamed Belkamel
                       </div>
-                      <p className="text-md text-center text-[#e7e7e7]">DevOps & Back-End Developer</p>
+                      <p className="text-md text-center text-[#e7e7e7]">{t('team.simo')}</p>
                       <div className="flex w-full justify-center pt-5 pb-5">
                         <a
                           href="https://www.linkedin.com/in/mohamed-belkamel-a65364183/"
@@ -241,7 +245,7 @@ const TeamBlock = () => {
                       <div className="bg-gradient-to-tr from-[#FFCC00] to-[#ED713C] bg-clip-text pb-1 text-center text-3xl font-bold text-transparent">
                         Jérémie Gauthier
                       </div>
-                      <p className="text-md text-center text-[#e7e7e7]">FullStack & Blockchain Developer</p>
+                      <p className="text-md text-center text-[#e7e7e7]">{t('team.jerem')}</p>
                       <div className="flex w-full justify-center pt-5 pb-5">
                         <a
                           href="https://www.linkedin.com/in/jeremie-gauthier-4141a014a/"
@@ -277,7 +281,7 @@ const TeamBlock = () => {
                       <div className="bg-gradient-to-tr from-[#FFCC00] to-[#ED713C] bg-clip-text pb-1 text-center text-3xl font-bold text-transparent">
                         Victor Raguin
                       </div>
-                      <p className="text-md text-center text-[#e7e7e7]">Front-End & Blockchain Developer</p>
+                      <p className="text-md text-center text-[#e7e7e7]">{t('team.vic')}</p>
                       <div className="flex w-full items-center justify-center py-4">
                         <a
                           href="https://www.linkedin.com/in/victor-raguin/"
@@ -305,7 +309,7 @@ const TeamBlock = () => {
                 <div className="container mx-auto flex justify-center pb-20 sm:pt-16 xl:pt-20 2xl:pt-20 4xl:pt-0">
                   <motion.div variants={CardItem}>
                     <p className="bg-gradient-to-tr from-[#FFCC00] to-[#ED713C] bg-clip-text pb-3 text-center font-poppins text-[32px] font-normal text-transparent xl:text-[36px] 2xl:text-[48px]">
-                      Advisors
+                      {t('team.advisors')}
                     </p>
                   </motion.div>
                 </div>
@@ -327,7 +331,7 @@ const TeamBlock = () => {
                       <div className="bg-gradient-to-tr from-[#FFCC00] to-[#ED713C] bg-clip-text pb-1 text-center text-3xl font-bold text-transparent">
                         Thibaut Lacave
                       </div>
-                      <p className="text-md text-center text-[#e7e7e7]">Technical Advisor</p>
+                      <p className="text-md text-center text-[#e7e7e7]">{t('team.thib')}</p>
                       <div className="flex w-full justify-center pt-5 pb-5">
                         <a
                           href="https://www.linkedin.com/in/lacavethibaut/"
@@ -363,7 +367,7 @@ const TeamBlock = () => {
                       <div className="bg-gradient-to-tr from-[#FFCC00] to-[#ED713C] bg-clip-text pb-1 text-center text-3xl font-bold text-transparent">
                         Didier Boullery
                       </div>
-                      <p className="text-md text-center text-[#e7e7e7]">Gaming & Business Advisor</p>
+                      <p className="text-md text-center text-[#e7e7e7]">{t('team.didier')}</p>
                       <div className="flex w-full justify-center pt-5 pb-5">
                         <a
                           href="https://www.linkedin.com/in/didierboullery/"
@@ -399,7 +403,7 @@ const TeamBlock = () => {
                       <div className="bg-gradient-to-tr from-[#FFCC00] to-[#ED713C] bg-clip-text pb-1 text-center text-3xl font-bold text-transparent">
                         Joachim Gillet
                       </div>
-                      <p className="text-md text-center text-[#e7e7e7]">Web3 Strategy & Growth Advisor</p>
+                      <p className="text-md text-center text-[#e7e7e7]">{t('team.joachim')}</p>
                       <div className="flex w-full justify-center pt-5 pb-5">
                         <a
                           href="https://www.linkedin.com/in/joachim-gillet-b91099133/"
@@ -430,7 +434,7 @@ const TeamBlock = () => {
                 href="https://vivid-tadpole-074.notion.site/Job-Board-a686e214017142d08fb73cf1f83ca4ad"
                 rel="noopener noreferrer"
               >
-                Hey! We're hiring! Join the squad!
+                {t('team.cta')}
               </a>
             </div>
           </button>
