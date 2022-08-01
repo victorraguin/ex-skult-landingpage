@@ -43,6 +43,15 @@ export default class MyDocument extends Document {
               });`,
             }}
           />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `hbspt.forms.create({
+                region: "eu1",
+                portalId: "25458610",
+                formId: "56708b4c-b13b-4537-8a34-f2454cd0670c"
+              });`,
+            }}
+          />
         </Head>
         <body>
           <Main />
