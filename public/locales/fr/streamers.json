@@ -1,1 +1,28 @@
-{}
+{
+  "benefits": {
+    "title": "<0>pour les <1>Streamers</1></0>",
+    "visibility": "<0>Augmente ta <1>visibilité</1></0>",
+    "engage": "<0><0>Interagis avec </0>ton public</0>",
+    "earn": "<0><0>Gagne</0> de l'argent</0>"
+  },
+  "experience": {
+    "events": {
+      "title": "<0>Crée <1>des événements</1> exclusifs</0>",
+      "description": "Nous te fournirons tous les outils pour créer des événements uniques pour ta communauté. C’est TOI qui décides qui peut participer à TES événements ! Récompense tes fans les plus fidèles avec des expériences immersives et interactives."
+    },
+    "earn": {
+      "title": "<0>Gagne de l'argent <2>en jouant</2></0>",
+      "description": "Offre à ton public la possibilité de participer à des jeux pendant ton stream ! Notre premier jeu : une Fantasy League ! Divertis ta communauté avec tes actions dans le jeu et augmente le score de tes fans en réalisant des performances exceptionnelles ! Montre-leur ton talent !"
+    }
+  },
+  "ranks": {
+    "title": "<0>Plus ton rang <2>augmente,</2> <5>plus tu gagnes d’argent</5></0>",
+    "subtitle": "Les rangs des Streamers sont déterminés en fonction de leur popularité et de leurs actions",
+    "explanation": "Reçois un pourcentage des ventes sur chaque carte vendue : plus ton rang est élevé, plus le pourcentage est important.",
+    "contactUs": "Contacte-nous pour connaître ton rang et savoir combien tu pourrais gagner avec SKULT."
+  },
+  "join": {
+    "title": "<0>Viens <1>jouer</1> avec nous</0>",
+    "subtitle": "Tu veux en savoir plus ?"
+  }
+}
