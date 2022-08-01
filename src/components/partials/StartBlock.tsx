@@ -80,7 +80,7 @@ const StartBlock = () => {
                 from-[#FFCC00] to-[#ED713C]  p-0.5 text-sm shadow-[0_0_15px_-3px_#ffcc00cf] transition duration-200 ease-in-out hover:bg-gradient-to-b hover:shadow-[0_0_25px_-3px_#ffcc00cf] md:mt-5 md:scale-[0.7]  xl:scale-[0.9] 2xl:scale-[1]`}
                 >
                   <motion.div className="group relative flex flex-row rounded-full bg-[#262626] px-6 pt-2">
-                    <img src="./elements/social/medium.svg" className="w-6 pb-2 md:w-8" alt="medium" />
+                    <img src="/elements/social/medium.svg" className="w-6 pb-2 md:w-8" alt="medium" />
                     <motion.div
                       className={`hidden pt-1 pl-2 font-poppins text-[20px] font-light text-[#a9a9a9] group-hover:brightness-150 sm:flex sm:pt-1.5`}
                     >

@@ -91,7 +91,7 @@ const SpeakOfUs = () => {
                       <div className="flex w-full items-center justify-center py-4">
                         <a href="https://youtu.be/V1VjHXJHBQM" target="_blank" className="mx-5" rel="noreferrer">
                           <img
-                            src="./elements/social/youtube.svg"
+                            src="/elements/social/youtube.svg"
                             className="h-12 cursor-pointer hover:scale-105 hover:brightness-150"
                             alt="YouTube"
                           />
@@ -122,7 +122,7 @@ const SpeakOfUs = () => {
                       <div className="flex w-full items-center justify-center py-4">
                         <a href="https://youtu.be/Gr2kK2dxYdo" target="_blank" className="mx-5" rel="noreferrer">
                           <img
-                            src="./elements/social/youtube.svg"
+                            src="/elements/social/youtube.svg"
                             className="h-12 cursor-pointer hover:scale-105 hover:brightness-150"
                             alt="YouTube"
                           />
@@ -158,14 +158,14 @@ const SpeakOfUs = () => {
                           rel="noreferrer"
                         >
                           <img
-                            src="./elements/social/linkedin.svg"
+                            src="/elements/social/linkedin.svg"
                             className="h-12 cursor-pointer hover:scale-105 hover:brightness-150"
                             alt="LinkedIn"
                           />
                         </a>
                         <a href="https://twitter.com/Artkorino" className="mx-5" target="_blank" rel="noreferrer">
                           <img
-                            src="./elements/social/twitter.svg"
+                            src="/elements/social/twitter.svg"
                             className="h-12 cursor-pointer hover:scale-105 hover:brightness-150"
                             alt="Twitter"
                           />
