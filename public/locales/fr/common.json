@@ -1,1 +1,18 @@
-{}
+{
+  "cta": {
+    "discord": "Rejoins le Discord",
+    "medium": "Litepaper",
+    "streamer": "Je suis Streamer"
+  },
+  "form": {
+    "contact": {
+      "firstname": "Prénom",
+      "email": "E-mail",
+      "cta": {
+        "todo": "Je m'inscris",
+        "pending": "Inscription en cours...",
+        "done": "Inscription réussie !"
+      }
+    }
+  }
+}
