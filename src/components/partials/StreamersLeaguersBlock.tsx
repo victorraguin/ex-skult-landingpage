@@ -1,12 +1,12 @@
 /* eslint-disable max-len */
 /* eslint-disable react/no-unescaped-entities */
-import React, { useEffect } from 'react';
-import { useAnimation, motion, AnimationControls } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
-import Link from 'next/link';
 import { Modal } from '@mui/material';
-import DiscordButton from './images/DiscordButton';
+import { AnimationControls, motion, useAnimation } from 'framer-motion';
 import { Trans, useTranslation } from 'next-i18next';
+import Link from 'next/link';
+import React, { useEffect } from 'react';
+import { useInView } from 'react-intersection-observer';
+import DiscordButton from './images/DiscordButton';
 
 const StreamersLeaguersBlock = () => {
   const controls = useAnimation();

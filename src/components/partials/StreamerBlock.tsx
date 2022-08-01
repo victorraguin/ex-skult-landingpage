@@ -1,5 +1,4 @@
 import { Trans } from 'next-i18next';
-import React from 'react';
 import { StreamerBenefits } from './StreamerBenefits';
 import { StreamerExperiences } from './StreamerExperience';
 import { StreamerInvitation } from './StreamerInvitation';

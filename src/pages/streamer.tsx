@@ -1,11 +1,10 @@
-import React from 'react';
+import { motion } from 'framer-motion';
 import type { NextPage } from 'next';
-import Seo from '../components/Seo';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import Footer from '../components/partials/Footer';
 import HeaderStreamer from '../components/partials/HeaderStreamer';
 import StreamerBlock from '../components/partials/StreamerBlock';
-import { motion } from 'framer-motion';
-import Footer from '../components/partials/Footer';
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import Seo from '../components/Seo';
 
 const Streamer: NextPage = () => {
   return (

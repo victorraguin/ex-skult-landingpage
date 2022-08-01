@@ -1,5 +1,4 @@
 /* eslint-disable max-len */
-import React from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { ContactForm } from './ContactForm';

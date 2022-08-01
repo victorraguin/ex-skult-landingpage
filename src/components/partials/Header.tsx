@@ -1,9 +1,8 @@
 /* eslint-disable max-len */
-import React from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { FlagIcon } from 'react-flag-kit';
 import { useRouter } from 'next/router';
+import { FlagIcon } from 'react-flag-kit';
 
 const Header = () => {
   const router = useRouter();
@@ -37,11 +36,11 @@ const Header = () => {
           <Link href="/streamer" passHref>
             <motion.button
               className={`
-                absolute top-[-2.6rem] right-[2rem] scale-[0.6] rounded-full
+                absolute top-[-2.6rem] right-[1rem] scale-[0.6] rounded-full
                 bg-gradient-to-br from-[#FFCC00] to-[#ED713C] p-0.5 text-sm
                 shadow-[0_0_15px_-3px_#ffcc00cf] transition
                 duration-200 ease-in-out hover:bg-gradient-to-b hover:shadow-[0_0_25px_-3px_#ffcc00cf]
-                md:right-[0rem]
+                md:right-[2rem]
                 md:scale-[0.7]
                 xl:top-[-3rem] 
                 xl:right-40
@@ -63,13 +62,13 @@ const Header = () => {
           <motion.div
             initial={{ y: -250 }}
             animate={{ y: -10 }}
-            transition={{ delay: 2, type: 'spring', stiffness: 60 }}
+            transition={{ delay: 1.5, type: 'spring', stiffness: 60 }}
             className="group"
           >
             <motion.button
               onClick={() => router.push(router.pathname, router.pathname, { locale: 'fr' })}
               className={`
-                absolute top-[-2.6rem] right-[-1.5rem] scale-[0.6]
+                absolute top-[-2.6rem] right-[0rem] scale-[0.6]
                 rounded-full
                 bg-gradient-to-br from-[#FFCC00] to-[#ED713C] p-0.5 text-sm
                 shadow-[0_0_15px_-3px_#ffcc00cf]  transition
@@ -96,20 +95,20 @@ const Header = () => {
           <motion.div
             initial={{ y: -250 }}
             animate={{ y: -10 }}
-            transition={{ delay: 3, type: 'spring', stiffness: 70 }}
+            transition={{ delay: 1.5, type: 'spring', stiffness: 70 }}
             className="group"
           >
             <motion.button
               onClick={() => router.push(router.pathname, router.pathname, { locale: 'en' })}
               className={`
-                absolute top-[-2.6rem] right-[-1.5rem] scale-[0.6] rounded-full
+                absolute top-[-2.6rem] right-[0rem] scale-[0.6] rounded-full
                 bg-gradient-to-br from-[#FFCC00] to-[#ED713C] p-0.5 text-sm
                 shadow-[0_0_15px_-3px_#ffcc00cf] transition
                 duration-200 ease-in-out hover:bg-gradient-to-b hover:shadow-[0_0_25px_-3px_#ffcc00cf]
                 md:right-[0rem]
                 md:scale-[0.7]
                 xl:top-[-3rem] 
-                xl:right-5
+                xl:right-20
                 xl:scale-[0.8]
                 2xl:scale-[0.9]
                 3xl:scale-[0.9]

@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
-import { GradientText } from './GradientText';
-import Image from 'next/image';
 import { Trans, useTranslation } from 'next-i18next';
+import Image from 'next/image';
+import { GradientText } from './GradientText';
 
 export const StreamerRanks = () => {
   const { t } = useTranslation('streamers');

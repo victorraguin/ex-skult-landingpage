@@ -1,10 +1,9 @@
 /* eslint-disable max-len */
 /* eslint-disable react/no-unescaped-entities */
-import React from 'react';
-import styles from './Landing.module.css';
 import { motion } from 'framer-motion';
-import DiscordButton from './images/DiscordButton';
 import { Trans, useTranslation } from 'next-i18next';
+import DiscordButton from './images/DiscordButton';
+import styles from './Landing.module.css';
 
 const StartBlock = () => {
   const { t } = useTranslation('home');

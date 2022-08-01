@@ -1,8 +1,8 @@
-import '../styles/globals.css';
-import type { AppProps } from 'next/app';
-import { useEffect } from 'react';
-import { useRouter } from 'next/router';
 import { appWithTranslation } from 'next-i18next';
+import type { AppProps } from 'next/app';
+import { useRouter } from 'next/router';
+import { useEffect } from 'react';
+import '../styles/globals.css';
 
 declare global {
   interface Window {

@@ -1,8 +1,8 @@
-import visibilityIcon from '../../../public/elements/streamer/visibility.svg';
-import engageIcon from '../../../public/elements/streamer/engage.svg';
-import earnCashIcon from '../../../public/elements/streamer/earn-cash.svg';
-import Image, { StaticImageData } from 'next/image';
 import { Trans } from 'next-i18next';
+import Image, { StaticImageData } from 'next/image';
+import earnCashIcon from '../../../public/elements/streamer/earn-cash.svg';
+import engageIcon from '../../../public/elements/streamer/engage.svg';
+import visibilityIcon from '../../../public/elements/streamer/visibility.svg';
 
 export const StreamerBenefits = () => (
   <div className="mx-auto flex max-w-7xl flex-row flex-wrap justify-evenly gap-y-12 pb-16 sm:py-5">

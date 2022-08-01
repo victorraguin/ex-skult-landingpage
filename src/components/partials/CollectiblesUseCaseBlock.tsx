@@ -1,8 +1,7 @@
-import React from 'react';
+import { Trans } from 'next-i18next';
 import { CollectiblesUseCaseEvents } from './CollectiblesUseCaseEvents';
 import { CollectiblesUseCaseLeagues } from './CollectiblesUseCaseLeagues';
 import { GradientText } from './GradientText';
-import { Trans } from 'next-i18next';
 
 const CollectiblesUseCaseBlock = () => {
   return (

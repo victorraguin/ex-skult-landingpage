@@ -1,11 +1,11 @@
 /* eslint-disable security/detect-object-injection */
 /* eslint-disable max-len */
-import { Dispatch, SetStateAction, useEffect, useRef, useState } from 'react';
-import { useSwipe } from 'beautiful-react-hooks';
 import ArrowBackIosOutlinedIcon from '@mui/icons-material/ArrowBackIosOutlined';
 import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
-import { GradientText } from './GradientText';
+import { useSwipe } from 'beautiful-react-hooks';
 import { useTranslation } from 'next-i18next';
+import { Dispatch, SetStateAction, useEffect, useRef, useState } from 'react';
+import { GradientText } from './GradientText';
 
 export const CollectiblesUseCaseEvents = () => {
   const [activeItem, setActiveItem] = useState(1);
