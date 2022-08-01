@@ -75,7 +75,7 @@ const PresentationBlock = () => {
         </div>
         <motion.div initial={{ opacity: 0 }} animate={controls} variants={openLureurVariant} aria-hidden="true">
           <motion.img
-            src="./elements/lueur-1.webp"
+            src="/elements/lueur-1.webp"
             alt="SKULT TV"
             className="absolute  top-[-12%] z-0 blur-3xl md:top-[-30%] xl:left-[1%] xl:top-[-38%] xl:w-[99%] 2xl:left-[5%] 2xl:w-[92%] 3xl:left-[16.5%] 3xl:w-[68%] 4xl:left-[18%] 4xl:top-[-50%] 4xl:w-[65%]"
             animate={controls}
@@ -83,7 +83,7 @@ const PresentationBlock = () => {
             variants={lueurVariant}
           />
           <motion.img
-            src="./elements/lueur-2.webp"
+            src="/elements/lueur-2.webp"
             alt="SKULT TV"
             className="absolute top-[-5%] z-0 blur-3xl md:top-[-30%]  xl:left-[1%] xl:top-[-38%] xl:w-[99%] 2xl:left-[5%] 2xl:w-[92%] 3xl:left-[16.5%] 3xl:w-[68%] 4xl:left-[18%] 4xl:top-[-50%] 4xl:w-[65%]"
             animate={controls}

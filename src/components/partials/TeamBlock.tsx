@@ -93,14 +93,14 @@ const TeamBlock = () => {
                           rel="noreferrer"
                         >
                           <img
-                            src="./elements/social/linkedin.svg"
+                            src="/elements/social/linkedin.svg"
                             className="h-12 cursor-pointer hover:scale-105 hover:brightness-150"
                             alt="LinkedIn"
                           />
                         </a>
                         <a href="https://twitter.com/LaroseAlex" className="mx-5" target="_blank" rel="noreferrer">
                           <img
-                            src="./elements/social/twitter.svg"
+                            src="/elements/social/twitter.svg"
                             className="h-12 cursor-pointer hover:scale-105 hover:brightness-150"
                             alt="Twitter"
                           />
@@ -132,14 +132,14 @@ const TeamBlock = () => {
                           rel="noreferrer"
                         >
                           <img
-                            src="./elements/social/linkedin.svg"
+                            src="/elements/social/linkedin.svg"
                             className="h-12 cursor-pointer hover:scale-105 hover:brightness-150"
                             alt="LinkedIn"
                           />
                         </a>
                         <a href="https://twitter.com/NeViuZ_" className="mx-5" target="_blank" rel="noreferrer">
                           <img
-                            src="./elements/social/twitter.svg"
+                            src="/elements/social/twitter.svg"
                             className="h-12 cursor-pointer hover:scale-105 hover:brightness-150"
                             alt="Twitter"
                           />
@@ -175,14 +175,14 @@ const TeamBlock = () => {
                           rel="noreferrer"
                         >
                           <img
-                            src="./elements/social/linkedin.svg"
+                            src="/elements/social/linkedin.svg"
                             className="h-12 cursor-pointer hover:scale-105 hover:brightness-150"
                             alt="LinkedIn"
                           />
                         </a>
                         <a href="https://twitter.com/Artkorino" className="mx-5" target="_blank" rel="noreferrer">
                           <img
-                            src="./elements/social/twitter.svg"
+                            src="/elements/social/twitter.svg"
                             className="h-12 cursor-pointer hover:scale-105 hover:brightness-150"
                             alt="Twitter"
                           />
@@ -218,7 +218,7 @@ const TeamBlock = () => {
                           rel="noreferrer"
                         >
                           <img
-                            src="./elements/social/linkedin.svg"
+                            src="/elements/social/linkedin.svg"
                             className="h-12 cursor-pointer hover:scale-105 hover:brightness-150"
                             alt="LinkedIn"
                           />
@@ -254,7 +254,7 @@ const TeamBlock = () => {
                           rel="noreferrer"
                         >
                           <img
-                            src="./elements/social/linkedin.svg"
+                            src="/elements/social/linkedin.svg"
                             className="h-12 cursor-pointer hover:scale-105 hover:brightness-150"
                             alt="LinkedIn"
                           />
@@ -290,14 +290,14 @@ const TeamBlock = () => {
                           rel="noreferrer"
                         >
                           <img
-                            src="./elements/social/linkedin.svg"
+                            src="/elements/social/linkedin.svg"
                             className="h-12 cursor-pointer hover:scale-105 hover:brightness-150"
                             alt="LinkedIn"
                           />
                         </a>
                         <a href="https://twitter.com/VictorRaguin" className="mx-5" target="_blank" rel="noreferrer">
                           <img
-                            src="./elements/social/twitter.svg"
+                            src="/elements/social/twitter.svg"
                             className="h-12 cursor-pointer hover:scale-105 hover:brightness-150"
                             alt="Twitter"
                           />
@@ -340,7 +340,7 @@ const TeamBlock = () => {
                           rel="noreferrer"
                         >
                           <img
-                            src="./elements/social/linkedin.svg"
+                            src="/elements/social/linkedin.svg"
                             className="h-12 cursor-pointer hover:scale-105 hover:brightness-150"
                             alt="LinkedIn"
                           />
@@ -376,7 +376,7 @@ const TeamBlock = () => {
                           rel="noreferrer"
                         >
                           <img
-                            src="./elements/social/linkedin.svg"
+                            src="/elements/social/linkedin.svg"
                             className="h-12 cursor-pointer hover:scale-105 hover:brightness-150"
                             alt="LinkedIn"
                           />
@@ -412,7 +412,7 @@ const TeamBlock = () => {
                           rel="noreferrer"
                         >
                           <img
-                            src="./elements/social/linkedin.svg"
+                            src="/elements/social/linkedin.svg"
                             className="h-12 cursor-pointer hover:scale-105 hover:brightness-150"
                             alt="LinkedIn"
                           />
