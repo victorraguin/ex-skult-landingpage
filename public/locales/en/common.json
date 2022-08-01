@@ -8,6 +8,7 @@
     "contact": {
       "firstname": "Firstname",
       "email": "Email",
+      "twitchLink": "Twitch channel link",
       "cta": {
         "todo": "Subscribe",
         "pending": "Subscribing...",
