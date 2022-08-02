@@ -9,8 +9,8 @@
     "start": "next start",
     "lint": "next lint",
     "lint-fix": "eslint --fix \"src/**/*.{js,jsx,tsx,ts}\"",
-    "prettier-check": "node_modules/.bin/prettier ./.prettierrc.js --check 'src/**/*.{js,jsx,ts,tsx}' --no-error-on-unmatched-pattern",
-    "prettier-run": "node_modules/.bin/prettier ./.prettierrc.js --write \"src/**/*.{js,jsx,ts,tsx}\" --no-error-on-unmatched-pattern",
+    "prettier-check": "prettier ./.prettierrc.js --check 'src/**/*.{js,jsx,ts,tsx}' --no-error-on-unmatched-pattern",
+    "prettier-run": "prettier ./.prettierrc.js --write \"src/**/*.{js,jsx,ts,tsx}\" --no-error-on-unmatched-pattern",
     "co:login:skultgg": "aws codeartifact login --tool npm --repository lib --domain skultgg --domain-owner 129095079376 --namespace @skultgg",
     "co:login:skultgg-config": "aws codeartifact login --tool npm --repository eslint-config-skult --domain skultgg --domain-owner 129095079376 --namespace @skultgg-config",
     "co:login": "npm run co:login:skultgg && npm run co:login:skultgg-config"
