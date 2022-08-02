@@ -1,12 +1,11 @@
 /* eslint-disable max-len */
 import { motion } from 'framer-motion';
-import { useTranslation } from 'next-i18next';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { FlagIcon } from 'react-flag-kit';
 
 const Header = () => {
-  const { t } = useTranslation('common');
+  // const { t } = useTranslation('common');
   const router = useRouter();
 
   return (
@@ -23,7 +22,7 @@ const Header = () => {
         initial={{ y: -250 }}
         animate={{ y: -10 }}
         transition={{ delay: 1, type: 'spring', stiffness: 70 }}
-        className="absolute top-[15px] left-7 z-20 sm:top-[26px] md:left-40 md:top-[15px] xl:top-[1.8rem] 2xl:top-[2.2rem] xl:left-80  4xl:left-[30rem]"
+        className="absolute top-[15px] left-7 z-20 sm:top-[26px] md:left-40 md:top-[15px] xl:top-[1.8rem] xl:left-80 2xl:top-[2.2rem]  4xl:left-[30rem]"
       >
         <Link href="/" passHref>
           <motion.button
@@ -99,8 +98,8 @@ const Header = () => {
               xl:scale-[0.8]
               2xl:scale-[0.9]
               3xl:scale-[0.9]
-              4xl:scale-[1]
               4xl:right-[30rem]
+              4xl:scale-[1]
               `}
             >
               <motion.div className="relative flex flex-row rounded-full bg-[#262626] px-3 py-[8px]">
@@ -132,8 +131,8 @@ const Header = () => {
                 xl:scale-[0.8]
                 2xl:scale-[0.9]
                 3xl:scale-[0.9]
-                4xl:scale-[1]
                 4xl:right-[30rem]
+                4xl:scale-[1]
               `}
             >
               <motion.div className="relative flex flex-row rounded-full bg-[#262626] px-3 py-[8px]">
