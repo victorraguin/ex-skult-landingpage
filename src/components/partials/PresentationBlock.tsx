@@ -77,17 +77,17 @@ const PresentationBlock = () => {
             <source src="https://cdn.skult.gg/SKULT.mp4" type="video/mp4" />
           </motion.video>
           <motion.div animate={controls} initial={{ opacity: 0 }} variants={openDescriptionText}>
-          <p className="mx-auto w-full pt-20 text-center font-poppins text-[18px] font-medium text-[#e4e4e4]">
-            Every time that a Streamer is onboarded on SKULT, 111 Cards will be created for its community: <br / >100 Bronze,
-            10 Silver, and 1 Gold!
-          </p>
-          <p className="mx-auto w-full text-center pt-5 font-poppins text-[18px] font-medium text-[#e4e4e4]">
-            Collect the Cards of your favorite Streamers to enter immersive events created by them exclusively for you,
-            and to play SKULT games and earn rewards!
-          </p>
-          <p className="mx-auto w-full text-center pt-5 font-poppins text-[18px] font-medium text-primary">
-            Let’s go beyond gameplay together!
-          </p>
+            <p className="mx-auto w-full pt-20 text-center font-poppins text-[18px] font-medium text-[#e4e4e4]">
+              Every time that a Streamer is onboarded on SKULT, 111 Cards will be created for its community: <br />
+              100 Bronze, 10 Silver, and 1 Gold!
+            </p>
+            <p className="mx-auto w-full pt-5 text-center font-poppins text-[18px] font-medium text-[#e4e4e4]">
+              Collect the Cards of your favorite Streamers to enter immersive events created by them exclusively for
+              you, and to play SKULT games and earn rewards!
+            </p>
+            <p className="mx-auto w-full pt-5 text-center font-poppins text-[18px] font-medium text-primary">
+              Let’s go beyond gameplay together!
+            </p>
           </motion.div>
         </div>
         <motion.div initial={{ opacity: 0 }} animate={controls} variants={openLureurVariant} aria-hidden="true">
