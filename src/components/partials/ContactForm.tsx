@@ -36,7 +36,7 @@ export const ContactForm = ({ className, inputClassname }: { className?: string;
           border-b border-[#a9a9a9] bg-transparent px-1
           text-[#a9a9a9] transition duration-100 ease-in-out focus:border-b-2 focus:outline-none  hover:border-b-2 lg:w-2/5 ${inputClassname}
         `}
-        name="name"
+        name="firstname"
         required
         placeholder={t('form.contact.firstname')}
         value={firstname}
@@ -60,7 +60,7 @@ export const ContactForm = ({ className, inputClassname }: { className?: string;
             border-b border-[#a9a9a9] bg-transparent px-1 text-[#a9a9a9]
             transition duration-100 ease-in-out  focus:border-b-2 focus:outline-none  hover:border-b-2 lg:w-3/5 ${inputClassname}
           `}
-          name="twitchAccount"
+          name="twitch_channel_link"
           required
           placeholder={t('form.contact.twitchLink')}
           value={twitchLink}
