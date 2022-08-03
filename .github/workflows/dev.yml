@@ -1,10 +1,13 @@
-name: ci push docker image
+name: Build & Deploy to ECS (DEV)
 
 on:
   push:
     branches:
       - 'dev'
+
   workflow_dispatch:
+    branches:
+      - 'dev'
 
 env:
   AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
