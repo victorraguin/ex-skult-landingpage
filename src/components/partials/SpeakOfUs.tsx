@@ -49,13 +49,13 @@ const SpeakOfUs = () => {
         ref={ref}
       >
         <div>
-          <div className="container mx-auto flex justify-center pt-8 pb-20 xl:pt-10 2xl:pt-20 4xl:pt-40">
+          <div className="container mx-auto flex justify-center pt-8 pb-20 xl:pt-40 4xl:pt-40">
             <motion.div variants={CardItem}>
               <Trans i18nKey="partners.title" ns="home">
-                <p className=" pb-3 text-center font-poppins text-[32px]  font-light text-white xl:text-[36px] 2xl:text-[48px]">
+                <p className=" pb-3 text-center font-poppins text-[32px]  font-light text-white xl:text-[48px]">
                   They{' '}
-                  <span className="bg-gradient-to-tr from-[#FFCC00] to-[#ED713C] bg-clip-text font-poppins font-normal text-transparent xl:text-[36px] 2xl:text-[48px]">
-                    Speak of Us
+                  <span className="bg-gradient-to-tr from-[#FFCC00] to-[#ED713C] bg-clip-text font-poppins font-normal text-transparent xl:text-[48px]">
+                    Speak about Us
                   </span>{' '}
                 </p>
               </Trans>
@@ -139,35 +139,23 @@ const SpeakOfUs = () => {
                     <div className="absolute -mt-20 flex w-full justify-center">
                       <div className="h-32 w-32">
                         <img
-                          src="/Quentin.png"
-                          alt="Quentin"
+                          src="/Yoan.jpg"
+                          alt="Yoan Axie"
                           className="h-full w-full rounded-full object-cover shadow-md"
                         />
                       </div>
                     </div>
                     <div className="mt-16 px-6">
                       <div className="bg-gradient-to-tr from-[#FFCC00] to-[#ED713C] bg-clip-text pb-1 text-center text-3xl font-bold text-transparent">
-                        Quentin Morin
+                        Yoan Axie
                       </div>
-                      <p className="text-md text-center text-[#e7e7e7]">{t('team.quentin')}</p>
+                      <p className="text-md text-center text-[#e7e7e7]">{t('partners.creator')}</p>
                       <div className="flex w-full items-center justify-center py-4">
-                        <a
-                          href="https://www.linkedin.com/in/quentinmorin/"
-                          target="_blank"
-                          className="mx-5"
-                          rel="noreferrer"
-                        >
+                        <a href="https://youtu.be/F2jGCrjNhzM" target="_blank" className="mx-5" rel="noreferrer">
                           <img
-                            src="/elements/social/linkedin.svg"
+                            src="/elements/social/youtube.svg"
                             className="h-12 cursor-pointer hover:scale-105 hover:brightness-150"
-                            alt="LinkedIn"
-                          />
-                        </a>
-                        <a href="https://twitter.com/Artkorino" className="mx-5" target="_blank" rel="noreferrer">
-                          <img
-                            src="/elements/social/twitter.svg"
-                            className="h-12 cursor-pointer hover:scale-105 hover:brightness-150"
-                            alt="Twitter"
+                            alt="YouTube"
                           />
                         </a>
                       </div>

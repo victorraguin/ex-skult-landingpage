@@ -13,8 +13,11 @@ import Footer from '../components/partials/Footer';
 import SocialBlock from '../components/partials/SocialBlock';
 import SpeakOfUs from '../components/partials/SpeakOfUs';
 import TeamBlock from '../components/partials/TeamBlock';
+import CollectiblesBlockSecond from '../components/partials/CollectiblesBlockSecond';
+import { useRouter } from 'next/router';
 
 const Home: NextPage = () => {
+  const router = useRouter();
   return (
     <div className="bg-[#282828]">
       <Seo title={'Fantasy Gaming & Streaming'} />
@@ -23,7 +26,7 @@ const Home: NextPage = () => {
         <StartBlock />
         <PresentationBlock />
         <CollectiblesBlockFirst />
-        {/* <CollectiblesBlockSecond /> */}
+        <CollectiblesBlockSecond />
 
         <img src="/Page_breaker2-1.svg" alt="Page Breaker" className="hidden w-screen sm:flex" />
         <img src="/Page_breaker2-1_mobile.svg" alt="Page Breaker Mobile" className="flex w-screen sm:hidden" />
@@ -33,7 +36,8 @@ const Home: NextPage = () => {
 
         <StreamersLeaguersBlock />
         <TeamBlock />
-        <SpeakOfUs />
+        {router.locale == 'fr' ? (
+          <SpeakOfUs /> ) : (null)}
         <SocialBlock />
         <Footer />
       </motion.div>

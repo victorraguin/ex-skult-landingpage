@@ -21,6 +21,10 @@ const PresentationBlock = () => {
     visible: { opacity: 1, scale: 1, transition: { delay: 0.5, duration: 0.5 } },
     hidden: { opacity: 0, scale: 0 },
   };
+  const openDescriptionText = {
+    visible: { opacity: 1, scale: 1, transition: { delay: 2, duration: 0.5 } },
+    hidden: { opacity: 0, scale: 0 },
+  };
   const lueurVariant = {
     visible: { opacity: 1, scale: [1, 0.9], transition: { duration: 1, yoyo: Number.POSITIVE_INFINITY } },
     hidden: { opacity: 0, scale: 0 },
@@ -62,7 +66,7 @@ const PresentationBlock = () => {
       <div className="relative flex flex-col">
         <div className="z-10 mx-auto rounded-[15px] xl:h-[504px] xl:w-[896px] xl:bg-[#282828] 4xl:w-[900px]">
           <motion.video
-            className="relative z-20 w-[340px] rounded-[15px] sm:w-[480px] md:w-[680px] lg:w-[880px] xl:h-[504px] xl:w-[896px] 4xl:w-[900px]"
+            className="relative z-20 mx-auto w-[340px] rounded-[15px] sm:w-[480px] md:w-[680px] lg:w-[880px] xl:h-[504px] xl:w-[896px] 4xl:w-[900px]"
             animate={controls}
             initial={{ opacity: 1 }}
             variants={videoVariant}
@@ -72,6 +76,19 @@ const PresentationBlock = () => {
           >
             <source src="https://cdn.skult.gg/SKULT.mp4" type="video/mp4" />
           </motion.video>
+          <motion.div animate={controls} initial={{ opacity: 0 }} variants={openDescriptionText}>
+          <p className="mx-auto w-full pt-20 text-center font-poppins text-[18px] font-medium text-[#e4e4e4]">
+            Every time that a Streamer is onboarded on SKULT, 111 Cards will be created for its community: <br / >100 Bronze,
+            10 Silver, and 1 Gold!
+          </p>
+          <p className="mx-auto w-full text-center pt-5 font-poppins text-[18px] font-medium text-[#e4e4e4]">
+            Collect the Cards of your favorite Streamers to enter immersive events created by them exclusively for you,
+            and to play SKULT games and earn rewards!
+          </p>
+          <p className="mx-auto w-full text-center pt-5 font-poppins text-[18px] font-medium text-primary">
+            Let’s go beyond gameplay together!
+          </p>
+          </motion.div>
         </div>
         <motion.div initial={{ opacity: 0 }} animate={controls} variants={openLureurVariant} aria-hidden="true">
           <motion.img

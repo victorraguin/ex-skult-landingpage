@@ -47,7 +47,7 @@ const StreamersLeaguersBlock = () => {
           <Streamer controls={controls} />
           <Leaguer controls={controls} setIsLeaguerModalOpen={setIsLeaguerModalOpen} />
         </div>
-        <div className="pb-20 2xl:pb-40"></div>
+        <div className="xl:pb-40"></div>
       </motion.div>
 
       <LeaguerModal open={isLeaguerModalOpen} handleClose={closeLeaguerModal} />

@@ -6,7 +6,7 @@ export const StreamerInvitation = () => {
   const { t } = useTranslation('streamers');
 
   return (
-    <div className="flex min-h-[70vh] flex-col justify-center gap-y-20 bg-[#222222]">
+    <div className="flex min-h-[70vh] flex-col justify-center gap-y-20 bg-[#222222] py-20">
       <Trans i18nKey="join.title" ns="streamers">
         <div className="text-center font-poppins text-3xl font-light text-[#e7e7e7] xl:text-5xl">
           Come and <GradientText>Play</GradientText> with us

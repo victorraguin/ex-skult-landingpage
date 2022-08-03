@@ -6,7 +6,7 @@
   "presentation": {
     "title": "<0>A world where new gaming experiences</0> <1>can come alive.</1>"
   },
-  "collectibles": {
+  "collectiblesFirst": {
     "collect": {
       "title": "Collect",
       "description": "Create your deck by collecting the cards of the best Streamers you can find! You'll need them to participate into their exclusive events & our Fantasy Leagues!"
@@ -18,6 +18,21 @@
     "compete": {
       "title": "Compete",
       "description": "Draft your Squad and enter weekly Leagues. Your final score will depend on the real-world performances of your Streamers."
+    }
+  },
+  "collectiblesSecond": {
+    "support": {
+      "title": "Support",
+      "description": "Streamers receive a share every time you buy one of their cards. Are you a real fan? Then show them your love !"
+    },
+    "unique": {
+      "titleFirst": "Unique &",
+      "titleLast": "Counterfeit proof",
+      "description": "Every card can be a non-fungible token (NFT): the blockchain technology ensures your ownership if you want to take your card outside SKULT !"
+    },
+    "earn": {
+      "title": "Earn",
+      "description": "Coins, cards, rewards and free drops are all for grab! Watch out: you might be ending up winning something !"
     }
   },
   "collectiblesUseCases": {
@@ -40,8 +55,8 @@
       }
     },
     "fantasyLeagues": {
-      "title": "Streamers Fantasy Leagues",
-      "description": "Every week, participate alongside other Leaguers in SKULT Fantasy Leagues by drafting your Dream Squad! The in-game actions of the Streamers you have chosen will contribute to your final score! At the end of the week, earn rewards based on the number of points you have!",
+      "title": "Play Games",
+      "description": "Participate alongside other SKULTERS in SKULT Fantasy Leagues! Every week, draft your Dream Squad among the Cards you hold! The in-game actions of the Streamers you have chosen will contribute to your final score! At the end of the week, earn rewards based on the number of points you have!",
       "catchphrase": "Will you have what it takes?"
     }
   },
@@ -98,7 +113,7 @@
     "cta": "Hey! We're hiring! Join the squad!"
   },
   "partners": {
-    "title": "<0>They <2>Speak of Us</2></0>",
+    "title": "<0>They <2>Speak about Us</2></0>",
     "creator": "Content Creator on Web3 Play&Earn"
   }
 }

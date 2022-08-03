@@ -6,7 +6,7 @@
   "presentation": {
     "title": "<0>Un monde de nouvelles expériences de Gaming</0> <1>s’ouvre à toi.</1>"
   },
-  "collectibles": {
+  "collectiblesFirst": {
     "collect": {
       "title": "Collections",
       "description": "Collectionne les cartes des meilleurs Streamers et compose le deck parfait ! Tu en auras besoin pour participer aux événements exclusifs des Streamers et rejoindre nos Fantasy Leagues !"
@@ -18,6 +18,21 @@
     "compete": {
       "title": "Compétitions",
       "description": "Compose ton équipe et participe chaque semaine aux Fantasy Leagues ! Ton score final dépendra des performances de tes Streamers dans la vraie vie."
+    }
+  },
+  "collectiblesSecond": {
+    "support": {
+      "title": "Soutien",
+      "description": "Les Streamers reçoivent une part des ventes à chaque fois que tu achètes une de leurs cartes. Montre-leur que tu es un vrai fan !"
+    },
+    "unique": {
+      "titleFirst": "Unique et",
+      "titleLast": " anti-contrefaçon",
+      "description": "Chaque carte est un jeton non fongible (NFT). La technologie blockchain garantit son caractère unique et la sécurité de la propriété."
+    },
+    "earn": {
+      "title": "Récompenses",
+      "description": "Des pièces, des cartes et bien d’autres récompenses sont à gagner ! Attention : tu pourrais bien ne pas repartir les mains vides !"
     }
   },
   "collectiblesUseCases": {
