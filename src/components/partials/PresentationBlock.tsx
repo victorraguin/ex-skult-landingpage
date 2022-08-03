@@ -3,8 +3,10 @@ import { motion, useAnimation } from 'framer-motion';
 import { Trans } from 'next-i18next';
 import { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
+import { useTranslation } from 'next-i18next';
 
 const PresentationBlock = () => {
+  const { t } = useTranslation('home');
   const videoVariant = {
     visible: { opacity: 1, transition: { delay: 2, duration: 6 } },
     hidden: { opacity: 0 },
@@ -54,7 +56,7 @@ const PresentationBlock = () => {
             A world where
           </motion.h3>
           <motion.h3
-            className="max-w-max bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text text-center font-poppins text-3xl font-normal text-transparent xl:text-5xl"
+            className="max-w-max bg-gradient-to-r py-2 from-[#FFCC00] to-[#ED713C] bg-clip-text text-center font-poppins text-3xl font-normal text-transparent xl:text-5xl"
             initial={{ opacity: 0 }}
             animate={controls}
             variants={openLittleTitleText}
@@ -79,15 +81,13 @@ const PresentationBlock = () => {
           </motion.video>
           <motion.div animate={controls} initial={{ opacity: 0 }} variants={openDescriptionText}>
             <p className="mx-auto w-full pt-20 text-center font-poppins text-[18px] font-medium text-[#e4e4e4]">
-              Every time that a Streamer is onboarded on SKULT, 111 Cards will be created for its community: <br />
-              100 Bronze, 10 Silver, and 1 Gold!
+            {t('presentation.descriptionIntro')}
             </p>
             <p className="mx-auto w-full pt-5 text-center font-poppins text-[18px] font-medium text-[#e4e4e4]">
-              Collect the Cards of your favorite Streamers to enter immersive events created by them exclusively for
-              you, and to play SKULT games and earn rewards!
+            {t('presentation.description')}
             </p>
             <p className="mx-auto w-full pt-5 text-center font-poppins text-[18px] font-medium text-primary">
-              Let’s go beyond gameplay together!
+            {t('presentation.descriptionOutro')}
             </p>
           </motion.div>
         </div>

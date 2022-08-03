@@ -4,7 +4,10 @@
     "catchphrase": "Streams can be much more than just a video!"
   },
   "presentation": {
-    "title": "<0><0>A world where</0> <1>new gaming experiences</1> <0>can come alive.</0></0>"
+    "title": "<0><0>A world where</0> <1>new gaming experiences</1> <0>can come alive.</0></0>",
+    "descriptionIntro": "Every time that a Streamer is onboarded on SKULT, 111 Cards will be created for its community: 100 Bronze, 10 Silver, and 1 Gold !",
+    "description": "Collect the Cards of your favorite Streamers to enter immersive events created by them exclusively for you, and to play SKULT games and earn rewards !",
+    "descriptionOutro": "Let’s go beyond gameplay together !"
   },
   "collectiblesFirst": {
     "collect": {
