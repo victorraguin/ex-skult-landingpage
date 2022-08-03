@@ -7,12 +7,12 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     domains: ['cdn.skult.gg'],
-    
   },
   i18n: {
     locales: ['en', 'fr'],
     defaultLocale: 'en',
   },
+  output: 'standalone',
 };
 
 module.exports = nextConfig;
