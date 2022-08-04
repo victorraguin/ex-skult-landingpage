@@ -5,11 +5,7 @@ on:
     branches:
       - 'dev'
       - 'main'
-
   workflow_dispatch:
-    branches:
-      - 'dev'
-      - 'main'
 
 env:
   AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
