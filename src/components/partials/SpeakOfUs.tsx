@@ -1,3 +1,4 @@
+/* eslint-disable sonarjs/no-duplicate-string */
 /* eslint-disable max-len */
 /* eslint-disable react/no-unescaped-entities */
 import { motion, useAnimation } from 'framer-motion';
@@ -140,7 +141,7 @@ const SpeakOfUs = () => {
                     <div className="absolute -mt-20 flex w-full justify-center">
                       <div className="h-32 w-32">
                         <img
-                          src="/Yoan.jpg"
+                          src="/yoan.jpg"
                           alt="Yoan Axie"
                           className="h-full w-full rounded-full object-cover shadow-md"
                         />

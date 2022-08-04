@@ -33,21 +33,18 @@ const StreamersLeaguersBlock = () => {
           animate={controls}
           variants={openTitleText}
           id="Streamer-Anybody"
-          className="relative mx-auto flex flex-row bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text font-poppins text-3xl font-normal text-transparent xl:text-5xl"
+          className="relative mx-auto flex flex-row flex-wrap justify-center bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text font-poppins text-3xl font-normal text-transparent xl:text-5xl"
         >
           <Trans i18nKey="community.title" ns="home">
             Nobody
-            <p className="pl-2 text-center font-poppins text-3xl font-light text-[#e7e7e7] xl:pl-3 xl:text-5xl">
-              {' '}
-              is left behind!
-            </p>
+            <p className="pl-2 font-poppins text-3xl font-light text-[#e7e7e7] xl:pl-3 xl:text-5xl"> is left behind!</p>
           </Trans>
         </motion.h1>
         <div className="mx-5 flex flex-row flex-wrap justify-around gap-y-20 pt-[4.5rem] xl:mx-0 xl:flex-nowrap 2xl:pt-[8rem] 4xl:pt-[12rem]">
           <Streamer controls={controls} />
           <Leaguer controls={controls} setIsLeaguerModalOpen={setIsLeaguerModalOpen} />
         </div>
-        <div className="xl:pb-40"></div>
+        <div className="pb-20 xl:pb-40"></div>
       </motion.div>
 
       <LeaguerModal open={isLeaguerModalOpen} handleClose={closeLeaguerModal} />

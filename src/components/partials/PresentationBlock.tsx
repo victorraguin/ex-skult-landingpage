@@ -79,7 +79,12 @@ const PresentationBlock = () => {
           >
             <source src="https://cdn.skult.gg/SKULT.mp4" type="video/mp4" />
           </motion.video>
-          <motion.div animate={controls} initial={{ opacity: 0 }} variants={openDescriptionText}>
+          <motion.div
+            animate={controls}
+            initial={{ opacity: 0 }}
+            variants={openDescriptionText}
+            className="px-7 md:px-0"
+          >
             <p className="mx-auto w-full pt-20 text-center font-poppins text-[18px] font-medium text-[#e4e4e4]">
               {t('presentation.descriptionIntro')}
             </p>

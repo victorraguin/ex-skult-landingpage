@@ -9,7 +9,7 @@
     "description": "Collectionnez les cartes de vos streamers préférés pour participer à des événements immersifs créés par eux, exclusivement pour vous, et pour jouer à des jeux SKULT et gagner des récompenses !",
     "descriptionOutro": "Allons au-delà du gameplay ensemble !"
   },
-  
+
   "collectiblesFirst": {
     "collect": {
       "title": "Collections",
@@ -65,7 +65,7 @@
     }
   },
   "community": {
-    "title": "Chacun <1>y trouve son compte !</1>",
+    "title": "Chacun<1> y trouve son compte !</1>",
     "streamer": {
       "title": "Streamers",
       "develop": {
