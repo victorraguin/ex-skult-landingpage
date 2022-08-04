@@ -81,7 +81,7 @@ const CollectiblesBlockFirst = () => {
               {t('collectiblesFirst.compete.title')}
             </h4>
             <p className="mx-auto w-2/3 pt-4 text-center font-poppins text-[18px] font-medium text-[#b8b8b8]">
-              {t('collectiblesFirst.trade.description')}
+              {t('collectiblesFirst.compete.description')}
             </p>
           </motion.div>
         </motion.div>

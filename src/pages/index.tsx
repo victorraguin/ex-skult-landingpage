@@ -16,8 +16,11 @@ import TeamBlock from '../components/partials/TeamBlock';
 import CollectiblesBlockSecond from '../components/partials/CollectiblesBlockSecond';
 import { useRouter } from 'next/router';
 
+
+
 const Home: NextPage = () => {
   const router = useRouter();
+
   return (
     <div className="bg-[#282828]">
       <Seo title={'Fantasy Gaming & Streaming'} />

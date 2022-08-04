@@ -1,7 +1,7 @@
 {
   "start": {
-    "title": "<0>Et si on allait</0> <1>au-delà du jeu ?</1>",
-    "catchphrase": "Faisons des streams plus que de simples vidéos !"
+    "title": "<0>Allons</0> <1>au-delà du Gameplay</1>",
+    "catchphrase": "Les streams peuvent être plus que de simples vidéos !"
   },
   "presentation": {
     "title": "<0><0>Un monde de</0> <1>nouvelles expériences de Gaming</1> <0>s’ouvre à toi.</0></0>",
@@ -82,7 +82,7 @@
       }
     },
     "leaguer": {
-      "title": "Tout le monde",
+      "title": "Viewers",
       "cta": "C'est parti",
       "fun": {
         "title": "Passe un bon moment en suivant tes Streamers favoris",
