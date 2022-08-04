@@ -4,10 +4,12 @@ on:
   push:
     branches:
       - 'dev'
+      - 'main'
 
   workflow_dispatch:
     branches:
       - 'dev'
+      - 'main'
 
 env:
   AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
@@ -15,7 +17,8 @@ env:
   AWS_REGION: ${{ secrets.AWS_REGION }}
 
   ECR_REPOSITORY: landing-page
-  ECS_CLUSTER: skult-staging
+  ECS_CLUSTER_PROD: skult-staging
+  ECS_CLUSTER_DEV: frontends-dev
   ECS_SERVICE: landing-page-svc
 
   CONTAINER_NAME: landing-page
@@ -23,7 +26,7 @@ env:
   ECS_TASK_DEFINITION: .aws/task-def.json
 
 jobs:
-  build_push_staging:
+  build_push:
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout
@@ -64,10 +67,28 @@ jobs:
           container-name: ${{ env.CONTAINER_NAME }}
           image: ${{ steps.build-push-image.outputs.image }}
 
-      - name: Deploy Amazon ECS task definition
+      - name: Deploy Amazon ECS task definition to PRODUCTION
         uses: aws-actions/amazon-ecs-deploy-task-definition@v1
+        if: ${{ github.ref }} == 'refs/heads/main'
         with:
           task-definition: ${{ steps.task-def.outputs.task-definition }}
           service: ${{ env.ECS_SERVICE }}
-          cluster: ${{ env.ECS_CLUSTER }}
+          cluster: ${{ env.ECS_CLUSTER_PROD }}
           wait-for-service-stability: true
+
+      - name: Deploy Amazon ECS task definition to DEVELOPMENT
+        uses: aws-actions/amazon-ecs-deploy-task-definition@v1
+        if: '{{ github.ref == "refs/heads/dev" }}'
+        with:
+          task-definition: ${{ steps.task-def.outputs.task-definition }}
+          service: ${{ env.ECS_SERVICE }}
+          cluster: ${{ env.ECS_CLUSTER_DEV }}
+          wait-for-service-stability: true
+
+      - name: Actions Status Discord
+        uses: sarisia/actions-status-discord@v1.9.0
+        with:
+          webhook: ${{ secrets.DISCORD_WEBHOOK }}
+          title: 'Deployment to ${{ github.ref }}'
+          description: 'Built and deployed landing page to ${{ github.ref }}'
+          color: 0x0000ff
