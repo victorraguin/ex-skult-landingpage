@@ -64,7 +64,7 @@
     }
   },
   "community": {
-    "title": "Nobody <1>is left behind!</1>",
+    "title": "Nobody<1> is left behind!</1>",
     "streamer": {
       "title": "Any Streamer",
       "develop": {

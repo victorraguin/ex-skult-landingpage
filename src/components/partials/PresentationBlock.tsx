@@ -56,7 +56,7 @@ const PresentationBlock = () => {
             A world where
           </motion.h3>
           <motion.h3
-            className="max-w-max bg-gradient-to-r py-2 from-[#FFCC00] to-[#ED713C] bg-clip-text text-center font-poppins text-3xl font-normal text-transparent xl:text-5xl"
+            className="max-w-max bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text py-2 text-center font-poppins text-3xl font-normal text-transparent xl:text-5xl"
             initial={{ opacity: 0 }}
             animate={controls}
             variants={openLittleTitleText}
@@ -79,15 +79,20 @@ const PresentationBlock = () => {
           >
             <source src="https://cdn.skult.gg/SKULT.mp4" type="video/mp4" />
           </motion.video>
-          <motion.div animate={controls} initial={{ opacity: 0 }} variants={openDescriptionText}>
+          <motion.div
+            animate={controls}
+            initial={{ opacity: 0 }}
+            variants={openDescriptionText}
+            className="px-7 md:px-0"
+          >
             <p className="mx-auto w-full pt-20 text-center font-poppins text-[18px] font-medium text-[#e4e4e4]">
-            {t('presentation.descriptionIntro')}
+              {t('presentation.descriptionIntro')}
             </p>
             <p className="mx-auto w-full pt-5 text-center font-poppins text-[18px] font-medium text-[#e4e4e4]">
-            {t('presentation.description')}
+              {t('presentation.description')}
             </p>
             <p className="mx-auto w-full pt-5 text-center font-poppins text-[18px] font-medium text-primary">
-            {t('presentation.descriptionOutro')}
+              {t('presentation.descriptionOutro')}
             </p>
           </motion.div>
         </div>
