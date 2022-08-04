@@ -30,11 +30,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Make pipeline fail
-        run: |
-          echo "This is a failing step"
-          exit 1
-
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
