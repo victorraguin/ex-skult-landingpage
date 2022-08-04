@@ -56,7 +56,7 @@ const PresentationBlock = () => {
             A world where
           </motion.h3>
           <motion.h3
-            className="max-w-max bg-gradient-to-r py-2 from-[#FFCC00] to-[#ED713C] bg-clip-text text-center font-poppins text-3xl font-normal text-transparent xl:text-5xl"
+            className="max-w-max bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text py-2 text-center font-poppins text-3xl font-normal text-transparent xl:text-5xl"
             initial={{ opacity: 0 }}
             animate={controls}
             variants={openLittleTitleText}
