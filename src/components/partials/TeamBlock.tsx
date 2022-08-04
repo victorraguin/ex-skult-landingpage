@@ -49,12 +49,12 @@ const TeamBlock = () => {
         ref={ref}
       >
         <div>
-          <div className="container mx-auto flex justify-center pt-16 pb-20 xl:pt-20 2xl:pt-40 4xl:pt-40">
+          <div className="container mx-auto flex justify-center pt-16 pb-20 xl:pt-40 2xl:pt-40 4xl:pt-40">
             <motion.div variants={CardItem}>
               <Trans i18nKey="team.title" ns="home">
-                <p className=" pb-3 text-center font-poppins text-[32px]  font-light text-white xl:text-[36px] 2xl:text-[48px]">
+                <p className=" pb-3 text-center font-poppins text-[32px]  font-light text-white xl:text-[48px]">
                   The{' '}
-                  <span className="bg-gradient-to-tr from-[#FFCC00] to-[#ED713C] bg-clip-text font-poppins font-normal text-transparent xl:text-[36px] 2xl:text-[48px]">
+                  <span className="bg-gradient-to-tr from-[#FFCC00] to-[#ED713C] bg-clip-text font-poppins font-normal text-transparent xl:text-[48px]">
                     dream
                   </span>{' '}
                   team
@@ -308,7 +308,7 @@ const TeamBlock = () => {
                 </motion.div>
                 <div className="container mx-auto flex justify-center pb-20 sm:pt-16 xl:pt-20 2xl:pt-20 4xl:pt-0">
                   <motion.div variants={CardItem}>
-                    <p className="bg-gradient-to-tr from-[#FFCC00] to-[#ED713C] bg-clip-text pb-3 text-center font-poppins text-[32px] font-normal text-transparent xl:text-[36px] 2xl:text-[48px]">
+                    <p className="bg-gradient-to-tr from-[#FFCC00] to-[#ED713C] bg-clip-text pb-3 text-center font-poppins text-[32px] font-normal text-transparent xl:text-[48px]">
                       {t('team.advisors')}
                     </p>
                   </motion.div>
@@ -425,7 +425,7 @@ const TeamBlock = () => {
             </div>
           </motion.div>
         </div>
-        <div className="flex flex-1 justify-center py-6 pb-20">
+        <div className="flex flex-1 justify-center py-6 pb-40">
           <button className="group relative rounded-full bg-gradient-to-r from-[#FFCC00] to-[#ED713C] p-0.5 text-sm shadow-[0_0_15px_-3px_#ffcc00cf] transition duration-200  ease-in-out hover:shadow-[0_0_25px_-3px_#ffcc00cf] ">
             <div className="relative flex flex-row rounded-full bg-[#262626] px-6 pt-3 ">
               <a

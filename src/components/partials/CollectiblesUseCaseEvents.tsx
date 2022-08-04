@@ -17,16 +17,19 @@ export const CollectiblesUseCaseEvents = () => {
       name: t('collectiblesUseCases.events.iryanne.name'),
       description: t('collectiblesUseCases.events.iryanne.description'),
       social: 'https://www.twitch.tv/iryanne',
+      quote: '- Iryanne, WoW Streamer'
     },
     {
       image: 'https://cdn.skult.gg/Landing+Page/rtx3080.png',
       name: t('collectiblesUseCases.events.gpu.name'),
       description: t('collectiblesUseCases.events.gpu.description'),
+      quote: '- WaieNot, Mutligaming Streamer'
     },
     {
       image: 'https://cdn.skult.gg/Landing+Page/worlds.png',
       name: t('collectiblesUseCases.events.worlds.name'),
       description: t('collectiblesUseCases.events.worlds.description'),
+      quote: '- Midbeast, LoL Streamer'
     },
   ];
 
@@ -42,6 +45,7 @@ export const CollectiblesUseCaseEvents = () => {
               {events[activeItem].name}
             </h4>
             <p className="h-16 text-xs italic text-[#B8B8B8] sm:text-sm">{events[activeItem].description}</p>
+            <p className="h-16 text-xs italic text-[#B8B8B8] sm:text-sm">{events[activeItem].quote}</p>
           </legend>
         </div>
 
@@ -119,6 +123,7 @@ type Event = {
   name: string;
   description: string;
   social?: string;
+  quote: string;
 };
 
 const EventItem = ({ item, isActive }: { item: Event; isActive: boolean }) => {

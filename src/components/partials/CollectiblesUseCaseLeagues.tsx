@@ -1,6 +1,7 @@
 import { useTranslation } from 'next-i18next';
 import Image from 'next/image';
 import { GradientText } from './GradientText';
+import { useRouter } from 'next/router';
 
 export const CollectiblesUseCaseLeagues = () => {
   const { t } = useTranslation('home');
@@ -36,12 +37,15 @@ const Description = () => {
   return <p className="h-36 text-[#B8B8B8]">{t('collectiblesUseCases.fantasyLeagues.description')}</p>;
 };
 
-const HowTo = () => (
+const HowTo = () => {
+  const router = useRouter();
+  return (
   <Image
-    src="https://cdn.skult.gg/Landing+Page/league.svg"
+    src={router.locale == 'fr' ? ("https://cdn.skult.gg/Landing+Page/skult-league-fr.svg") : ("https://cdn.skult.gg/Landing+Page/league.svg")}
     alt="league rules"
     layout="intrinsic"
     height={384}
     width={384}
   />
 );
+}

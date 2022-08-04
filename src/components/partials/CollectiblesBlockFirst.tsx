@@ -40,7 +40,7 @@ const CollectiblesBlockFirst = () => {
   };
 
   return (
-    <motion.div className="mt-28 h-full bg-[#282828]">
+    <motion.div className="mt-[20rem] h-full bg-[#282828]">
       <motion.img
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -60,28 +60,28 @@ const CollectiblesBlockFirst = () => {
           <motion.div className="flex flex-1 flex-col" variants={CardItem}>
             <img src="/elements/skult-collecte-icon-.svg" alt="Collect Icon" className="h-[125px]" />
             <h4 className="pt-2 text-center font-poppins text-3xl font-semibold text-primary md:pt-5">
-              {t('collectibles.collect.title')}
+              {t('collectiblesFirst.collect.title')}
             </h4>
             <p className="mx-auto w-2/3 pt-4 text-center font-poppins text-[18px] font-medium text-[#b8b8b8]">
-              {t('collectibles.collect.description')}
+              {t('collectiblesFirst.collect.description')}
             </p>
           </motion.div>
           <motion.div className="flex flex-1 flex-col" variants={CardItem}>
             <img src="/elements/skult-trade-icon.svg" alt="Trade Icon" className="h-[125px]" />
             <h4 className="pt-2 text-center font-poppins text-3xl font-semibold text-primary md:pt-5">
-              {t('collectibles.trade.title')}
+              {t('collectiblesFirst.trade.title')}
             </h4>
             <p className="mx-auto w-2/3 pt-4 text-center font-poppins text-[18px] font-medium text-[#b8b8b8]">
-              {t('collectibles.trade.description')}
+              {t('collectiblesFirst.trade.description')}
             </p>
           </motion.div>
           <motion.div className="flex flex-1 flex-col" variants={CardItem}>
             <img src="/elements/skult-compete-icon.svg" alt="Compete Icon" className="h-[125px]" />
             <h4 className="pt-2 text-center font-poppins text-3xl font-semibold text-primary md:pt-5">
-              {t('collectibles.compete.title')}
+              {t('collectiblesFirst.compete.title')}
             </h4>
             <p className="mx-auto w-2/3 pt-4 text-center font-poppins text-[18px] font-medium text-[#b8b8b8]">
-              {t('collectibles.trade.description')}
+              {t('collectiblesFirst.compete.description')}
             </p>
           </motion.div>
         </motion.div>

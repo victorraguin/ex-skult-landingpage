@@ -1,12 +1,16 @@
 {
   "start": {
-    "title": "<0>Et si on allait</0> <1>au-delà du jeu ?</1>",
-    "catchphrase": "Faisons des streams plus que de simples vidéos !"
+    "title": "<0>Allons</0> <1>au-delà du Gameplay</1>",
+    "catchphrase": "Les streams peuvent être plus que de simples vidéos !"
   },
   "presentation": {
-    "title": "<0>Un monde de nouvelles expériences de Gaming</0> <1>s’ouvre à toi.</1>"
+    "title": "<0><0>Un monde de</0> <1>nouvelles expériences de Gaming</1> <0>s’ouvre à toi.</0></0>",
+    "descriptionIntro": "Chaque fois qu'un streamer est intégré à SKULT, 111 cartes sont créées pour sa communauté : 100 Bronze, 10 Argent et 1 Or !",
+    "description": "Collectionnez les cartes de vos streamers préférés pour participer à des événements immersifs créés par eux, exclusivement pour vous, et pour jouer à des jeux SKULT et gagner des récompenses !",
+    "descriptionOutro": "Allons au-delà du gameplay ensemble !"
   },
-  "collectibles": {
+  
+  "collectiblesFirst": {
     "collect": {
       "title": "Collections",
       "description": "Collectionne les cartes des meilleurs Streamers et compose le deck parfait ! Tu en auras besoin pour participer aux événements exclusifs des Streamers et rejoindre nos Fantasy Leagues !"
@@ -18,6 +22,21 @@
     "compete": {
       "title": "Compétitions",
       "description": "Compose ton équipe et participe chaque semaine aux Fantasy Leagues ! Ton score final dépendra des performances de tes Streamers dans la vraie vie."
+    }
+  },
+  "collectiblesSecond": {
+    "support": {
+      "title": "Soutien",
+      "description": "Les Streamers reçoivent une part des ventes à chaque fois que tu achètes une de leurs cartes. Montre-leur que tu es un vrai fan !"
+    },
+    "unique": {
+      "titleFirst": "Unique et",
+      "titleLast": " anti-contrefaçon",
+      "description": "Chaque carte peut être un jeton non fongible (NFT). La technologie blockchain garantit son caractère unique et la sécurité de la propriété."
+    },
+    "earn": {
+      "title": "Récompenses",
+      "description": "Des pièces, des cartes et bien d’autres récompenses sont à gagner ! Attention : tu pourrais bien ne pas repartir les mains vides !"
     }
   },
   "collectiblesUseCases": {
@@ -40,7 +59,7 @@
       }
     },
     "fantasyLeagues": {
-      "title": "Rejoins des Fantasy Leagues de Streamers",
+      "title": "Joue à des jeux SKULT",
       "description": "Chaque semaine, crée ton équipe parfaite et affronte d’autres membres dans les Fantasy Leagues SKULT ! Ton score final dépendra des actions réalisées par tes Streamers dans la partie ! À la fin de chaque semaine, obtiens des récompenses en fonction du nombre de points cumulés !",
       "catchphrase": "Feras-tu les bons choix ?"
     }
@@ -63,7 +82,7 @@
       }
     },
     "leaguer": {
-      "title": "Tout le monde",
+      "title": "Viewers",
       "cta": "C'est parti",
       "fun": {
         "title": "Passe un bon moment en suivant tes Streamers favoris",
