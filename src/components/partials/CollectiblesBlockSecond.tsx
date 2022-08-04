@@ -50,24 +50,32 @@ const CollectiblesBlockSecond = () => {
       <motion.div className="mx-auto flex flex-col flex-wrap justify-around gap-y-8 sm:flex-nowrap md:flex-row 3xl:w-2/3 4xl:w-3/4">
         <motion.div className="flex flex-1 flex-col" variants={CardItem}>
           <img src="/elements/skult-support-icon.svg" alt="Support Icon" className="h-[125px]" />
-          <h4 className="pt-2 text-center font-poppins text-3xl font-semibold text-primary md:pt-5">{t('collectiblesSecond.support.title')}</h4>
+          <h4 className="pt-2 text-center font-poppins text-3xl font-semibold text-primary md:pt-5">
+            {t('collectiblesSecond.support.title')}
+          </h4>
           <p className="mx-auto w-[75%] pt-4 text-center font-poppins text-[18px] font-medium text-[#b8b8b8]">
-          {t('collectiblesSecond.support.description')}
+            {t('collectiblesSecond.support.description')}
           </p>
         </motion.div>
         <motion.div className="flex flex-1 flex-col" variants={CardItem}>
           <img src="/elements/skult-nft-icon.svg" alt="Unique & Counterfeit Icon" className="h-[125px]" />
-          <h4 className="pt-2 text-center font-poppins text-3xl font-semibold text-primary md:pt-5">{t('collectiblesSecond.unique.titleFirst')}</h4>
-          <h4 className="text-center font-poppins text-3xl font-semibold text-primary">{t('collectiblesSecond.unique.titleLast')}</h4>
+          <h4 className="pt-2 text-center font-poppins text-3xl font-semibold text-primary md:pt-5">
+            {t('collectiblesSecond.unique.titleFirst')}
+          </h4>
+          <h4 className="text-center font-poppins text-3xl font-semibold text-primary">
+            {t('collectiblesSecond.unique.titleLast')}
+          </h4>
           <p className="mx-auto w-2/3 pt-4 text-center font-poppins text-[18px] font-medium text-[#b8b8b8]">
-          {t('collectiblesSecond.unique.description')}
+            {t('collectiblesSecond.unique.description')}
           </p>
         </motion.div>
         <motion.div className="flex flex-1 flex-col" variants={CardItem}>
           <img src="/elements/skult-airdrop-icon.svg" alt="Earn Icon" className="h-[125px]" />
-          <h4 className="pt-2 text-center font-poppins text-3xl font-semibold text-primary md:pt-5">{t('collectiblesSecond.earn.title')}</h4>
+          <h4 className="pt-2 text-center font-poppins text-3xl font-semibold text-primary md:pt-5">
+            {t('collectiblesSecond.earn.title')}
+          </h4>
           <p className="mx-auto w-2/3 pt-4 text-center font-poppins text-[18px] font-medium text-[#b8b8b8]">
-          {t('collectiblesSecond.earn.description')}
+            {t('collectiblesSecond.earn.description')}
           </p>
         </motion.div>
       </motion.div>

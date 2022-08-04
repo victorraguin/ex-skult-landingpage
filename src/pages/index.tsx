@@ -16,8 +16,6 @@ import TeamBlock from '../components/partials/TeamBlock';
 import CollectiblesBlockSecond from '../components/partials/CollectiblesBlockSecond';
 import { useRouter } from 'next/router';
 
-
-
 const Home: NextPage = () => {
   const router = useRouter();
 
@@ -39,8 +37,7 @@ const Home: NextPage = () => {
 
         <StreamersLeaguersBlock />
         <TeamBlock />
-        {router.locale == 'fr' ? (
-          <SpeakOfUs /> ) : (null)}
+        {router.locale == 'fr' ? <SpeakOfUs /> : ''}
         <SocialBlock />
         <Footer />
       </motion.div>

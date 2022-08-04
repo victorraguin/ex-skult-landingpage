@@ -40,12 +40,16 @@ const Description = () => {
 const HowTo = () => {
   const router = useRouter();
   return (
-  <Image
-    src={router.locale == 'fr' ? ("https://cdn.skult.gg/Landing+Page/skult-league-fr.svg") : ("https://cdn.skult.gg/Landing+Page/league.svg")}
-    alt="league rules"
-    layout="intrinsic"
-    height={384}
-    width={384}
-  />
-);
-}
+    <Image
+      src={
+        router.locale == 'fr'
+          ? 'https://cdn.skult.gg/Landing+Page/skult-league-fr.svg'
+          : 'https://cdn.skult.gg/Landing+Page/league.svg'
+      }
+      alt="league rules"
+      layout="intrinsic"
+      height={384}
+      width={384}
+    />
+  );
+};

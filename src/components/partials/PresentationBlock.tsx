@@ -81,13 +81,13 @@ const PresentationBlock = () => {
           </motion.video>
           <motion.div animate={controls} initial={{ opacity: 0 }} variants={openDescriptionText}>
             <p className="mx-auto w-full pt-20 text-center font-poppins text-[18px] font-medium text-[#e4e4e4]">
-            {t('presentation.descriptionIntro')}
+              {t('presentation.descriptionIntro')}
             </p>
             <p className="mx-auto w-full pt-5 text-center font-poppins text-[18px] font-medium text-[#e4e4e4]">
-            {t('presentation.description')}
+              {t('presentation.description')}
             </p>
             <p className="mx-auto w-full pt-5 text-center font-poppins text-[18px] font-medium text-primary">
-            {t('presentation.descriptionOutro')}
+              {t('presentation.descriptionOutro')}
             </p>
           </motion.div>
         </div>
