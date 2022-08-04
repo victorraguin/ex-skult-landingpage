@@ -7,6 +7,7 @@ import { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 
 const SpeakOfUs = () => {
+  const PARTNERS_CREATOR = 'partners.creator';
   const { t } = useTranslation('home');
   const controls = useAnimation();
   const [ref, inView] = useInView({ threshold: 0.1 });
@@ -88,7 +89,7 @@ const SpeakOfUs = () => {
                       <div className="bg-gradient-to-tr from-[#FFCC00] to-[#ED713C] bg-clip-text pb-1 text-center text-3xl font-bold text-transparent">
                         Zlataneur89
                       </div>
-                      <p className="text-md text-center text-[#e7e7e7]">{t('partners.creator')}</p>
+                      <p className="text-md text-center text-[#e7e7e7]">{t(PARTNERS_CREATOR)}</p>
                       <div className="flex w-full items-center justify-center py-4">
                         <a href="https://youtu.be/V1VjHXJHBQM" target="_blank" className="mx-5" rel="noreferrer">
                           <img
@@ -119,7 +120,7 @@ const SpeakOfUs = () => {
                       <div className="bg-gradient-to-tr from-[#FFCC00] to-[#ED713C] bg-clip-text pb-1 text-center text-3xl font-bold text-transparent">
                         Fomaw
                       </div>
-                      <p className="text-md text-center text-[#e7e7e7]">{t('partners.creator')}</p>
+                      <p className="text-md text-center text-[#e7e7e7]">{t(PARTNERS_CREATOR)}</p>
                       <div className="flex w-full items-center justify-center py-4">
                         <a href="https://youtu.be/Gr2kK2dxYdo" target="_blank" className="mx-5" rel="noreferrer">
                           <img
@@ -150,7 +151,7 @@ const SpeakOfUs = () => {
                       <div className="bg-gradient-to-tr from-[#FFCC00] to-[#ED713C] bg-clip-text pb-1 text-center text-3xl font-bold text-transparent">
                         Yoan Axie
                       </div>
-                      <p className="text-md text-center text-[#e7e7e7]">{t('partners.creator')}</p>
+                      <p className="text-md text-center text-[#e7e7e7]">{t(PARTNERS_CREATOR)}</p>
                       <div className="flex w-full items-center justify-center py-4">
                         <a href="https://youtu.be/F2jGCrjNhzM" target="_blank" className="mx-5" rel="noreferrer">
                           <img

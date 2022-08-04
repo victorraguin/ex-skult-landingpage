@@ -5,7 +5,6 @@ import { useRouter } from 'next/router';
 import { FlagIcon } from 'react-flag-kit';
 import { useTranslation } from 'next-i18next';
 
-
 const Header = () => {
   const router = useRouter();
   const { t: tCommon } = useTranslation('common');
@@ -54,7 +53,7 @@ const Header = () => {
             >
               <motion.div className="relative flex flex-row rounded-full bg-[#262626] px-6 py-[8px]">
                 <motion.div className="py-[6px] font-poppins text-[20px] font-light text-[#a9a9a9] group-hover:text-white">
-                {tCommon('cta.streamer')}
+                  {tCommon('cta.streamer')}
                 </motion.div>
               </motion.div>
             </motion.button>

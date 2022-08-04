@@ -17,19 +17,19 @@ export const CollectiblesUseCaseEvents = () => {
       name: t('collectiblesUseCases.events.iryanne.name'),
       description: t('collectiblesUseCases.events.iryanne.description'),
       social: 'https://www.twitch.tv/iryanne',
-      quote: '- Iryanne, WoW Streamer'
+      quote: '- Iryanne, WoW Streamer',
     },
     {
       image: 'https://cdn.skult.gg/Landing+Page/rtx3080.png',
       name: t('collectiblesUseCases.events.gpu.name'),
       description: t('collectiblesUseCases.events.gpu.description'),
-      quote: '- WaieNot, Mutligaming Streamer'
+      quote: '- WaieNot, Mutligaming Streamer',
     },
     {
       image: 'https://cdn.skult.gg/Landing+Page/worlds.png',
       name: t('collectiblesUseCases.events.worlds.name'),
       description: t('collectiblesUseCases.events.worlds.description'),
-      quote: '- Midbeast, LoL Streamer'
+      quote: '- Midbeast, LoL Streamer',
     },
   ];
 
