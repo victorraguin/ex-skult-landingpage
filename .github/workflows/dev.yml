@@ -103,12 +103,9 @@ jobs:
           description: 'Built PR ${{ github.ref }}'
           color: 0x0000ff
 
-  warn-discord:
-    runs-on: ubuntu-20.04
-    if: ${{ failure() }}
-    steps:
       - name: Actions Status Discord
         uses: sarisia/actions-status-discord@v1.9.0
+        if: ${{ failure() }}
         with:
           webhook: ${{ secrets.DISCORD_WEBHOOK }}
           title: 'Deployment to ${{ github.ref }} failed'
