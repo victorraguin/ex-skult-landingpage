@@ -19,7 +19,7 @@ env:
   ECS_CLUSTER: ${{ secrets.ECS_PROD_CLUSTER }}
   ECS_SERVICE: ${{ secrets.ECS_PROD_SERVICE }}
 
-  CONTAINER_NAME: landing-page
+  CONTAINER_NAME: landing-page-svc
 
   ECS_TASK_DEFINITION: .aws/task-def.json
 
