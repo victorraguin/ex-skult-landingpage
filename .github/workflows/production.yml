@@ -1,14 +1,14 @@
-name: Build & Deploy to ECS (DEV)
+name: Build & Deploy to ECS (PRODUCTION)
 
 on:
   workflow_dispatch:
   push:
     branches:
-      - 'dev'
+      - 'main'
 
   pull_request:
     branches:
-      - 'dev'
+      - 'main'
 
 env:
   AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
@@ -16,8 +16,8 @@ env:
   AWS_REGION: ${{ secrets.AWS_REGION }}
 
   ECR_REPOSITORY: landing-page
-  ECS_CLUSTER: ${{ secrets.ECS_DEV_CLUSTER }}
-  ECS_SERVICE: ${{ secrets.ECS_DEV_SERVICE }}
+  ECS_CLUSTER: ${{ secrets.ECS_PROD_CLUSTER }}
+  ECS_SERVICE: ${{ secrets.ECS_PROD_SERVICE }}
 
   CONTAINER_NAME: landing-page
 
