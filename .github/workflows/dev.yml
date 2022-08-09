@@ -5,7 +5,10 @@ on:
   push:
     branches:
       - 'dev'
-      - 'main'
+
+  pull_request:
+    branches:
+      - 'dev'
 
 env:
   AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
@@ -13,11 +16,10 @@ env:
   AWS_REGION: ${{ secrets.AWS_REGION }}
 
   ECR_REPOSITORY: landing-page
-  ECS_CLUSTER_PROD: skult-staging
-  ECS_CLUSTER_DEV: frontends-dev
-  ECS_SERVICE: landing-page-svc
+  ECS_CLUSTER: ${{ secrets.ECS_DEV_CLUSTER }}
+  ECS_SERVICE: ${{ secrets.ECS_DEV_SERVICE }}
 
-  CONTAINER_NAME: landing-page
+  CONTAINER_NAME: landing-page-svc
 
   ECS_TASK_DEFINITION: .aws/task-def.json
 
@@ -39,10 +41,6 @@ jobs:
         id: login-ecr
         uses: aws-actions/amazon-ecr-login@v1
 
-      - uses: satackey/action-docker-layer-caching@v0.0.11
-        name: Setup Docker Layer Caching
-        continue-on-error: true
-
       - name: Build, tag, and push image to Amazon ECR
         id: build-push-image
         env:
@@ -62,33 +60,45 @@ jobs:
       - name: Fill in the new image ID in the Amazon ECS task definition
         id: task-def
         uses: aws-actions/amazon-ecs-render-task-definition@v1
+        # if event is push
+        if: github.event_name  == 'push'
         with:
           task-definition: ${{ env.ECS_TASK_DEFINITION }}
           container-name: ${{ env.CONTAINER_NAME }}
           image: ${{ steps.build-push-image.outputs.image }}
 
-      - name: Deploy Amazon ECS task definition to PRODUCTION
-        uses: aws-actions/amazon-ecs-deploy-task-definition@v1
-        if: github.ref == 'refs/heads/main'
-        with:
-          task-definition: ${{ steps.task-def.outputs.task-definition }}
-          service: ${{ env.ECS_SERVICE }}
-          cluster: ${{ env.ECS_CLUSTER_PROD }}
-          wait-for-service-stability: true
-
       - name: Deploy Amazon ECS task definition to DEVELOPMENT
         uses: aws-actions/amazon-ecs-deploy-task-definition@v1
-        if: github.ref == 'refs/heads/dev'
+        if: github.event_name  == 'push'
         with:
           task-definition: ${{ steps.task-def.outputs.task-definition }}
           service: ${{ env.ECS_SERVICE }}
-          cluster: ${{ env.ECS_CLUSTER_DEV }}
+          cluster: ${{ env.ECS_CLUSTER }}
           wait-for-service-stability: true
 
       - name: Actions Status Discord
         uses: sarisia/actions-status-discord@v1.9.0
+        if: github.event_name  == 'push'
         with:
           webhook: ${{ secrets.DISCORD_WEBHOOK }}
           title: 'Deployment to ${{ github.ref }}'
           description: 'Built and deployed landing page to ${{ github.ref }}'
           color: 0x0000ff
+
+      - name: Actions Status Discord
+        uses: sarisia/actions-status-discord@v1.9.0
+        if: github.event_name  == 'pull_request'
+        with:
+          webhook: ${{ secrets.DISCORD_WEBHOOK }}
+          title: 'PR ${{ github.ref }} Built successfully'
+          description: 'Built PR ${{ github.ref }}'
+          color: 0x0000ff
+
+      - name: Actions Status Discord
+        uses: sarisia/actions-status-discord@v1.9.0
+        if: ${{ failure() }}
+        with:
+          webhook: ${{ secrets.DISCORD_WEBHOOK }}
+          title: 'Deployment to ${{ github.ref }} failed'
+          description: 'Failed to deploy to ${{ github.ref }}'
+          color: 0xff0000

@@ -19,10 +19,6 @@ const PresentationBlock = () => {
     visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
     hidden: { opacity: 0, scale: 0 },
   };
-  const openLittleTitleText = {
-    visible: { opacity: 1, scale: 1, transition: { delay: 0.5, duration: 0.5 } },
-    hidden: { opacity: 0, scale: 0 },
-  };
   const openDescriptionText = {
     visible: { opacity: 1, scale: 1, transition: { delay: 2, duration: 0.5 } },
     hidden: { opacity: 0, scale: 0 },
