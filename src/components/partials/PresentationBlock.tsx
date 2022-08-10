@@ -19,10 +19,6 @@ const PresentationBlock = () => {
     visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
     hidden: { opacity: 0, scale: 0 },
   };
-  const openLittleTitleText = {
-    visible: { opacity: 1, scale: 1, transition: { delay: 0.5, duration: 0.5 } },
-    hidden: { opacity: 0, scale: 0 },
-  };
   const openDescriptionText = {
     visible: { opacity: 1, scale: 1, transition: { delay: 2, duration: 0.5 } },
     hidden: { opacity: 0, scale: 0 },
@@ -59,7 +55,7 @@ const PresentationBlock = () => {
             className="max-w-max bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text py-2 text-center font-poppins text-3xl font-normal text-transparent xl:text-5xl"
             initial={{ opacity: 0 }}
             animate={controls}
-            variants={openLittleTitleText}
+            variants={openTitleText}
           >
             new gaming experiences
           </motion.h3>
