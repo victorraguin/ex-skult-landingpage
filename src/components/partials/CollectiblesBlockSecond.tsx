@@ -1,10 +1,12 @@
 /* eslint-disable max-len */
 /* eslint-disable react/no-unescaped-entities */
-import React, { useEffect } from 'react';
-import { useAnimation, motion } from 'framer-motion';
+import { motion, useAnimation } from 'framer-motion';
+import { useEffect } from 'react';
+import { useTranslation } from 'next-i18next';
 import { useInView } from 'react-intersection-observer';
 
 const CollectiblesBlockSecond = () => {
+  const { t } = useTranslation('home');
   const controls = useAnimation();
   const [ref, inView] = useInView({ threshold: 0.6 });
   useEffect(() => {
@@ -48,26 +50,32 @@ const CollectiblesBlockSecond = () => {
       <motion.div className="mx-auto flex flex-col flex-wrap justify-around gap-y-8 sm:flex-nowrap md:flex-row 3xl:w-2/3 4xl:w-3/4">
         <motion.div className="flex flex-1 flex-col" variants={CardItem}>
           <img src="/elements/skult-support-icon.svg" alt="Support Icon" className="h-[125px]" />
-          <h4 className="pt-2 text-center font-poppins text-3xl font-semibold text-primary md:pt-5">Support</h4>
+          <h4 className="pt-2 text-center font-poppins text-3xl font-semibold text-primary md:pt-5">
+            {t('collectiblesSecond.support.title')}
+          </h4>
           <p className="mx-auto w-[75%] pt-4 text-center font-poppins text-[18px] font-medium text-[#b8b8b8]">
-            Streamers receive a share every time you buy one of their cards. Are you a real fan? Then show them your
-            love!
+            {t('collectiblesSecond.support.description')}
           </p>
         </motion.div>
         <motion.div className="flex flex-1 flex-col" variants={CardItem}>
           <img src="/elements/skult-nft-icon.svg" alt="Unique & Counterfeit Icon" className="h-[125px]" />
-          <h4 className="pt-2 text-center font-poppins text-3xl font-semibold text-primary md:pt-5">Unique &</h4>
-          <h4 className="text-center font-poppins text-3xl font-semibold text-primary">Counterfeit proof</h4>
+          <h4 className="pt-2 text-center font-poppins text-3xl font-semibold text-primary md:pt-5">
+            {t('collectiblesSecond.unique.titleFirst')}
+          </h4>
+          <h4 className="text-center font-poppins text-3xl font-semibold text-primary">
+            {t('collectiblesSecond.unique.titleLast')}
+          </h4>
           <p className="mx-auto w-2/3 pt-4 text-center font-poppins text-[18px] font-medium text-[#b8b8b8]">
-            Every card can be a non-fungible token (NFT): the blockchain technology ensures your ownership if you want
-            to take your card outside SKULT
+            {t('collectiblesSecond.unique.description')}
           </p>
         </motion.div>
         <motion.div className="flex flex-1 flex-col" variants={CardItem}>
           <img src="/elements/skult-airdrop-icon.svg" alt="Earn Icon" className="h-[125px]" />
-          <h4 className="pt-2 text-center font-poppins text-3xl font-semibold text-primary md:pt-5">Earn</h4>
+          <h4 className="pt-2 text-center font-poppins text-3xl font-semibold text-primary md:pt-5">
+            {t('collectiblesSecond.earn.title')}
+          </h4>
           <p className="mx-auto w-2/3 pt-4 text-center font-poppins text-[18px] font-medium text-[#b8b8b8]">
-            Coins, cards, rewards and free drops are all for grab! Watch out: you might be ending up winning something!
+            {t('collectiblesSecond.earn.description')}
           </p>
         </motion.div>
       </motion.div>

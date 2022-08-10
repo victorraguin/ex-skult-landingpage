@@ -1,10 +1,11 @@
 /* eslint-disable max-len */
 /* eslint-disable react/no-unescaped-entities */
-import React, { useEffect } from 'react';
-import { useAnimation, motion, AnimationControls } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
-import Link from 'next/link';
 import { Modal } from '@mui/material';
+import { AnimationControls, motion, useAnimation } from 'framer-motion';
+import { Trans, useTranslation } from 'next-i18next';
+import Link from 'next/link';
+import React, { useEffect } from 'react';
+import { useInView } from 'react-intersection-observer';
 import DiscordButton from './images/DiscordButton';
 
 const StreamersLeaguersBlock = () => {
@@ -32,19 +33,18 @@ const StreamersLeaguersBlock = () => {
           animate={controls}
           variants={openTitleText}
           id="Streamer-Anybody"
-          className="relative mx-auto flex flex-row bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text font-poppins text-3xl font-normal text-transparent xl:text-5xl"
+          className="relative mx-auto flex flex-row flex-wrap justify-center bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text font-poppins text-3xl font-normal text-transparent xl:text-5xl"
         >
-          Nobody
-          <p className="pl-2 text-center font-poppins text-3xl font-light text-[#e7e7e7] xl:pl-3 xl:text-5xl">
-            {' '}
-            is left behind!
-          </p>
+          <Trans i18nKey="community.title" ns="home">
+            Nobody
+            <p className="pl-2 font-poppins text-3xl font-light text-[#e7e7e7] xl:pl-3 xl:text-5xl"> is left behind!</p>
+          </Trans>
         </motion.h1>
         <div className="mx-5 flex flex-row flex-wrap justify-around gap-y-20 pt-[4.5rem] xl:mx-0 xl:flex-nowrap 2xl:pt-[8rem] 4xl:pt-[12rem]">
           <Streamer controls={controls} />
           <Leaguer controls={controls} setIsLeaguerModalOpen={setIsLeaguerModalOpen} />
         </div>
-        <div className="pb-20 2xl:pb-40"></div>
+        <div className="pb-20 xl:pb-40"></div>
       </motion.div>
 
       <LeaguerModal open={isLeaguerModalOpen} handleClose={closeLeaguerModal} />
@@ -54,30 +54,40 @@ const StreamersLeaguersBlock = () => {
 
 export default StreamersLeaguersBlock;
 
-const LeaguerModal = ({ open, handleClose }: { open: boolean; handleClose: () => void }) => (
-  <Modal open={open} onClose={handleClose} onBackdropClick={handleClose}>
-    <div className="absolute inset-0 m-auto h-max w-96 items-center space-y-8 rounded-xl bg-[#222] p-8 text-white">
-      <h2 className="bg-gradient-to-r from-[#7517F8] to-[#E323FF] bg-clip-text text-center text-2xl font-semibold text-transparent">
-        Join our Discord!
-      </h2>
-      <div className="space-y-1">
-        <p>Hey, thanks for your interest!</p>
-        <p>We're COMING SOON!</p>
-        <p>To be updated, join our Discord</p>
+const LeaguerModal = ({ open, handleClose }: { open: boolean; handleClose: () => void }) => {
+  const { t } = useTranslation('home');
+  const { t: tCommon } = useTranslation('common');
+
+  return (
+    <Modal open={open} onClose={handleClose} onBackdropClick={handleClose}>
+      <div className="absolute inset-0 m-auto h-max w-96 items-center space-y-8 rounded-xl bg-[#222] p-8 text-white">
+        <h2 className="bg-gradient-to-r from-[#7517F8] to-[#E323FF] bg-clip-text text-center text-2xl font-semibold text-transparent">
+          {tCommon('cta.discord')}
+        </h2>
+        <div className="space-y-1">
+          <Trans i18nKey="community.leaguer.modal.text" ns="home">
+            <p>Hey, thanks for your interest!</p>
+            <p>We're COMING SOON!</p>
+            <p>To be updated, join our Discord</p>
+          </Trans>
+        </div>
+        <div>
+          <a href="https://discord.gg/fJvrQCJr4W" target="_blank" rel="noopener noreferrer" className="font-semibold">
+            <div className="flex flex-shrink flex-row items-center justify-center space-x-2 rounded-full bg-gradient-to-r from-[#7517F8] to-[#E323FF] pt-2 hover:brightness-110">
+              <DiscordButton fill="white" />
+              <span className="pb-1">{t('community.leaguer.modal.button')}</span>
+            </div>
+          </a>
+        </div>
       </div>
-      <div>
-        <a href="https://discord.gg/fJvrQCJr4W" target="_blank" rel="noopener noreferrer" className="font-semibold">
-          <div className="flex flex-shrink flex-row items-center justify-center space-x-2 rounded-full bg-gradient-to-r from-[#7517F8] to-[#E323FF] pt-2 hover:brightness-110">
-            <DiscordButton fill="white" />
-            <span className="pb-1">SKULT Community</span>
-          </div>
-        </a>
-      </div>
-    </div>
-  </Modal>
-);
+    </Modal>
+  );
+};
 
 const Streamer = ({ controls }: { controls: AnimationControls }) => {
+  const { t } = useTranslation('home');
+  const { t: tCommon } = useTranslation('common');
+
   const openStreamerLogoShadow = {
     visible: { opacity: 1, transition: { duration: 0.3 } },
     hidden: { opacity: 0 },
@@ -154,20 +164,20 @@ const Streamer = ({ controls }: { controls: AnimationControls }) => {
         variants={openAnyStreamerText}
         className=" bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text pt-5 pb-10 text-center font-poppins text-3xl font-semibold text-transparent xl:text-5xl"
       >
-        Any Streamer
+        {t('community.streamer.title')}
       </motion.h2>
       <div className="h-96 space-y-4 sm:space-y-8">
         <motion.div initial={{ opacity: 0 }} animate={controls} variants={openCommunityBlock} className="xl:h-20">
-          <p className="font-poppins text-[18px] font-medium text-primary">Develop your Community</p>
+          <p className="font-poppins text-[18px] font-medium text-primary">{t('community.streamer.develop.title')}</p>
           <p className="font-poppins text-[18px] font-medium text-[#b8b8b8]">
-            Get discovered thanks to level-based games: any Streamer can get an audience!
+            {t('community.streamer.develop.description')}
           </p>
         </motion.div>
 
         <motion.div initial={{ opacity: 0 }} animate={controls} variants={openEngagementBlock} className="xl:h-20">
-          <p className="font-poppins text-[18px] font-medium text-[#f49124]">Boost Engagement</p>
+          <p className="font-poppins text-[18px] font-medium text-[#f49124]">{t('community.streamer.boost.title')}</p>
           <p className="font-poppins text-[18px] font-medium text-[#b8b8b8]">
-            Grow your fan base and increase interactions with your followers.
+            {t('community.streamer.boost.description')}
           </p>
         </motion.div>
 
@@ -177,10 +187,9 @@ const Streamer = ({ controls }: { controls: AnimationControls }) => {
           variants={openEarnCashStreamersBlock}
           className="xl:h-20"
         >
-          <p className="font-poppins text-[18px] font-medium text-[#ed713c]">Earn Cash</p>
+          <p className="font-poppins text-[18px] font-medium text-[#ed713c]">{t('community.streamer.earn.title')}</p>
           <p className="font-poppins text-[18px] font-medium text-[#b8b8b8]">
-            From your cards and your in-game actions. The better you play and the best you entertain your fans, the more
-            valuable you are!
+            {t('community.streamer.earn.description')}
           </p>
         </motion.div>
       </div>
@@ -196,7 +205,7 @@ const Streamer = ({ controls }: { controls: AnimationControls }) => {
           <div className="relative flex flex-row rounded-full bg-[#262626] px-6 pt-3">
             <Link href="/streamer" passHref>
               <div className="pb-3 font-poppins text-[20px] text-[#a9a9a9] group-hover:brightness-150">
-                I'm a Streamer!
+                {tCommon('cta.streamer')}
               </div>
             </Link>
           </div>
@@ -213,6 +222,8 @@ const Leaguer = ({
   controls: AnimationControls;
   setIsLeaguerModalOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }) => {
+  const { t } = useTranslation('home');
+
   const openLeaguerLogoShadow = {
     visible: { opacity: 1, transition: { duration: 0.3 } },
     hidden: { opacity: 0 },
@@ -290,25 +301,21 @@ const Leaguer = ({
           variants={openAnyLeaguerText}
           className="bg-gradient-to-r from-[#E323FF] to-[#7517F8] bg-clip-text pt-5 pb-10 text-center font-poppins text-3xl font-semibold text-transparent xl:text-5xl"
         >
-          Anyone
+          {t('community.leaguer.title')}
         </motion.h2>
         <div className="xl:ml-10">
           <div className="h-96 space-y-4 sm:space-y-8">
             <motion.div initial={{ opacity: 0 }} animate={controls} variants={openFunBlock} className="xl:h-20">
-              <p className="font-poppins text-[18px] font-medium  text-[#e323ff]">
-                Get fun while following your favorite Streamers
-              </p>
-              <p className="font-poppins text-[18px] font-medium text-[#b8b8b8] ">
-                Enroll Streamers in your Team through their cards and participate in their exclusive and personalized
-                events!
+              <p className="font-poppins text-[18px] font-medium  text-[#e323ff]">{t('community.leaguer.fun.title')}</p>
+              <p className="font-poppins text-[18px] font-medium text-[#b8b8b8]">
+                {t('community.leaguer.fun.description')}
               </p>
             </motion.div>
 
             <motion.div initial={{ opacity: 0 }} animate={controls} variants={openRewardsBlock} className="xl:h-20">
-              <p className="font-poppins text-[18px] font-medium text-[#C820FD]">Play & Earn Rewards</p>
-              <p className="font-poppins text-[18px] font-medium text-[#b8b8b8] ">
-                Challenge other participants in SKULT immersive games, and get rewarded. Our first game is a Fantasy
-                League!
+              <p className="font-poppins text-[18px] font-medium text-[#C820FD]">{t('community.leaguer.play.title')}</p>
+              <p className="font-poppins text-[18px] font-medium text-[#b8b8b8]">
+                {t('community.leaguer.play.description')}
               </p>
             </motion.div>
 
@@ -318,9 +325,9 @@ const Leaguer = ({
               variants={openEarnCashLeaguersBlock}
               className="xl:h-20"
             >
-              <p className="font-poppins text-[18px] font-medium text-[#a80cfb] ">Earn Cash</p>
-              <p className="font-poppins text-[18px] font-medium text-[#b8b8b8] ">
-                Keep your team strong and sell other Streamers you don't need: earn cash from card trading
+              <p className="font-poppins text-[18px] font-medium text-[#a80cfb]">{t('community.leaguer.earn.title')}</p>
+              <p className="font-poppins text-[18px] font-medium text-[#b8b8b8]">
+                {t('community.leaguer.earn.description')}
               </p>
             </motion.div>
           </div>
@@ -336,7 +343,7 @@ const Leaguer = ({
             >
               <div className="relative flex flex-row rounded-full bg-[#262626] px-6 pt-3">
                 <div className="pb-3 font-poppins text-[20px] text-[#a9a9a9] group-hover:brightness-150">
-                  Let's play
+                  {t('community.leaguer.cta')}
                 </div>
               </div>
             </button>

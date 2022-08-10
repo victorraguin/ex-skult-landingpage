@@ -1,10 +1,12 @@
 /* eslint-disable max-len */
 /* eslint-disable react/no-unescaped-entities */
-import React, { useEffect } from 'react';
-import { useAnimation, motion } from 'framer-motion';
+import { motion, useAnimation } from 'framer-motion';
+import { Trans, useTranslation } from 'next-i18next';
+import { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 
 const TeamBlock = () => {
+  const { t } = useTranslation('home');
   const controls = useAnimation();
   const [ref, inView] = useInView({ threshold: 0.1 });
   useEffect(() => {
@@ -47,15 +49,17 @@ const TeamBlock = () => {
         ref={ref}
       >
         <div>
-          <div className="container mx-auto flex justify-center pt-16 pb-20 xl:pt-20 2xl:pt-40 4xl:pt-40">
+          <div className="container mx-auto flex justify-center pt-16 pb-20 xl:pt-40 2xl:pt-40 4xl:pt-40">
             <motion.div variants={CardItem}>
-              <p className=" pb-3 text-center font-poppins text-[32px]  font-light text-white xl:text-[36px] 2xl:text-[48px]">
-                The{' '}
-                <span className="bg-gradient-to-tr from-[#FFCC00] to-[#ED713C] bg-clip-text font-poppins font-normal text-transparent xl:text-[36px] 2xl:text-[48px]">
-                  dream
-                </span>{' '}
-                team
-              </p>
+              <Trans i18nKey="team.title" ns="home">
+                <p className=" pb-3 text-center font-poppins text-[32px]  font-light text-white xl:text-[48px]">
+                  The{' '}
+                  <span className="bg-gradient-to-tr from-[#FFCC00] to-[#ED713C] bg-clip-text font-poppins font-normal text-transparent xl:text-[48px]">
+                    dream
+                  </span>{' '}
+                  team
+                </p>
+              </Trans>
             </motion.div>
           </div>
           <motion.div
@@ -80,7 +84,7 @@ const TeamBlock = () => {
                       <div className="bg-gradient-to-tr from-[#FFCC00] to-[#ED713C] bg-clip-text pb-1 text-center text-3xl font-bold text-transparent">
                         Alex Larose
                       </div>
-                      <p className="text-md text-center text-[#e7e7e7]">Founder & CEO</p>
+                      <p className="text-md text-center text-[#e7e7e7]">{t('team.alex')}</p>
                       <div className="flex w-full items-center justify-center py-4">
                         <a
                           href="https://www.linkedin.com/in/alexandrelarose/"
@@ -89,14 +93,14 @@ const TeamBlock = () => {
                           rel="noreferrer"
                         >
                           <img
-                            src="./elements/social/linkedin.svg"
+                            src="/elements/social/linkedin.svg"
                             className="h-12 cursor-pointer hover:scale-105 hover:brightness-150"
                             alt="LinkedIn"
                           />
                         </a>
                         <a href="https://twitter.com/LaroseAlex" className="mx-5" target="_blank" rel="noreferrer">
                           <img
-                            src="./elements/social/twitter.svg"
+                            src="/elements/social/twitter.svg"
                             className="h-12 cursor-pointer hover:scale-105 hover:brightness-150"
                             alt="Twitter"
                           />
@@ -119,7 +123,7 @@ const TeamBlock = () => {
                       <div className="bg-gradient-to-tr from-[#FFCC00] to-[#ED713C] bg-clip-text pb-1 text-center text-3xl font-bold text-transparent">
                         Raphael André
                       </div>
-                      <p className="text-md text-center text-[#e7e7e7]">Marketing Project Manager</p>
+                      <p className="text-md text-center text-[#e7e7e7]">{t('team.raph')}</p>
                       <div className="flex w-full items-center justify-center py-4">
                         <a
                           href="https://www.linkedin.com/in/raphael-andre-aa26b022a/"
@@ -128,14 +132,14 @@ const TeamBlock = () => {
                           rel="noreferrer"
                         >
                           <img
-                            src="./elements/social/linkedin.svg"
+                            src="/elements/social/linkedin.svg"
                             className="h-12 cursor-pointer hover:scale-105 hover:brightness-150"
                             alt="LinkedIn"
                           />
                         </a>
                         <a href="https://twitter.com/NeViuZ_" className="mx-5" target="_blank" rel="noreferrer">
                           <img
-                            src="./elements/social/twitter.svg"
+                            src="/elements/social/twitter.svg"
                             className="h-12 cursor-pointer hover:scale-105 hover:brightness-150"
                             alt="Twitter"
                           />
@@ -162,7 +166,7 @@ const TeamBlock = () => {
                       <div className="bg-gradient-to-tr from-[#FFCC00] to-[#ED713C] bg-clip-text pb-1 text-center text-3xl font-bold text-transparent">
                         Quentin Morin
                       </div>
-                      <p className="text-md text-center text-[#e7e7e7]">Marketing Manager</p>
+                      <p className="text-md text-center text-[#e7e7e7]">{t('team.quentin')}</p>
                       <div className="flex w-full items-center justify-center py-4">
                         <a
                           href="https://www.linkedin.com/in/quentinmorin/"
@@ -171,14 +175,14 @@ const TeamBlock = () => {
                           rel="noreferrer"
                         >
                           <img
-                            src="./elements/social/linkedin.svg"
+                            src="/elements/social/linkedin.svg"
                             className="h-12 cursor-pointer hover:scale-105 hover:brightness-150"
                             alt="LinkedIn"
                           />
                         </a>
                         <a href="https://twitter.com/Artkorino" className="mx-5" target="_blank" rel="noreferrer">
                           <img
-                            src="./elements/social/twitter.svg"
+                            src="/elements/social/twitter.svg"
                             className="h-12 cursor-pointer hover:scale-105 hover:brightness-150"
                             alt="Twitter"
                           />
@@ -205,7 +209,7 @@ const TeamBlock = () => {
                       <div className="bg-gradient-to-tr from-[#FFCC00] to-[#ED713C] bg-clip-text pb-1 text-center text-3xl font-bold text-transparent">
                         Mohamed Belkamel
                       </div>
-                      <p className="text-md text-center text-[#e7e7e7]">DevOps & Back-End Developer</p>
+                      <p className="text-md text-center text-[#e7e7e7]">{t('team.simo')}</p>
                       <div className="flex w-full justify-center pt-5 pb-5">
                         <a
                           href="https://www.linkedin.com/in/mohamed-belkamel-a65364183/"
@@ -214,7 +218,7 @@ const TeamBlock = () => {
                           rel="noreferrer"
                         >
                           <img
-                            src="./elements/social/linkedin.svg"
+                            src="/elements/social/linkedin.svg"
                             className="h-12 cursor-pointer hover:scale-105 hover:brightness-150"
                             alt="LinkedIn"
                           />
@@ -241,7 +245,7 @@ const TeamBlock = () => {
                       <div className="bg-gradient-to-tr from-[#FFCC00] to-[#ED713C] bg-clip-text pb-1 text-center text-3xl font-bold text-transparent">
                         Jérémie Gauthier
                       </div>
-                      <p className="text-md text-center text-[#e7e7e7]">FullStack & Blockchain Developer</p>
+                      <p className="text-md text-center text-[#e7e7e7]">{t('team.jerem')}</p>
                       <div className="flex w-full justify-center pt-5 pb-5">
                         <a
                           href="https://www.linkedin.com/in/jeremie-gauthier-4141a014a/"
@@ -250,7 +254,7 @@ const TeamBlock = () => {
                           rel="noreferrer"
                         >
                           <img
-                            src="./elements/social/linkedin.svg"
+                            src="/elements/social/linkedin.svg"
                             className="h-12 cursor-pointer hover:scale-105 hover:brightness-150"
                             alt="LinkedIn"
                           />
@@ -277,7 +281,7 @@ const TeamBlock = () => {
                       <div className="bg-gradient-to-tr from-[#FFCC00] to-[#ED713C] bg-clip-text pb-1 text-center text-3xl font-bold text-transparent">
                         Victor Raguin
                       </div>
-                      <p className="text-md text-center text-[#e7e7e7]">Front-End & Blockchain Developer</p>
+                      <p className="text-md text-center text-[#e7e7e7]">{t('team.vic')}</p>
                       <div className="flex w-full items-center justify-center py-4">
                         <a
                           href="https://www.linkedin.com/in/victor-raguin/"
@@ -286,14 +290,14 @@ const TeamBlock = () => {
                           rel="noreferrer"
                         >
                           <img
-                            src="./elements/social/linkedin.svg"
+                            src="/elements/social/linkedin.svg"
                             className="h-12 cursor-pointer hover:scale-105 hover:brightness-150"
                             alt="LinkedIn"
                           />
                         </a>
                         <a href="https://twitter.com/VictorRaguin" className="mx-5" target="_blank" rel="noreferrer">
                           <img
-                            src="./elements/social/twitter.svg"
+                            src="/elements/social/twitter.svg"
                             className="h-12 cursor-pointer hover:scale-105 hover:brightness-150"
                             alt="Twitter"
                           />
@@ -304,8 +308,8 @@ const TeamBlock = () => {
                 </motion.div>
                 <div className="container mx-auto flex justify-center pb-20 sm:pt-16 xl:pt-20 2xl:pt-20 4xl:pt-0">
                   <motion.div variants={CardItem}>
-                    <p className="bg-gradient-to-tr from-[#FFCC00] to-[#ED713C] bg-clip-text pb-3 text-center font-poppins text-[32px] font-normal text-transparent xl:text-[36px] 2xl:text-[48px]">
-                      Advisors
+                    <p className="bg-gradient-to-tr from-[#FFCC00] to-[#ED713C] bg-clip-text pb-3 text-center font-poppins text-[32px] font-normal text-transparent xl:text-[48px]">
+                      {t('team.advisors')}
                     </p>
                   </motion.div>
                 </div>
@@ -327,7 +331,7 @@ const TeamBlock = () => {
                       <div className="bg-gradient-to-tr from-[#FFCC00] to-[#ED713C] bg-clip-text pb-1 text-center text-3xl font-bold text-transparent">
                         Thibaut Lacave
                       </div>
-                      <p className="text-md text-center text-[#e7e7e7]">Technical Advisor</p>
+                      <p className="text-md text-center text-[#e7e7e7]">{t('team.thib')}</p>
                       <div className="flex w-full justify-center pt-5 pb-5">
                         <a
                           href="https://www.linkedin.com/in/lacavethibaut/"
@@ -336,7 +340,7 @@ const TeamBlock = () => {
                           rel="noreferrer"
                         >
                           <img
-                            src="./elements/social/linkedin.svg"
+                            src="/elements/social/linkedin.svg"
                             className="h-12 cursor-pointer hover:scale-105 hover:brightness-150"
                             alt="LinkedIn"
                           />
@@ -363,7 +367,7 @@ const TeamBlock = () => {
                       <div className="bg-gradient-to-tr from-[#FFCC00] to-[#ED713C] bg-clip-text pb-1 text-center text-3xl font-bold text-transparent">
                         Didier Boullery
                       </div>
-                      <p className="text-md text-center text-[#e7e7e7]">Gaming & Business Advisor</p>
+                      <p className="text-md text-center text-[#e7e7e7]">{t('team.didier')}</p>
                       <div className="flex w-full justify-center pt-5 pb-5">
                         <a
                           href="https://www.linkedin.com/in/didierboullery/"
@@ -372,7 +376,7 @@ const TeamBlock = () => {
                           rel="noreferrer"
                         >
                           <img
-                            src="./elements/social/linkedin.svg"
+                            src="/elements/social/linkedin.svg"
                             className="h-12 cursor-pointer hover:scale-105 hover:brightness-150"
                             alt="LinkedIn"
                           />
@@ -399,7 +403,7 @@ const TeamBlock = () => {
                       <div className="bg-gradient-to-tr from-[#FFCC00] to-[#ED713C] bg-clip-text pb-1 text-center text-3xl font-bold text-transparent">
                         Joachim Gillet
                       </div>
-                      <p className="text-md text-center text-[#e7e7e7]">Web3 Strategy & Growth Advisor</p>
+                      <p className="text-md text-center text-[#e7e7e7]">{t('team.joachim')}</p>
                       <div className="flex w-full justify-center pt-5 pb-5">
                         <a
                           href="https://www.linkedin.com/in/joachim-gillet-b91099133/"
@@ -408,7 +412,7 @@ const TeamBlock = () => {
                           rel="noreferrer"
                         >
                           <img
-                            src="./elements/social/linkedin.svg"
+                            src="/elements/social/linkedin.svg"
                             className="h-12 cursor-pointer hover:scale-105 hover:brightness-150"
                             alt="LinkedIn"
                           />
@@ -421,7 +425,7 @@ const TeamBlock = () => {
             </div>
           </motion.div>
         </div>
-        <div className="flex flex-1 justify-center py-6">
+        <div className="flex flex-1 justify-center py-6 pb-40">
           <button className="group relative rounded-full bg-gradient-to-r from-[#FFCC00] to-[#ED713C] p-0.5 text-sm shadow-[0_0_15px_-3px_#ffcc00cf] transition duration-200  ease-in-out hover:shadow-[0_0_25px_-3px_#ffcc00cf] ">
             <div className="relative flex flex-row rounded-full bg-[#262626] px-6 pt-3 ">
               <a
@@ -430,7 +434,7 @@ const TeamBlock = () => {
                 href="https://vivid-tadpole-074.notion.site/Job-Board-a686e214017142d08fb73cf1f83ca4ad"
                 rel="noopener noreferrer"
               >
-                Hey! We're hiring! Join the squad!
+                {t('team.cta')}
               </a>
             </div>
           </button>

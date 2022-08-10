@@ -1,8 +1,8 @@
 /* eslint-disable max-len */
-import React, { useEffect } from 'react';
-import { useAnimation, motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
+import { motion, useAnimation } from 'framer-motion';
+import { useEffect } from 'react';
 import { MdArrowForwardIos } from 'react-icons/md';
+import { useInView } from 'react-intersection-observer';
 
 const FantasyandGamesPart = () => {
   const openStreamerFantasyText = {

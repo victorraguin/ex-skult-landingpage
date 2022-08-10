@@ -1,5 +1,4 @@
 /* eslint-disable max-len */
-import React from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { ContactForm } from './ContactForm';
@@ -45,37 +44,37 @@ export default Footer;
 const socialIcons = [
   {
     linkTo: 'https://discord.gg/fJvrQCJr4W',
-    uri: './elements/social/discord.svg',
+    uri: '/elements/social/discord.svg',
     alt: 'Discord',
   },
   {
     linkTo: 'https://www.facebook.com/profile.php?id=100075407260088',
-    uri: './elements/social/facebook.svg',
+    uri: '/elements/social/facebook.svg',
     alt: 'Facebook',
   },
   {
     linkTo: 'https://www.instagram.com/skult.gg/',
-    uri: './elements/social/instagram.svg',
+    uri: '/elements/social/instagram.svg',
     alt: 'Instagram',
   },
   {
     linkTo: 'https://www.reddit.com/r/Skult_gg/',
-    uri: './elements/social/reddit.svg',
+    uri: '/elements/social/reddit.svg',
     alt: 'Reddit',
   },
   {
     linkTo: 'https://twitter.com/SKULT_gg',
-    uri: './elements/social/twitter-circled.svg',
+    uri: '/elements/social/twitter-circled.svg',
     alt: 'Twitter',
   },
   {
     linkTo: 'https://www.linkedin.com/company/skultgg/',
-    uri: './elements/social/linkedin-circled.svg',
+    uri: '/elements/social/linkedin-circled.svg',
     alt: 'LinkedIn',
   },
   {
     linkTo: 'https://medium.com/@SKULT',
-    uri: './elements/social/medium.svg',
+    uri: '/elements/social/medium.svg',
     alt: 'Medium',
   },
 ];

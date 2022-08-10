@@ -1,0 +1,19 @@
+{
+  "cta": {
+    "discord": "Join the Discord",
+    "medium": "Litepaper",
+    "streamer": "I'm a Streamer"
+  },
+  "form": {
+    "contact": {
+      "firstname": "Firstname",
+      "email": "Email",
+      "twitchLink": "Twitch channel link",
+      "cta": {
+        "todo": "Subscribe",
+        "pending": "Subscribing...",
+        "done": "Subscribed!"
+      }
+    }
+  }
+}

@@ -1,34 +1,41 @@
-import visibilityIcon from '../../../public/elements/streamer/visibility.svg';
-import engageIcon from '../../../public/elements/streamer/engage.svg';
-import earnCashIcon from '../../../public/elements/streamer/earn-cash.svg';
+import { Trans } from 'next-i18next';
 import Image, { StaticImageData } from 'next/image';
+import earnCashIcon from '../../../public/elements/streamer/earn-cash.svg';
+import engageIcon from '../../../public/elements/streamer/engage.svg';
+import visibilityIcon from '../../../public/elements/streamer/visibility.svg';
 
 export const StreamerBenefits = () => (
   <div className="mx-auto flex max-w-7xl flex-row flex-wrap justify-evenly gap-y-12 pb-16 sm:py-5">
     <Benefit
       icon={visibilityIcon}
       advantage={
-        <p>
-          Increase your <span className="font-semibold">visibility</span>
-        </p>
+        <Trans i18nKey="benefits.visibility" ns="streamers">
+          <p>
+            Increase your <span className="font-semibold">visibility</span>
+          </p>
+        </Trans>
       }
       shadowColor="shadow-[#9E30FE]"
     />
     <Benefit
       icon={engageIcon}
       advantage={
-        <p>
-          <span className="font-semibold">Engage</span> your audience
-        </p>
+        <Trans i18nKey="benefits.engage" ns="streamers">
+          <p>
+            <span className="font-semibold">Engage</span> your audience
+          </p>
+        </Trans>
       }
       shadowColor="shadow-[#ED713C]"
     />
     <Benefit
       icon={earnCashIcon}
       advantage={
-        <p>
-          <span className="font-semibold">Earn</span> cash
-        </p>
+        <Trans i18nKey="benefits.earn" ns="streamers">
+          <p>
+            <span className="font-semibold">Earn</span> cash
+          </p>
+        </Trans>
       }
       shadowColor="shadow-[#FFC000]"
     />

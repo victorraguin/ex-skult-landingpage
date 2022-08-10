@@ -1,0 +1,122 @@
+{
+  "start": {
+    "title": "<0>Let's go</0> <1>beyond Gameplay</1>",
+    "catchphrase": "Streams can be much more than just a video!"
+  },
+  "presentation": {
+    "title": "<0><0>A world where</0> <1>new gaming experiences</1> <0>can come alive.</0></0>",
+    "descriptionIntro": "Every time that a Streamer is onboarded on SKULT, 111 Cards will be created for its community: 100 Bronze, 10 Silver, and 1 Gold !",
+    "description": "Collect the Cards of your favorite Streamers to enter immersive events created by them exclusively for you, and to play SKULT games and earn rewards !",
+    "descriptionOutro": "Let’s go beyond gameplay together !"
+  },
+  "collectiblesFirst": {
+    "collect": {
+      "title": "Collect",
+      "description": "Create your deck by collecting the cards of the best Streamers you can find! You'll need them to participate into their exclusive events & our Fantasy Leagues!"
+    },
+    "trade": {
+      "title": "Trade",
+      "description": "Trade with other members of the SKULT Community across the globe. Sell the cards you won't need: real cash is coming your way!"
+    },
+    "compete": {
+      "title": "Compete",
+      "description": "Draft your Squad and enter weekly Leagues. Your final score will depend on the real-world performances of your Streamers."
+    }
+  },
+  "collectiblesSecond": {
+    "support": {
+      "title": "Support",
+      "description": "Streamers receive a share every time you buy one of their cards. Are you a real fan? Then show them your love !"
+    },
+    "unique": {
+      "titleFirst": "Unique &",
+      "titleLast": "Counterfeit proof",
+      "description": "Every card can be a non-fungible token (NFT): the blockchain technology ensures your ownership if you want to take your card outside SKULT !"
+    },
+    "earn": {
+      "title": "Earn",
+      "description": "Coins, cards, rewards and free drops are all for grab! Watch out: you might be ending up winning something !"
+    }
+  },
+  "collectiblesUseCases": {
+    "title": "What can you do with <1>your Cards</1>?",
+    "catchphrase": "Watching is over. It’s time to participate",
+    "events": {
+      "title": "Participate in Exclusive Events",
+      "description": "Your cards can unlock immersive events created by your favorite Streamers, exclusively for you! Game sessions, drops, giveaways, exclusive content, in real life events... Everything is possible!",
+      "iryanne": {
+        "name": "World of Warcraft - Community raid",
+        "description": "“I need 10 mates for the Black Temple raid in World of Warcraft! Silver Card holders: I need YOU! Come and join me! Let’s play together during my stream session this weekend!”"
+      },
+      "gpu": {
+        "name": "Graphics card to win!",
+        "description": "“Raffle! I have a RTX 3080 Ti to give to one of my card holders! Enter the raffle and get a chance to bring it home! The winner will be drawn from all those that will check-in with their card!”"
+      },
+      "worlds": {
+        "name": "Come with me to the Worlds!",
+        "description": "“I’m playing at the League of Legends Worlds and I can bring one person with me! YOU, Gold Card holder! Come with me and follow the event from the backstage!”"
+      }
+    },
+    "fantasyLeagues": {
+      "title": "Play Games",
+      "description": "Participate alongside other SKULTERS in SKULT Fantasy Leagues! Every week, draft your Dream Squad among the Cards you hold! The in-game actions of the Streamers you have chosen will contribute to your final score! At the end of the week, earn rewards based on the number of points you have!",
+      "catchphrase": "Will you have what it takes?"
+    }
+  },
+  "community": {
+    "title": "Nobody<1> is left behind!</1>",
+    "streamer": {
+      "title": "Any Streamer",
+      "develop": {
+        "title": "Develop your Community",
+        "description": "Get discovered thanks to level-based games: any Streamer can get an audience!"
+      },
+      "boost": {
+        "title": "Boost Engagement",
+        "description": "Grow your fan base and increase interactions with your followers."
+      },
+      "earn": {
+        "title": "Earn Cash",
+        "description": "From your cards and your in-game actions. The better you play and the best you entertain your fans, the more valuable you are!"
+      }
+    },
+    "leaguer": {
+      "title": "Any Viewers",
+      "cta": "Let's play",
+      "fun": {
+        "title": "Get fun while following your favorite Streamers",
+        "description": "Enroll Streamers in your Team through their cards and participate in their exclusive and personalized events!"
+      },
+      "play": {
+        "title": "Play & Earn Rewards",
+        "description": "Challenge other participants in SKULT immersive games, and get rewarded. Our first game is a Fantasy League!"
+      },
+      "earn": {
+        "title": "Earn Cash",
+        "description": "Keep your team strong and sell other Streamers you don't need: earn cash from card trading"
+      },
+      "modal": {
+        "text": "<0>Hey, thanks for your interest!</0><1>We're COMING SOON!</1><2>To be updated, join our Discord</2>",
+        "button": "SKULT Community"
+      }
+    }
+  },
+  "team": {
+    "title": "<0>The <2>dream</2> team</0>",
+    "alex": "Founder & CEO",
+    "raph": "Marketing Project Manager",
+    "quentin": "Marketing Manager",
+    "simo": "DevOps & Back-End Developer",
+    "jerem": "FullStack & Blockchain Developer",
+    "vic": "Front-End & Blockchain Developer",
+    "advisors": "Advisors",
+    "thib": "Technical Advisor",
+    "didier": "Gaming & Business Advisor",
+    "joachim": "Web3 Strategy & Growth Advisor",
+    "cta": "Hey! We're hiring! Join the squad!"
+  },
+  "partners": {
+    "title": "<0>They <2>Speak about Us</2></0>",
+    "creator": "Content Creator on Web3 Play&Earn"
+  }
+}

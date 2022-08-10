@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
-import React from 'react';
 import Head from 'next/head';
+import React from 'react';
 
 const Seo: React.FC<SEOProps> = ({ description, keywords, title }) => (
   <Head>
@@ -39,6 +39,7 @@ Seo.defaultProps = {
     'Collect Cards of your favorite Streamers and participate in exclusive events & Fantasy Leagues! Enter the SKULT Community and challenge other Leaguers: earn rewards from the in-game actions of the Streamers you love!',
   keywords: [
     'Streamers',
+    'Gaming',
     'SKULT',
     'Games',
     'Cryptocurrency',
@@ -49,6 +50,7 @@ Seo.defaultProps = {
     'Fantasy',
     'Earn',
     'Web3',
+    'Leagues',
   ],
 };
 

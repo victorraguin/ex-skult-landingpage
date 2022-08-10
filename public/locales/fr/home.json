@@ -1,0 +1,123 @@
+{
+  "start": {
+    "title": "<0>Allons</0> <1>au-delà du Gameplay</1>",
+    "catchphrase": "Les streams peuvent être plus que de simples vidéos !"
+  },
+  "presentation": {
+    "title": "<0><0>Un monde de</0> <1>nouvelles expériences de Gaming</1> <0>s’ouvre à toi.</0></0>",
+    "descriptionIntro": "Chaque fois qu'un streamer est intégré à SKULT, 111 cartes sont créées pour sa communauté : 100 Bronze, 10 Argent et 1 Or !",
+    "description": "Collectionnez les cartes de vos streamers préférés pour participer à des événements immersifs créés par eux, exclusivement pour vous, et pour jouer à des jeux SKULT et gagner des récompenses !",
+    "descriptionOutro": "Allons au-delà du gameplay ensemble !"
+  },
+
+  "collectiblesFirst": {
+    "collect": {
+      "title": "Collections",
+      "description": "Collectionne les cartes des meilleurs Streamers et compose le deck parfait ! Tu en auras besoin pour participer aux événements exclusifs des Streamers et rejoindre nos Fantasy Leagues !"
+    },
+    "trade": {
+      "title": "Échanges",
+      "description": "Échange tes cartes avec d’autres membres de la communauté SKULT dans le monde entier. Vends les cartes que tu n’utilises pas : elles te rapporteront de l’argent réel !"
+    },
+    "compete": {
+      "title": "Compétitions",
+      "description": "Compose ton équipe et participe chaque semaine aux Fantasy Leagues ! Ton score final dépendra des performances de tes Streamers dans la vraie vie."
+    }
+  },
+  "collectiblesSecond": {
+    "support": {
+      "title": "Soutien",
+      "description": "Les Streamers reçoivent une part des ventes à chaque fois que tu achètes une de leurs cartes. Montre-leur que tu es un vrai fan !"
+    },
+    "unique": {
+      "titleFirst": "Unique et",
+      "titleLast": " anti-contrefaçon",
+      "description": "Chaque carte peut être un jeton non fongible (NFT). La technologie blockchain garantit son caractère unique et la sécurité de la propriété."
+    },
+    "earn": {
+      "title": "Récompenses",
+      "description": "Des pièces, des cartes et bien d’autres récompenses sont à gagner ! Attention : tu pourrais bien ne pas repartir les mains vides !"
+    }
+  },
+  "collectiblesUseCases": {
+    "title": "Comment utiliser <1>tes Cartes</1> ?",
+    "catchphrase": "Arrête d’être spectateur. Deviens acteur.",
+    "events": {
+      "title": "Participe à des événements exclusifs",
+      "description": "Tes cartes te donnent accès à des événements immersifs créés par tes Streamers préférés, spécialement pour toi ! Sessions de jeu, cadeaux, contenus exclusifs, événements dans la vie réelle... Tout est possible !",
+      "iryanne": {
+        "name": "World of Warcraft - Raid",
+        "description": "« J’ai besoin de 10 joueurs pour le raid du Temple noir dans World of Warcraft ! Tu possèdes une Carte Argent ? J’ai besoin de TOI ! Viens jouer avec moi lors de mon stream ce week-end ! »"
+      },
+      "gpu": {
+        "name": "Des cartes graphiques à gagner !",
+        "description": "« Super loterie ! Tu possèdes l’une de mes cartes ? Tente ta chance pour remporter une carte RTX 3080 Ti ! Le gagnant sera tiré au sort parmi tous ceux qui s’inscriront à la loterie avec leur carte ! »"
+      },
+      "worlds": {
+        "name": "Accompagne-moi au championnat du monde !",
+        "description": "« Je participe au championnat du monde de League of Legends et je peux amener une personne avec moi ! Et ce sera TOI qui détiens une Carte Or ! Viens avec moi et suis l’événement depuis les coulisses ! »"
+      }
+    },
+    "fantasyLeagues": {
+      "title": "Joue à des jeux SKULT",
+      "description": "Chaque semaine, crée ton équipe parfaite et affronte d’autres membres dans les Fantasy Leagues SKULT ! Ton score final dépendra des actions réalisées par tes Streamers dans la partie ! À la fin de chaque semaine, obtiens des récompenses en fonction du nombre de points cumulés !",
+      "catchphrase": "Feras-tu les bons choix ?"
+    }
+  },
+  "community": {
+    "title": "Chacun<1> y trouve son compte !</1>",
+    "streamer": {
+      "title": "Streamers",
+      "develop": {
+        "title": "Accrois ta communauté",
+        "description": "Fais-toi connaître grâce à des jeux à niveaux : n'importe quel Streamer peut avoir un public !"
+      },
+      "boost": {
+        "title": "Renforce l’engagement",
+        "description": "Séduis plus de fans et augmente les interactions avec tes abonnés."
+      },
+      "earn": {
+        "title": "Gagne de l’argent",
+        "description": "Grâce à tes cartes et à tes actions dans les jeux. Gagne un maximum de points et anime ta communauté pour augmenter ta valeur !"
+      }
+    },
+    "leaguer": {
+      "title": "Viewers",
+      "cta": "C'est parti",
+      "fun": {
+        "title": "Passe un bon moment en suivant tes Streamers favoris",
+        "description": "Intègre des Streamers dans ton Équipe grâce à leurs cartes et participe à leurs événements exclusifs et personnalisés !"
+      },
+      "play": {
+        "title": "Joue et gagne des récompenses",
+        "description": "Affronte d’autres participants dans les jeux immersifs SKULT et obtiens des récompenses. Notre premier jeu est une Fantasy League !"
+      },
+      "earn": {
+        "title": "Gagne de l’argent",
+        "description": "Garde les cartes des meilleurs Streamers et vends celles dont tu n'as plus besoin pour gagner de l'argent !"
+      },
+      "modal": {
+        "text": "<0>Merci pour ton intérêt !</0><1> SKULT sera BIENTÔT DISPONIBLE !</1><2> Pour ne rien manquer, rejoins notre Discord</2>",
+        "button": "Communauté SKULT"
+      }
+    }
+  },
+  "team": {
+    "title": "<0>L'<2>équipe</2> de choc</0>",
+    "alex": "Founder & CEO",
+    "raph": "Marketing Project Manager",
+    "quentin": "Marketing Manager",
+    "simo": "DevOps & Back-End Developer",
+    "jerem": "FullStack & Blockchain Developer",
+    "vic": "Front-End & Blockchain Developer",
+    "advisors": "Conseillers",
+    "thib": "Conseiller technique",
+    "didier": "Conseiller Gaming & Business",
+    "joachim": "Conseiller Web3 Strategy & Growth",
+    "cta": "On recrute ! Rejoins l’équipe !"
+  },
+  "partners": {
+    "title": "<0>Ils <2>parlent de nous</2></0>",
+    "creator": "Créateur de contenu - Web3 Play&Earn"
+  }
+}

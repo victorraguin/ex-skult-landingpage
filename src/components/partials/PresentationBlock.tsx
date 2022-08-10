@@ -1,9 +1,12 @@
 /* eslint-disable max-len */
-import React, { useEffect } from 'react';
-import { useAnimation, motion } from 'framer-motion';
+import { motion, useAnimation } from 'framer-motion';
+import { Trans } from 'next-i18next';
+import { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
+import { useTranslation } from 'next-i18next';
 
 const PresentationBlock = () => {
+  const { t } = useTranslation('home');
   const videoVariant = {
     visible: { opacity: 1, transition: { delay: 2, duration: 6 } },
     hidden: { opacity: 0 },
@@ -16,8 +19,8 @@ const PresentationBlock = () => {
     visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
     hidden: { opacity: 0, scale: 0 },
   };
-  const openLittleTitleText = {
-    visible: { opacity: 1, scale: 1, transition: { delay: 0.5, duration: 0.5 } },
+  const openDescriptionText = {
+    visible: { opacity: 1, scale: 1, transition: { delay: 2, duration: 0.5 } },
     hidden: { opacity: 0, scale: 0 },
   };
   const lueurVariant = {
@@ -38,28 +41,31 @@ const PresentationBlock = () => {
 
   return (
     <motion.div className="flex flex-col" ref={ref}>
-      <div className="flex flex-col items-center">
-        <motion.h3
-          className="mx-2 mt-5 text-center font-poppins text-3xl font-light text-[#e7e7e7] xl:mx-0 xl:text-5xl"
-          initial={{ opacity: 0 }}
-          animate={controls}
-          variants={openTitleText}
-        >
-          A world where new gaming experiences
-        </motion.h3>
-        <motion.h3
-          className="mb-32 max-w-max bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text text-center font-poppins text-3xl font-normal text-transparent xl:text-5xl"
-          initial={{ opacity: 0 }}
-          animate={controls}
-          variants={openLittleTitleText}
-        >
+      <Trans i18nKey="presentation.title" ns="home">
+        <div className="mt-5 mb-32 flex flex-col items-center">
+          <motion.h3
+            className="mx-2 text-center font-poppins text-3xl font-light text-[#e7e7e7] xl:mx-0 xl:text-5xl"
+            initial={{ opacity: 0 }}
+            animate={controls}
+            variants={openTitleText}
+          >
+            A world where
+          </motion.h3>
+          <motion.h3
+            className="max-w-max bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text py-2 text-center font-poppins text-3xl font-normal text-transparent xl:text-5xl"
+            initial={{ opacity: 0 }}
+            animate={controls}
+            variants={openTitleText}
+          >
+            new gaming experiences
+          </motion.h3>
           can come alive.
-        </motion.h3>
-      </div>
+        </div>
+      </Trans>
       <div className="relative flex flex-col">
         <div className="z-10 mx-auto rounded-[15px] xl:h-[504px] xl:w-[896px] xl:bg-[#282828] 4xl:w-[900px]">
           <motion.video
-            className="relative z-20 w-[340px] rounded-[15px] sm:w-[480px] md:w-[680px] lg:w-[880px] xl:h-[504px] xl:w-[896px] 4xl:w-[900px]"
+            className="relative z-20 mx-auto w-[340px] rounded-[15px] sm:w-[480px] md:w-[680px] lg:w-[880px] xl:h-[504px] xl:w-[896px] 4xl:w-[900px]"
             animate={controls}
             initial={{ opacity: 1 }}
             variants={videoVariant}
@@ -69,10 +75,26 @@ const PresentationBlock = () => {
           >
             <source src="https://cdn.skult.gg/SKULT.mp4" type="video/mp4" />
           </motion.video>
+          <motion.div
+            animate={controls}
+            initial={{ opacity: 0 }}
+            variants={openDescriptionText}
+            className="px-7 md:px-0"
+          >
+            <p className="mx-auto w-full pt-20 text-center font-poppins text-[18px] font-medium text-[#e4e4e4]">
+              {t('presentation.descriptionIntro')}
+            </p>
+            <p className="mx-auto w-full pt-5 text-center font-poppins text-[18px] font-medium text-[#e4e4e4]">
+              {t('presentation.description')}
+            </p>
+            <p className="mx-auto w-full pt-5 text-center font-poppins text-[18px] font-medium text-primary">
+              {t('presentation.descriptionOutro')}
+            </p>
+          </motion.div>
         </div>
         <motion.div initial={{ opacity: 0 }} animate={controls} variants={openLureurVariant} aria-hidden="true">
           <motion.img
-            src="./elements/lueur-1.webp"
+            src="/elements/lueur-1.webp"
             alt="SKULT TV"
             className="absolute  top-[-12%] z-0 blur-3xl md:top-[-30%] xl:left-[1%] xl:top-[-38%] xl:w-[99%] 2xl:left-[5%] 2xl:w-[92%] 3xl:left-[16.5%] 3xl:w-[68%] 4xl:left-[18%] 4xl:top-[-50%] 4xl:w-[65%]"
             animate={controls}
@@ -80,7 +102,7 @@ const PresentationBlock = () => {
             variants={lueurVariant}
           />
           <motion.img
-            src="./elements/lueur-2.webp"
+            src="/elements/lueur-2.webp"
             alt="SKULT TV"
             className="absolute top-[-5%] z-0 blur-3xl md:top-[-30%]  xl:left-[1%] xl:top-[-38%] xl:w-[99%] 2xl:left-[5%] 2xl:w-[92%] 3xl:left-[16.5%] 3xl:w-[68%] 4xl:left-[18%] 4xl:top-[-50%] 4xl:w-[65%]"
             animate={controls}

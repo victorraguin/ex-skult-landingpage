@@ -1,4 +1,4 @@
-import React from 'react';
+import { Trans } from 'next-i18next';
 import { StreamerBenefits } from './StreamerBenefits';
 import { StreamerExperiences } from './StreamerExperience';
 import { StreamerInvitation } from './StreamerInvitation';
@@ -27,12 +27,14 @@ export default StreamerBlock;
 const Title = () => (
   <div className="flex flex-row flex-wrap items-baseline justify-center gap-x-4 pb-16">
     <img src="https://cdn.skult.gg/SKULT_logo.png" alt="SKULT Logo" className="h-10" />
-    <div className="text-center font-poppins text-5xl font-light leading-none text-[#E7E7E7]">
-      for
-      <span className="bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text leading-none text-transparent">
-        {' '}
-        Streamers
-      </span>
-    </div>
+    <Trans i18nKey="benefits.title" ns="streamers">
+      <div className="text-center font-poppins text-5xl font-light leading-none text-[#E7E7E7]">
+        for
+        <span className="bg-gradient-to-r from-[#FFCC00] to-[#ED713C] bg-clip-text leading-none text-transparent">
+          {' '}
+          Streamers
+        </span>
+      </div>
+    </Trans>
   </div>
 );

@@ -1,0 +1,28 @@
+{
+  "benefits": {
+    "title": "<0>for <1>Streamers</1></0>",
+    "visibility": "<0>Increase your <1>visibility</1></0>",
+    "engage": "<0><0>Engage</0> your audience</0>",
+    "earn": "<0><0>Earn</0> cash</0>"
+  },
+  "experience": {
+    "events": {
+      "title": "<0>Create <1>exclusive</1> events</0>",
+      "description": "We will provide you with the toolbox to generate unique events for your community. YOU decide who can join the events that YOU created! Reward you loyaliest fans with engaging and interactive experiences"
+    },
+    "earn": {
+      "title": "<0>Play & <2>Earn</2></0>",
+      "description": "Let your audience play games while you're streaming! Our first game: Fantasy Leagues! Entertain your community with your in-game actions and boost their score with crazy performances! Show them who's the best!"
+    }
+  },
+  "ranks": {
+    "title": "<0>The more you go <1>up the ladder</1> the <3>more you earn</3></0>",
+    "subtitle": "Streamer Ranks based on your popularity and your actions",
+    "explanation": "Get your share for every card sold: higher the Rank, bigger the share",
+    "contactUs": "Get in touch with us to know your Rank and understand how much you could earn with SKULT"
+  },
+  "join": {
+    "title": "<0>Come and <1>Play</1> with us</0>",
+    "subtitle": "Wanna know more about it?"
+  }
+}
