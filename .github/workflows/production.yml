@@ -67,7 +67,7 @@ jobs:
           container-name: ${{ env.CONTAINER_NAME }}
           image: ${{ steps.build-push-image.outputs.image }}
 
-      - name: Deploy Amazon ECS task definition to DEVELOPMENT
+      - name: Deploy Amazon ECS task definition to PRODUCTION
         uses: aws-actions/amazon-ecs-deploy-task-definition@v1
         if: github.event_name  == 'push'
         with:
