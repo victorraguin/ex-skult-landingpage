@@ -62,7 +62,7 @@ const CollectiblesBlockFirst = () => {
             <h4 className="pt-2 text-center font-poppins text-3xl font-semibold text-primary md:pt-5">
               {t('collectiblesFirst.collect.title')}
             </h4>
-            <p className="mx-auto w-2/3 pt-4 text-center font-poppins text-[18px] font-medium text-[#b8b8b8]">
+            <p className="mx-auto w-3/4 pt-4 text-center font-poppins text-[18px] font-medium text-[#b8b8b8]">
               {t('collectiblesFirst.collect.description')}
             </p>
           </motion.div>
@@ -71,7 +71,7 @@ const CollectiblesBlockFirst = () => {
             <h4 className="pt-2 text-center font-poppins text-3xl font-semibold text-primary md:pt-5">
               {t('collectiblesFirst.trade.title')}
             </h4>
-            <p className="mx-auto w-2/3 pt-4 text-center font-poppins text-[18px] font-medium text-[#b8b8b8]">
+            <p className="mx-auto w-3/4 pt-4 text-center font-poppins text-[18px] font-medium text-[#b8b8b8]">
               {t('collectiblesFirst.trade.description')}
             </p>
           </motion.div>
@@ -80,7 +80,7 @@ const CollectiblesBlockFirst = () => {
             <h4 className="pt-2 text-center font-poppins text-3xl font-semibold text-primary md:pt-5">
               {t('collectiblesFirst.compete.title')}
             </h4>
-            <p className="mx-auto w-2/3 pt-4 text-center font-poppins text-[18px] font-medium text-[#b8b8b8]">
+            <p className="mx-auto w-3/4 pt-4 text-center font-poppins text-[18px] font-medium text-[#b8b8b8]">
               {t('collectiblesFirst.compete.description')}
             </p>
           </motion.div>
