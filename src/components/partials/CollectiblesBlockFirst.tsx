@@ -56,7 +56,7 @@ const CollectiblesBlockFirst = () => {
         animate={controls}
         ref={ref}
       >
-        <motion.div className="mx-auto flex flex-col flex-wrap justify-around gap-y-8 sm:flex-nowrap md:flex-row 3xl:w-2/3 4xl:w-3/4">
+        <motion.div className="mx-auto flex flex-col flex-wrap justify-around gap-y-8 sm:flex-nowrap md:flex-row 2xl:w-3/4 4xl:w-3/4">
           <motion.div className="flex flex-1 flex-col" variants={CardItem}>
             <img src="/elements/skult-collecte-icon-.svg" alt="Collect Icon" className="h-[125px]" />
             <h4 className="pt-2 text-center font-poppins text-3xl font-semibold text-primary md:pt-5">
@@ -85,7 +85,7 @@ const CollectiblesBlockFirst = () => {
             </p>
           </motion.div>
         </motion.div>
-        <div className="2xl:pb-42 xl:pb-20"></div>
+        <div className="xl:pb-10 2xl:pb-10"></div>
       </motion.div>
     </motion.div>
   );

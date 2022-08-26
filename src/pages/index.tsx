@@ -37,7 +37,6 @@ const Home: NextPage = () => {
 
         <StreamersLeaguersBlock />
         <TeamBlock />
-        {router.locale == 'fr' ? <SpeakOfUs /> : undefined}
         <SocialBlock />
         <Footer />
       </motion.div>

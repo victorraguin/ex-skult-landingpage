@@ -28,14 +28,9 @@
       "title": "Support",
       "description": "Streamers receive a share every time you buy one of their cards. Are you a real fan? Then show them your love !"
     },
-    "unique": {
-      "titleFirst": "Unique &",
-      "titleLast": "Counterfeit proof",
-      "description": "Every card can be a non-fungible token (NFT): the blockchain technology ensures your ownership if you want to take your card outside SKULT !"
-    },
     "earn": {
       "title": "Earn",
-      "description": "Coins, cards, rewards and free drops are all for grab! Watch out: you might be ending up winning something !"
+      "description": "Rewards, cards and free drops are all for grab! Watch out: you might be ending up winning something !"
     }
   },
   "collectiblesUseCases": {
@@ -107,16 +102,12 @@
     "raph": "Marketing Project Manager",
     "quentin": "Marketing Manager",
     "simo": "DevOps & Back-End Developer",
-    "jerem": "FullStack & Blockchain Developer",
-    "vic": "Front-End & Blockchain Developer",
+    "jerem": "FullStack Developer",
+    "vic": "Front-End Developer",
     "advisors": "Advisors",
     "thib": "Technical Advisor",
     "didier": "Gaming & Business Advisor",
-    "joachim": "Web3 Strategy & Growth Advisor",
+    "joachim": "Growth Advisor",
     "cta": "Hey! We're hiring! Join the squad!"
-  },
-  "partners": {
-    "title": "<0>They <2>Speak about Us</2></0>",
-    "creator": "Content Creator on Web3 Play&Earn"
   }
 }

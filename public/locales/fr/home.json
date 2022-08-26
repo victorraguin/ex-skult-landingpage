@@ -29,14 +29,9 @@
       "title": "Soutien",
       "description": "Les Streamers reçoivent une part des ventes à chaque fois que tu achètes une de leurs cartes. Montre-leur que tu es un vrai fan !"
     },
-    "unique": {
-      "titleFirst": "Unique et",
-      "titleLast": " anti-contrefaçon",
-      "description": "Chaque carte peut être un jeton non fongible (NFT). La technologie blockchain garantit son caractère unique et la sécurité de la propriété."
-    },
     "earn": {
       "title": "Récompenses",
-      "description": "Des pièces, des cartes et bien d’autres récompenses sont à gagner ! Attention : tu pourrais bien ne pas repartir les mains vides !"
+      "description": "Des récompenses, des cartes et bien d’autres choses sont à gagner ! Attention : tu pourrais bien ne pas repartir les mains vides !"
     }
   },
   "collectiblesUseCases": {
@@ -107,17 +102,13 @@
     "alex": "Founder & CEO",
     "raph": "Marketing Project Manager",
     "quentin": "Marketing Manager",
-    "simo": "DevOps & Back-End Developer",
-    "jerem": "FullStack & Blockchain Developer",
-    "vic": "Front-End & Blockchain Developer",
+    "simo": "Développeur Back-End & DevOps",
+    "jerem": "Développeur FullStack",
+    "vic": "Développeur Front-End",
     "advisors": "Conseillers",
     "thib": "Conseiller technique",
     "didier": "Conseiller Gaming & Business",
-    "joachim": "Conseiller Web3 Strategy & Growth",
+    "joachim": "Conseiller Strategy & Growth",
     "cta": "On recrute ! Rejoins l’équipe !"
-  },
-  "partners": {
-    "title": "<0>Ils <2>parlent de nous</2></0>",
-    "creator": "Créateur de contenu - Web3 Play&Earn"
   }
 }
