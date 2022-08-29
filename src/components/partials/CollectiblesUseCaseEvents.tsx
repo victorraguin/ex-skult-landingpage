@@ -45,11 +45,15 @@ export const CollectiblesUseCaseEvents = () => {
               {events[activeItem].name}
             </h4>
             <p className="h-16 text-xs italic text-[#B8B8B8] sm:text-sm">{events[activeItem].description}</p>
-            <p className="h-16 text-xs italic text-[#B8B8B8] sm:text-sm">{events[activeItem].quote}</p>
+            <p className="mt-5  text-xs italic text-[#B8B8B8] sm:text-sm md:mt-10 lg:mt-5 xl:mt-0 ">
+              {events[activeItem].quote}
+            </p>
           </legend>
         </div>
 
-        <GradientText className="text-center text-2xl font-bold">{t('collectiblesUseCases.catchphrase')}</GradientText>
+        <GradientText className="mt-10 text-center text-2xl font-bold lg:mt-0">
+          {t('collectiblesUseCases.catchphrase')}
+        </GradientText>
       </div>
     </div>
   );
