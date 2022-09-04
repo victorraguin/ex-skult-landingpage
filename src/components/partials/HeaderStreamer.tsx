@@ -61,7 +61,7 @@ const Header = () => {
           </Link>
         </motion.div>
         {/* <motion.div initial={{ y: -250 }} animate={{ y: -10 }} transition={{ delay: 1, type: 'spring', stiffness: 70 }}>
-          <a href="https://discord.gg/fJvrQCJr4W" target="_blank" rel="noopener noreferrer">
+          <a href="https://discord.gg/K2pNugpGwB" target="_blank" rel="noopener noreferrer">
             <motion.button
               className={`group absolute top-[-2.25rem] right-[2.5rem] scale-[0.8] rounded-full bg-gradient-to-br from-[#FFCC00] to-[#ED713C] p-0.5 text-sm shadow-[0_0_15px_-3px_#ffcc00cf]  transition duration-200 ease-in-out hover:bg-gradient-to-b hover:shadow-[0_0_25px_-3px_#ffcc00cf] sm:right-[-2rem] md:right-[0rem]  md:scale-[0.7]  xl:top-[-3.1rem]
               xl:right-20 xl:scale-[0.8] 2xl:top-[-3.5rem] 2xl:scale-[0.9] 3xl:top-[-3.5rem] 3xl:scale-[0.95]`}

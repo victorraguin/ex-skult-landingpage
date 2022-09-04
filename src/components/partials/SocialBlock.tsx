@@ -52,7 +52,7 @@ const SocialBlock = () => {
           // className="flex justify-center"
         >
           <a
-            href="https://discord.gg/fJvrQCJr4W"
+            href="https://discord.gg/K2pNugpGwB"
             target="_blank"
             rel="noopener noreferrer"
             className="flex justify-center"

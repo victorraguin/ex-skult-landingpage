@@ -45,7 +45,7 @@ const StartBlock = () => {
           </motion.h2>
           <div className="flex flex-row space-x-5 md:flex-col md:space-x-0">
             <div className="">
-              <a href="https://discord.gg/fJvrQCJr4W" target="_blank" rel="noreferrer" className="group">
+              <a href="https://discord.gg/K2pNugpGwB" target="_blank" rel="noreferrer" className="group">
                 <motion.button
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}

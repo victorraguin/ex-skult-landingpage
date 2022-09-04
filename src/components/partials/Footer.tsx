@@ -43,7 +43,7 @@ export default Footer;
 
 const socialIcons = [
   {
-    linkTo: 'https://discord.gg/fJvrQCJr4W',
+    linkTo: 'https://discord.gg/K2pNugpGwB',
     uri: '/elements/social/discord.svg',
     alt: 'Discord',
   },

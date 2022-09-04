@@ -72,7 +72,7 @@ const LeaguerModal = ({ open, handleClose }: { open: boolean; handleClose: () =>
           </Trans>
         </div>
         <div>
-          <a href="https://discord.gg/fJvrQCJr4W" target="_blank" rel="noopener noreferrer" className="font-semibold">
+          <a href="https://discord.gg/K2pNugpGwB" target="_blank" rel="noopener noreferrer" className="font-semibold">
             <div className="flex flex-shrink flex-row items-center justify-center space-x-2 rounded-full bg-gradient-to-r from-[#7517F8] to-[#E323FF] pt-2 hover:brightness-110">
               <DiscordButton fill="white" />
               <span className="pb-1">{t('community.leaguer.modal.button')}</span>
