@@ -14,7 +14,7 @@ export const StreamerExperiences = () => {
       `}
       >
         <Experience
-          icon="https://cdn.skult.gg/Landing+Page/EVENTS.png"
+          icon="/elements/streamer/EVENTS.png"
           title={
             <Trans i18nKey="experience.events.title" ns="streamers">
               <span>
@@ -25,7 +25,7 @@ export const StreamerExperiences = () => {
           description={t('experience.events.description')}
         />
         <Experience
-          icon="https://cdn.skult.gg/Landing+Page/CARD-PLAY-EARN.png"
+          icon="/elements/streamer/CARD-PLAY-EARN.png"
           title={
             <Trans i18nKey="experience.title" ns="streamers">
               <span>

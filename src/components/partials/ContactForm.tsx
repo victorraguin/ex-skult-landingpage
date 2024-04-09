@@ -41,6 +41,7 @@ export const ContactForm = ({ className, inputClassname }: { className?: string;
         placeholder={t('form.contact.firstname')}
         value={firstname}
         onChange={e => setFirstname(e.target.value)}
+        disabled
       />
       <input
         className={`
@@ -53,6 +54,7 @@ export const ContactForm = ({ className, inputClassname }: { className?: string;
         placeholder={t('form.contact.email')}
         value={email}
         onChange={e => setEmail(e.target.value)}
+        disabled
       />
       {isStreamer && (
         <input
@@ -65,6 +67,7 @@ export const ContactForm = ({ className, inputClassname }: { className?: string;
           placeholder={t('form.contact.twitchLink')}
           value={twitchLink}
           onChange={e => setTwitchLink(e.target.value)}
+          disabled
         />
       )}
       <input

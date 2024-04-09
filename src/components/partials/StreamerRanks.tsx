@@ -36,15 +36,15 @@ const Title = () => (
 
 const ranks = [
   {
-    icon: 'https://cdn.skult.gg/Landing+Page/1stars.png',
+    icon: '/elements/streamer/1stars.png',
     name: 'ROOKIE',
   },
   {
-    icon: 'https://cdn.skult.gg/Landing+Page/2stars.png',
+    icon: '/elements/streamer/2stars.png',
     name: 'HERO',
   },
   {
-    icon: 'https://cdn.skult.gg/Landing+Page/3stars.png',
+    icon: '/elements/streamer/3stars.png',
     name: 'LEGEND',
   },
 ];

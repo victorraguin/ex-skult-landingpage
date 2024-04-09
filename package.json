@@ -1,5 +1,5 @@
 {
-  "name": "skult",
+  "name": "ex-skult-landing-page",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,10 +10,7 @@
     "lint": "next lint",
     "lint-fix": "eslint --fix \"src/**/*.{js,jsx,tsx,ts}\"",
     "prettier-check": "prettier ./.prettierrc.js --check 'src/**/*.{js,jsx,ts,tsx}' --no-error-on-unmatched-pattern",
-    "prettier-run": "prettier ./.prettierrc.js --write \"src/**/*.{js,jsx,ts,tsx}\" --no-error-on-unmatched-pattern",
-    "co:login:skultgg": "aws codeartifact login --tool npm --repository lib --domain skultgg --domain-owner 129095079376 --namespace @skultgg",
-    "co:login:skultgg-config": "aws codeartifact login --tool npm --repository eslint-config-skult --domain skultgg --domain-owner 129095079376 --namespace @skultgg-config",
-    "co:login": "npm run co:login:skultgg && npm run co:login:skultgg-config"
+    "prettier-run": "prettier ./.prettierrc.js --write \"src/**/*.{js,jsx,ts,tsx}\" --no-error-on-unmatched-pattern"
   },
   "husky": {
     "hooks": {
@@ -29,7 +26,6 @@
     "@emotion/styled": "^11.9.3",
     "@mui/icons-material": "^5.8.4",
     "@mui/material": "^5.6.1",
-    "@skultgg/lib": "^1.23.0",
     "beautiful-react-hooks": "^1.2.0",
     "dotenv": "^16.0.0",
     "framer-motion": "^6.2.9",
@@ -43,7 +39,6 @@
   },
   "devDependencies": {
     "@material-ui/core": "^4.12.3",
-    "@skultgg-config/eslint-config-skult": "^1.5.0",
     "@types/node": "^16.11.26",
     "@types/qs": "^6.9.7",
     "@types/react": "^17.0.42",

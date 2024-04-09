@@ -13,20 +13,20 @@ export const CollectiblesUseCaseEvents = () => {
 
   const events: Event[] = [
     {
-      image: 'https://cdn.skult.gg/Landing+Page/wow.png',
+      image: '/wow.png',
       name: t('collectiblesUseCases.events.iryanne.name'),
       description: t('collectiblesUseCases.events.iryanne.description'),
       social: 'https://www.twitch.tv/iryanne',
       quote: '- Iryanne, WoW Streamer',
     },
     {
-      image: 'https://cdn.skult.gg/Landing+Page/rtx3080.png',
+      image: '/rtx3080.png',
       name: t('collectiblesUseCases.events.gpu.name'),
       description: t('collectiblesUseCases.events.gpu.description'),
       quote: '- WaieNot, Mutligaming Streamer',
     },
     {
-      image: 'https://cdn.skult.gg/Landing+Page/worlds.png',
+      image: '/worlds.png',
       name: t('collectiblesUseCases.events.worlds.name'),
       description: t('collectiblesUseCases.events.worlds.description'),
       quote: '- Midbeast, LoL Streamer',

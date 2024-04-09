@@ -73,7 +73,6 @@ const PresentationBlock = () => {
             muted
             controls
           >
-            <source src="https://cdn.skult.gg/SKULT.mp4" type="video/mp4" />
           </motion.video>
           <motion.div
             animate={controls}

@@ -26,7 +26,7 @@ export default StreamerBlock;
 
 const Title = () => (
   <div className="flex flex-row flex-wrap items-baseline justify-center gap-x-4 pb-16">
-    <img src="https://cdn.skult.gg/SKULT_logo.png" alt="SKULT Logo" className="h-10" />
+    <img src="/elements/SKULT.png" alt="SKULT Logo" className="h-10" />
     <Trans i18nKey="benefits.title" ns="streamers">
       <div className="text-center font-poppins text-5xl font-light leading-none text-[#E7E7E7]">
         for

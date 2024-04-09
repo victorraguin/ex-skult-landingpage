@@ -39,7 +39,7 @@ const SocialBlock = () => {
   return (
     <motion.div className="relative h-screen w-full flex-auto bg-[#222222] xl:h-screen" ref={ref}>
       <motion.div
-        style={{ backgroundImage: `url("https://cdn.skult.gg/Landing+Page/skult-social.webp")` }}
+        style={{ backgroundImage: `url("/elements/skult-social.webp")` }}
         className="flex h-full w-full items-end justify-center bg-cover bg-center bg-no-repeat"
         animate={controls}
         initial="hidden"

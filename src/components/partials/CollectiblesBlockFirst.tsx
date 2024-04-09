@@ -45,7 +45,7 @@ const CollectiblesBlockFirst = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
-        src="https://cdn.skult.gg/Landing+Page/skult-streamer-cards.png"
+        src="/skult-streamer-cards.png"
         alt="SKULT Streamer Cards"
         className="mx-auto mb-12 hidden h-72 sm:flex lg:h-80 xl:h-96"
       />

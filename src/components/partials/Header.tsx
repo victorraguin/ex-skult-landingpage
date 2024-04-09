@@ -4,6 +4,8 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { FlagIcon } from 'react-flag-kit';
 import { useTranslation } from 'next-i18next';
+import SKULTLogo from '../../../public/elements/logo-skult.png';
+import Image from 'next/image';
 
 const Header = () => {
   const router = useRouter();
@@ -23,7 +25,7 @@ const Header = () => {
           <Link href="#top" passHref>
             <img
               className="mx-10 mt-6 h-8 cursor-pointer transition duration-100 ease-in-out md:mx-auto md:mt-5 xl:mx-auto xl:mt-7 xl:h-12 2xl:h-14 4xl:h-16"
-              src={`https://cdn.skult.gg/Landing+Page/SKULT.png`}
+              src="/elements/logo-skult.png"
               alt="SKULT"
             />
           </Link>
