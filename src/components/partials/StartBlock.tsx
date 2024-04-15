@@ -17,6 +17,7 @@ const StartBlock = () => {
     >
       <div className="flex flex-row flex-wrap px-10 sm:flex-nowrap md:py-10 xl:px-[12rem] xl:pt-[9rem] xl:pb-[10rem] 3xl:px-[24rem] 3xl:pb-[15rem] 3xl:pt-[13rem] 4xl:px-[35rem]">
         <div className="flex flex-col sm:w-1/2">
+          
           <Trans i18nKey="start.title" ns="home">
             <motion.h1
               className={`${styles.HomeTitle} pb-3 leading-none`}
@@ -43,6 +44,9 @@ const StartBlock = () => {
           >
             {t('start.catchphrase')}
           </motion.h2>
+          <motion.div className='text-red-400 italic'>
+          {tCommon('cta.exskult')}
+          </motion.div>
           <div className="flex flex-row space-x-5 md:flex-col md:space-x-0">
             <div className="">
               <a href="https://discord.gg/K2pNugpGwB" target="_blank" rel="noreferrer" className="group">
@@ -61,6 +65,7 @@ const StartBlock = () => {
                       {tCommon('cta.discord')}
                     </motion.div>
                   </motion.div>
+                  
                 </motion.button>
               </a>
             </div>
